@@ -1,0 +1,26 @@
+{
+  "name": "3095-001-03-cardx-design-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/vsapartners/3095-001-03-cardx-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vsapartners/3095-001-03-cardx-design-system#readme",
+  "dependencies": {
+    "@pattern-lab/cli": "^0.0.1-beta.1",
+    "@pattern-lab/core": "^3.0.0-beta.1",
+    "@pattern-lab/engine-mustache": "^2.0.0-beta.0",
+    "@pattern-lab/uikit-workshop": "^1.0.0-beta.0",
+    "gulp": "3.9.1",
+    "minimist": "1.2.0",
+    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
+  }
+}
