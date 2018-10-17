@@ -8,6 +8,6 @@ server({
     password: process.env.PASSWORD,
     port: 1234,
     realm: 'Private',
-    root: './exported/',
+    root: './public/',
     username: process.env.USERNAME
 })
