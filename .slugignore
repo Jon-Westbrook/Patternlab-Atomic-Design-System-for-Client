@@ -1,6 +1,5 @@
 .tmp
 .zip
-node_modules/
 source/
 pattern_exports/
 

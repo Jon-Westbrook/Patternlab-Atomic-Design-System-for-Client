@@ -3,8 +3,6 @@ coverage/
 dist/
 dist
 node_modules/
-public
-public/
 build
 build/
 design-files/
