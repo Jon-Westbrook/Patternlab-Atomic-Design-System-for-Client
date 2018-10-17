@@ -12,4 +12,5 @@ pipelines:
         name: Deploy to Heroku
         deployment: production
         script:
+          - gulp patternlab:build
           - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD
