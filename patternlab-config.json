@@ -2,7 +2,7 @@
   "cacheBust": true,
   "cleanPublic": true,
   "defaultPattern": "all",
-  "defaultShowPatternInfo": false,
+  "defaultShowPatternInfo": true,
   "ishControlsHide": {
     "s": false,
     "m": false,
@@ -10,7 +10,7 @@
     "full": false,
     "random": false,
     "disco": false,
-    "hay": true,
+    "hay": false,
     "mqs": false,
     "find": false,
     "views-all": false,
@@ -21,17 +21,25 @@
     "tools-docs": false
   },
   "ishViewportRange": {
+    "xs": [
+      320,
+      575
+    ],
     "s": [
-      240,
-      500
+      576,
+      767
     ],
     "m": [
-      500,
-      800
+      768,
+      991
     ],
-    "l": [
-      800,
-      2600
+    "lg": [
+      992,
+      1199
+    ],
+    "xl": [
+      1200,
+      1440
     ]
   },
   "logLevel": "info",
