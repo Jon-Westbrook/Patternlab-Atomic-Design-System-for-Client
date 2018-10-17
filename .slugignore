@@ -1,5 +1,7 @@
-.tmp/
-.zip/
+.tmp
+.zip
+node_modules/
+source/
 
 README.html
 

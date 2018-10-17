@@ -21,6 +21,7 @@
     "@pattern-lab/uikit-workshop": "^1.0.0-beta.0",
     "gulp": "3.9.1",
     "minimist": "1.2.0",
-    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
+    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap",
+    "auth-static": "^1.0.3"
   }
 }
