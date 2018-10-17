@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		
+<div id="testi-carousel" class="carousel slide testi-carousel pt-md-4" data-ride="carousel" data-interval="6000" style="background-color: ">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#testi-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#testi-carousel" data-slide-to="1"></li>
+    <li data-target="#testi-carousel" data-slide-to="2"></li>
+  </ol>
+ 
+  <div class="carousel-inner" role="listbox">
+    
+    <div class="carousel-item active" style="background-color: #58a1ac;">
+      <div class="container">
+        <img class="d-block img-fluid c-img hidden-sm-down" src="person3.png" alt="First slide">
+        <div class="carousel-caption">
+          <blockquote class="display4__testimonial bold light quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor magna diam, a mollis lacus mattis non. Praesent aliquet efficitur felis, at hendrerit odio. Fusce.</blockquote>
+          <p class="display7 light mt-3">Andrea Lehman</p>
+        </div>
+      </div>
+    </div>
+
+   <div class="carousel-item" style="background-color: #7c7cad;">
+      <div class="container">
+        <img class="d-block img-fluid c-img hidden-sm-down" src="person4.png" alt="First slide">
+        <div class="carousel-caption">
+          <blockquote class="display4__testimonial bold light quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor magna diam, a mollis lacus mattis non. Praesent aliquet efficitur felis, at hendrerit odio. Fusce.</blockquote>
+          <p class="display7 light mt-3">Andrea Lehman</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-color: #9f7b98;">
+      <div class="container">
+        <img class="d-block img-fluid c-img hidden-sm-down" src="person5.png" alt="First slide">
+        <div class="carousel-caption">
+          <blockquote class="display4__testimonial bold light quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor magna diam, a mollis lacus mattis non. Praesent aliquet efficitur felis, at hendrerit odio. Fusce.</blockquote>
+          <p class="display7 light mt-3">Andrea Lehman</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+  <a class="carousel-control-prev hidden-sm-down" href="#" role="button" data-target="#testi-carousel" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next hidden-sm-down" href="#" data-target="#testi-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+
+<script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-T01-Home","lineagePath":"../../patterns/03-templates-T01-Home/03-templates-T01-Home.rendered.html"},{"lineagePattern":"templates-T02C-Section-Landing-Events","lineagePath":"../../patterns/03-templates-T02C-Section-Landing-Events/03-templates-T02C-Section-Landing-Events.rendered.html"}],"lineageR":[{"lineagePattern":"templates-T01-Home","lineagePath":"../../patterns/03-templates-T01-Home/03-templates-T01-Home.rendered.html"},{"lineagePattern":"templates-T02C-Section-Landing-Events","lineagePath":"../../patterns/03-templates-T02C-Section-Landing-Events/03-templates-T02C-Section-Landing-Events.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>Image</p>\n<ul>\n<li>on hover - nav arrows appear</li>\n<li>on click left/right arrow - advances to next pane (circular) , pagination dot highlight moves accordingly</li>\n</ul>\n<p>Quote</p>\n<ul>\n<li>We recommend a maximum of 25 words for the quote.</li>\n</ul>\n","patternBreadcrumb":{"patternType":"modules"},"patternExtension":"mustache","patternName":"M3 Testimonial Carousel","patternPartial":"modules-M3A-Testimonial-Carousel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1539810219346">
+  (function() {
+    if (self != top) {
+      var cb = '1539810219346';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1539810219346">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

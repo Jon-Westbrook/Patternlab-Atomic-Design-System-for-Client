@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		
+<div class="container mobile-promo">
+  <div class="row">
+    <div class="col-md-6 pr-md-0">
+      <div class="d-flex flex-column copy">
+      	<h1 class="display3 bold mt-5 mt-md-0">Connect faster with ICSC on the go</h1>
+      	<p class="display7 mt-3 secondary">Search directories, sees who's at the same conference, or register for your next event. All while OOO.</p>
+				
+				<form class="form-inline mt-3">
+  				<label class="sr-only hidden-sm-down" for="inlineFormInput">Name</label>
+  				<input type="tel" class="form-control mr-2 hidden-sm-down pl-3 mobileInput" id="smsForm" placeholder="Enter Mobile #" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Enter Mobile #'">
+					<button type="submit" class="btn btn-primary d-inline-block mr-0 px-3 align-self-end hidden-sm-down">Text me the link</button>
+				</form>
+				<button type="submit" class="btn btn-primary d-inline-block mr-0 mb-5 px-3 hidden-md-up">Add to Home Screen</button>     	
+				<p class="display8 mt-2 secondary hidden-sm-down">Standard SMS rates apply.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 p-5 hidden-sm-down">
+      <img class="ml-auto promo-img w-100" src="promo-smartphone-2x.png" alt="Promo Img">
+    </div>
+  </div>
+</div>
+<script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-T01-Home","lineagePath":"../../patterns/03-templates-T01-Home/03-templates-T01-Home.rendered.html"}],"lineageR":[{"lineagePattern":"templates-T01-Home","lineagePath":"../../patterns/03-templates-T01-Home/03-templates-T01-Home.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>Phone Text Field</p>\n<ul>\n<li>on click - cursor appears, placeholder text disappears</li>\n<li>on type - phone number formatting appears</li>\n</ul>\n<p>Phone Text Field (Mobile Only)</p>\n<ul>\n<li>on tap - OS keyboard appears</li>\n</ul>\n<p>Command Button</p>\n<ul>\n<li>on successful entry of number - TBD or highlight appears (see styleguide)</li>\n<li>on click - TBD or text sent message replaces command button</li>\n</ul>\n","patternBreadcrumb":{"patternType":"modules"},"patternExtension":"mustache","patternName":"M6 Mobile Promo","patternPartial":"modules-M6-Mobile-Promo","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1539810219346">
+  (function() {
+    if (self != top) {
+      var cb = '1539810219346';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1539810219346">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

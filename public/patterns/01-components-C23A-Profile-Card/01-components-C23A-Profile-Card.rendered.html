@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<div class="card">
+
+  <!-- Real Image --> 
+  <!-- <img class="member-card-img mt-4 mt-lg-5 mx-auto" src="" alt=""> -->
+
+  <!-- Fake Image --> 
+  <div class="member-card-img member-default mt-4 mt-lg-5 d-flex align-items-center mx-auto" alt="" >
+    <div class="letters mx-auto">
+      <span class="display5"></span><span class="display5"></span>
+    </div>
+  </div>
+
+  <div class="card-block py-0">
+    <a href="#" class="profile-name-link"><h3 class="member-name mt-3 mb-0 display6 bold text-center"></h3></a>
+    <p class="display8 secondary mt-2 mb-0 text-center member-title" ></p> 
+    <p class="display8 secondary mt-2 mb-0 text-center member-title" ></p>
+    <a href="#" class="profile-co-link"><p class="display8 mt-2 mb-0 text-center"></p></a>
+  </div>
+  <div class="card-icons mt-3 mt-lg-4 p-3 w-100 d-flex justify-content-start">
+        <a tabindex="0" class="share share--facebook pt-2 mt-2 ml-auto" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true"></a>
+
+         
+      <!--card has two variations — data-placement for save icon is "bottom" on desktop, "left" on mobile-->
+      <a tabindex="0" class="share share--save hidden-sm-down ml-3 mt-1" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="
+         <div class='bg-gray-dark p-2'>
+            <a href='#' target='_self' class='light'>Log In to Save</a>
+         </div>
+      "></a>
+
+      <a tabindex="0" class="share share--save hidden-md-up ml-3 mt-1" data-toggle="popover" data-placement="left" data-trigger="focus" data-html="true" title="
+         <div class='bg-gray-dark p-2'>
+            <a href='#' target='_self' class='light'>Log In to Save</a>
+         </div>
+      "></a>
+
+  </div>
+  
+</div>
+<script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Card</p>\n<ul>\n<li>on hover - card animates</li>\n<li>on hover of name - highlight appears (see styleguide)</li>\n<li>on hover of address - higlight appears (see styleguide)</li>\n<li>on click of name or address - redirect to appropriate template</li>\n<li>on click of favorite icon (authenticated) - item saved in user profile, success tooltip appears</li>\n<li>on click of favorite icon (unauthenticated) - login/signup modal appears</li>\n</ul>\n","patternBreadcrumb":{"patternType":"components"},"patternExtension":"mustache","patternName":"Member Card","patternPartial":"components-C23A-Profile-Card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1539810219346">
+  (function() {
+    if (self != top) {
+      var cb = '1539810219346';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1539810219346">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>
