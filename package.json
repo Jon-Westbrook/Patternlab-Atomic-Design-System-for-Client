@@ -25,6 +25,11 @@
     "auth-static": "^1.0.3"
   },
   "devDependencies": {
-    "eslint": "^5.7.0"
+    "autoprefixer": "^9.2.1",
+    "bootstrap": "^4.1.3",
+    "eslint": "^5.7.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
   }
 }

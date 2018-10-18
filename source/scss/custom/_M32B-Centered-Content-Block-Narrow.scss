@@ -1,0 +1,74 @@
+
+.content-block-narrow  {
+	position: relative;
+	.download {
+		&:after {
+			content: '';
+			display: inline-block;
+			background: url('/assets/images/download-icon-small.svg') no-repeat;
+			width: 16px;
+			height: 20px;
+			margin-left: 16px;
+			cursor: pointer;
+			vertical-align: top;
+		}
+	}
+}
+
+.dropup {
+	.dropdown-menu {
+		height: auto;
+  	max-height: 400px;
+  	overflow-x: hidden;
+  	bottom: 95%;
+	}
+	.back:before {
+		content: '';
+    display: inline-block;
+    background: url(/assets/images/back-to-home.svg) no-repeat;
+    width: 24px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 4px;
+	}
+	.dropdown-toggle {
+		outline: none;
+	}
+	.dropdown-toggle:focus {
+		box-shadow: none;
+	}
+	.dropdown-toggle::after {
+		content: '';
+		display: inline-block !important;
+		background: url('/assets/images/up-arrow.svg') no-repeat;
+		border: 0 !important;
+		width: 10px;
+		height: 6px;
+		margin: 0 0 2px 8px;
+		transition: all 0.2s ease-in-out;
+	}
+	.dropdown-toggle:hover {
+		&:after {
+			background: url('/assets/images/down-arrow-white.svg') no-repeat;
+		}
+	}
+	.dropdown-item { 
+		white-space: inherit;
+	}
+
+	.sub-links {
+		&:after {
+			content: "";
+			background: url('/assets/images/down-arrow.svg') no-repeat;
+			position: absolute;
+			right: 0;
+			width: 10px;
+			height: 6px;
+			margin: auto 10px;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+
+}
+
+

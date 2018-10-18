@@ -1,0 +1,123 @@
+
+.sponsors {
+
+  .logo-wrap {
+    overflow: hidden;
+    width: 220px;
+    height: 120px;
+    @include media-breakpoint-up(sm) {
+      width: 220px;
+      height: 125px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 290px;
+      height: 150px;
+    }
+    //IE image wrap fix
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width:auto;
+      height:auto;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      margin: 0px;
+      .p-3 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+      }
+    } //IE fix
+
+  } //.logo-wrap
+
+
+
+  .platinum {
+    width: 153px;
+    height: 100px;
+      @include media-breakpoint-up(sm) {
+        width: 200px;
+        height: 125px;
+      }
+      @include media-breakpoint-up(md) {
+        width: 255px;
+        height: 150px;
+      }
+      //IE image wrap fix size & make platinums scale down
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        width:auto;
+        height:auto;
+        padding: 0px;
+        margin: 0px;
+        transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+      }
+  } // .platinum
+
+
+  .logo {
+    transition: $transition-base;
+    cursor: pointer;
+    max-width: 100%;
+    width:inherit;
+    height: auto;
+  } //.logo 
+
+} //.sponsors
+
+
+//cross-browser filter grayscale
+/*! Gray v1.6.0 (https://github.com/karlhorky/gray) | MIT */
+.grayscale {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(1);
+
+  /* Firefox 35+ */
+  filter: grayscale(1);
+
+  /* IE 6-9 */
+  filter: gray;
+}
+
+.grayscale.grayscale-fade {
+  transition: filter .5s;
+}
+
+/* Webkit hack until filter is unprefixed */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .grayscale.grayscale-fade {
+    -webkit-transition: -webkit-filter .5s;
+    transition:         -webkit-filter .5s;
+  }
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+}
+
+/* Background element */
+.grayscale.grayscale-replaced {
+  -webkit-filter: none;
+  filter:         none;
+}
+
+.grayscale.grayscale-replaced > svg {
+  -webkit-transition: opacity .5s ease;
+  transition:         opacity .5s ease;
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off > svg,
+.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
+  opacity: 0;
+}
+

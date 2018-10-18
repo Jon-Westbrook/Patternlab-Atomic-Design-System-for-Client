@@ -1,0 +1,21 @@
+{{#sessions}}
+<div class="row mt-4">
+	<div class="col-12">
+		<h4 class="display7 bold mb-1">{{startTime}} - {{endTime}}</h4>
+		<p class="display6 accent bold mb-1">{{title}}</p>
+		<p class="display8 secondary bold mt-1">{{location}}</p>
+		<p class="display8 secondary mt-0 mb-3">{{desc}}</p>
+		<div class="card-icons relative border-0 d-flex justify-content-start align-items-center">
+			<a href="#" class="share share--facebook mr-5 " data-toggle="popover" data-trigger="focus" data-placement="right" data-html="true"
+			 title="" data-original-title=" 
+					<div class='addthis_toolbox bg-gray-dark'>
+						<a class='addthis_button_facebook'><img src='{{ imagePath }}facebook-white.svg' alt='Share to Facebook' height='28' width='28'  ></a>
+						<a class='addthis_button_linkedin px-2'><img src='{{ imagePath }}linkedIn-white.svg' alt='Share to LinkedIn' height='28' width='28' ></a>
+						<a class='addthis_button_twitter'><img src='{{ imagePath }}twitter-white.svg' alt='Share to Twitter' height='28' width='28' ></a>
+					</div>
+				"></a>
+			<img class="mr-3" src="{{ imagePath }}icon-save.svg" alt="Favorite Icon">
+		</div>
+	</div>
+</div>
+{{/sessions}}

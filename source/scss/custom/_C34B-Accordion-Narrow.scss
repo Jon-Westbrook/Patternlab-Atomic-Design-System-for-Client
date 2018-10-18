@@ -1,0 +1,40 @@
+.accordion-narrow {
+    .card {
+        height: auto !important;
+        box-shadow: none !important;
+        transform: none !important;
+        border: none;
+        border-bottom: 2px solid $tertiary4;
+        .card-header {
+            background: none;
+            border: none;
+            a {
+                &:before {
+                    content: '-';
+                    position: absolute;
+                    left: 20px;
+                }
+                &.collapsed {
+                    &:before {
+                        content: '+';
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-device-width : 459px) { //fix tables phones
+    .collapse{
+        .card-block{
+            padding: 1rem !important;
+        } 
+        table{
+             width: 100% !important;
+        }
+        .wysiwyg-text-wrapper th, .wysiwyg-text-wrapper td{
+            padding: 10px !important;
+        }
+    } 
+} //end query

@@ -1,0 +1,19 @@
+
+.search-bar {
+  .row {
+    position: relative;
+  }
+  .col {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+  }
+  .search-icon {
+    height: 30px;
+    width: 30px;
+  }
+  input {
+    opacity: 1;
+  }
+}

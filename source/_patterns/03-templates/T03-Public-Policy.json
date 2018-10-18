@@ -1,0 +1,10 @@
+{
+  "shortHero": {
+    "heroTitle"	: "Public Policy",
+    "heroDesc"	: "Elect to protect our industry",
+    "imgSrc"	: "/images/icsc_pubpol_lg.jpg"
+  },
+  "cards" : {
+  	 "moduleTitle1" : "Latest in public policy"
+  }
+}

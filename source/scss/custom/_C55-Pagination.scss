@@ -1,0 +1,59 @@
+
+.pagination {
+	
+	.page-item:first-child a {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.page-item:last-child a {
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+
+
+	.single {
+		width: 11.4px;
+		height: 8px;
+		object-fit: contain;
+		@include media-breakpoint-up(md) {
+			width: 14px;
+			height: 10.5px;
+		}
+	}
+
+	.double {
+		width: 14pxpx;
+		height: 8px;
+		object-fit: contain;
+		@include media-breakpoint-up(md) {
+			width: 14px;
+			height: 10.5px;
+		}
+	}
+
+	.page-item {
+		height: 42px;
+		&:not(:first-of-type) .page-link {
+			border-left: 2px solid $tertiary3;
+		}
+	}
+
+	.page-link {
+		border: 1px solid $tertiary3;
+		&.no-hover {
+			background-color: $primary3;
+			color: $primary2;
+		}
+		&.hits {
+			padding: 11px 12px 0;
+			@include media-breakpoint-up(sm) {
+				padding: 11px 12px 0;
+			}
+		}
+		&.active {
+			border-bottom: solid 3px $primary1;
+		}
+	}
+
+}
+

@@ -1,0 +1,60 @@
+{
+  "subPage": {
+    "headerTitle": "ADA Lawsuit Reform",
+    "headerDesc": "Restore the integrity of the ADA<br /><br />ICSC supports H.R. 620, The ADA Education and Reform Act, which closes the loophole in the federal law that has unintentionally produced “drive-by” ADA Title III lawsuits and adds safeguards that incentivize the remedy of alleged violations – without taking away the right to pursue “bad actors” who ignore compliance.",
+    "secondaryTitle1": "Current Legislation",
+    "secondaryBodyCopy1": "H.R. 620 is a “notice and cure” bill that requires a plaintiff to notify property owners about alleged violations and allows them 120 days to correct the potential problems before the clock starts running on attorney fees.",
+    "link1": "H.R.620 - ADA Education and Reform Act of 2017",
+    "secondaryTitle2": "The Rise of \"Drive-By\" Lawsuits",
+    "secondaryBodyCopy2": "“Drive-by” ADA Title III federal lawsuits are on the rise nationwide. The suits are aimed private businesses open to the public. The main driver in these actions is forcing a monetary settlement consisting mainly of attorney’s fees that only benefit the attorney and do little to increase access.<br /><br />A “cash for compliance” industry has emerged with certain plaintiff’s firms inspecting shopping centers, theaters, stores and restaurants in order to allege minor, easily-correctable ADA infractions, such as those relating to parking lot striping and signs, bathroom dispensers and ramps. In many instances, a single plaintiff has filed dozens, even hundreds, of cases across a geographic area alleging violations.<br /><br />Many property owners reasonably believed their properties were ADA-compliant based on assurances by state or local inspectors and/or outside consultants. Despite the best efforts of some states to curb ADA lawsuit abuse through additional litigation protections (such as special rules in district courts) federal legislation is still needed.",
+    "link2": "ADA Lawsuit Statistics, February 2017",
+    "secondaryTitle3": "Ask Congress to Pass H.R. 620",
+    "secondaryBodyCopy3": "Send an email to your Representative today asking him or her to cosponsor H.R. 620. Maintaining bipartisan support from Republicans and Democrats is imperative to moving this issue forward.",
+    "link3": "Ask the House to Stop \"Drive-By\" ADA Lawsuits",
+    "secondaryTitle4": "Media Coverage of the Problem",
+    "secondaryBodyCopy4": "\"60 Minutes\" and other news outlets have noticed the problem.",
+    "link4": "60 Minutes - Americans with Disabilities",
+    "link5": "NPR - Arizona Group Goes To Court For The Disabled — More Than 1,500 Times"
+  },
+  "leftNav": {
+    "backText":   "Back to [Parent]",
+    "link1":      "Tax Reform",
+    "link2":      "ADA Lawsuit Reform",
+    "link3":      "e-Fairness",
+    "link4":      "Grassroots & Key Contacts",
+    "link5":      "ICSC PAC"
+  },
+  "contactModule": {
+  	"contactTitle": "For more information"
+  },
+  "cards": {
+  	"membername": "Abby Jagoda",
+  	"memberTitle": "Director, Public Policy and Best Practices"
+  },
+  "callouts": {
+  	"title": "More member resources",
+  	"cat1": "Legislative Action Center",
+  	"cat1desc": "As an informed and active constituent, you can play the most important role of all in shaping legislation. Here are ways to make your voice heard in support of the retail real estate industry.",
+  	"cat1LinkText": "Legislative Action Center",
+  	"cat2": "ICSC PAC",
+  	"cat2desc": "We are the only federally registered political action committee representing retail real estate industry interests. A robust PAC provides opportunities to support Congressional candidates who advance our members’ interests on Capitol Hill.",
+  	"cat2LinkText": null,
+  	"cat3": "Key Contact Program",
+  	"cat3desc": "The Key Contact Program links ICSC members with Members of Congress to proactively drive the legislative process rather than responding to legislation after the fact.",
+  	"cat3LinkText": "Example",
+  	"cat4": "Other Issues",
+  	"cat4desc": "Additional regulatory and legislative issues that impact our industry.",
+  	"cat4LinkText": "Additional Issues",
+  	"cat5": "State Shopping Center Statistics",
+  	"cat5desc": "Shopping centers provide valuable goods, employment and sales tax revenue to communities.",
+  	"cat5LinkText": "Shopping Center Statistics",
+  	"cat6": "Request Amicus Curiae Briefs",
+  	"cat6desc": "You may request ICSC to file an amicus curiae brief, either independently or with others, in pending appeals on issues of importance to the shopping center industry.",
+  	"cat6LinkText": "Amicus Curiae Application"
+  }
+}
+
+
+
+
+

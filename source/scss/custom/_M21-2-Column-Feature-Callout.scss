@@ -1,0 +1,19 @@
+@include media-breakpoint-down(sm) {
+	.callout-item {
+		/* Add a border to each item on small screen sizes */
+		&:after {
+			display: block;
+			margin: 0 26px;
+			content: '';
+			padding: 15px;
+			border-bottom: 1px solid $tertiary4;
+			width: 100%;
+		}
+		/* Hide border from last item */
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+
+.snapshots-3 {
+  .promo-img {
+		width: 140px;
+		@include media-breakpoint-up(lg) {
+			width: 140px;
+		}
+  }
+}

@@ -1,0 +1,131 @@
+
+.homeHero {
+  background: url('../images/Hero_FPO.png') no-repeat center center; 
+  background-size: cover;
+  position: relative;
+  .heroTitle {
+		@include media-breakpoint-down(sm) {
+			margin-top: 102px;
+			margin-bottom: 102px;
+		}
+		@include media-breakpoint-only(md) {
+			margin-top: 156px;
+			margin-bottom: 156px;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 191px;
+			margin-bottom: 273px;
+		}
+	}
+	 &:before {
+		position: absolute;
+		content: '\A';
+    width: 100%; 
+    height: 100%;
+ 		top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hero-boxes {
+	.link-wrap {
+		width: 100%;
+	}
+	.block {
+		display: flex;
+		flex-grow: 1;
+	}
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		// .row {
+		// 	padding-right: 15px;
+		// 	padding-left: 15px;
+		// }
+	}
+	@include media-breakpoint-up(lg) {
+		position: relative;
+		top: -60px;
+		margin-bottom: -60px;
+	}
+	.left-title {
+		width: 246px;
+		@include media-breakpoint-up(sm) {
+			width: 259px;
+		}		
+		@include media-breakpoint-up(lg) {
+			width: 311px;
+		}
+	}
+	.top-hero-box {
+		border-bottom: 1px solid $tertiary3;
+		@include media-breakpoint-only(md) {
+			border-bottom: 0;
+			border-right: 1px solid $tertiary3;
+		}
+	}
+	.forward {
+		position: absolute;
+		top: 39px;
+		right: 32px;
+		transition: $transition-base;
+		@include media-breakpoint-only(md) {
+			top: 39px;
+			right: 46px;
+		}
+		@include media-breakpoint-up(lg) {
+			top: 94px;
+			right: 46px;
+		}
+	}
+	.title {
+		text-decoration: none;
+    // display: inline-block;
+    // border-bottom: 3px solid transparent;    
+    // width: 0px;
+    // transition: .5s ease;
+    // white-space: nowrap;
+	}
+	.copy {
+		width: 300px;
+	}
+	.copyBlock {
+		&:hover {
+			.title {
+				// color: $primary2;
+				// border-bottom: 3px solid $primary1;
+    			// width: 125px;
+			}
+			.forward {
+				transform: translateX(10px);
+			}
+			.copy {
+				// color: $primary2;
+			}
+		}
+	}
+
+	/* pbland - new underline */
+	.copyBlock {
+		cursor: pointer;
+		.title {
+			&:after {
+				content: '';
+				display: block;
+				width: 0;
+				border-bottom: 3px solid transparent;
+				transition: all .5s ease;
+			}
+		}
+		&:hover {
+			.title {
+				&:after {
+					border-bottom: 3px solid $primary1; 
+					width: 100%;
+				}
+			}
+		}
+	}
+}

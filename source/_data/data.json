@@ -1,247 +1,628 @@
 {
-	"title" : "Pattern Lab",
-	"heading" : "Page Header",
-	"subheading" : "Subtext For Header",
-	"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-	"placeholder" : "Placeholder Text",
-	"url" : "#",
-	"cta" : "Call To Action",
-	"ariaLabel" : "Aria label",
-	"listItem" : "List Item",
-	"listItemNested" : "Nested List Item",
-	"term" : "Term",
-	"definition" : "This is the definition of the term.",
-	"badge" : "23",
-	"label" : "New Label",
-	"labelClass" : "label-default",
-	"progressBarClass" : "",
-	"progressCompleteText" : "60% Complete",
-	"progressMinWidth" : false,
-	"removeProgressText" : true,
-	"ariaMin" : 0,
-	"ariaMax" : 100,
-	"ariaNow" : 60,
-	"src" : "../../images/bootstrapthumb.jpg",
-	"alt" : "Bootstrap Thumbnail",
-	"caption" : "Caption Text",
-	"panelClass" : "panel-default",
-	"panelHeading" : false,
-	"panelFooter" : false,
-	"table" : {
-	  "thead" : {
-		  "th" : [
-			  { "title" : "Table Heading 1" },
-			  { "title" : "Table Heading 2" },
-			  { "title" : "Table Heading 3" },
-			  { "title" : "Table Heading 4" }
-		  ]
-	  },
-		"tbody" : {
-			"tr" : [
-				{
-					"td" : [
-						{ "text" : "row 1 cell 1" },
-						{ "text" : "row 1 cell 2" },
-						{ "text" : "row 1 cell 3" },
-						{ "text" : "row 1 cell 4" }
-					]
-				}
-			]
-		}	
-	},
-	"wellClass" : "",
-	"mediaClass" : "",
-	"mediaLeft" : true,
-	"mediaRight" : false,
-	"mediaImage" : "../../images/bootstrapthumb64.jpg",
-	"embedClass" : "embed-responsive-16by9",
-	"mediaEmbed" : "//www.youtube.com/embed/zpOULjyy-n8?rel=0",
-	"inputClass" : "",
-	"inputAddonBefore" : "Addon",
-	"inputAddonAfter" : false,
-	"buttonClass" :"btn-default",
-	"breadcrumbs" : [
-		{ 
-			"url" : "#", 
-			"text" : "Link 1"
-			
-		},
-		{ 
-			"url" : "#",
-			"text" : "Link 2"
-		},
-		{ 
-			"url" : "#", 
-			"text" : "Link 3" 
-		}	
-	],
-	"caret" : "caret",
-	"dropdownClass" : "dropdown",
-	"dropdownList" : [
-		{ 
-			"url" : "#",
-			"text" : "Action"	 
-		},
-		{ 
-			"url" : "#",
-			"text" : "Another action" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "Something else here"
-		},
-		{ 
-			"url" : "#",
-			"text" : "Link 4" 
-		}
-	],
-	"navClass" : "",
-	"navList" : [
-		{ 
-			"url" : "#",
-			"text" : "Home"
-		},
-		{ 
-			"url" : "#",
-			"text" : "Profile" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "Messages" 
-		}
-	],
-	"paginationClass" : "",
-	"paginationList" : [
-		{ 
-			"url" : "#",
-			"text" : "1" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "2" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "3" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "4" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "5" 
-		}
-	],
-	"pagerClass" : "",
-	"pagerList" : [
-		{ 
-			"url" : "#",
-			"text" : "Previous" 
-		},
-		{ 
-			"url" : "#",
-			"text" : "Next" 
-		}
-	],
-	"buttonGroupClass" : "",
-	"buttonGroupList" : [
-		{ "text" : "Left" },
-		{ "text" : "Middle" },
-		{ "text" : "Right"}
-	],
-	
-	"alertClass" : "alert-success",
-	"alertText" : "I am alerting you about something",
-	"dismissableAlert" : false,
-	"listGroupClass" : "",
-	"listGroup" : [
-		{ "text" : "Cras justo odio" },
-		{ "text" : "Dapibus ac facilisis in" },
-		{ "text" : "Morbi leo risus" },
-		{ "text" : "Porta ac consectetur ac" },
-		{ "text" : "Vestibulum at eros" }
-	],
-	"navbarBrandText" : "Pattern Lab",
-	"navbarNavClass" : "",
-	"navbarNavFirst" : true,
-	"navbarNavLast" : {
-		"navbarNavClass" : "navbar-right"
-	},
-	"navbarNav" : [
-		{
-			"url" : "#",
-			"text" : "Link"
-		},
-		{
-			"url" : "#",
-			"text" : "Link"
-		},
-		{
-			"url" : "#",
-			"text" : "Dropdown",
-			"hasDropdown" : true,
-			"dropdownMenu" : [
-				{ 
-					"url" : "#",
-					"text" : "Action"	 
-				},
-				{ 
-					"url" : "#",
-					"text" : "Another action" 
-				},
-				{ 
-					"url" : "#",
-					"text" : "Something else here"
-				},
-				{ 
-					"separator" : "true"
-				},
-				{ 
-					"url" : "#",
-					"text" : "Link 4" 
-				}
-				
-			]
-		}
-	],
-	"navbarFormClass" : "navbar-left",
-	"navbarClass" : "navbar-default",
-	"mediaList" : [
-		{
-			"mediaLeft" : true,
-			"mediaRight" : false,
-			"nestedMedia" : [
-				{
-					"mediaLeft" : false,
-					"mediaRight" : true
-				},
-				{
-					"mediaLeft" : true,
-					"mediaRight" : false
-				}
-			]
-			
-		},
-		{
-			"heading" : "Item 2",
-			"text" : "This is the second item that is not nested.",
-			"mediaLeft" : true,
-			"mediaRight" : false,
-			"nestedMedia" : [
-				{
-					"heading" : "Nested Item 1",
-					"text" : "This is the first nested item of the list.",
-					"mediaLeft" : true,
-					"mediaRight" : false
-				},
-				{
-					"heading" : "Nested Item 2",
-					"text" : "This is the second nested item of the list",
-					"mediaLeft" : false,
-					"mediaRight" : true
-				}
-			]	
-		}
-	]
+  "imagePath": "/assets/images/",
+  "closeBtn": "/assets/images/clear-button.svg",
+  "logoGrey": "/assets/images/icsc-logo-grey.svg",
+  "splash": "/assets/images/ICSC_web-05@3x.png",
+  "header": {
+    "mainLinks": [
+      {"navLink": "Who We Are","subLinks": [{ "name": "Our Mission", "route": "routerLink=\"\/mission\"" }, { "name": "Our Leadership", "route": "routerLink=\"\/leadership\"" }, { "name": "Foundation", "route": "routerLink=\"\/foundation\"" }, { "name": "Community Development", "route": "routerLink=\"\/community-development\""}, { "name": "Volunteer", "route": "routerLink=\"\/volunteer\""},  { "name": "Awards and Recognition", "route": "routerLink=\"\/awards\""} ] },
+      {"navLink": "News &amp; Views", "subLinks": [{ "name": "TEST LINKS", "route": "routerLink=\"\/icsc-exchange\"" }, { "name": "ICSC Exchange", "route": "routerLink=\"\/icsc-exchange\"" }, { "name": "Newsstand", "route": "routerLink=\"\/news\"" }, { "name": "Public Policy", "route": "routerLink=\"\/public-policy\"" }, { "name": "SCT", "route": "routerLink=\"\/sct\"" }, { "name": "Research", "route": "routerLink=\"\/research\"" } ] },
+      {"navLink": "Attend &amp; Learn", "subLinks": [{ "name": "Events", "route": "routerLink=\"\/events\"" }, { "name": "Professional Development", "route": "routerLink=\"\/professional-dev\""} ] },
+      {"navLink": "Find &amp; Connect", "subLinks": [{ "name": "Find Members", "route": "routerLink=\"\/find-members\"" }, { "name": "Find Outlets", "route": "routerLink=\"\/find-outlets\"" }, { "name": "Find Jobs", "route": "routerLink=\"\/find-jobs\"" } ] },
+      {"navLink": "Join", "subLinks": [{ "name": "Become a Member", "route": "routerLink=\"\/join\"" } ] }
+    ],
+    "userName": "Willa Cather"
+  },
+  "shortHero": {
+      "heroTitle": "Sed posuere consectetur est at lobortis",
+      "heroDesc": "Lorem Ultricies Vestibulum Fermentum Sit",
+      "imgSrc1": "/assets/images/bg-mall-outdoors.jpg",
+      "imgSrc2": "/assets/images/pattern-fill-grey-bg.svg"
+  },
+  "tallHero": {
+      "heroTitle": "Sed posuere consectetur est at lobortis",
+      "category": "Fermentum Sit"
+  },
+  "cards": {
+    "generalCardCat": "SCT",
+    "generalCardPostAge": "1 week ago",
+    "generalCardTitle": "ICSC Meets with Key DC Influencers on Tax Reform",
+    "generalCardImg": "/assets/images/article-thumb-FPO@2x.png",
+    "generalThumb": "Article Thumb",
+    "generalLongDesc": "Curabitur dignissim scelerisque ligula vitae pellentesque. In mollis neque am faucibus ante nec nulla egestas sagir. Mauris nec purus eget eros pretium viverra eu et libero.",
+    "generalEyebrow": "Wall Street Journal",
+    "generalDesc": "1 week ago",
+    "downloadIcon": "/assets/images/download-icon.svg",
+    "shareImg": "/assets/images/icon-share.svg",
+    "saveImg": "/assets/images/icon-save.svg",
+    "eventTitle": "New England Conference & Deal Making",
+    "eventDate": "December 5-6",
+    "eventLocale": "Javits Center",
+    "eventCity": "New York, NY",
+    "eventIcon": "/assets/images/event-icon.svg",
+    "eventURL": "www.icsc.org/events-and-programs/details/centerbuild.../brochure",
+    "memberCardImg": "/assets/images/90.jpg",
+    "memberName": "Anthony Pennington-Cross",
+    "memberFirstInit": "W",
+    "memberLastInit": "C",
+    "memberTitle": "Major Marketing Affecianada",
+    "memberCompany": "Marquette University Center for Real Estate",
+    "memberLocale": "Milwaukee, United States",
+    "memberCountry": "United States",
+    "pubCardImg": "/assets/images/book@2x.jpg",
+    "pubTitle": "Tax Increment Finance Best Practices Reference Guide, Second Edition",
+    "pubCat": "eBook, Print Edition",
+    "moduleTitle1" : "Lorem ipsum dolor sit amet",
+    "moduleTitle2" : "Lorem ipsum dolor sit amet",
+    "moduleTitle3" : "New members",
+    "optionalLabel": "Free for Members"
+  },
+  "results": {
+    "resultTitle": "210",
+    "resultText": "results found in",
+    "current": "Events",
+    "scope2": "Members",
+    "scope3": "Articles",
+    "scope4": "Publications",
+    "scope5": "Everything",
+    "heroCat": "Events",
+    "placeholder": "SEARCH",
+    "pageRange": "1-12",
+    "resultCount":  "472",
+    "filterCount": "16"
+  },
+  "members-promo": {
+    "heroTitle": "Members get the VIP treatment.",
+    "heroDesc": "Anyone can enroll in our webinars and online courses, but members do it on a discount.",
+    "ctaTxt": "Join ICSC today"
+  },
+  "searchIcon": {
+    "src": "/assets/images/icon-search-glass.svg",
+    "alt": "Search Icon"
+  },
+  "pagination": {
+    "back": "/assets/images/back-arrow.svg",
+    "doubleBack": "/assets/images/arrow-double-back.svg",
+    "forward": "/assets/images/forward.svg",
+    "doubleForward": "/assets/images/arrow-double-forward.svg"
+  },
+  "eventHero": {
+    "heroTitle": "Western Conference & Deal Making",
+    "date": "October 2 - 4",
+    "venue": "LA Convention Center",
+    "locale": "Los Angeles, CA",
+    "bgImg": "/assets/images/icsc_event_la_lg.jpg",
+    "category": "SCT Magazine",
+    "cta": "Register"
+  },
+  "homeHero": {
+    "bgImg": "/assets/images/icsc_home_lg.jpg",
+    "heroTitle1": "70,000 professionals.",
+    "heroTitle2": "One vibrant global community."
+  },
+  "newsHero": {
+    "type": "eBook, Print",
+    "heroTitle": "Economic Development: Strategies for State and Local Practice",
+    "bgImg": "/assets/images/pattern-fill-1.svg",
+    "category": "SCT Magazine"
+  },
+  "location": {
+    "mapImg": "/assets/images/map.jpg"
+  },
+  "featureCallout": [
+    {
+      "title"   : "Tax reform",
+      "desc"    : "Stay informed throughout the tax reform legislative process with this toolkit. It features the latest news and action items for retail real estate professionals.",
+      "imgSrc"  : "/assets/images/artwork-1-taxreform.svg",
+      "reverse"  : true
+    },
+    {
+      "title"   : "ADA lawsuit reform",
+      "desc"    : "Congress should restore the integrity of the American Disabilities Act by providing clearer rules for identifying and correcting access violations.",
+      "imgSrc"  : "/assets/images/artwork-2-lawsuitreform.svg",
+      "reverse"  : false
+    },
+    {
+      "title"   : "E-Fairness",
+      "desc"    : "This legislation modernizes the sales tax collection system and levels the playing field between online-only sellers and brick and mortar retailers.",
+      "imgSrc"  : "/assets/images/artwork-3-efairness.svg",
+      "reverse"  : true
+    }
+  ],
+  "featuredVideo" : {
+    "title"   : "We advocate for you",
+    "desc"    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna leo. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+    "mp4Src"  : "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "ogvSrc"  : "http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv",
+    "placeholderSrc"      : "https://via.placeholder.com/1280x720&text=16:9",
+    "placeholderLargeSrc" : "https://via.placeholder.com/1920x1080&text=16:9"
+  },
+  "singleFeatureCallout": {
+    "tagline": "Leaders read first",
+    "desc": "Newsstand offers books, magazines, reports and other in-depth publications to keep you ahead of the pack. Check back regularly for new titles and free downloads for members.",
+    "img": "/assets/images/promo-smartphone-2x.png"
+  },
+  "promoCallout": {
+    "tagline": "Innovation has no borders",
+    "desc": "Explore our regional titles of SCT magazine. Each issue translates the trends and retails real estate news happening aroudn the world.",
+    "img": "/assets/images/promo-smartphone-2x.png"
+  },
+  "tiles": {
+    "bgImgblur": "/assets/images/blurred1.png",
+    "items" :  [
+      {
+        "bgImg" : "/assets/images/tile1.jpg",
+        "title" : "Deal Making",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile2.jpg",
+        "title" : "Specialty",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile3.jpg",
+        "title" : "Online Learning",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile4.jpg",
+        "title" : "New York National Deal Making for Dealers",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile4.jpg",
+        "title" : "RECon",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile3.jpg",
+        "title" : "Professional Development",
+        "text"   : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      },
+      {
+        "bgImg" : "/assets/images/tile2.jpg",
+        "title" : "Idea Exchange",
+        "text"  : "Cras justo odio, dapibus ac facilisis in egestas eget quam."
+      }
+    ]
+  },
+  "share" : {
+    "facebookSrc"     : "/assets/images/facebook-dark.svg",
+    "facebookSrcMed"  : "/assets/images/facebook-med.svg",
+    "twitterSrc"      : "/assets/images/twitter-dark.svg",
+    "twitterSrcMed"   : "/assets/images/twitter-med.svg",
+    "linkedinSrc"     : "/assets/images/linkedIn-dark.svg",
+    "linkedinSrcMed"  : "/assets/images/linkedin-med.svg",
+    "shareText"       : "Click to share"
+  },
+  "infographic" : {
+    "title" : "Lorem ipsum dolor sit amet",
+    "imgLg": "/assets/images/infographic-desktop@2x.png",
+    "imgSm": "/assets/images/infographic-mobile@2x.png"
+  },
+  "author" : {
+    "imgSrc"        : "/assets/images/90.jpg",
+    "name"          : "Juanita Stephens",
+    "position"      : "Vice President",
+    "company"       : "JLL Realty",
+    "text"          : "I’m VP at JLL. I’m also a contributor on Forbes’ real estate beat, covering markets news, investing and personal finance. Prior to Forbes, I wrote about savings and credit at Money magazine and have also enjoyed short stints at CNNMoney and digital news start-up Kicker.",
+    "emailText"     : "Email me at",
+    "emailAddress"  : "jstephens@jll.com"
+  },
+  "profileDetail" : {
+    "backText"    : "Back to Find Members",
+    "bgImg"       : "/assets/images/pattern-fill-1.svg",
+    "imgSrc"      : "/assets/images/90.jpg",
+    "name"        : "Corinne Daily",
+    "memberSince" : "Member since 2007",
+    "position"    : "Vice President",
+    "department"  : "Real Estate Services",
+    "location"    : "New York, NY",
+    "company"     : "Cushman & Wakefield",
+    "phone"       : "1.212.499.6446",
+    "email"       : "email@email.com",
+    "website"     : "website.com",
+    "address1"    : "1290 Avenue of the Americas",
+    "address2"    : "New York, NY, 10104",
+    "aboutText"   : "Highly accomplished retail real estate professional with a vast network of landlords, retailers and brokers. Expertise across a wide variety of product types, geographies and uses. Consistently produces strong store openings and delivers measurable results through savvy lease negotiations. Skilled in deal structure on both Landlord and Retailer side. Proven ability to juggle multiple projects concurrently and quickly adapt to rapidly changing priorities. A tenacious negotiator with an uncommon focus on delivering superior results.",
+    "education"   : [
+      {
+        "imgSrc" : "//via.placeholder.com/50x50?text=FPO",
+        "school" : "New York University",
+        "degree" : "Master of Business, Business Management"
+      },
+      {
+        "imgSrc" : "//via.placeholder.com/50x50",
+        "school" : "Washington University in St Louis",
+        "degree" : "Bachelor of Science, Computer Science (Honors)"
+      }]
+  },
+  "snapshots3" : {
+    "title"         : "What drives us",
+    "cat1"          : "Building communities",
+    "cat1desc"      : "Retail centers offer more than money — a place to hang out after work, walk around with a child or experience life offline. They enrich the social fabric of the places the world calls home.",
+    "cat1img"       : "/assets/images/promo-smartphone-2x.png",
+    "cat2"          : "Fueling economies",
+    "cat2desc"      : "Retail centers are essential to economic development, largely because of the property and sales taxes they generate. They also create jobs, buoy GDPs and fuel revenue everywhere they serve.",
+    "cat2img"       : "/assets/images/promo-smartphone-2x.png",
+    "cat3"          : "Inspiring innovation ",
+    "cat3desc"      : "Retail real estate will shape the social practices, business policies and technologies of the future. We stay on the cutting edge and report what we find, helping members step into the future with efficiency.",
+    "cat3img"       : "/assets/images/promo-smartphone-2x.png"
+  },
+  "callouts"     : {
+  "title"        : "Additional Resources",
+  "cat1"         : "Event Brochure",
+  "cat1desc"     : "This is an optional description field.",
+  "cat1LinkText" : "Download",
+  "cat2"         : "Attendee List",
+  "cat2desc"     : "This is an optional description field.",
+  "cat3"         : "Registration form",
+  "cat3desc"     : "This is an optional description field.",
+  "cat4"         : "Optional",
+  "cat4desc"     : "This is an optional description field.",
+  "cat4LinkText" : "Optional Link",
+  "cat5"         : "Optional",
+  "cat5desc"     : "This is an optional description field.",
+  "cat5LinkText" : "Optional Link",
+  "cat6"         : "Optional",
+  "cat6desc"     : "This is an optional description field.",
+  "cat6LinkText" : "Optional Link"
+  },
+  "calloutsAttending" : {
+    "moduleTitle":        "Attending",
+    "attendanceCount":    "345 Registered",
+    "ctaCopy": "View all attendees"
+  },
+  "profileBadges" : {
+    "title" : "Recognition",
+    "items" : [
+      {
+        "text"  : "Trustees Distinguished Service Award Recipient",
+        "style" : "style-1"
+      },
+      {
+        "text"  : "ICSC Foundation Contributor",
+        "style" : "style-2"
+      },
+      {
+        "text"  : "Past State Director",
+        "style" : "style-4"
+      },
+       {
+        "text"  : "ICSC Member 5 years",
+        "style" : "style-1"
+      },
+      {
+        "text"  : "Past Chairman",
+        "style" : "style-3"
+      },
+      {
+        "text"  : "Certified Leasing Specialist",
+        "style" : "style-1"
+      },
+       {
+        "text"  : "Certified Shopping Center Manager",
+        "style" : "style-3"
+      }
+    ]
+  },
+  "textBlockLarge": {
+    "text"    : "We are the world leader in retail real estate conferences and deal-making events, hosting more than 300 a year and attracting a combined audience of 100,000 industry professionals. When you put our powerful exhibiting, advertising and sponsorship opportunities to work, you get visibility with impact. Here’s how."
+  },
+  "textBlock"   : {
+    "title"   : "Lorem ipsum in amet",
+    "text"    : "Reprehenderit amet commodo eu do laboris quis in non enim cupidatat dolor aliquip in consectetur commodo commodo voluptate do voluptate magna ullamco magna adipisicing id ullamco nostrud irure. Esse duis ut commodo id. do culpa sint esse esse veniam est. Sed dolore esse sit esse aute culpa non aute aute. Quis ea dolore aliqua voluptate tempor cupidatat ex commodo in id id velit culpa nostrud nisi dolore deserunt nisi consectetur in voluptate pariatur proident sunt."
+  },
+  "assetPromo" : {
+    "title"     : "Join us at Research Connections 2017",
+    "date"      : "October 22-24",
+    "locale"    : "Toronto, ON Canada",
+    "linkText"  : "Register",
+    "imgSrc"    : "/assets/images/bg-mall-outdoors.jpg"
+  },
+  "carousel": {
+    "bgClr": "#fff"
+  },
+  "subPage": {
+    "headerTitle": "Sponsor, Exhibit &amp; Advertise",
+    "headerDesc": "We are the world leader in retail real estate conferences and deal-making events, hosting more than 300 a year and attracting a combined audience of 100,000 industry professionals. When you put our powerful exhibiting, advertising and sponsorship opportunities to work, you get visibility with impact. Here’s how.",
+    "secondaryTitle1": "Current Legislation",
+    "secondaryBodyCopy1": "As a sponsor or exhibitor at a regional deal-making conference or idea exchange, you could get in front of more than 8,000 industry stakeholders. Or target your customers with digital displays of your company name at a conference.",
+    "link1": "Download the RECon sponsorship brochure",
+    "secondaryTitle2": "Advertise in our publications",
+    "secondaryBodyCopy2": "Our targeted audience helps you focus on qualified buyers in the global retail real estate industry. We reach more than 750,000 readers across the six industry magazine brands we publish, and many are distributed on-site at our conferences and exhibitions.",
+    "secondaryTitle3": "Advertise digitally",
+    "secondaryBodyCopy3": "Place a banner ad on one of the most trafficked pages of ICSC.org, which has 110,000 unique monthly visitors and more than 1 million annual page views. Or, target your customer of choice with an ad on our mobile app or in weekly international e-newsletters.",
+    "link2": "Download the RECon sponsorship brochure",
+    "link3": "Download the RECon sponsorship brochure",
+    "link4": "Download the RECon sponsorship brochure",
+    "link5": "Download the RECon sponsorship brochure",
+    "sublink1": "+1 646 728 3800",
+    "sublink2": "membership@icsc.org"
+  },
+  "leftNav": {
+    "backText":   "Back to Home",
+    "link1":      "Contact Us",
+    "link2":      "Sponsor, Exhibit &amp; Advertise",
+    "link3":      "Terms &amp; Conditions",
+    "link4":      "Privacy Policy",
+    "link5":      "Antitrust Policy"
+  },
+  "contactModule": {
+    "contactTitle": "Event sponsorship team"
+  },
+  "leaders" : [
+    {
+      "title"     : "Tom McGee",
+      "subtitle"  : "President and Chief Executive Officer",
+      "text"      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar laoreet ultrices. Duis malesuada leo felis, non bibendum est eleifend a. Suspendisse ut diam ut mi dapibus elementum gravida sodales risus. Praesent varius justo quis sem eleifend, vel ultricies ante hendrerit. Morbi dictum pretium elementum.",
+      "imgSrc"    : "/assets/images/90.jpg"
+    },
+    {
+      "title"     : "Leslie Fox",
+      "subtitle"  : "Chief of Staff and Vice President of Strategy and Operations",
+      "text"      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar laoreet ultrices. Duis malesuada leo felis, non bibendum est eleifend a. Suspendisse ut diam ut mi dapibus elementum gravida sodales risus. Praesent varius justo quis sem eleifend, vel ultricies ante hendrerit. Morbi dictum pretium elementum.",
+      "imgSrc"    : "/assets/images/90.jpg"
+    },
+    {
+      "title"     : "Stefan Freiberg",
+      "subtitle"  : "Chief Financial Officer",
+      "text"      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar laoreet ultrices. Duis malesuada leo felis, non bibendum est eleifend a. Suspendisse ut diam ut mi dapibus elementum gravida sodales risus. Praesent varius justo quis sem eleifend, vel ultricies ante hendrerit. Morbi dictum pretium elementum.",
+      "imgSrc"    : "/assets/images/90.jpg"
+    },
+    {
+      "title"     : "Aniece Martin",
+      "subtitle"  : "Executive Assistant to President",
+      "text"      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar laoreet ultrices. Duis malesuada leo felis, non bibendum est eleifend a. Suspendisse ut diam ut mi dapibus elementum gravida sodales risus. Praesent varius justo quis sem eleifend, vel ultricies ante hendrerit. Morbi dictum pretium elementum.",
+      "imgSrc"    : "/assets/images/90.jpg"
+    }
+  ],
+  "sessions" : [
+    {
+      "startTime" : "8:00am",
+      "endTime"   : "5:00pm",
+      "title"     : "Student Speed Networking Breakfast",
+      "location"  : "ICSC Talent Pavillion - Marketplace Mall - N3",
+      "desc"    :  "Join more than a dozen member of ICSC's elite Ambassador Volunteer Leadership Program for a bite of breakfast and three..."
+    },
+    {
+      "startTime" : "8:00am",
+      "endTime"   : "5:00pm",
+      "title"     : "Student Speed Networking Breakfast",
+      "location"  : "ICSC Talent Pavillion - Marketplace Mall - N3",
+      "desc"    :  "Join more than a dozen member of ICSC's elite Ambassador Volunteer Leadership Program for a bite of breakfast and three..."
+    },
+    {
+      "startTime" : "8:00am",
+      "endTime"   : "5:00pm",
+      "title"     : "Student Speed Networking Breakfast",
+      "location"  : "ICSC Talent Pavillion - Marketplace Mall - N3",
+      "desc"    :  "Join more than a dozen member of ICSC's elite Ambassador Volunteer Leadership Program for a bite of breakfast and three..."
+    }
+  ],
+  "accordion" : [
+    {
+      "title"     : "My Account - login and profile",
+      "subtitle"  : "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "text"      : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "expanded"  : true,
+      "id"        : "collapseOne",
+      "headingId" : "headingOne",
+      "cta"       : "Button CTA"
+    },
+    {
+      "title"     : "Membership",
+      "subtitle"  : "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "text"      : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "expanded"  : false,
+      "id"        : "collapseTwo",
+      "headingId" : "headingTwo",
+      "cta"       : "Button CTA"
+    },
+    {
+      "title"     : "Events",
+      "subtitle"  : "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "text"      : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "expanded"  : false,
+      "id"        : "collapseThree",
+      "headingId" : "headingThree",
+      "cta"       : "Button CTA"
+    }
+  ],
+  "featuredSpeakers" :[
+    {
+      "memberCardImg": "/assets/images/90.jpg",
+      "memberName": "Willa Sibert Cather",
+      "memberTitle": "Major Marketing Affecianada",
+      "memberCompany": "Real Big Company, Really"
+    },
+    {
+      "memberCardImg": "/assets/images/90.jpg",
+      "memberName": "Willa Sibert Cather",
+      "memberTitle": "Major Marketing Affecianada",
+      "memberCompany": "Real Big Company, Really"
+    },
+    {
+      "memberCardImg": "/assets/images/90.jpg",
+      "memberName": "Willa Sibert Cather",
+      "memberTitle": "Major Marketing Affecianada",
+      "memberCompany": "Real Big Company, Really"
+    },
+    {
+      "memberCardImg": "/assets/images/90.jpg",
+      "memberName": "Willa Sibert Cather",
+      "memberTitle": "Major Marketing Affecianada",
+      "memberCompany": "Real Big Company, Really"
+    },
+    {
+      "memberCardImg": "/assets/images/90.jpg",
+      "memberName": "Willa Sibert Cather",
+      "memberTitle": "Major Marketing Affecianada",
+      "memberCompany": "Real Big Company, Really"
+    }
+  ],
+  "addresses" : [
+    {
+      "title"   : "Membership Services",
+      "address1"  : "1221 Avenue of the Americas",
+      "address2"  : "41st Floor",
+      "address3"  : "New York, NY 10020-1099",
+      "phone"   : "+1 646 728 3487",
+      "fax"     : "+1 732 694 1690",
+      "email"   : "membership@icsc.org"
+    },
+    {
+      "title"   : "Washington",
+      "address1"  : "ICSC Office of Global Public Policy",
+      "address2"  : "555 12th Street, N.W., Suite 660",
+      "address3"  : "Washington, DC 20004",
+      "phone"   : "+1  202 626 1400",
+      "fax"     : "+1  202 626 1418",
+      "email"   : "gpp@icsc.org"
+    },
+    {
+      "title"   : "Boston",
+      "address1"  : "SPREE/ Special Realty Office",
+      "address2"  : "195 Hanover Street",
+      "address3"  : "Hanover, MA 02339",
+      "phone"   : "+1  781 709 2411",
+      "fax"     : "",
+      "email"   : ""
+    },
+    {
+      "title"   : "Europe",
+      "address1"  : "ICSC London Office",
+      "address2"  : "London, SW1H 9BU, United Kingdom",
+      "address3"  : "United Kingdom",
+      "phone"   : "[ T ]  +44  20 7976 3100",
+      "fax"     : "[ F ]  +44  20 7976 3101",
+      "email"   : "info.europe@icsc.org"
+    },
+    {
+      "title"   : "Latin America",
+      "address1"  : "Torre Virreyes. Pedregal No. 24, piso 3.",
+      "address2"  : "Col. Molino del Rey, 11040",
+      "address3"  : "Ciudad de México, México",
+      "phone"   : "[ T ]  +52  55 8647 0383",
+      "fax"     : "[ F ]  +52  55 1253 7091",
+      "email"   : "latam@icsc.org"
+    },
+    {
+      "title"   : "Asia Pacific",
+      "address1"  : "138 Cecil Street",
+      "address2"  : "Cecil Court #08-02",
+      "address3"  : "Singapore 069538",
+      "phone"   : "[ T ]  +65  6532 3722",
+      "fax"     : "[ F ]  +65  6532 7355",
+      "email"   : "icsc.asia@icsc.org"
+    },
+    {
+      "title"   : "U.S. Member Payment",
+      "address1"  : "c/o Member Services International Council of Shopping Centers",
+      "address2"  : "Post Office Box 26958",
+      "address3"  : "New York, New York 10087-6958 USA",
+      "phone"   : "",
+      "fax"     : "",
+      "email"   : ""
+    }
+  ],
+  "links" : [
+    {
+      "title" : "Certification",
+      "href"  : "#"
+    },
+    {
+      "title" : "Mail Room",
+      "href"  : "#"
+    },
+    {
+      "title" : "Reception",
+      "href"  : "#"
+    },
+    {
+      "title" : "Education",
+      "href"  : "#"
+    },
+    {
+      "title" : "Meetings",
+      "href"  : "#"
+    },
+    {
+      "title" : "Registration",
+      "href"  : "#"
+    },
+    {
+      "title" : "Government Relations",
+      "href"  : "#"
+    },
+    {
+      "title" : "Membership",
+      "href"  : "#"
+    },
+    {
+      "title" : "Research",
+      "href"  : "#"
+    },
+    {
+      "title" : "ICSC",
+      "href"  : "#"
+    },
+    {
+      "title" : "News",
+      "href"  : "#"
+    },
+    {
+      "title" : "Web Technology",
+      "href"  : "#"
+    },
+    {
+      "title" : "International",
+      "href"  : "#"
+    },
+    {
+      "title" : "Publications",
+      "href"  : "#"
+    }
+  ],
+  "contacts" : [
+    {
+      "title" : "Advertising contacts",
+      "items" : [
+        {
+          "imgSrc"  : "/assets/images/90.jpg",
+          "name"    : "Edmund Mander",
+          "position"  : "Global Marketing Director",
+          "phone"   : "+1  555 555-9081",
+          "email"   : "emander@csc.org"
+        },
+        {
+          "imgSrc"  : "/assets/images/90.jpg",
+          "name"    : "Brandon Boswell",
+          "position"  : "Media Director",
+          "phone"   : "+1  555 555-9082",
+          "email"   : "bboswell@icsc.org"
+        },
+        {
+          "imgSrc"  : "/assets/images/90.jpg",
+          "name"    : "Willa Cather",
+          "position"  : "Media Strategist",
+          "phone"   : "+1  555 555-9083",
+          "email"   : "emander@icsc.org"
+        }
+      ]
+    },
+    {
+      "title" : "Press contact",
+      "items" : [
+        {
+          "imgSrc"  : "/assets/images/90.jpg",
+          "name"    : "Jessica Day",
+          "position"  : "Public Relations Director",
+          "phone"   : "+1  555 555-9084",
+          "email"   : "emander@icsc.org"
+        }
+      ]
+    }
+  ]
 }

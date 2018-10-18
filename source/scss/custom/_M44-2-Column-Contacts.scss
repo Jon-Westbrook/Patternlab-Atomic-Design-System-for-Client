@@ -1,0 +1,18 @@
+
+.two-col-contacts {
+	.border {
+		border-top: 2px solid $tertiary4;
+	}
+	@include media-breakpoint-only(md) {
+		.card-img-right {
+			height: 50px;
+			width: 50px;
+		}
+	}
+	@include media-breakpoint-only(lg) {
+		.card-img-right {
+			height: 50px;
+			width: 50px;
+		}
+	}
+}

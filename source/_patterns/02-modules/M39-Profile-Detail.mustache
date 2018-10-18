@@ -1,0 +1,112 @@
+
+<!-- Hero --> 
+<div class="jumbotron jumbotron-fluid m-0 pt-1 pb-5 event-hero event-hero__no-overlay" style="background-image: url('{{profileDetail.bgImg}}');" >
+	<div class="container">
+		<div class="row my-3 my-md-5">
+			<div class="col text-center">
+				<div class="left-nav text-left mb-4 hidden-sm-down">
+					<a href="#" class="display9 accent back p-0 m-0">{{profileDetail.backText}}</a> 
+				</div>
+				<img src="{{profileDetail.imgSrc}}" class="p-0 m-0 mb-3 profile-img" />
+						<h1 class="display3 bold p-0 m-0 mb-3">{{profileDetail.name}}</h1>
+						<div class="mb-3">
+							<p class="display5 secondary p-0 m-0 mb-3">{{profileDetail.memberSince}}</p>
+							<p class="display6 secondary p-0 m-0">{{profileDetail.position}}</p>
+							<p class="display6 secondary p-0 m-0">{{profileDetail.department}}</p>
+							<p class="display6 secondary p-0 m-0">{{profileDetail.location}}</p>
+						</div>
+						<p class="display6 accent p-0 m-0">{{profileDetail.company}}</p>
+			</div>
+		</div>  
+	</div>
+</div>
+
+<!-- Sticky Bar --> 
+<div class="container-fluid sticky-cta m-0 p-0 py-md-2">
+	<div class="container"> 
+			<div class="row">
+				<div class="col-3 d-flex align-self-center hidden-sm-down">
+					<p class="display7 text-primary my-auto mr-auto bold sticky-title">
+						<a class="top" href="#">{{profileDetail.name}}</a>
+					</p>
+				</div>
+				<div class="col-6 col-md-7 align-self-center  my-auto">
+					<a href="tel:{{profileDetail.phone}}" class="accent phone-link mr-3 ml-2 ml-md-0 mr-md-3">
+						<span class="hidden-sm-down">{{profileDetail.phone}}</span>
+					</a>
+					<a href="mailto:{{profileDetail.email}}" class="accent email-link">
+						<span class="hidden-sm-down">{{profileDetail.email}}</span>
+						
+					</a>
+				</div>
+			<div class="col-6 col-md-2 d-flex justify-content-end pr-0 py-3">
+					<a href="#" class="share share--save my-auto mr-4 d-inline-block" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" title="
+					<div class='bg-gray-dark p-2'>
+						<a href='#' target='_self' class='light'>Log In to Save</a>
+					</div>
+				"></a>
+				</div>
+			</div>
+	</div>
+</div>
+
+<div class="container offset-sticky">
+	<div class="row pt-4 pt-md-6">
+		<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+
+			<!-- CONTACT -->
+			<div class="contact-section mb-4 pb-4">
+				<p class="display6 bold mb-4">Contact</p>
+				<div class="row display8 mb-3">
+					<div class="col-4">Phone:</div>
+					<div class="col-8"><a href="tel:{{profileDetail.phone}}" class="accent">{{profileDetail.phone}}</a></div>
+				</div>
+				<div class="row display8 mb-3">
+					<div class="col-4">Email:</div>
+					<div class="col-8"><a href="mailto:{{profileDetail.email}}" class="accent">{{profileDetail.email}}</a></div>
+				</div>
+				<div class="row display8 mb-3">
+					<div class="col-4">Website:</div>
+					<div class="col-8"><a href="{{profileDetail.website}}" class="accent">{{profileDetail.website}}</a></div>
+				</div>
+				<div class="row display8 mb-3">
+					<div class="col-4">Address:</div>
+					<div class="col-8">
+						<span class="secondary">
+							{{profileDetail.address1}}<br />
+							{{profileDetail.address2}}<br />
+						</span>
+						<a href="#" class="accent">View Map</a>
+					</div>
+				</div>
+				<div class="row display8 mb-4">
+					<div class="col-4">Social:</div>
+					<div class="col-8">
+						<a href="#" class="mr-2"><img src="{{ imagePath }}icon-fb.svg" /></a>
+						<a href="#" class="mr-2"><img src="{{ imagePath }}icon-linkedin.svg" /></a>
+						<a href="#" class="mr-2"><img src="{{ imagePath }}icon-twitter.svg" /></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ABOUT -->
+			<div class="contact-section mb-4 pb-4">
+				<p class="display6 bold mb-3">About</p>
+				<p class="display8 secondary">{{profileDetail.aboutText}}</p>
+			</div>
+
+			<!-- EDUCATION -->
+			<div class="mb-4 pb-4">
+				<p class="display6 bold mb-4">Education</p>
+				{{#profileDetail.education}}
+				<div class="row mb-4">
+					<div class="col-12 display8 secondary">
+						<span class="bold">{{school}}</span><br />{{degree}}
+					</div>
+				</div>
+				{{/profileDetail.education}}
+			</div>
+
+		</div>
+	</div>
+</div>

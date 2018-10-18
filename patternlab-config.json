@@ -3,7 +3,8 @@
   "cleanPublic": true,
   "defaultPattern": "all",
   "defaultShowPatternInfo": false,
-  "ishControlsHide": {
+  "ishControlsHide":
+  {
     "s": false,
     "m": false,
     "l": false,
@@ -20,7 +21,8 @@
     "tools-all": false,
     "tools-docs": false
   },
-  "ishViewportRange": {
+  "ishViewportRange":
+  {
     "s": [
       240,
       500
@@ -35,20 +37,24 @@
     ]
   },
   "logLevel": "info",
-  "outputFileSuffixes": {
+  "outputFileSuffixes":
+  {
     "rendered": ".rendered",
     "rawTemplate": "",
     "markupOnly": ".markup-only"
   },
-  "paths": {
-    "source": {
+  "paths":
+  {
+    "source":
+    {
       "root": "source/",
       "patterns": "source/_patterns/",
       "data": "source/_data/",
       "meta": "source/_meta/",
       "annotations": "source/_annotations/",
       "styleguide": "dist/",
-      "patternlabFiles": {
+      "patternlabFiles":
+      {
         "general-header": "views/partials/general-header.mustache",
         "general-footer": "views/partials/general-footer.mustache",
         "patternSection": "views/partials/patternSection.mustache",
@@ -60,7 +66,8 @@
       "fonts": "source/fonts",
       "css": "source/css"
     },
-    "public": {
+    "public":
+    {
       "root": "public/",
       "patterns": "public/patterns/",
       "data": "public/styleguide/data/",
@@ -80,23 +87,24 @@
   ],
   "patternExportDirectory": "pattern_exports",
   "patternExportPatternPartials": [],
-  "serverOptions": {
+  "serverOptions":
+  {
     "wait": 1000
   },
   "starterkitSubDir": "dist",
   "styleGuideExcludes": [],
-  "theme": {
+  "theme":
+  {
     "color": "dark",
     "density": "compact",
     "layout": "horizontal"
   },
   "uikits": [
-    {
-      "name": "uikit-workshop",
-      "outputDir": "",
-      "enabled": true,
-      "excludedPatternStates": [],
-      "excludedTags": []
-    }
-  ]
+  {
+    "name": "uikit-workshop",
+    "outputDir": "",
+    "enabled": true,
+    "excludedPatternStates": [],
+    "excludedTags": []
+  }]
 }

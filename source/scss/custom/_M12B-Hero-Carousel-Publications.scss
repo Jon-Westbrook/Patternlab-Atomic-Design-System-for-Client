@@ -1,0 +1,59 @@
+
+.pub_carousel {
+
+	.carousel-inner {
+		overflow: visible;
+	}
+
+	.carousel-item {
+		overflow: visible;
+		background-size: cover;
+		background-position: center center;
+	  .title {
+	  	height: 72px;
+	  	@include media-breakpoint-up(md) {
+				height: 112px;
+			}	
+	  }
+	  .cta {
+	  	@include media-breakpoint-down(sm) {
+	  		width: 100%;
+	  	}
+	  }
+	}
+
+	.carousel-indicators {
+		bottom: 16px;
+		@include media-breakpoint-up(md) {
+			bottom: 48px;
+		}		
+	}
+
+	.carousel-indicators li {
+		background-color: $tertiary5;
+		width: 8px;
+		height: 8px;
+		max-width: 8px;
+		// margin-right: 16px;
+		// margin-left: 16px;
+		&.active {
+			background-color: darken($primary1, 10%);
+			padding: 2px;
+		}
+	}
+
+	.carousel-control-prev {
+		@include media-breakpoint-up(md) {
+			left: -30px;
+		}
+	}
+
+	.carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23cfd8dc' viewBox='0 0 8 8'><path d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/></svg>");
+	}
+
+	.carousel-control-next-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23cfd8dc' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+
+}

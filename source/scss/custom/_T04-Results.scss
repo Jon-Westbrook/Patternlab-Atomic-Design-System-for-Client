@@ -1,0 +1,117 @@
+
+
+.dropdown-item.active {
+	background-color: $primary1;
+}
+
+.listing-filters {
+
+	.btn-filter {
+		background-color: $tertiary3;
+		border: 1px solid $gray;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		&:after {
+			content: '';
+			display: block;
+			background: url('/assets/images/filter.svg') no-repeat;
+			width: 19px;
+			height: 19px;
+			float: right;
+			margin: 3px 14px 0 0;
+			transition: all 0.2s ease-in-out;
+		}
+		&.small {
+			&:after {
+				background-size: 14px 14px;
+				margin-top: 7px;
+			}
+		}
+		&:hover {
+			background: darken($tertiary3, 10%);
+			color: $primary2;
+			transition: all 0.2s ease-in-out;
+			&:after {
+				// background: url('/assets/images/filter-white.svg') no-repeat;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+	}
+
+	.nav-item.show .nav-link {
+		background-color: inherit;
+		color: $primary1;
+	}
+
+	.sort-list {
+		&:after {
+			content: '';
+			display: block;
+			background: url('/assets/images/down-arrow.svg') no-repeat;
+			width: 9px;
+			height: 9px;
+			float: right;
+			margin: 10px 4px 0 14px;
+		}
+		&.small {
+			&:after {
+				margin: 6px 12px;
+			}
+		}
+	}
+
+
+
+	.cards {
+		.nav-link {
+			cursor: pointer;
+			height: 52px; 
+			width: 54px;
+			@include media-breakpoint-up(md) {
+				height: 52px; 
+				width: 54px;
+			}
+			padding: 20px;
+			border: 1px solid $gray-lightest;
+			background: url('../images/cards-disabled.svg') no-repeat center center;
+			border-right: 0;
+			&.active {
+				background: url('../images/cards-active.svg') no-repeat center center;
+				cursor: pointer;
+			}
+			&:hover {
+				background: url('../images/cards-hover.svg') no-repeat center center;
+				cursor: pointer;
+			}
+			&.disabled {
+				&:hover {
+					opacity: .3;
+				}
+			}
+		}
+	}
+
+	.list {
+		.nav-link { 
+			cursor: pointer;
+			height: 52px; 
+			width: 54px;
+			padding: 20px;
+			border: 1px solid $gray-lightest;
+			background: url('../images/list-disabled.svg') no-repeat center center;
+			&.active {
+				background: url('../images/list-active.svg') no-repeat center center;
+				cursor: pointer;
+			}
+			&:hover {
+				background: url('../images/list-hover.svg') no-repeat center center;
+				cursor: pointer;
+			}
+			&.disabled {
+				&:hover {
+					opacity: .3;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+<div class="list-card py-4 my-0 w-100">
+  <div class="row">
+    <div class="col-2 col-md-1 my-0 pt-1">
+
+      <!-- Thumbnail Image Version, if there IS an available image --> 
+      <img src="{{ cards.generalCardImg }}" alt="General Image" class="px-0 py-2 card-img-right">
+      
+      <!-- Download Icon Version, if there is no available image --> 
+      <img src="{{ cards.downloadIcon }}" alt="General Image" class="px-2 pt-2 card-img-right download bg-gray-lightest hidden-xl-down">
+    
+    </div>
+    <div class="col-10 col-md-8 d-flex align-items-center">
+      <div class="card-block m-0 ml-md-3 p-0 pl-2 pl-sm-0 pl-md-3">        
+        <a href="#"><h3 class="card-title mt-1 mb-0 ml-0 mx-0 py-0 display8 bold d7-truncate2 truncate-lines">{{ cards.generalCardTitle }}</h3></a>
+        <p class="display9 secondary mt-1 p-0">{{ cards.generalCardCat }} - {{ cards.generalCardPostAge }}</p>
+        <p class="display9 mr-auto ml-auto my-auto hidden-sm-down">{{ cards.optionalLabel }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2 hidden-md-up">&nbsp;</div>
+    <div class="col-10 col-md-2 gen-list-item-icons justify-content-start justify-content-lg-end d-inline-flex align-items-center pl-3 py-0">
+      <img class="mr-5 ml-2 ml-sm-0" src="{{ cards.shareImg }}" alt="Share Icon">
+      <img class="" src="{{ cards.saveImg }}" alt="Favorite Icon">
+      <p class="display9 ml-auto my-auto hidden-md-up">{{ cards.optionalLabel }}</p>
+    </div>
+  </div>
+</div>

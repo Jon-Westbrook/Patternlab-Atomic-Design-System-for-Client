@@ -1,0 +1,32 @@
+
+<div class="list-card py-4 my-0 w-100">
+	<div class="row">
+		<div class="col-2 col-md-1 my-0 pt-1">
+			
+			<!-- Real Image --> 
+			<!-- <img src="{{ cards.memberCardImg }}" alt="Member Avatar" class="p-0 card-img-right profile-img-list"> -->
+
+			<!-- Fake Image --> 
+		  <div class="p-0 member-default card-img-right profile-img-list d-flex align-items-center" alt="{{ cards.memberName }}" >
+		    <div class="letters mx-auto">
+		      <span class="display7">{{ cards.memberFirstInit }}</span><span class="display7">{{ cards.memberLastInit }}</span>
+		    </div>
+		  </div>
+
+		</div>
+
+		<div class="col-10 col-md-8">
+			<div class="card-block m-0 ml-md-3 p-0 pl-2 pl-sm-0 pl-md-3">
+				<a href="#"><h3 class="card-title mt-1 mb-0 ml-0 mx-0 py-0 display8 bold">{{ cards.memberName }}</h3></a>
+				<p class="display9 secondary mt-1">{{ cards.memberTitle }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-2 hidden-md-up">&nbsp;</div>
+		<div class="col-8 col-md-2 gen-list-item-icons justify-content-start justify-content-lg-end d-inline-flex align-items-center ml-3 my-md-0 p-0">
+			<img class="mr-5 ml-2 ml-sm-0" src="{{ cards.shareImg }}" alt="Share Icon">
+			<img class="mr-3" src="{{ cards.saveImg }}" alt="Favorite Icon">
+		</div>
+	</div>
+</div>

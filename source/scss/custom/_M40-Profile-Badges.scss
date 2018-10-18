@@ -1,0 +1,19 @@
+.profile-badges {
+	background-color: $tertiary4;
+
+	
+	.profile-badges--item {
+		border-top-width: 6px;
+		border-top-style: solid;
+		background-color: $primary3;
+		height: 118px;
+		@include media-breakpoint-up(md) {
+			height: 100%;
+		}
+
+		&.profile-badges--item__style-1 { border-color: $secondary1; }
+		&.profile-badges--item__style-2 { border-color: $secondary2; } 
+		&.profile-badges--item__style-3 { border-color: $secondary3; }
+		&.profile-badges--item__style-4 { border-color: $secondary4; }
+	}
+}

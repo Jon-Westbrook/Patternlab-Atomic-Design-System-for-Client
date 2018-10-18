@@ -1,0 +1,98 @@
+
+.image-tiles {
+
+	.image-tile {
+		height: 124px;
+		width: 100%;
+		position: relative;
+		transition: $transition-base;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #fff !important;
+
+		.tile-text, .image-tile-desc {
+			position: relative;
+			width: 100%;
+			word-wrap: break-word;
+			text-align: center;
+			display:block !important;
+		}
+		
+
+		@include media-breakpoint-down(md) {
+			&:before {
+				position: absolute;
+				content: '\A';
+			    width: 100%; 
+			    height: 100%;
+		 		top: 0;
+			    left: 0;
+			    background-color: rgba(0, 0, 0, 0.5);
+			    .viewAll {
+			    	color: $primary1;
+			    	background-color: $primary3;
+			    }
+			}
+		}
+		
+		@include media-breakpoint-up(lg) {
+			height: 200px;
+			.image-tile-desc {
+				opacity: 0;
+				display: none;
+				transform: scale(0);
+				transition: $transition-base;
+			}
+			&:before {
+				position: absolute;
+				content: '\A';
+			    width: 100%; 
+			    height: 100%;
+		 		top: 0;
+			    left: 0;
+			    background-color: rgba(0, 0, 0, 0.5);
+			    transition: $transition-base;
+			    .viewAll {
+				    color: $primary1;
+			    	background-color: $primary3;
+			    }
+			}
+			&:hover {
+				color: #fff !important;
+				transition: $transition-base;
+				&:before {
+					background-color: rgba(0, 0, 0, 0.7);
+				}
+				.image-tile-desc {
+					transform: scale(1);
+	    		opacity: 1;
+	    		transition: $transition-base;
+				}
+				.tile-text {
+					color: primary1 !important;
+					transform: translateY(0px);
+					transition: $transition-base;
+				}
+			}
+			.tile-text {
+				position: relative;
+				transform: translateY(20px);
+				transition: $transition-base;
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			height: 255px;
+		}
+
+
+		&.viewAll {
+			border: solid 2px #e31837;
+			color: $primary1;
+			&:before {
+				background-color: $primary3;
+			}
+		}
+
+	}
+}

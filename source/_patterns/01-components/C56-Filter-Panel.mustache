@@ -1,0 +1,267 @@
+
+<!-- Filters Mobile -->
+<div class="container-fluid hidden-md-up pt-3 pb-3 bg-gray-ultra-light">
+	<div class="container no-xs-guts">
+		<ul class="nav nav-pills listing-filters d-flex justify-content-start pt-md-6 pb-md-4">
+			<li class="nav-item btn-filter small mr-auto py-2 px-2 my-auto my-auto d-flex align-self-center" data-toggle="collapse" href="#filterPanel" aria-expanded="false" aria-controls="filterPanel" >
+					<span class="mr-2 pl-3 display9 align-self-center" >Filter</span>
+			</li>
+			 <li class="nav-item cards hidden-sm-down border-right-0">
+				<span>{{ resultCount }}</span>
+			</li>
+			<li class="nav-item dropdown d-inline-block my-auto mr-1 align-self-center">
+				<a aria-expanded="false" aria-haspopup="true" class="nav-link sort-list small display9 p-0" data-toggle="dropdown" href="#">Best match</a>
+				<div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-menu-right m-0 mt-2 px-2">
+					<a class="dropdown-item display8 my-3 pl-3 text-right accent" href="#">Date</a>
+					<a class="dropdown-item display8 my-3 pl-3 text-right " href="#">Distance</a>
+					<a class="dropdown-item display8 my-3 pl-3 text-right" href="#">Favorite</a>
+				</div>
+			</li>
+			<li class="nav-item cards border-right-0 my-auto">
+				<a class="nav-link" data-toggle="pill" href="#cards" role="tab"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- Filters Desktop -->
+<div class="container-fluid hidden-sm-down">
+	<div class="container">
+		<ul class="nav nav-pills listing-filters d-flex justify-content-start pt-md-6 pb-md-2">
+			<li class="nav-item btn-filter mr-auto py-2 px-3 my-auto my-auto d-flex align-self-center" data-toggle="collapse" href="#filterPanel" aria-expanded="false" aria-controls="filterPanel" >
+					<span class="mr-3 pl-3 align-self-center" >Filter</span>
+			</li>
+			 <li class="nav-item cards hidden-sm-down border-right-0">
+				<span>{{ resultCount }}</span>
+			</li>
+			<li class="nav-item dropdown d-inline-block my-md-auto mr-md-5 align-self-center">
+				<a aria-expanded="false" aria-haspopup="true" class="nav-link sort-list display8 p-0" data-toggle="dropdown" href="#">Best match</a>
+				<div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-menu-right m-0 mt-2 px-2 align-self-start">
+					<a class="dropdown-item display8 my-3 pl-3 accent" href="#">Best match</a>
+					<a class="dropdown-item display8 my-3 pl-3" href="#">Recently Added</a>
+					<a class="dropdown-item display8 my-3 pl-3" href="#">Popularity</a>
+					<a class="dropdown-item display8 my-3 pl-3" href="#">Title (A-Z)</a>
+					<a class="dropdown-item display8 my-3 pl-3" href="#">Title (Z-A)</a>
+				</div>
+			</li>
+			<li class="nav-item cards hidden-sm-down border-right-0 my-auto">
+				<a class="nav-link" data-toggle="pill" href="#cards" role="tab"></a>
+			</li>
+			<li class="nav-item list hidden-sm-down my-auto">
+				<a class="nav-link active" data-toggle="pill" href="#list-items" role="tab"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- Filter Tabs --> 
+<div class="container">
+	<div class="row pb-2">
+		<div class="col-md-3 filter-card">
+				<div class="filter-card my-md-2 py-0 px-2 bg-gray-light d-flex align-items-center">
+					<p class="flt-card-copy display9 d-inline-block my-2 my-md-2 p-0 mr-2 d9-truncate2"><strong>Business Type</strong>: Bldg Matl's / Struct / Prod &amp; Supp</p>
+					<img src="{{ closeBtn }}" alt="Clear" aria-label="Clear" aria-hidden="true" class="clear ml-auto" />
+				</div>
+		</div>
+		<div class="col-md-3 filter-card">
+				<div class="filter-card my-md-2 py-0 px-2 bg-gray-light d-flex align-items-center">
+					<p class="flt-card-copy display9 d-inline-block my-2 my-md-2 p-0 mr-2 d9-truncate2"><strong>Region/Language</strong>: Spanish Language Publications</p>
+					<img src="{{ closeBtn }}" alt="Clear" aria-label="Clear" aria-hidden="true" class="clear ml-auto" />
+				</div>
+		</div>
+		<div class="col-md-3 filter-card">
+				<div class="filter-card my-md-2 py-0 px-2 bg-gray-light d-flex align-items-center">
+					<p class="flt-card-copy display9 d-inline-block my-2 my-md-2 p-0 mr-2 d9-truncate2"><strong>Region/Language</strong>: Entertainment / Amusement Systems, Products, Services</p>
+					<img src="{{ closeBtn }}" alt="Clear" aria-label="Clear" aria-hidden="true" class="clear ml-auto" />
+				</div>
+		</div>
+		<div class="col-md-3 filter-card">
+				<div class="filter-card my-md-2 py-0 px-2 bg-gray-light d-flex align-items-center">
+					<p class="flt-card-copy display9 d-inline-block my-2 my-md-2 p-0 mr-2 d9-truncate2"><strong>Region/Language</strong>: Roofing Systems, Equipment, Services and Supplies</p>
+					<img src="{{ closeBtn }}" alt="Clear" aria-label="Clear" aria-hidden="true" class="clear ml-auto" />
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Filter Panel --> 
+<div class="container-fluid collapse bg-gray-dark filter-panel" id="filterPanel">
+	
+	<div class="container py-4 no-xs-guts">
+ 
+		<!-- Button Bar --> 
+		<ul class="nav nav-pills d-flex mb-4 justify-content-end">
+			<li class="nav-item"><button class="btn btn-tertiary display9 mr-4">Apply</button></li>
+			<li class="nav-item"><button class="btn btn-tertiary display9 mr-4">Reset</button></li>
+			<li class="nav-item d-flex align-items-center"><button type="button" class="close" aria-label="Close" ><span aria-hidden="true">&times;</span></button></li>
+		</ul>
+		
+
+			<!-- Facet-Group and Panel 1 --> 
+			<a class="display6 d-block light facet-group pb-3 collapsed" data-toggle="collapse" href="#" data-target="#facet-group" aria-expanded="false" aria-controls="facet-group" data-parent="#accordion">
+				<span class="mr-3 ml-md-3 mr-md-5"></span>Business Type
+				<span class="filter-count text-white display9 ml-2">({{ results.filterCount }})</span>
+			</a>
+
+			<div class="collapse primary-panel" id="facet-group">
+				<div class="row light">
+					<div class="col">
+						<form class="my-3">
+							<div class="form-group row"> 
+								
+								<!-- Facet Checkbox -->
+								<div class="col-2 col-sm-1">
+									<div class="form-check">
+										<label class="custom-control custom-checkbox fac-check">
+										  <input type="checkbox" class="custom-control-input indeterminate">
+										  <span class="custom-control-indicator"></span>
+										</label>
+									</div>
+								</div>
+
+								<!-- Facet Link and Panel 1 --> 
+								<a class="facetLink align-self-end col-10 col-sm-11" data-toggle="collapse" href="#" data-target="#facetPanel" aria-expanded="false" aria-controls="facetPanel" >
+									<label class="facet parent mt-1">Academic Institution</label>
+								</a>
+								
+								<div class="collapse bg-gray w-100 facetPanel" id="facetPanel">
+									<div class="row">
+										<div class="col">
+											<ul class="nav nav-pills d-flex justify-content-end mt-4">
+												<li class="nav-item ml-4"><button class="btn btn-quaternary display9 mr-4">Select all</button></li>
+												<li class="nav-item"><button class="btn btn-quaternary display9 mr-3">Deselect all</button></li>
+											</ul>
+										</div>
+									</div>	
+
+									<div class="row pl-4 pt-4 pr-4 pb-4">
+										
+										<!-- Sub-Facet Col and Input -->
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-2 col-sm-1">
+													<div class="form-check">
+														<label class="custom-control custom-checkbox d-flex my-auto">
+														  <input type="checkbox" class="custom-control-input checked">
+														  <span class="custom-control-indicator"></span>
+														</label>
+													</div>
+												</div>
+												<label class="col-10 mb-0 mt-1 pl-3 pl-md-5 pl-lg-5">Ceiling Systems, products</label>
+											</div>
+											<div class="row">
+												<div class="col-2 col-sm-1">
+													<div class="form-check">
+														<label class="custom-control custom-checkbox d-flex my-auto">
+														  <input type="checkbox" class="custom-control-input">
+														  <span class="custom-control-indicator"></span>
+														</label>
+													</div>
+												</div>
+												<label class="col-10 mb-0 mt-1 pl-3 pl-md-5 pl-lg-5">Communication Systems, products, services</label>
+											</div>
+										</div>
+										
+										<!-- Sub-Facet Col and Input -->
+										<div class="col-md-6"> 
+											<div class="row">
+												<div class="col-2 col-sm-1">
+													<div class="form-check">
+														<label class="custom-control custom-checkbox d-flex my-auto">
+														  <input type="checkbox" class="custom-control-input">
+														  <span class="custom-control-indicator"></span>
+														</label>
+													</div>
+												</div>
+												<label class="col-10 mb-0 mt-1 pl-3 pl-md-5 pl-lg-5">Ceiling Systems, products</label>
+											</div>
+											<div class="row">
+												<div class="col-2 col-sm-1">
+													<div class="form-check">
+														<label class="custom-control custom-checkbox d-flex my-auto">
+														  <input type="checkbox" class="custom-control-input checked">
+														  <span class="custom-control-indicator"></span>
+														</label>
+													</div>
+												</div>
+												<label class="col-10 mb-0 mt-1 pl-3 pl-md-5 pl-lg-5">Communication Systems, products, services</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End Facet Panel 1 --> 
+
+
+								<!-- Facet Checkbox 2 no Panel -->
+								<div class="col-2 col-sm-1">
+									<div class="form-check">
+										<label class="custom-control custom-checkbox fac-check">
+										  <input type="checkbox" class="custom-control-input">
+										  <span class="custom-control-indicator"></span>
+										</label>
+									</div>
+								</div>
+
+								<!-- Facet Link 2 no Panel --> 
+								<a class="col-10 col-sm-11 align-self-end" >
+									<label class="facetNoPanel mt-1">Academic Institution</label>
+								</a>
+
+								<!-- Facet Checkbox 3 no Panel -->
+								<div class="col-2 col-sm-1">
+									<div class="form-check">
+										<label class="custom-control custom-checkbox fac-check">
+										  <input type="checkbox" class="custom-control-input my-2">
+										  <span class="custom-control-indicator"></span>
+										</label>
+									</div>
+								</div>
+
+								<!-- Facet Label 3 no Panel --> 
+								<a class="col-10 col-sm-11 align-self-end" >
+									<label class="facetNoPanel mt-1">Academic Institution</label>
+								</a>
+
+							</div>
+						</form>
+					</div>
+				</div>      
+			</div>
+			<!-- End Facet-Group 1 -->
+
+
+			<!-- Facet-Group and Panel 2 --> 
+			<a class="display6 d-block light facet-group pb-3 collapsed" data-toggle="collapse" href="#" data-target="#facet-group2" aria-expanded="false" aria-controls="facet-group2" data-parent="#accordion">
+				<span class="mr-3 ml-md-3 mr-md-5"></span>Date 
+				<span class="filter-count text-white display9 ml-2">({{ results.filterCount }})</span>
+			</a>
+			
+			<div class="collapse primary-panel" id="facet-group2">
+				<div class="row light">
+					<div class="col">
+						<form class="mb-4">
+							<div class="form-group row"> 
+							  
+							  <div class="col-sm-5 offset-sm-1 offset-md-1 px-5 pl-sm-1 pr-sm-3 pl-md-4 pl-lg-3 pl-xl-0">
+							  <label for="example-date-input" class="col-form-label mt-3 py-2">From</label>
+							    <input class="form-control filter-input" type="date" value="2011-08-19" id="example-date-input">
+							  </div>
+							  
+							  <div class="col-sm-5 offset-sm-1 offset-md-1 px-5 pl-sm-1 pr-sm-3 pl-md-4 pl-lg-3 pl-xl-0">
+							  <label for="example-date-input" class="col-form-label mt-3 py-2">To</label>
+							    <input class="form-control filter-input" type="date" value="2011-08-19" id="example-date-input">
+							  </div>
+
+							</div>
+						</form>
+					</div>
+				</div>      
+			</div>
+			<!-- End Facet-Group 2 --> 
+
+
+	</div>
+</div>

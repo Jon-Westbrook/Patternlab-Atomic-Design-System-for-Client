@@ -1,0 +1,27 @@
+<div class="card event-card">
+	<a href="#" class="card-link">
+		<div class="card-block py-0">
+			<h3 class="card-title d6-truncate3 mt-5 mt-sm-6 mt-md-5 mt-lg-6 mb-0 mr-lg-3 display6 truncate-lines bold">{{ cards.eventTitle }}</h3>
+			<p class="display8 secondary mt-3 mt-md-5 mt-lg-3 mb-0 py-0">{{ cards.eventDate }}</p>
+			<p class="display8 secondary mt-4 mb-0 py-0">{{ cards.eventLocale }}</p>
+			<p class="display8 secondary my-0 py-0">{{ cards.eventCity }}</p>
+		</div>
+	</a>
+	<div class="card-icons mt-3 p-3 w-100 d-flex justify-content-start">
+    	<p class="display9 mr-auto my-auto ml-3">{{ cards.optionalLabel }}</p>
+		     <a tabindex="0" class="share share--facebook pt-2 mt-2 ml-auto" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true"></a>
+		      
+		      <!--card has two variations — data-placement for save icon is "bottom" on desktop, "left" on mobile-->
+		      <a tabindex="0" class="share share--save hidden-sm-down ml-3 mt-1" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="
+		         <div class='bg-gray-dark p-2'>
+		            <a href='#' target='_self' class='light'>Log In to Save</a>
+		         </div>
+		      "></a>
+
+		      <a tabindex="0" class="share share--save hidden-md-up ml-3 mt-1" data-toggle="popover" data-placement="left" data-trigger="focus" data-html="true" title="
+		         <div class='bg-gray-dark p-2'>
+		            <a href='#' target='_self' class='light'>Log In to Save</a>
+		         </div>
+		      "></a>
+  	</div>
+</div>

@@ -1,0 +1,107 @@
+
+.testi-carousel {
+
+	.carousel-inner {
+		overflow: visible;
+	}
+
+	.c-img {
+		object-fit: contain;
+		height: 570px;
+		position: absolute;
+		@include media-breakpoint-only(md) {
+			left: -70px;
+		}
+		@include media-breakpoint-up(lg) {
+			left: -40px;
+		}
+		bottom: 0;
+		z-index: 1000;
+	}
+
+	.carousel-caption {
+		position: relative;
+		width: 90%;
+		top: 10px;
+		left: 18px;
+		text-align: left;
+		@include media-breakpoint-only(xs)  {
+			width: 95%;
+			top: 0px;
+			left: 8px;
+		}
+		@include media-breakpoint-only(sm)  {
+			top: 20px;
+			left: 36px;
+		}
+		@include media-breakpoint-only(md) {
+			position: absolute;
+			width: 39%;
+			top: 20px;
+			right: 0;
+			left: 52%;
+			text-align: left;
+		}
+		@include media-breakpoint-only(lg) {
+			width: 50%;
+			top: 36px;
+			right: 0;
+			left: 44%;
+		}
+		@include media-breakpoint-only(xl) {
+			width: 50%;
+			top: 60px;
+			right: 0;
+			left: 44%;
+		}
+	}
+
+	.carousel-item {
+		transition: transform 0.5s ease;
+		height: 350px;
+		overflow: visible;
+		@include media-breakpoint-up(md) {
+			height: 519px;
+		}
+	}
+
+	.carousel-indicators {
+		bottom: 20px;
+		@include media-breakpoint-only(xs)  {
+			bottom: 5px;
+		}
+		
+	}
+
+	.carousel-indicators li {
+		background-color: #f7f7fb;
+		&.active {
+			background-color: $tertiary6;
+		}
+	}
+
+	.quote:before {
+	  content: "\201C";
+	  position: absolute;
+      margin-left: -.5em;
+      font-size: 1.5em;
+	}
+	.quote:after {
+	  content: "\201D";
+	  font-size: 1em;
+	}
+
+	.carousel-indicators li {
+		background-color: #f7f7fb;
+		width: 8px;
+		height: 8px;
+		max-width: 8px;
+		// margin-right: 16px;
+		// margin-left: 16px;
+		&.active {
+			background-color: darken($primary1, 10%);
+			padding: 2px;
+		}
+	}
+
+}

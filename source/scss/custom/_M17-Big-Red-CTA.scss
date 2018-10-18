@@ -1,0 +1,13 @@
+
+.big-red {
+    background: url('../images/promo-red-arrow-bg.svg') no-repeat;
+    background-position: left center;  
+    background-size: cover;
+    background-color: $primary1; 
+    @include media-breakpoint-up(md) {
+      background-position: center center;
+    }
+    .hero-desc {
+      max-width: 612px;
+    }
+}

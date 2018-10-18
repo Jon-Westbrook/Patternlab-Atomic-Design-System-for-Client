@@ -1,0 +1,378 @@
+
+// Text Sizes and Headline Overrides
+// =================================
+
+p {
+  font-size: $display6-size-xs;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display6-size-sm;
+    line-height: $display6-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display6-size-md;
+    line-height: $display6-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display6-size-lg;
+    line-height: $display6-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display6-size-xl;
+    line-height: $display6-line-height-xl;
+  }
+}
+
+.display1 {
+  font-size: $display1-size-xs;
+  line-height: $display1-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display1-size-sm;
+    line-height: $display1-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display1-size-md;
+    line-height: $display1-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display1-size-lg;
+    line-height: $display1-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display1-size-xl;
+    line-height: $display1-line-height-xl;
+  }
+}
+
+.display2 {
+  font-size: $display2-size-xs;
+  line-height: $display2-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display2-size-sm;
+    line-height: $display2-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display2-size-md;
+    line-height: $display2-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display2-size-lg;
+    line-height: $display2-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display2-size-xl;
+    line-height: $display2-line-height-xl;
+  }
+}
+
+.display3 {
+  font-size: $display3-size-xs;
+  line-height: $display3-line-height-xs;
+  opacity: .9;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  @include media-breakpoint-only(sm) {
+    font-size: $display3-size-sm;
+    line-height: $display3-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display3-size-md;
+    line-height: $display3-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display3-size-lg;
+    line-height: $display3-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display3-size-xl;
+    line-height: $display3-line-height-xl;
+  }
+  
+}
+
+.display4 {
+  font-size: $display4-size-xs;
+  line-height: $display4-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display4-size-sm;
+    line-height: $display4-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display4-size-md;
+    line-height: $display4-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display4-size-lg;
+    line-height: $display4-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display4-size-xl;
+    line-height: $display4-line-height-xl;
+  }
+}
+
+.display5 {
+  font-size: $display5-size-xs;
+  line-height: $display5-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display5-size-sm;
+    line-height: $display5-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display5-size-md;
+    line-height: $display5-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display5-size-lg;
+    line-height: $display5-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display5-size-xl;
+    line-height: $display5-line-height-xl;
+  }
+}
+
+.display6 {
+  font-size: $display6-size-xs;
+  line-height: $display6-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display6-size-sm;
+    line-height: $display6-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display6-size-md;
+    line-height: $display6-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display6-size-lg;
+    line-height: $display6-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display6-size-xl;
+    line-height: $display6-line-height-xl;
+  }
+}
+
+.display7 {
+  font-size: $display7-size-xs;
+  line-height: $display7-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display7-size-sm;
+    line-height: $display7-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display7-size-md;
+    line-height: $display7-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display7-size-lg;
+    line-height: $display7-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display7-size-xl;
+    line-height: $display7-line-height-xl;
+  }
+}
+
+.display8 {
+  font-size: $display8-size-xs;
+  line-height: $display8-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display8-size-sm;
+    line-height: $display8-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display8-size-md;
+    line-height: $display8-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display8-size-lg;
+    line-height: $display8-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display8-size-xl;
+    line-height: $display8-line-height-xl;
+  }
+}
+
+.display9 {
+  font-size: $display9-size-xs;
+  line-height: $display9-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display9-size-sm;
+    line-height: $display9-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display9-size-md;
+    line-height: $display9-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display9-size-lg;
+    line-height: $display9-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display9-size-xl;
+    line-height: $display9-line-height-xl;
+  }
+}
+
+// Special Display4 Size Override for Testimonial Carousel
+.display4__testimonial {
+  font-size: $display5-size-xs;
+  line-height: $display5-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display4-size-sm;
+    line-height: $display4-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display4-size-md;
+    line-height: $display4-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display4-size-lg;
+    line-height: $display4-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display4-size-xl;
+    line-height: $display4-line-height-xl;
+  }
+}
+
+// Special display8__alt Size Override for left nav and search
+// which basically is always 16px. to replace display8 which is now 18px
+.display8__alt {
+  font-size: $display8-size-md;
+  line-height: $display8-line-height-md;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+}
+
+
+
+h1, .h1 {
+  font-size: $display3-size-xs;
+  line-height: $display3-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-bold;
+  @include media-breakpoint-only(sm) {
+    font-size: $display3-size-sm;
+    line-height: $display3-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display3-size-md;
+    line-height: $display3-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display3-size-lg;
+    line-height: $display3-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display3-size-xl;
+    line-height: $display3-line-height-xl;
+  }
+}
+
+h2, .h2 {
+  font-size: $display4-size-xs;
+  line-height: $display4-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-bold;
+  @include media-breakpoint-only(sm) {
+    font-size: $display4-size-sm;
+    line-height: $display4-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display4-size-md;
+    line-height: $display4-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display4-size-lg;
+    line-height: $display4-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display4-size-xl;
+    line-height: $display4-line-height-xl;
+  }
+}
+
+h3, .h3 {
+  font-size: $display5-size-xs;
+  line-height: $display5-line-height-xs;
+  opacity: .9;
+  font-weight: 400;
+  font-family: $font-family-bold;
+  @include media-breakpoint-only(sm) {
+    font-size: $display5-size-sm;
+    line-height: $display5-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display5-size-md;
+    line-height: $display5-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display5-size-lg;
+    line-height: $display5-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display5-size-xl;
+    line-height: $display5-line-height-xl;
+  }
+}
+
+.lead {
+  &.light {
+    opacity: 1;
+    color: $primary3;
+  }
+}
+
+.bold {
+ font-family: $font-family-bold;
+}
+
+.secondary {
+  color: rgba(0,0,0,0.75);
+}
+.disabled {
+  opacity: .2;
+}
+.accent {
+  opacity: 1;
+  color: $primary1;
+}
+.light {
+  opacity: 1;
+  color: $primary3;
+}
+

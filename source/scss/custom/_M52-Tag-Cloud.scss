@@ -1,0 +1,31 @@
+.tag-cloud {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    a, span {
+      background-color: $tertiary4;
+      display: inline-block;
+      padding: 0.4rem 2rem; 
+      border-radius: 2.5rem;
+      margin-right: 0.5rem;
+      opacity: 1;
+      
+      @include media-breakpoint-down(sm) {
+        padding: 0.3rem 1.5rem 0.35rem; 
+        border-radius: 1.25rem;
+        margin-right: 0.25rem;
+      }
+    }
+
+    &:last-child {
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+}
