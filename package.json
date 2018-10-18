@@ -23,5 +23,8 @@
     "minimist": "1.2.0",
     "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap",
     "auth-static": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0"
   }
 }
