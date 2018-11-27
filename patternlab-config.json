@@ -1,8 +1,8 @@
 {
   "cacheBust": true,
   "cleanPublic": true,
-  "defaultPattern": "all",
-  "defaultShowPatternInfo": false,
+  "defaultPattern": "Templates-T2-Home",
+  "defaultShowPatternInfo": true,
   "ishControlsHide": {
     "s": false,
     "m": false,
@@ -20,17 +20,26 @@
     "tools-all": false,
     "tools-docs": false
   },
-  "ishViewportRange": {
+  "ishViewportRange":
+  {
+    "xs": [
+      320,
+      575
+    ],
     "s": [
-      240,
-      500
+      576,
+      767
     ],
     "m": [
-      500,
-      800
+      768,
+      991
     ],
     "l": [
-      800,
+      992,
+      1199
+    ],
+    "xl": [
+      1200,
       2600
     ]
   },
@@ -47,7 +56,7 @@
       "data": "source/_data/",
       "meta": "source/_meta/",
       "annotations": "source/_annotations/",
-      "styleguide": "dist/",
+      "styleguide": "../../../source/uikit-workshop/dist/",
       "patternlabFiles": {
         "general-header": "views/partials/general-header.mustache",
         "general-footer": "views/partials/general-footer.mustache",
