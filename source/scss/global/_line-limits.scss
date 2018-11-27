@@ -1,0 +1,56 @@
+
+// Ellipse Classes for limiting copy lines
+
+.d6-truncate3 {
+   @include limitLines(3, 20px);
+   @include media-breakpoint-up(lg) {
+      @include limitLines(3, 32px);
+   }
+}
+
+.d6-truncate2 { //not in use
+   @include limitLines(2, 20px);
+   @include media-breakpoint-up(lg) {
+      @include limitLines(2, 32px);
+   }
+}
+
+.d7-truncate2 {
+  @include limitLines(2, 24px);
+  @include media-breakpoint-up(lg) {
+    @include limitLines(2, 28px);
+  }
+}
+
+.d7-truncate3 { //not in use
+  @include limitLines(3, 24px);
+  @include media-breakpoint-up(lg) {
+    @include limitLines(3, 28px);
+  }
+}
+
+.d8-truncate1 {
+  @include limitLines(1, 24px);
+}
+
+.d8-truncate3 {
+  @include limitLines(3, 24px);
+  @include media-breakpoint-up(lg) {
+    @include limitLines(3, 27px);
+  }
+}
+
+.d9-truncate1 {
+  @include limitLines(1, 16px);
+}
+
+.d9-truncate2 {
+  @include limitLines(2, 16px);
+}
+
+.d9-truncate3 {
+  @include limitLines(3, 16px);
+  @include media-breakpoint-up(lg) {
+    @include limitLines(3, 27px);
+  }
+}

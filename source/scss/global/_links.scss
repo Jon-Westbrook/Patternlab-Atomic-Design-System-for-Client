@@ -1,0 +1,17 @@
+
+a {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    color: darken($primary-1, 10%);
+  }
+  &.accent {
+    word-wrap: break-word;
+    &:hover {
+      color: darken($primary-1, 10%);
+    }
+  }
+  &:focus {
+    outline: 0;
+  }
+}

@@ -1,0 +1,340 @@
+
+.card {
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  border:none;
+  height: 350px;
+  transition: 0.3s;
+  @include media-breakpoint-up(sm) {
+    height: 360px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 420px;
+  }
+  @include media-breakpoint-up(xl) {
+    height: 430px;
+  }
+  &:hover {
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+.member-default {
+  background-color: $tertiary-3;
+  .letters {
+    color: #BCBFC0;
+  }
+}
+.member-name {
+  word-wrap: break-word;
+}
+
+
+.list-card {
+  margin-bottom: 2rem;
+  border-top: 1px solid $tertiary-3;
+  position: relative;
+}
+
+.list-card-module {
+  border-bottom: 1px solid $tertiary-3;
+}
+
+.list-card-latest-news {
+  margin-bottom: 2rem;
+  position: relative;
+  [class*='col-'] {
+    border-top: 1px solid $tertiary-3;
+  }
+  .card-img-right {
+    object-fit: cover;
+    height: 56px;
+    width: 56px;
+    @include media-breakpoint-up(sm) {
+      height: 80px;
+      width: 80px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      height: 90px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 120px;
+    }
+    &.download {
+      object-fit: initial;
+    }
+  }
+  .gen-list-item-icons {
+    @include media-breakpoint-up(md) {
+      bottom: 10px;
+    }
+  }
+  .border {
+    border-top: 1px solid $tertiary-3;
+  }
+}
+
+.obj-fit-ie{
+  @include media-breakpoint-up(xs) {
+    height: 56px;
+    width: 56px;
+    margin-top:20px !important;
+  }
+  @include media-breakpoint-up(sm) {
+    height: 80px;
+    width: 80px;
+  }
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    height: 90px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 120px;
+    margin-top:35px !important;
+  }
+}
+
+.card-img-right {
+  object-fit: cover;
+  height: 56px;
+  width: 56px;
+  @include media-breakpoint-up(sm) {
+    height: 64px;
+    width: 64px;
+  }
+  &.download {
+    object-fit: initial;
+  }
+  &.square {
+    border-radius: 0;
+  }
+}
+
+.profile-img-list {
+  border-radius: 36px;
+}
+
+.card-icons {
+  border-top: 1px solid $gray-border;
+  position: absolute;
+  bottom: 0;
+  img {
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &.relative {
+    position: relative;
+  }
+}
+
+.card-link {
+  color: $primary-2;
+  //margin:0 auto;
+  &:hover{
+    color: $primary-2;
+  }
+  .card-title{
+
+    &:hover{
+      color: $link-hover-color;
+    }
+  }
+
+}
+
+
+// General Card
+
+.card-img-top {
+  height: 120px;
+  object-fit: cover;
+  @include media-breakpoint-only(md) {
+    height: 124px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 140px;
+  }
+}
+
+.gen-list-item-icons {
+  position: relative;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 0;
+    top: 0;
+    img {
+      cursor: pointer;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.no-image {
+  .no-image-icon {
+    width: 90px;
+    height: 96px;
+    object-fit: none;
+    margin-top: 24px;
+    @include media-breakpoint-only(md) {
+      margin-top: 28px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 44px;
+    }
+  }
+}
+
+
+// Event Cards
+
+.event-card {
+  border-top: 6px solid $primary-1;
+}
+
+.event-card-list {
+  border-left: 6px solid $primary-1;
+}
+
+@include media-breakpoint-down(sm) {
+  .event-card:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+}
+
+
+// Member Cards
+
+.member-card-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  @include media-breakpoint-up(xl) {
+    border-radius: 100%;
+    height: 104px;
+    width: 104px;
+  }
+}
+
+.profile-name-link {
+  color: $primary-2 !important;
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}
+.member-title:nth-child(3n){
+  margin-top: -3px !important;
+}
+.profile-co-link p{
+  color: $primary-1 !important;
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}
+
+// Publication Cards
+
+.publication-card-img {
+  height: 78px;
+  width: 60px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  @include media-breakpoint-only(md) {
+    height: 92px;
+    width: 70px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 132px;
+    width: 104px;
+  }
+}
+
+
+
+//making publications cards a list here:
+@media (max-width: 768px) {
+  .card.pub-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+      margin-left: -5px;
+    border-top: 1px solid #eceff1;
+      position: relative;
+    margin-bottom: 2rem;
+    border-top: 1px solid $tertiary-3;
+    position: relative;
+    height:180px;
+    box-shadow: none !important;
+    &:hover{
+      box-shadow:none !important;
+    }
+    .card-icons{border-top:none;}
+    .card-link{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .pub-text{
+      padding:0px;
+      margin:0px;
+      padding-left: .5rem !important;
+      .card-title{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        opacity: .9;
+        font-weight: 400;
+        flex: 1 1 auto;
+      }
+
+  }
+  .flex-card{
+    flex: 0 0 16.66667% !important;
+      max-width: 16.66667% !important;
+  }
+  .flex-text{
+    flex: 0 0 83.33333% !important;
+      max-width: 83.33333% !important;
+      .display8{
+          font-size: .75rem !important;
+        line-height: 1rem;
+        opacity: .9;
+        font-weight: 400;
+        font-family: "sofia_pro_regularregular";
+      }
+      .d6-truncate3{
+        max-height:53px;
+      }
+
+  }
+  .publication-card-img{
+      display: inline !important;
+    object-fit: cover;
+    height: 56px;
+    width: 56px;
+    margin-right:0px !important;
+    margin-left:10px !important;
+    padding-right: .5rem !important;
+      padding-left: .5rem !important;
+      box-shadow:none !important;
+      &:hover{
+      box-shadow: none !important;
+      }
+    @include media-breakpoint-up(sm) {
+      height: 64px;
+      width: 64px;
+    }
+    &.download {
+      object-fit: initial;
+    }
+    &.square {
+      border-radius: 0;
+    }
+  }
+}

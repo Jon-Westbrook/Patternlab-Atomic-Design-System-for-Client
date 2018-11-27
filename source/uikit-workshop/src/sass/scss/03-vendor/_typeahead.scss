@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    #TWITTER TYPEAHEAD
+\*------------------------------------*/
+/**
+ * Using Twitter Typeahead to autocomplete pattern
+ * searches. https://twitter.github.io/typeahead.js/
+ * 1) Wrapped in pl-c-header to contain styles for projects that
+ *    might already be using Typeahead
+*/
+
+.pl-c-header {
+  /**
+     * Typeahead input
+     * 1) the primary DOM element that initiates the JS library
+     */
+  .pl-c-typeahead {
+    border: 0;
+    background: $pl-primary-bg !important;
+    color: $pl-primary-color;
+    width: 100%;
+    right: 0;
+    padding: 0.61rem 0.5rem;
+    font-size: inherit;
+
+    &:focus {
+      background: $pl-primary-bg;
+      color: $pl-primary-color;
+    }
+  }
+
+  /**
+     * Typeahead wrapper
+     * 1) This is the JS-generated wrapper around the input
+     * 2) Display after nav list items for horizontal theme
+     */
+  .twitter-typeahead {
+    display: flex !important;
+    order: 2; /* 2 */
+    width: 100%;
+  }
+
+  .tt-input {
+    background: $pl-primary-bg;
+    color:  $pl-primary-color;
+
+    &:hover {
+      color: $pl-primary-color;
+      background: $pl-primary-bg !important;
+
+      &::-webkit-input-placeholder {
+        color: $pl-primary-color;
+      }
+
+      &::-moz-input-placeholder {
+        color: $pl-primary-color;
+      }
+    }
+
+    &:focus {
+      border-radius: 0;
+      // text-transform: lowercase;
+      color: $pl-primary-color;
+      background: $pl-primary-bg;
+      outline: 1px dotted $pl-color-gray-50;
+      outline-offset: -1px;
+    }
+  }
+
+  .tt-hint {
+    // text-transform: lowercase;
+  }
+
+  .tt-menu {
+    // text-transform: lowercase;
+    background-color: $pl-primary-bg;
+    width: 100%;
+    border-bottom-right-radius: $pl-border-radius-med;
+    border-bottom-left-radius: $pl-border-radius-med;
+  }
+
+  .tt-suggestion {
+    color: $pl-primary-color;
+    padding: 0.8em;
+  }
+
+  .tt-suggestion.tt-cursor {
+    color: $pl-primary-color;
+    background: $pl-primary-bg;
+  }
+
+  .tt-suggestion p {
+    margin: 0;
+  }
+}

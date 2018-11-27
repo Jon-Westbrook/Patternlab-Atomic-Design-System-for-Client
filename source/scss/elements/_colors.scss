@@ -1,0 +1,58 @@
+
+.color-box {
+  position: relative;
+  width: 100%;
+  border: 1px solid $primary-2;
+  border-radius: 0px;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 25%;
+    @include media-breakpoint-up(md) {
+      padding-top: 100%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    border-radius: 50%;
+  }
+
+  &.primary-1 {
+    background-color: $primary-1;
+  }
+  &.primary-2 {
+    background-color: $primary-2;
+  }
+  &.primary-3 {
+    background-color: $primary-3;
+  }
+  &.secondary-1 {
+  background-color: $secondary-1;
+  }
+  &.secondary-2 {
+  background-color: $secondary-2;
+  }
+  &.secondary-3 {
+  background-color: $secondary-3;
+  }
+  &.secondary-4 {
+  background-color: $secondary-4;
+  }
+  &.tertiary-1 {
+  background-color: $tertiary-1;
+  }
+  &.tertiary-2 {
+  background-color: $tertiary-2;
+  }
+  &.tertiary-3 {
+  background-color: $tertiary-3;
+  }
+  &.tertiary-4 {
+  background-color: $tertiary-4;
+  }
+  &.tertiary-5 {
+  background-color: $tertiary-5;
+  }
+  &.tertiary-6 {
+  background-color: $tertiary-6;
+  }
+}

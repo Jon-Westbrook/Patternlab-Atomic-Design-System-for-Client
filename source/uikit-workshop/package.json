@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      "@pattern-lab/uikit-workshop@1.0.0-beta.0",
+      "/Users/jwestbrook/Sites/Repos/vsa-digital-design-system-starterkit"
+    ]
+  ],
+  "_from": "@pattern-lab/uikit-workshop@1.0.0-beta.0",
+  "_id": "@pattern-lab/uikit-workshop@1.0.0-beta.0",
+  "_inBundle": false,
+  "_integrity": "sha512-2bac3NkUxXGH7csaoWtpPfBGD4imtZj3KAg761fGVs8FEmKGQP6DXt303nyU0kceaWJMCmYOJGYSJDzrM+5cdg==",
+  "_location": "/@pattern-lab/uikit-workshop",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@pattern-lab/uikit-workshop@1.0.0-beta.0",
+    "name": "@pattern-lab/uikit-workshop",
+    "escapedName": "@pattern-lab%2fuikit-workshop",
+    "scope": "@pattern-lab",
+    "rawSpec": "1.0.0-beta.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0-beta.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@pattern-lab/uikit-workshop/-/uikit-workshop-1.0.0-beta.0.tgz",
+  "_spec": "1.0.0-beta.0",
+  "_where": "/Users/jwestbrook/Sites/Repos/vsa-digital-design-system-starterkit",
+  "authors": [
+    {
+      "name": "Brad Frost",
+      "homepage": "http://bradfrostweb.com",
+      "role": "Creator"
+    },
+    {
+      "name": "Brian Muenzenmeyer",
+      "homepage": "http://brianmuenzenmeyer.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Salem Ghoweri",
+      "homepage": "https://github.com/sghoweri",
+      "role": "Developer"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/pattern-lab/patternlab-node/issues"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.1",
+    "deepmerge": "^2.1.1",
+    "fg-loadcss": "^2.0.1",
+    "fg-loadjs": "^1.0.0",
+    "hogan.js": "^3.0.2",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "jshint": "^2.9.5",
+    "mousetrap": "^1.6.2",
+    "prism": "^4.1.2",
+    "prismjs": "^1.15.0",
+    "scriptjs": "^2.5.8",
+    "typeahead.js": "^0.11.1",
+    "whendefined": "^0.0.1",
+    "wolfy87-eventemitter": "^5.2.4"
+  },
+  "description": "Front-end assets and templates for the default Pattern Lab workshop view",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "autoprefixer": "^9.1.0",
+    "babel-loader": "^8.0.0-beta.4",
+    "clean-css-loader": "^1.0.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "critical": "^1.3.4",
+    "critical-css-webpack-plugin": "^0.2.0",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "github:jantimon/html-webpack-plugin#webpack-4",
+    "mini-css-extract-plugin": "^0.4.1",
+    "no-emit-webpack-plugin": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "penthouse": "^1.6.2",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "4.16.3",
+    "webpack-cli": "^3.1.0",
+    "workbox-build": "^3.4.1",
+    "yargs": "^12.0.1"
+  },
+  "gitHead": "de867385bd6e19a96fad3d25efcbb0a6c44dd7bc",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "name": "@pattern-lab/uikit-workshop",
+  "peerDependencies": {
+    "jshint": "^2.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pattern-lab/patternlab-node/tree/master/packages/uikit-workshop"
+  },
+  "scripts": {
+    "build": "webpack-cli --config webpack.config.js --progress",
+    "test": "npm run build -- --bail",
+    "watch": "webpack-cli --config webpack.config.js --progress --watch"
+  },
+  "version": "1.0.0-beta.0"
+}
