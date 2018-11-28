@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="52px" viewBox="0 0 54 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>list-view-icon-disabled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Module-Library" transform="translate(-1005.000000, -207.000000)">
+            <g id="view-toggle-copy-2" transform="translate(950.000000, 207.000000)">
+                <g id="list-view-icon-disabled" transform="translate(55.000000, 0.000000)">
+                    <path d="M5.22291397e-16,0 C2.75007109e-14,9.09494702e-13 51.9979097,3.23107258e-14 51.9979097,3.23107258e-14 C53.1036337,1.44660047e-14 54,0.902557373 54,2.00659927 L54,49.9934007 C54,51.1016149 53.1077828,52 51.9979097,52 C51.9979097,52 -9.00106131e-13,52 5.22291397e-16,52 C9.01150714e-13,52 -2.50510021e-14,-9.09494702e-13 5.22291397e-16,0 Z" id="Rectangle-2" fill="#F5F5F5"></path>
+                    <g transform="translate(16.000000, 16.000000)" fill="#000000" opacity="0.2">
+                        <g id="Group-10" transform="translate(0.000000, 16.000000)">
+                            <g id="color/primary-2" transform="translate(6.000000, 0.000000)">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="16" height="4"></rect>
+                            </g>
+                            <g id="color/primary-2">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="4" height="4"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-10-Copy" transform="translate(0.000000, 8.000000)">
+                            <g id="color/primary-2" transform="translate(6.000000, 0.000000)">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="16" height="4"></rect>
+                            </g>
+                            <g id="color/primary-2">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="4" height="4"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-10-Copy-2">
+                            <g id="color/primary-2" transform="translate(6.000000, 0.000000)">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="16" height="4"></rect>
+                            </g>
+                            <g id="color/primary-2">
+                                <rect id="Rectangle-Copy-3" x="0" y="0" width="4" height="4"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

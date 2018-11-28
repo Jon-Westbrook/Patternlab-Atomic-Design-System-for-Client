@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="20px" viewBox="0 0 23 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modules/Hero-Overlay---Home" transform="translate(-1016.000000, -114.000000)" fill="#E31837">
+            <g id="Hero-Overlay">
+                <g id="Find-Events-and-People" transform="translate(555.000000, 0.000000)">
+                    <g id="Group-2">
+                        <g id="Icon/-Download-Arrow" transform="translate(473.000000, 123.500000) scale(-1, -1) rotate(90.000000) translate(-473.000000, -123.500000) translate(461.500000, 110.500000)">
+                            <g id="Group">
+                                <rect id="Rectangle-path" fill-rule="nonzero" x="9.15975393" y="1.625" width="3.92388214" height="19.3246625"></rect>
+                                <rect id="Rectangle-path" fill-rule="nonzero" transform="translate(15.990697, 19.303350) rotate(-45.000000) translate(-15.990697, -19.303350) " x="9.2881687" y="15.24085" width="13.4050571" height="3.88123125"></rect>
+                                <rect id="Rectangle-path" fill-rule="nonzero" transform="translate(9.286478, 16.302600) rotate(-45.000000) translate(-9.286478, -16.302600) " x="5.1793353" y="9.67288392" width="3.92388214" height="13.2594313"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

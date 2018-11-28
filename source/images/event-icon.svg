@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="65" height="65" fill="#F5F5F5" rx="3"/>
+        <path fill="#E31837" d="M0 0h65v4H0z"/>
+        <text fill="#4A4A4A" font-family="SofiaProBold, Sofia Pro" font-size="16" font-weight="bold">
+            <tspan x="12.368" y="37">Event</tspan>
+        </text>
+    </g>
+</svg>
