@@ -3,6 +3,7 @@
 // // Variables should follow the `$component-state-property-size` formula for
 // // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+
 // Primary Custom Colors
 $primary-1: #372772;
 $primary-2: #fff;
@@ -14,16 +15,16 @@ $secondary-2: #0088b0;
 $secondary-3: #0088b0;
 $secondary-4: #9f7b98;
 
-$tertiary-1: #E4E4E7;
-$tertiary-2: #f5f5f5;
+$tertiary-1: #f5f5f5;
+$tertiary-2: #E4E4E7;
 $tertiary-3: #4D4D4D;
-$tertiary-4: #fff;
+$tertiary-4: #000;
 
-
-// Color system
+// Basic Colors
 $white       : #fff !default;
 $gray-border : $tertiary-3;
 $black       : #000 !default;
+
 
 // Bootstrap Grays
 $gray-dark:                 $tertiary-4;
