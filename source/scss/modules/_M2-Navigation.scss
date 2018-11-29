@@ -32,7 +32,7 @@
   background: $primary-1;
   color: #fff;
   transition: all 0.3s;
-  z-index: 9999;
+  z-index: 9000;
   & svg {
     width: 50%;
     fill: #fff;
@@ -64,7 +64,7 @@
 }
 
 #sidebar ul li a:hover {
-  color: $primary-2;
+  color: $primary-1;
   background: #fff;
 }
 
@@ -111,7 +111,7 @@ a.download {
 
 a.article,
 a.article:hover {
-  background: #6d7fcc !important;
+  background: #BF1F7A !important;
   color: #fff !important;
 }
 
@@ -123,6 +123,7 @@ a.article:hover {
   width: 100%;
   min-height: 100vh;
   transition: all 0.3s;
+  z-index: 1000;
 }
 
 /* ---------------------------------------------------

@@ -2,7 +2,7 @@
   "cacheBust": true,
   "cleanPublic": true,
   "defaultPattern": "Templates-T2-Home",
-  "defaultShowPatternInfo": true,
+  "defaultShowPatternInfo": false,
   "ishControlsHide": {
     "s": false,
     "m": false,
