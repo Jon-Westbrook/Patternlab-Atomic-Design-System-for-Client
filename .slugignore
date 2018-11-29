@@ -1,0 +1,17 @@
+.tmp
+.zip
+source/
+pattern_exports/
+
+README.html
+
+.sass-cache/
+*~
+
+*.log
+.DS_Store
+*/.DS_Store
+
+/license.txt
+/readme.html
+.sass-cache
