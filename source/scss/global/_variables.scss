@@ -5,8 +5,8 @@
 
 // Primary Custom Colors
 $primary-1: #372772;
-$primary-2: #000;
-$primary-3: #fff;
+$primary-2: #fff;
+$primary-3: #787583;
 
 // Special Custom Colorss
 $secondary-1: #0038aa;
@@ -14,54 +14,23 @@ $secondary-2: #0088b0;
 $secondary-3: #0088b0;
 $secondary-4: #9f7b98;
 
-$tertiary-1: #f9f9f9;
+$tertiary-1: #E4E4E7;
 $tertiary-2: #f5f5f5;
-$tertiary-3: #eceff1;
-$tertiary-4: #e4eaef;
-$tertiary-5: #cfd8dc;
-$tertiary-6: #4a4a4a;
-$tertiary-7: #343434;
+$tertiary-3: #4D4D4D;
+$tertiary-4: #fff;
 
-// // Color system
 
+// Color system
 $white       : #fff !default;
-$gray-100    : #e9ecef !default;
-$gray-200    : #e9ecef !default;
-$gray-300    : #dee2e6 !default;
-$gray-400    : #ced4da !default;
-$gray-500    : #adb5bd !default;
-$gray-600    : #6c757d !default;
-$gray-700    : #495057 !default;
-$gray-800    : #343a40 !default;
-$gray-900    : #212529 !default;
 $gray-border : $tertiary-3;
 $black       : #000 !default;
 
-$grays: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-$grays: map-merge(
-  (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
-
 // Bootstrap Grays
-$gray-crazy-dark:           $tertiary-7;
-$gray-dark:                 $tertiary-6;
-$gray:                      $tertiary-5;
-$gray-light:                $tertiary-4;
-$gray-lighter:              $tertiary-3;
-$gray-lightest:             $tertiary-2;
-$gray-ultra-light:          $tertiary-1;
+$gray-dark:                 $tertiary-4;
+$gray:                      $tertiary-3;
+$gray-light:                $tertiary-2;
+$gray-lightest:             $tertiary-1;
+
 
 $footer-gray:               #3f3f3f;
 $footer-gray2:              #343434;
@@ -100,13 +69,13 @@ $gray:    #f8f9fa !default;
 // );
 
 $primary:       $primary-1 !default;
-$secondary:     $secondary-4 !default;
+$secondary:     $primary-2 !default;
 $success:       $green !default;
-$info:          $secondary-1 !default;
-$warning:       $yellow !default;
+$info:          $yellow !default;
+$warning:       $red !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         $primary-2 !default;
+$dark:          $primary-3 !default;
 
 // $theme-colors: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
