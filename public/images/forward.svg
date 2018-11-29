@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>back-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="back-arrow" transform="translate(6.000000, 7.500000) scale(-1, 1) translate(-6.000000, -7.500000) translate(0.000000, -1.000000)" fill-rule="nonzero" fill="#4A4A4A">
+            <g id="Icon/Arrow/dark" transform="translate(6.333333, 8.833333) rotate(90.000000) translate(-6.333333, -8.833333) translate(-1.666667, 3.333333)">
+                <polygon id="Arrow" transform="translate(8.000000, 5.500000) rotate(90.000000) translate(-8.000000, -5.500000) " points="5.44210524 -1.57142859 3.19999998 0.592672399 8.28421051 5.49999998 3.19999998 10.4073276 5.44210524 12.5714286 12.8 5.49999998"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

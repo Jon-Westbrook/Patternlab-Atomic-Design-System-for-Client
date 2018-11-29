@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="30px" viewBox="0 0 14 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Image</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Nav/-Footer" transform="translate(-293.000000, -181.000000)" fill="#4a4a4a">
+            <g id="Group-2" transform="translate(101.000000, 181.000000)">
+                <path d="M206,9.7125 L201.24,9.7125 L201.24,6.6 C201.24,5.4375 202.024,5.15625 202.565333,5.15625 L205.925333,5.15625 L205.925333,0.01875 L201.296,0 C196.144,0 194.968,3.825 194.968,6.28125 L194.968,9.7125 L192,9.7125 L192,15.01875 L194.968,15.01875 L194.968,30 L201.24,30 L201.24,15.01875 L205.458667,15.01875 L206,9.7125" id="Image"></path>
+            </g>
+        </g>
+    </g>
+</svg>

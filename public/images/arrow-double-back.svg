@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>double-arrow-icon-active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Module-Library" transform="translate(-1145.000000, -275.000000)" fill="#000000">
+            <g id="double-arrow-icon-active" transform="translate(1145.000000, 275.000000)">
+                <g id="Icon/Arrow/dark" transform="translate(12.000000, 5.714286) rotate(-270.000000) translate(-12.000000, -5.714286) translate(6.285714, 1.714286)">
+                    <polygon id="Arrow" transform="translate(5.500000, 4.000000) rotate(-270.000000) translate(-5.500000, -4.000000) " points="3.74144737 -1.14285714 2.2 0.431034483 5.69539474 4 2.2 7.56896552 3.74144737 9.14285714 8.8 4"></polygon>
+                </g>
+                <g id="Icon/Arrow/dark" transform="translate(4.000000, 5.714286) rotate(-270.000000) translate(-4.000000, -5.714286) translate(-1.714286, 1.714286)">
+                    <polygon id="Arrow" transform="translate(5.500000, 4.000000) rotate(-270.000000) translate(-5.500000, -4.000000) " points="3.74144737 -1.14285714 2.2 0.431034483 5.69539474 4 2.2 7.56896552 3.74144737 9.14285714 8.8 4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
