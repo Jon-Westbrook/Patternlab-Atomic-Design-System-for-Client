@@ -24,9 +24,9 @@
   margin: 0;
   border: 0;
   border-radius: $pl-border-radius;
-  background: transparent;
+  background: $pl-secondary-bg;
   font-size: inherit;
-  color: $pl-color-gray-50;
+  color: $pl-color-white;
   width: 35px;
   text-align: right;
   transition: all $pl-animate-quick ease-out;
@@ -38,13 +38,13 @@
 
   &:hover {
     color: $pl-color-white;
-    background: $pl-color-gray-87;
+    background: $pl-secondary-bg;
   }
 
   &:active,
   &:focus {
     color: $pl-color-white;
-    background: $pl-color-gray-87;
+    background: $pl-secondary-bg;
     outline: 1px dotted $pl-color-gray-50;
     outline-offset: -1px;
   }

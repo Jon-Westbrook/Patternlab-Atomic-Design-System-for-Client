@@ -101,14 +101,12 @@ import { patternFinder } from './pattern-finder';
   }
 
   $('#pl-size-xs').on('click', function(e) {
-    console.log(minViewportWidth);
     e.preventDefault();
     goXsmall();
   });
 
   // handle small button
   function goSmall() {
-    console.log(minViewportWidth);
     killDisco();
     killHay();
     fullMode = false;

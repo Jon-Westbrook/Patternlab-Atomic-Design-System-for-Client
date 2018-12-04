@@ -62,14 +62,13 @@
   }
 
   /**
-     * Size input
-     */
+   * Size input
+   */
   .pl-c-viewport-size__input {
-    color: $pl-color-gray-70;
-
+    color: #fff;
     &:hover,
     &:focus {
-      background: $pl-color-gray-13;
+      background: #fff;
     }
   }
 
