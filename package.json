@@ -21,7 +21,7 @@
     "watch:ui-kit": "watch 'npm run pl:build' source/uikit-workshop/dist",
     "watch:patterns": "watch 'npm run pl:build' source/_patterns",
     "watch": "npm run watch:patterns & npm run watch:css & npm run watch:js & npm run watch:ui-kit",
-    "serve": "browser-sync start --server --no-notify --startPath 'public/index.html' --files 'public/patterns/**/*, public/css/*.css, public/js/*.js'",
+    "serve": "browser-sync start --server 'public' --no-notify --files 'public/patterns/**/*, public/css/*.css, public/js/*.js'",
     "prebuild": "npm run clean",
     "build": "npm run build:css & npm run pl:build",
     "postbuild": "npm run serve & npm run watch"
