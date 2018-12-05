@@ -201,8 +201,8 @@ $theme-colors: map-merge(
 // // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
-  md: 768px,
+  sm: 768px,
+  md: 992px,
   lg: 992px,
   xl: 1140px
 ) !default;
