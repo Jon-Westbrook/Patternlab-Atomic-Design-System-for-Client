@@ -201,10 +201,10 @@ $theme-colors: map-merge(
 // // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 768px,
-  md: 992px,
-  lg: 992px,
-  xl: 1140px
+  sm: 767px,
+  md: 991px,
+  lg: 1199px,
+  xl: 1240px
 ) !default;
 
 // @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -297,16 +297,16 @@ $font-family-sans-serif:
 
 $font-family-bold: Roboto, sans-serif;
 
-$display1-size-xs        : (64 / 16)+rem;
-$display1-size-sm        : (64 / 16)+rem;
-$display1-size-md        : (64 / 16)+rem;
-$display1-size-lg        : (72 / 16)+rem;
-$display1-size-xl        : (72 / 16)+rem;
-$display1-line-height-xs : (78 / 16)+rem;
-$display1-line-height-sm : (78 / 16)+rem;
-$display1-line-height-md : (78 / 16)+rem;
-$display1-line-height-lg : (86 / 16)+rem;
-$display1-line-height-xl : (86 / 16)+rem;
+$display1-size-xs        : (48 / 16)+rem;
+$display1-size-sm        : (48 / 16)+rem;
+$display1-size-md        : (48 / 16)+rem;
+$display1-size-lg        : (48 / 16)+rem;
+$display1-size-xl        : (48 / 16)+rem;
+$display1-line-height-xs : (52 / 16)+rem;
+$display1-line-height-sm : (52 / 16)+rem;
+$display1-line-height-md : (52 / 16)+rem;
+$display1-line-height-lg : (52 / 16)+rem;
+$display1-line-height-xl : (52 / 16)+rem;
 
 $display2-size-xs        : (36 / 16)+rem;
 $display2-size-sm        : (36 / 16)+rem;
