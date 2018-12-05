@@ -27,46 +27,50 @@
 }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 147px;
+  max-width: 147px;
   background: $primary-1;
   color: #fff;
   transition: all 0.3s;
   z-index: 9000;
+  min-height: 100vh;
+
   & svg {
-    width: 50%;
+    width: 71px;
+    height: 44px;
     fill: #fff;
   }
+
+  .active {
+    margin-left: -250px;
+  }
+
+  .sidebar-header {
+    background: $primary-1;
+  }
+
+  ul p {
+    color: $white;
+  }
+
+  ul .org a {
+    color: $primary-1-muted;
+  }
+
+  ul li a {
+    color: $white;
+    font-size: 1.1em;
+    display: block;
+  }
+
+  ul li a:hover {
+    color: $primary-1;
+    background: #fff;
+  }
+
 }
 
-#sidebar.active {
-  margin-left: -250px;
-}
 
-#sidebar .sidebar-header {
-  background: $primary-1;
-}
-
-#sidebar ul.components {
-  padding: 20px 0;
-}
-
-#sidebar ul p {
-  color: $primary-1;
-  padding: 10px;
-}
-
-#sidebar ul li a {
-  color: $primary-3;
-  padding: 10px;
-  font-size: 1.1em;
-  display: block;
-}
-
-#sidebar ul li a:hover {
-  color: $primary-1;
-  background: #fff;
-}
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
@@ -77,47 +81,6 @@ a[aria-expanded="true"] {
 a[data-toggle="collapse"] {
   position: relative;
 }
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-ul ul a {
-  font-size: 0.9em !important;
-  padding-left: 30px !important;
-  background: #6d7fcc;
-}
-
-ul.CTAs {
-  padding: 20px;
-}
-
-ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-a.download {
-  background: #fff;
-  color: #7386D5;
-}
-
-a.article,
-a.article:hover {
-  background: #BF1F7A !important;
-  color: #fff !important;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
 
 #content {
   width: 100%;
@@ -132,9 +95,8 @@ a.article:hover {
 
 @include media-breakpoint-down(md) {
   #sidebar {
-    margin-left: -250px;
+    margin-left: -147px;
     position: fixed;
-    // top: 168px;
   }
 
   #sidebar.active {

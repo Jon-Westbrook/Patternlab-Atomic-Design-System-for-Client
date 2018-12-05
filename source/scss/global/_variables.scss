@@ -9,6 +9,8 @@ $primary-1: #372772;
 $primary-2: #fff;
 $primary-3: #787583;
 
+$primary-1-muted: #A89BC6;
+
 // Special Custom Colorss
 $secondary-1: #0038aa;
 $secondary-2: #0088b0;
@@ -78,21 +80,21 @@ $danger:        $red !default;
 $light:         $primary-2 !default;
 $dark:          $primary-3 !default;
 
-// $theme-colors: () !default;
-// // stylelint-disable-next-line scss/dollar-variable-default
-// $theme-colors: map-merge(
-//   (
-//     "primary":    $primary,
-//     "secondary":  $secondary,
-//     "success":    $success,
-//     "info":       $info,
-//     "warning":    $warning,
-//     "danger":     $danger,
-//     "light":      $light,
-//     "dark":       $dark
-//   ),
-//   $theme-colors
-// );
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
 
 // // Set a specific jump point for requesting color jumps
 // $theme-color-interval:      8% !default;
