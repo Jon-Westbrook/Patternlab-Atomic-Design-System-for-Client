@@ -4,7 +4,7 @@
 .color-box {
   position: relative;
   width: 100%;
-  border: 1px solid $primary-2;
+  border: 1px solid $gray-medium;
   border-radius: 0px;
   &:before {
     content: "";
@@ -17,39 +17,21 @@
   @include media-breakpoint-up(md) {
     border-radius: 50%;
   }
-
-  &.primary-1 {
-    background-color: $primary-1;
-  }
-  &.primary-2 {
-    background-color: $primary-2;
-  }
-  &.primary-3 {
-    background-color: $primary-3;
-  }
-  &.secondary-1 {
-  background-color: $secondary-1;
-  }
-  &.secondary-2 {
-  background-color: $secondary-2;
-  }
-  &.secondary-3 {
-  background-color: $secondary-3;
-  }
-  &.secondary-4 {
-  background-color: $secondary-4;
-  }
-  &.tertiary-1 {
-  background-color: $tertiary-1;
-  }
-  &.tertiary-2 {
-  background-color: $tertiary-2;
-  }
-  &.tertiary-3 {
-  background-color: $tertiary-3;
-  }
-  &.tertiary-4 {
-  background-color: $tertiary-4;
-  }
-
 }
+
+.bg-primary-1     {background-color: $primary-1;   }
+.bg-primary-2     {background-color: $primary-2;   }
+.bg-primary-3     {background-color: $primary-3;   }
+.bg-secondary-1   {background-color: $secondary-1; }
+.bg-secondary-2   {background-color: $secondary-2; }
+.bg-secondary-3   {background-color: $secondary-3; }
+.bg-secondary-4   {background-color: $secondary-4; }
+.bg-secondary-5   {background-color: $secondary-5; }
+.bg-tertiary-1    {background-color: $tertiary-1;  }
+.bg-tertiary-2    {background-color: $tertiary-2;  }
+.bg-gray-dark     {background-color: $gray-dark;  }
+.bg-gray          {background-color: $gray;  }
+.bg-gray-medium   {background-color: $gray-medium;  }
+.bg-gray-light    {background-color: $gray-light;  }
+.bg-gray-lightest {background-color: $gray-lightest;  }
+.bg-gray-purple   {background-color: $gray-purple;  }

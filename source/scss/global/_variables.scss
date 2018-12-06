@@ -6,38 +6,36 @@
 
 // Primary Custom Colors
 $primary-1: #372772;
-$primary-2: #4F3D93;
-$primary-3: #7A67A8;
-$primary-4: #D3CDE3;
+$primary-2: #404144;
+$primary-3: #FFF;
 
 $primary-1-muted: #A89BC6;
 
-// Special Custom Colorss
-$secondary-1: #0071CE;
-$secondary-2: #003967;
-$secondary-3: #8C2A84;
-$secondary-4: #E7417A;
+// Special Custom Colors
+$secondary-1: #4F3D93;
+$secondary-2: #7A67A8;
+$secondary-3: #D3CDE3;
+$secondary-4: #0071CE;
+$secondary-5: #003967;
 
-$tertiary-1: #f5f5f5;
-$tertiary-2: #E4E4E7;
-$tertiary-3: #4D4D4D;
-$tertiary-4: #000;
+$tertiary-1: #8C2A84;
+$tertiary-2: #E7417A;
+
 
 // Basic Colors
-$white       : #fff !default;
-$gray-border : $tertiary-3;
-$black       : #000 !default;
+$white       : $primary-3 !default;
+$black       : $primary-2 !default;
 
 
 // Bootstrap Grays
-$gray-dark:                 $tertiary-4;
-$gray:                      $tertiary-3;
-$gray-light:                $tertiary-2;
-$gray-lightest:             $tertiary-1;
 
-
-$footer-gray:               #3f3f3f;
-$footer-gray2:              #343434;
+$gray-dark:                 $primary-2;
+$gray:                      #919193;
+$gray-medium:               #C7C6C7;
+$gray-light:                #F1F2F7;
+$gray-lightest:             #F5F6FA;
+$gray-purple:               #D3CDE3;
+$gray-border :              $gray-medium !default;
 
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
@@ -161,7 +159,7 @@ $theme-colors: map-merge(
 // // Settings for the `<body>` element.
 
 // $body-bg:                   $white !default;
-// $body-color:                $gray-900 !default;
+$body-color:                $primary-2 !default;
 
 // // Links
 // //
@@ -280,7 +278,7 @@ $container-max-widths: (
 // $headings-color:              inherit !default;
 
 /*------------------------------------*\
-# CUSTOM TYPE VARIABLES
+# CUSTOM FONT VARIABLES
 \*------------------------------------*/
 
 $font-family-sans-serif:
@@ -311,90 +309,69 @@ $display1-line-height-xl : (52 / 16)+rem;
 $display2-size-xs        : (36 / 16)+rem;
 $display2-size-sm        : (36 / 16)+rem;
 $display2-size-md        : (36 / 16)+rem;
-$display2-size-lg        : (56 / 16)+rem;
-$display2-size-xl        : (56 / 16)+rem;
-$display2-line-height-xs : (40 / 16)+rem;
-$display2-line-height-sm : (40 / 16)+rem;
-$display2-line-height-md : (40 / 16)+rem;
-$display2-line-height-lg : (68 / 16)+rem;
-$display2-line-height-xl : (68 / 16)+rem;
+$display2-size-lg        : (36 / 16)+rem;
+$display2-size-xl        : (36 / 16)+rem;
+$display2-line-height-xs : (41 / 16)+rem;
+$display2-line-height-sm : (41 / 16)+rem;
+$display2-line-height-md : (41 / 16)+rem;
+$display2-line-height-lg : (41 / 16)+rem;
+$display2-line-height-xl : (41 / 16)+rem;
 
-$display3-size-xs        : (28 / 16)+rem;
-$display3-size-sm        : (36 / 16)+rem;
-$display3-size-md        : (36 / 16)+rem;
-$display3-size-lg        : (48 / 16)+rem;
-$display3-size-xl        : (48 / 16)+rem;
-$display3-line-height-xs : (36 / 16)+rem;
-$display3-line-height-sm : (36 / 16)+rem;
-$display3-line-height-md : (48 / 16)+rem;
-$display3-line-height-lg : (56 / 16)+rem;
-$display3-line-height-xl : (56 / 16)+rem;
+$display3-size-xs        : (32 / 16)+rem;
+$display3-size-sm        : (32 / 16)+rem;
+$display3-size-md        : (32 / 16)+rem;
+$display3-size-lg        : (32 / 16)+rem;
+$display3-size-xl        : (32 / 16)+rem;
+$display3-line-height-xs : (37 / 16)+rem;
+$display3-line-height-sm : (37 / 16)+rem;
+$display3-line-height-md : (37 / 16)+rem;
+$display3-line-height-lg : (37 / 16)+rem;
+$display3-line-height-xl : (37 / 16)+rem;
 
-$display4-size-xs        : (24 / 16)+rem;
-$display4-size-sm        : (24 / 16)+rem;
-$display4-size-md        : (24 / 16)+rem;
-$display4-size-lg        : (36 / 16)+rem;
-$display4-size-xl        : (36 / 16)+rem;
-$display4-line-height-xs : (32 / 16)+rem;
-$display4-line-height-sm : (32 / 16)+rem;
-$display4-line-height-md : (32 / 16)+rem;
-$display4-line-height-lg : (44 / 16)+rem;
-$display4-line-height-xl : (44 / 16)+rem;
+$display4-size-xs        : (28 / 16)+rem;
+$display4-size-sm        : (28 / 16)+rem;
+$display4-size-md        : (28 / 16)+rem;
+$display4-size-lg        : (28 / 16)+rem;
+$display4-size-xl        : (28 / 16)+rem;
+$display4-line-height-xs : (33 / 16)+rem;
+$display4-line-height-sm : (33 / 16)+rem;
+$display4-line-height-md : (33 / 16)+rem;
+$display4-line-height-lg : (33 / 16)+rem;
+$display4-line-height-xl : (33 / 16)+rem;
 
-$display5-size-xs        : (20 / 16)+rem;
-$display5-size-sm        : (20 / 16)+rem;
-$display5-size-md        : (20 / 16)+rem;
+$display5-size-xs        : (24 / 16)+rem;
+$display5-size-sm        : (24 / 16)+rem;
+$display5-size-md        : (24 / 16)+rem;
 $display5-size-lg        : (24 / 16)+rem;
-$display5-size-xl        : (28 / 16)+rem;
-$display5-line-height-xs : (28 / 16)+rem;
-$display5-line-height-sm : (28 / 16)+rem;
-$display5-line-height-md : (28 / 16)+rem;
-$display5-line-height-lg : (32 / 16)+rem;
-$display5-line-height-xl : (36 / 16)+rem;
+$display5-size-xl        : (24 / 16)+rem;
+$display5-line-height-xs : (29 / 16)+rem;
+$display5-line-height-sm : (29 / 16)+rem;
+$display5-line-height-md : (29 / 16)+rem;
+$display5-line-height-lg : (29 / 16)+rem;
+$display5-line-height-xl : (29 / 16)+rem;
 
-$display6-size-xs        : (20 / 16)+rem;
-$display6-size-sm        : (20 / 16)+rem;
-$display6-size-md        : (20 / 16)+rem;
-$display6-size-lg        : (24 / 16)+rem;
-$display6-size-xl        : (24 / 16)+rem;
-$display6-line-height-xs : (28 / 16)+rem;
-$display6-line-height-sm : (28 / 16)+rem;
-$display6-line-height-md : (28 / 16)+rem;
-$display6-line-height-lg : (32 / 16)+rem;
-$display6-line-height-xl : (32 / 16)+rem;
+$display6-size-xs        : (14 / 16)+rem;
+$display6-size-sm        : (14 / 16)+rem;
+$display6-size-md        : (14 / 16)+rem;
+$display6-size-lg        : (14 / 16)+rem;
+$display6-size-xl        : (14 / 16)+rem;
+$display6-line-height-xs : (18 / 16)+rem;
+$display6-line-height-sm : (18 / 16)+rem;
+$display6-line-height-md : (18 / 16)+rem;
+$display6-line-height-lg : (18 / 16)+rem;
+$display6-line-height-xl : (18 / 16)+rem;
 
-$display7-size-xs        : (16 / 16)+rem;
-$display7-size-sm        : (16 / 16)+rem;
-$display7-size-md        : (16 / 16)+rem;
-$display7-size-lg        : (20 / 16)+rem;
-$display7-size-xl        : (20 / 16)+rem;
-$display7-line-height-xs : (24 / 16)+rem;
-$display7-line-height-sm : (24 / 16)+rem;
-$display7-line-height-md : (24 / 16)+rem;
-$display7-line-height-lg : (28 / 16)+rem;
-$display7-line-height-xl : (28 / 16)+rem;
+$display7-size-xs        : (12 / 16)+rem;
+$display7-size-sm        : (12 / 16)+rem;
+$display7-size-md        : (12 / 16)+rem;
+$display7-size-lg        : (12 / 16)+rem;
+$display7-size-xl        : (12 / 16)+rem;
+$display7-line-height-xs : (16 / 16)+rem;
+$display7-line-height-sm : (16 / 16)+rem;
+$display7-line-height-md : (16 / 16)+rem;
+$display7-line-height-lg : (16 / 16)+rem;
+$display7-line-height-xl : (16 / 16)+rem;
 
-$display8-size-xs        : (16 / 16)+rem;
-$display8-size-sm        : (16 / 16)+rem;
-$display8-size-md        : (16 / 16)+rem;
-$display8-size-lg        : (18 / 16)+rem;
-$display8-size-xl        : (18 / 16)+rem;
-$display8-line-height-xs : (24 / 16)+rem;
-$display8-line-height-sm : (24 / 16)+rem;
-$display8-line-height-md : (24 / 16)+rem;
-$display8-line-height-lg : (27 / 16)+rem;
-$display8-line-height-xl : (27 / 16)+rem;
-
-$display9-size-xs        : (12 / 16)+rem;
-$display9-size-sm        : (12 / 16)+rem;
-$display9-size-md        : (12 / 16)+rem;
-$display9-size-lg        : (12 / 16)+rem;
-$display9-size-xl        : (12 / 16)+rem;
-$display9-line-height-xs : (16 / 16)+rem;
-$display9-line-height-sm : (16 / 16)+rem;
-$display9-line-height-md : (16 / 16)+rem;
-$display9-line-height-lg : (16 / 16)+rem;
-$display9-line-height-xl : (16 / 16)+rem;
 
 // $display1-size:               6rem !default;
 // $display2-size:               5.5rem !default;
@@ -1057,8 +1034,8 @@ $animation-delay:               150ms;
 
 // Code
 
-$code-font-size:                    70% !default;
-$code-color:                        $purple !default;
+$code-font-size:                    100% !default;
+$code-color:                        $primary-1 !default;
 
 // $kbd-padding-y:                     .2rem !default;
 // $kbd-padding-x:                     .4rem !default;

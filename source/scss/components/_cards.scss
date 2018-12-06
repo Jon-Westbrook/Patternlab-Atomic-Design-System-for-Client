@@ -22,7 +22,7 @@
 }
 
 .member-default {
-  background-color: $tertiary-3;
+  background-color: $tertiary-2;
   .letters {
     color: #BCBFC0;
   }
@@ -34,19 +34,19 @@
 
 .list-card {
   margin-bottom: 2rem;
-  border-top: 1px solid $tertiary-3;
+  border-top: 1px solid $tertiary-2;
   position: relative;
 }
 
 .list-card-module {
-  border-bottom: 1px solid $tertiary-3;
+  border-bottom: 1px solid $tertiary-2;
 }
 
 .list-card-latest-news {
   margin-bottom: 2rem;
   position: relative;
   [class*='col-'] {
-    border-top: 1px solid $tertiary-3;
+    border-top: 1px solid $tertiary-2;
   }
   .card-img-right {
     object-fit: cover;
@@ -73,7 +73,7 @@
     }
   }
   .border {
-    border-top: 1px solid $tertiary-3;
+    border-top: 1px solid $tertiary-2;
   }
 }
 
@@ -268,7 +268,7 @@
     border-top: 1px solid #eceff1;
       position: relative;
     margin-bottom: 2rem;
-    border-top: 1px solid $tertiary-3;
+    border-top: 1px solid $tertiary-2;
     position: relative;
     height:180px;
     box-shadow: none !important;
