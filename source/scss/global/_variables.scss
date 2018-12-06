@@ -5,8 +5,8 @@
 
 
 // Primary Custom Colors
-$primary-1: #372772;
-$primary-2: #404144;
+$primary-1: #404144;
+$primary-2: #372772;
 $primary-3: #FFF;
 
 
@@ -36,17 +36,16 @@ $gray-lightest:             #F5F6FA;
 $gray-purple:               #F3F1F9;
 $gray-border :              $gray-medium !default;
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$blue:    $secondary-4 !default;
+$purple:  $primary-1 !default;
 $green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
-$gray:    #f8f9fa !default;
+$yellow:  #ffc107 !default;
+$red:     #D0021B !default;
+
+// $orange:  #fd7e14 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+// $gray:    #f8f9fa !default;
 
 // $colors: () !default;
 // // stylelint-disable-next-line scss/dollar-variable-default
@@ -72,11 +71,11 @@ $gray:    #f8f9fa !default;
 $primary:       $primary-1 !default;
 $secondary:     $primary-2 !default;
 $success:       $green !default;
-$info:          $yellow !default;
-$warning:       $red !default;
-$danger:        $red !default;
-$light:         $primary-2 !default;
-$dark:          $primary-3 !default;
+$info:          $secondary-4 !default;
+$warning:       $yellow !default;
+$danger:        $tertiary-2 !default;
+$light:         $primary-3 !default;
+$dark:          $primary-1 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -158,7 +157,7 @@ $theme-colors: map-merge(
 // // Settings for the `<body>` element.
 
 // $body-bg:                   $white !default;
-$body-color:                $primary-2 !default;
+$body-color:                $primary-1 !default;
 
 // // Links
 // //

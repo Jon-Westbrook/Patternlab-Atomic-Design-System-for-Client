@@ -1,3 +1,40 @@
+// Needs Converting to Sass Maps
+
+//                Background-Color   Classes
+.bg-primary-1     {background-color: $primary-1;     }
+.bg-primary-2     {background-color: $primary-2;     }
+.bg-primary-3     {background-color: $primary-3;     }
+.bg-secondary-1   {background-color: $secondary-1;   }
+.bg-secondary-2   {background-color: $secondary-2;   }
+.bg-secondary-3   {background-color: $secondary-3;   }
+.bg-secondary-4   {background-color: $secondary-4;   }
+.bg-secondary-5   {background-color: $secondary-5;   }
+.bg-tertiary-1    {background-color: $tertiary-1;    }
+.bg-tertiary-2    {background-color: $tertiary-2;    }
+.bg-gray-dark     {background-color: $gray-dark;     }
+.bg-gray          {background-color: $gray;          }
+.bg-gray-medium   {background-color: $gray-medium;   }
+.bg-gray-light    {background-color: $gray-light;    }
+.bg-gray-lightest {background-color: $gray-lightest; }
+.bg-gray-purple   {background-color: $gray-purple;   }
+
+//                Color              Classes
+.primary-1        {color:            $primary-1;     }
+.primary-2        {color:            $primary-2;     }
+.primary-3        {color:            $primary-3;     }
+.secondary-1      {color:            $secondary-1;   }
+.secondary-2      {color:            $secondary-2;   }
+.secondary-3      {color:            $secondary-3;   }
+.secondary-4      {color:            $secondary-4;   }
+.secondary-5      {color:            $secondary-5;   }
+.tertiary-1       {color:            $tertiary-1;    }
+.tertiary-2       {color:            $tertiary-2;    }
+.gray-dark        {color:            $gray-dark;     }
+.gray             {color:            $gray;          }
+.gray-medium      {color:            $gray-medium;   }
+.gray-light       {color:            $gray-light;    }
+.gray-lightest    {color:            $gray-lightest; }
+.gray-purple      {color:            $gray-purple;   }
 
 
 // Color Examples under Elements > Brand Colors
@@ -18,20 +55,3 @@
     border-radius: 50%;
   }
 }
-
-.bg-primary-1     {background-color: $primary-1;   }
-.bg-primary-2     {background-color: $primary-2;   }
-.bg-primary-3     {background-color: $primary-3;   }
-.bg-secondary-1   {background-color: $secondary-1; }
-.bg-secondary-2   {background-color: $secondary-2; }
-.bg-secondary-3   {background-color: $secondary-3; }
-.bg-secondary-4   {background-color: $secondary-4; }
-.bg-secondary-5   {background-color: $secondary-5; }
-.bg-tertiary-1    {background-color: $tertiary-1;  }
-.bg-tertiary-2    {background-color: $tertiary-2;  }
-.bg-gray-dark     {background-color: $gray-dark;  }
-.bg-gray          {background-color: $gray;  }
-.bg-gray-medium   {background-color: $gray-medium;  }
-.bg-gray-light    {background-color: $gray-light;  }
-.bg-gray-lightest {background-color: $gray-lightest;  }
-.bg-gray-purple   {background-color: $gray-purple;  }
