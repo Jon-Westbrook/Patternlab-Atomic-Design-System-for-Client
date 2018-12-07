@@ -90,6 +90,7 @@ a[data-toggle="collapse"] {
 
 #content {
   width: 100%;
+  background-color: $gray-lightest;
   min-height: 100vh;
   transition: all 0.3s;
   z-index: 1000;
