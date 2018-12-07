@@ -1,7 +1,11 @@
 
 .article {
-  border-radius: 6px;
+
 	background: $white;
   box-shadow: -3px 3px 10px 8px #E7E8ED;
   min-height: 80vh;
+  border-radius: 6px;
+  @include media-breakpoint-down(md) {
+    border-radius: 0px;
+  }
 }
