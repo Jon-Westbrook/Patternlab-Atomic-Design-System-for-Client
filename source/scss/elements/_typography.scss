@@ -304,9 +304,33 @@ h6, .h6 {
 }
 
 p {
-  font-size: $display6-size-xs;
+  font-size: (16 / 16)+rem;
+  line-height: (22 / 16)+rem;
   font-weight: 400;
-  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: (16 / 16)+rem;
+    line-height: (22 / 16)+rem;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: (16 / 16)+rem;
+    line-height: (22 / 16)+rem;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: (16 / 16)+rem;
+    line-height: (22 / 16)+rem;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: (16 / 16)+rem;
+    line-height: (22 / 16)+rem;
+  }
+}
+
+code {
+  font-size: $display6-size-xs;
+  line-height: $display6-line-height-xs;
+  color: $primary-2;
+  font-weight: 500;
+  text-transform: lowercase;
   @include media-breakpoint-only(sm) {
     font-size: $display6-size-sm;
     line-height: $display6-line-height-sm;
@@ -324,4 +348,31 @@ p {
     line-height: $display6-line-height-xl;
   }
 }
+
+label {
+  font-size: (11 / 16)+rem;
+  line-height: (15 / 16)+rem;
+  color: $primary-2;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include media-breakpoint-only(sm) {
+    font-size: (11 / 16)+rem;
+    line-height: (15 / 16)+rem;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: (11 / 16)+rem;
+    line-height: (15 / 16)+rem;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: (11 / 16)+rem;
+    line-height: (15 / 16)+rem;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: (11 / 16)+rem;
+    line-height: (15 / 16)+rem;
+  }
+}
+
+
 
