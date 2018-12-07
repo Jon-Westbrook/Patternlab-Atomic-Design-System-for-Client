@@ -76,19 +76,25 @@
 
   ul li:hover {
     color: $white;
-    background: $secondary-2;
+    border-left: 6px solid $secondary-2;
     text-decoration: none;
+  }
+
+  ul li {
+    &.active-link {
+      background-color: $secondary-2;
+    }
   }
 
 }
 
 
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-  color: #fff;
-  background: #6d7fcc;
-}
+// #sidebar ul li.active>a,
+// a[aria-expanded="true"] {
+//   color: #fff;
+//   background: #6d7fcc;
+// }
 
 a[data-toggle="collapse"] {
   position: relative;

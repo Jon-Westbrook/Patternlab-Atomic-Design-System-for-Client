@@ -5,6 +5,9 @@
     "parent2": "CardX Basics",
     "currentPage": "Payments & Pricing"
   },
+  "article": {
+    "title": "What are CardX's fees?"
+  },
   "sidenav": {
     "mainLinks": [
       {"navLink": "Who We Are","subLinks": [{ "name": "Our Mission", "route": "routerLink=\"\/mission\"" }, { "name": "Our Leadership", "route": "routerLink=\"\/leadership\"" }, { "name": "Foundation", "route": "routerLink=\"\/foundation\"" }, { "name": "Community Development", "route": "routerLink=\"\/community-development\""}, { "name": "Volunteer", "route": "routerLink=\"\/volunteer\""},  { "name": "Awards and Recognition", "route": "routerLink=\"\/awards\""} ] }
