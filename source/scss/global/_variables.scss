@@ -105,7 +105,7 @@ $theme-colors: map-merge(
 
 // $enable-caret:              true !default;
 // $enable-rounded:            true !default;
-$enable-shadows:            true !default;
+$enable-shadows:            false !default;
 // $enable-gradients:          false !default;
 // $enable-transitions:        true !default;
 // $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
@@ -437,8 +437,8 @@ $display7-line-height-xl : (16 / 16)+rem;
 // //
 // // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-// $input-btn-padding-y:         .375rem !default;
-// $input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         1rem !default;
 // $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       4px !default;
@@ -465,8 +465,8 @@ $animation-delay:               150ms;
 // //
 // // For each of Bootstrap's buttons, define text, background, and border color.
 
-// $btn-padding-y:               $input-btn-padding-y !default;
-// $btn-padding-x:               $input-btn-padding-x !default;
+$btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-x:               $input-btn-padding-x !default;
 // $btn-line-height:             $input-btn-line-height !default;
 
 // $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
@@ -477,9 +477,9 @@ $animation-delay:               150ms;
 // $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 // $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
-// $btn-border-width:            $input-btn-border-width !default;
+$btn-border-width:            .125rem !default;
 
-// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             bold !default;
 // $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 // $btn-focus-width:             $input-btn-focus-width !default;
 // $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
@@ -491,7 +491,7 @@ $animation-delay:               150ms;
 // $btn-block-spacing-y:         .5rem !default;
 
 // // Allows for customizing button radius independently from global border radius
-// $btn-border-radius:           $border-radius !default;
+$btn-border-radius:           19px !default;
 // $btn-border-radius-lg:        $border-radius-lg !default;
 // $btn-border-radius-sm:        $border-radius-sm !default;
 
