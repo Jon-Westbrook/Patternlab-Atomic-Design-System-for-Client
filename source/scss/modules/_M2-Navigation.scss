@@ -62,15 +62,21 @@
     color: $secondary-2;
   }
 
+  .org:hover {
+    color: $primary-3;
+  }
+
   ul li a {
     color: $white;
-    font-size: 1.1em;
+    font-size: .875rem;
+    font-weight: 500;
+    text-decoration: none;
     display: block;
   }
 
-  ul li a:hover {
+  ul li:hover {
     color: $white;
-    background: $primary-3;
+    background: $secondary-2;
     text-decoration: none;
   }
 

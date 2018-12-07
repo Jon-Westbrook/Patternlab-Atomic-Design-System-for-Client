@@ -27,13 +27,16 @@ $black       : $primary-2 !default;
 
 
 // Custom Grays
-$gray-dark:                 $primary-2;
+$gray-dark:                 $primary-1;
+$gray-medium:               #747476;
 $gray:                      #919193;
-$gray-medium:               #C7C6C7;
+$gray-border:               #C7C6C7;
 $gray-light:                #F1F2F7;
 $gray-lightest:             #F5F6FA;
 $gray-purple:               #F3F1F9;
-$gray-border :              $gray-medium !default;
+
+
+
 
 // Semantic Colors
 $blue:    $secondary-4 !default;

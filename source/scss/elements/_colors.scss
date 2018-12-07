@@ -30,14 +30,19 @@
 .tertiary-1       {color:            $tertiary-1;    }
 .tertiary-2       {color:            $tertiary-2;    }
 .gray-dark        {color:            $gray-dark;     }
-.gray             {color:            $gray;          }
 .gray-medium      {color:            $gray-medium;   }
+.gray             {color:            $gray;          }
+.gray-border      {color:            $gray-border;   }
 .gray-light       {color:            $gray-light;    }
 .gray-lightest    {color:            $gray-lightest; }
 .gray-purple      {color:            $gray-purple;   }
 
 
 // Color Examples under Elements > Brand Colors
+.color-labels {
+  min-height: 66px;
+}
+
 .color-box {
   position: relative;
   width: 100%;
