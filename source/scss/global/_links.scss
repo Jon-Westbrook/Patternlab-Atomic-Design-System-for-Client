@@ -2,6 +2,8 @@
 a {
   transition: all 0.2s ease-in-out;
   font-weight: 700;
+  color: $secondary-4;
+  text-decoration: none;
   &:hover {
     color: $secondary-5;
 

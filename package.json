@@ -24,7 +24,7 @@
     "serve": "browser-sync start --server 'public' --no-notify --files 'public/patterns/**/*, public/css/*.css, public/js/*.js'",
     "prebuild": "npm run clean",
     "build": "npm run build:css & npm run pl:build",
-    "postbuild": "npm run serve & npm run watch & imagemin"
+    "postbuild": "npm run watch & imagemin"
   },
   "repository": {
     "type": "git",
