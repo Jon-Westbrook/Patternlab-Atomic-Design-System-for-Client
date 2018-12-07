@@ -5,13 +5,8 @@
   "splash": "../../images/ICSC_web-05@3x.png",
   "header": {
     "mainLinks": [
-      {"navLink": "Who We Are","subLinks": [{ "name": "Our Mission", "route": "routerLink=\"\/mission\"" }, { "name": "Our Leadership", "route": "routerLink=\"\/leadership\"" }, { "name": "Foundation", "route": "routerLink=\"\/foundation\"" }, { "name": "Community Development", "route": "routerLink=\"\/community-development\""}, { "name": "Volunteer", "route": "routerLink=\"\/volunteer\""},  { "name": "Awards and Recognition", "route": "routerLink=\"\/awards\""} ] },
-      {"navLink": "News &amp; Views", "subLinks": [{ "name": "TEST LINKS", "route": "routerLink=\"\/icsc-exchange\"" }, { "name": "ICSC Exchange", "route": "routerLink=\"\/icsc-exchange\"" }, { "name": "Newsstand", "route": "routerLink=\"\/news\"" }, { "name": "Public Policy", "route": "routerLink=\"\/public-policy\"" }, { "name": "SCT", "route": "routerLink=\"\/sct\"" }, { "name": "Research", "route": "routerLink=\"\/research\"" } ] },
-      {"navLink": "Attend &amp; Learn", "subLinks": [{ "name": "Events", "route": "routerLink=\"\/events\"" }, { "name": "Professional Development", "route": "routerLink=\"\/professional-dev\""} ] },
-      {"navLink": "Find &amp; Connect", "subLinks": [{ "name": "Find Members", "route": "routerLink=\"\/find-members\"" }, { "name": "Find Outlets", "route": "routerLink=\"\/find-outlets\"" }, { "name": "Find Jobs", "route": "routerLink=\"\/find-jobs\"" } ] },
-      {"navLink": "Join", "subLinks": [{ "name": "Become a Member", "route": "routerLink=\"\/join\"" } ] }
-    ],
-    "userName": "Willa Cather"
+      {"navLink": "Who We Are","subLinks": [{ "name": "Our Mission", "route": "routerLink=\"\/mission\"" }, { "name": "Our Leadership", "route": "routerLink=\"\/leadership\"" }, { "name": "Foundation", "route": "routerLink=\"\/foundation\"" }, { "name": "Community Development", "route": "routerLink=\"\/community-development\""}, { "name": "Volunteer", "route": "routerLink=\"\/volunteer\""},  { "name": "Awards and Recognition", "route": "routerLink=\"\/awards\""} ] }
+    ]
   },
   "shortHero": {
       "heroTitle": "Sed posuere consectetur est at lobortis",
@@ -25,51 +20,9 @@
   },
   "cards": {
     "generalCardCat": "SCT",
-    "generalCardPostAge": "1 week ago",
-    "generalCardTitle": "ICSC Meets with Key DC Influencers on Tax Reform",
-    "generalCardImg": "../../images/article-thumb-FPO@2x.png",
-    "generalThumb": "Article Thumb",
-    "generalLongDesc": "Curabitur dignissim scelerisque ligula vitae pellentesque. In mollis neque am faucibus ante nec nulla egestas sagir. Mauris nec purus eget eros pretium viverra eu et libero.",
-    "generalEyebrow": "Wall Street Journal",
-    "generalDesc": "1 week ago",
-    "downloadIcon": "../../images/download-icon.svg",
-    "shareImg": "../../images/icon-share.svg",
-    "saveImg": "../../images/icon-save.svg",
-    "eventTitle": "New England Conference & Deal Making",
-    "eventDate": "December 5-6",
-    "eventLocale": "Javits Center",
-    "eventCity": "New York, NY",
-    "eventIcon": "../../images/event-icon.svg",
-    "eventURL": "www.icsc.org/events-and-programs/details/centerbuild.../brochure",
-    "memberCardImg": "../../images/90.jpg",
-    "memberName": "Anthony Pennington-Cross",
-    "memberFirstInit": "W",
-    "memberLastInit": "C",
-    "memberTitle": "Major Marketing Affecianada",
-    "memberCompany": "Marquette University Center for Real Estate",
-    "memberLocale": "Milwaukee, United States",
-    "memberCountry": "United States",
-    "pubCardImg": "../../images/book@2x.jpg",
-    "pubTitle": "Tax Increment Finance Best Practices Reference Guide, Second Edition",
-    "pubCat": "eBook, Print Edition",
-    "moduleTitle1" : "Lorem ipsum dolor sit amet",
-    "moduleTitle2" : "Lorem ipsum dolor sit amet",
-    "moduleTitle3" : "New members",
-    "optionalLabel": "Free for Members"
   },
   "results": {
     "resultTitle": "210",
-    "resultText": "results found in",
-    "current": "Events",
-    "scope2": "Members",
-    "scope3": "Articles",
-    "scope4": "Publications",
-    "scope5": "Everything",
-    "heroCat": "Events",
-    "placeholder": "SEARCH",
-    "pageRange": "1-12",
-    "resultCount":  "472",
-    "filterCount": "16"
   },
   "members-promo": {
     "heroTitle": "Members get the VIP treatment.",

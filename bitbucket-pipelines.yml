@@ -4,6 +4,8 @@
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
 
+
+image: node:10.7.0
 pipelines:
   default:
     - step:
@@ -12,4 +14,6 @@ pipelines:
         name: Deploy to Heroku
         deployment: production
         script:
+          - npm install
+          - npm run build -s
           - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD
