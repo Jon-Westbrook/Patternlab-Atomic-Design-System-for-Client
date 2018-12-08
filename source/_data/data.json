@@ -6,7 +6,8 @@
     "currentPage": "Payments & Pricing"
   },
   "article": {
-    "title": "What are CardX's fees?"
+    "title": "What are CardX's fees?",
+    "placeholder": "Search keywords, topics, etc."
   },
   "sidenav": {
     "mainLinks": [
