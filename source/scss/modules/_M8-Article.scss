@@ -4,7 +4,13 @@
   box-shadow: -3px 3px 10px 8px #E7E8ED;
   min-height: 80vh;
   border-radius: 6px;
+
   @include media-breakpoint-down(md) {
     border-radius: 0px;
+  }
+
+  .anchor-links {
+    background: $secondary-3;
+    border-left: 6px solid $primary-2;
   }
 }
