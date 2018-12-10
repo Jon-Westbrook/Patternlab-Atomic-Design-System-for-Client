@@ -45,6 +45,7 @@
     "autoprefixer": "^9.3.1",
     "browser-sync": "^2.26.3",
     "eslint": "^5.9.0",
+    "eslint-plugin-prettier": "^3.0.0",
     "imagemin-cli": "^4.0.0",
     "node-sass": "^4.10.0",
     "npm-check": "^5.9.0",
