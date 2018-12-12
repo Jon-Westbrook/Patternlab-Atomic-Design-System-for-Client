@@ -330,7 +330,6 @@ label, .label {
 small, .small {
   font-size: (12 / 16)+rem;
   line-height: (16 / 16)+rem;
-  color: $gray-medium;
   font-weight: 400;
   @include media-breakpoint-only(sm) {
     font-size: (12 / 16)+rem;
@@ -351,6 +350,18 @@ small, .small {
   a {
     font-weight: 400;
   }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
 }
 
 

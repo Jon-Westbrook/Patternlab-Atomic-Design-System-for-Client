@@ -9,8 +9,12 @@
     border-radius: 0px;
   }
 
-  .anchor-links {
+  .jump-nav {
     background: $secondary-3;
     border-left: 6px solid $primary-2;
+    .title {
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
   }
 }

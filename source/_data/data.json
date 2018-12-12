@@ -9,11 +9,55 @@
     "title": "What are CardX's fees?",
     "placeholder": "Search keywords, topics, etc..."
   },
-  "sidenav": {
-    "mainLinks": [
-      {"navLink": "Who We Are","subLinks": [{ "name": "Our Mission", "route": "routerLink=\"\/mission\"" }, { "name": "Our Leadership", "route": "routerLink=\"\/leadership\"" }, { "name": "Foundation", "route": "routerLink=\"\/foundation\"" }, { "name": "Community Development", "route": "routerLink=\"\/community-development\""}, { "name": "Volunteer", "route": "routerLink=\"\/volunteer\""},  { "name": "Awards and Recognition", "route": "routerLink=\"\/awards\""} ] }
+  "jumpNav": {
+    "title": "Jump to Section",
+    "links": [
+      {
+      "copy": "Section Headline 1",
+      "linkID": "section-1"
+      },
+      {
+      "copy": "Section Headline 2",
+      "linkID": "section-2"
+      },
+      {
+      "copy": "Section Headline 3",
+      "linkID": "section-3"
+      }
     ]
   },
+  "header":
+    {
+      "mainLinks": [
+      {
+        "navLink": "Who We Are",
+        "subLinks": [
+        {
+          "name": "Our Mission",
+          "route": "routerLink=\"\/mission\""
+        },
+        {
+          "name": "Our Leadership",
+          "route": "routerLink=\"\/leadership\""
+        },
+        {
+          "name": "Foundation",
+          "route": "routerLink=\"\/foundation\""
+        },
+        {
+          "name": "Community Development",
+          "route": "routerLink=\"\/community-development\""
+        },
+        {
+          "name": "Volunteer",
+          "route": "routerLink=\"\/volunteer\""
+        },
+        {
+          "name": "Awards and Recognition",
+          "route": "routerLink=\"\/awards\""
+        }]
+      }]
+    },
   "arrayOfObjects": [
     {
       "title"   : "Tax reform",
