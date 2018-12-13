@@ -72,15 +72,28 @@
     font-weight: 500;
     text-decoration: none;
     display: block;
+    .copy {
+      max-width: 99px;
+    }
+    .hover {
+      display: none;
+    }
   }
 
   ul li:hover {
     color: $white;
     border-left: 6px solid $secondary-2;
     text-decoration: none;
+    .default {
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
   }
 
   ul li {
+    min-height: 50px;
     &.active-link {
       background-color: $secondary-2;
     }

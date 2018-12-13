@@ -16,39 +16,21 @@
   </ul>
 
   <ul class="list-unstyled mt-5">
-    <li class="active-link">
-      <a href="#" class="ml-4 py-3 "><img src="../../images/icons/nav/Home_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Home</a>
-    </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Invoice_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Sales</a>
-    </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Customer_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Customers</a>
-    </li>
-  </ul>
 
-  <ul class="list-unstyled mt-5">
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Home_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Home</a>
+    {{# mainNav.mainLinks }}
+    <li class="mt-2 {{ activeClass }}" >
+      <a href="{{ URL }}" class="ml-4 py-3">
+        <div class="d-inline-block align-middle">
+          <img src="../../images/icons/nav/{{ icon }}" alt="Homepage Icon" class="sidebar-icon mr-2 default">
+          <img src="../../images/icons/nav/{{ iconHover }}" alt="Homepage Icon" class="sidebar-icon mr-2 hover">
+        </div>
+        <div class="d-inline-block align-middle copy">
+          {{ copy }}
+        </div>
+      </a>
     </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Invoice_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Sales</a>
-    </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Customer_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Customers</a>
-    </li>
-  </ul>
+    {{/ mainNav.mainLinks }}
 
-  <ul class="list-unstyled mt-5">
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Home_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Home</a>
-    </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Invoice_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Sales</a>
-    </li>
-    <li>
-      <a href="#" class="ml-4 py-3"><img src="../../images/icons/nav/Customer_icn.svg" alt="Homepage Icon" class="sidebar-icon mr-2">Customers</a>
-    </li>
   </ul>
 
 </nav>

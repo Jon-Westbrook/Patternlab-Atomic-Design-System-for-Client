@@ -9,6 +9,47 @@
     "title": "What are CardX's fees?",
     "placeholder": "Search keywords, topics, etc..."
   },
+  "mainNav": {
+    "mainLinks": [
+      {
+      "activeClass": "active-link",
+      "icon": "Home_icn.svg",
+      "iconHover": "Home_icn_active.svg",
+      "copy": "Home",
+      "URL": "#"
+      },
+      {
+      "icon": "Virtual_terminal_icn.svg",
+      "iconHover": "Virtual_terminal_icn_active.svg",
+      "copy": "Virtual Terminal",
+      "URL": "#"
+      },
+      {
+      "icon": "Sales_icn.svg",
+      "iconHover": "Sales_icn_active.svg",
+      "copy": "Reporting",
+      "URL": "#"
+      },
+      {
+      "icon": "Customer_icn.svg",
+      "iconHover": "Customer_icn_active.svg",
+      "copy": "Customers",
+      "URL": "#"
+      },
+      {
+      "icon": "Invoice_icn.svg",
+      "iconHover": "Invoice_icn_active.svg",
+      "copy": "Invoices",
+      "URL": "#"
+      },
+      {
+      "icon": "Support_icn.svg",
+      "iconHover": "Support_icn_active.svg",
+      "copy": "Support",
+      "URL": "#"
+      }
+    ]
+  },
   "jumpNav": {
     "title": "Jump to Section",
     "links": [

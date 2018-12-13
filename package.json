@@ -19,12 +19,12 @@
     "watch:css": "watch 'npm run build:css' source/scss -d -u",
     "watch:js": "watch 'npm run pl:build' source/js",
     "watch:ui-kit": "watch 'npm run pl:build' source/uikit-workshop/dist",
-    "watch:patterns": "watch 'npm run pl:build' source/_patterns",
+    "watch:patterns": "watch 'npm run pl:build -s' source/_patterns",
     "watch": "npm run watch:patterns & npm run watch:css & npm run watch:js & npm run watch:ui-kit",
     "serve": "browser-sync start --server 'public' --no-notify --files 'public/patterns/**/*, public/css/*.css, public/js/*.js'",
     "prebuild": "npm run clean",
-    "build": "npm run build:css & npm run pl:build",
-    "postbuild": "npm run watch & imagemin"
+    "build": "npm run build:css -s & npm run pl:build -s",
+    "postbuild": "npm run serve & npm run watch"
   },
   "repository": {
     "type": "git",

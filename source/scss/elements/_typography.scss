@@ -147,7 +147,7 @@
 h1, .h1 {
   font-size: $display2-size-xs;
   line-height: $display2-line-height-xs;
-  font-weight: 500;
+  font-weight: 400;
   @include media-breakpoint-only(sm) {
     font-size: $display2-size-sm;
     line-height: $display2-line-height-sm;
