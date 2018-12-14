@@ -133,6 +133,9 @@
     &.active-link {
       background-color: $secondary-2;
     }
+    &.submenu {
+      color: $secondary-1;
+    }
   }
 
   .profile {
