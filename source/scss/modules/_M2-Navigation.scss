@@ -23,6 +23,7 @@
 .hamburger-menu {
   height: 50px;
   button {
+    cursor: pointer;
     background-color: $primary-2;
     border: none;
     &:active {
@@ -30,6 +31,7 @@
     }
   }
 }
+
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -49,7 +51,14 @@
   transition: all 0.3s;
   z-index: 9000;
   min-height: 100vh;
+  position: relative;
 
+  #dismiss {
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    right: 18px;
+  }
 
   .active {
     margin-left: -250px;
@@ -73,12 +82,10 @@
     color: $white;
   }
 
-  ul .org a {
+  .org {
     color: $secondary-2;
-  }
-
-  .org:hover {
-    color: $primary-3;
+    font-size: .875rem;
+    font-weight: 500;
   }
 
   ul li a {
@@ -95,9 +102,10 @@
     }
   }
 
-  ul li:hover {
+  ul li:hover, ul li:focus {
     color: $white;
     text-decoration: none;
+
     .default {
       display: none;
     }
@@ -113,17 +121,30 @@
       width: 6px;
       background-color: $secondary-2;
       z-index: 999;
+      transition: all .9s;
     }
   }
 
   ul li {
     position: relative;
-    min-height: 50px;
-    margin-top: 10px;
+    &.main-link {
+      height: 50px;
+    }
     &.active-link {
       background-color: $secondary-2;
     }
   }
+
+  .profile {
+    li {
+      &:hover, *:focus {
+        &:before {
+          width: 0px;
+        }
+      }
+    }
+  }
+
 }
 
 
