@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="17px" viewBox="0 0 27 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Responsive-Nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Tablet-" transform="translate(-31.000000, -32.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+            <g id="hamburger-nav" transform="translate(32.000000, 32.000000)">
+                <path d="M0.431034483,1 L25,1" id="Line"></path>
+                <path d="M0.436472926,8.5 L17.458917,8.5" id="Line"></path>
+                <path d="M0.431034483,16 L25,16" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>
