@@ -7,7 +7,24 @@
   },
   "article": {
     "title": "What are CardX's fees?",
-    "placeholder": "Search keywords, topics, etc..."
+    "placeholder": "Search keywords, topics, etc...",
+    "sections": [
+      {
+        "title": "Section 1 Headline",
+        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
+      },
+      {
+        "title": "Section 2 Headline",
+        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
+      },
+      {
+        "title": "Section 3 Headline",
+        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
+      }
+    ]
   },
   "mainNav": {
     "mainLinks": [

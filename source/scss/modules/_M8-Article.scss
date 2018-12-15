@@ -10,11 +10,17 @@
   }
 
   .jump-nav {
-    background: $secondary-3;
-    border-left: 6px solid $primary-2;
     .title {
+      color: $primary-2;
+      border-left: 6px solid $primary-2;
       text-transform: uppercase;
       letter-spacing: .5px;
+    }
+    .section {
+      border-bottom: 2px solid $primary-1;
+    }
+    .rule {
+      height: 2px;
     }
   }
 }

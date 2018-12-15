@@ -1,10 +1,14 @@
 {{> Modules-MX-Grid-Tester }}
 
 <div class="container article mt-3">
+
   <div class="row">
     <div class="col-md-8 offset-md-1 mt-9">
       <h2>{{ article.title }}</h2>
     </div>
+  </div>
+
+  <div class="row jump-nav">
 
     <div class="col-md-10 d-lg-none offset-md-1 mt-5">
         <div class="dropdown d-lg-none mt-md-5">
@@ -18,25 +22,29 @@
         </div>
     </div>
 
-    <div class="col-md-3 d-none d-lg-block offset-md-1 mt-8">
-
-      <br><br>
-
-      <!-- Jump Nav -->
-      <div class="jump-nav py-7">
-        <div class="row">
-          <div class="col-md-5">
-            <p class="small primary-2 medium my-0 title">{{ jumpNav.title }}</p>
-          </div>
-          {{# jumpNav.links }}
-          <div class="col-md-2">
-            <a href="#{{ linkID }}">{{ copy }}</a>
-          </div>
-          {{/ jumpNav.links }}
-        </div>
-      </div>
-
+    <!-- Jump Nav -->
+    <div class="col-md-3 d-none d-lg-block offset-md-1 mt-8 py-3 bg-secondary-3 text-right py-md-5 title">
+      <p class="small my-0 secondary-1 bold">{{ jumpNav.title }}</p>
+    </div>
+    <div class="col-md-7 d-none d-lg-block mt-8 py-3 bg-secondary-3 text-right py-md-5">
+      {{# jumpNav.links }}
+        <a href="#{{ linkID }}">{{ copy }}</a>
+      {{/ jumpNav.links }}
     </div>
 
+    {{# article.sections }}
+      <div class="col-md-3 offset-md-1 my-8">
+        <h3>{{ title }}</h3>
+      </div>
+      <div class="col-md-7 mt-8 pr-0">
+        <img src="{{ imgSrc }}" class="w-100 h-50">
+        <p class="my-7">{{ copy }}</p>
+      </div>
+      <div class="col-md-10 offset-md-1 rule bg-secondary-1">
+        &nbsp;
+      </div>
+    {{/ article.sections }}
+
   </div>
+
 </div>
