@@ -21,6 +21,9 @@
     }
     .rule {
       height: 2px;
+      &:last-of-type {
+        display: none;
+      }
     }
   }
 }
