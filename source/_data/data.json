@@ -142,5 +142,12 @@
       "imgSrc"  : "../../images/artwork-3-efairness.svg",
       "reverse"  : true
     }
-  ]
+  ],
+  "chat": {
+    "bubble": "../../images/icons/nav/chat-bubble.svg",
+    "title": "Can’t find what you’re looking for?",
+    "wait-copy": "Current wait time is",
+    "wait-time": "2 Minutes",
+    "button-copy": "Start Chat"
+  }
 }
