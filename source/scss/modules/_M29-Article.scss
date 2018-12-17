@@ -19,12 +19,14 @@
     .section {
       border-bottom: 2px solid $primary-1;
     }
-    .rule {
-      height: 2px;
-      background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
-      // &:last-of-type {
-      //   display: none;
-      // }
+    .rule-container {
+      .rule {
+        height: 2px;
+        background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
+      }
+      &:last-of-type {
+        display: none;
+      }
     }
     .small-rule {
       height: 1px;

@@ -39,6 +39,7 @@
         <h3 class="secondary-2">{{ title }}</h3>
       </div>
 
+      <!-- Article Image -->
       <div class="col-md-7 mt-8 pr-md-0">
         <img src="{{ imgSrc }}" class="article-img-cont image w-100">
       </div>
@@ -63,10 +64,13 @@
 
       </div>
 
+      <!-- Article Copy -->
       <div class="col-md-7 mt-7 mb-8 pr-0">
         <p class="mb-0">{{ copy }}</p>
       </div>
-      <div class="col-md-10 offset-md-1 px-md-0">
+
+      <!-- Rule -->
+      <div class="col-md-10 offset-md-1 px-md-0 rule-container">
         <div class="w-100 rule">&nbsp;</div>
       </div>
     {{/ article.sections }}
@@ -75,4 +79,3 @@
 
 </div>
 
-{{> Modules-MX-Grid-Tester }}
