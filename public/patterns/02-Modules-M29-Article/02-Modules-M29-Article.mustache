@@ -2,7 +2,7 @@
 <div class="container article mt-3">
 
   <div class="row">
-    <div class="col-md-8 offset-md-1 mt-9 pl-0">
+    <div class="col-md-8 offset-md-1 mt-9 pl-md-0">
       <h2>{{ article.title }}</h2>
     </div>
   </div>
@@ -10,7 +10,7 @@
   <div class="row jump-nav">
 
     <!-- Mobile Jump Nav -->
-    <div class="col-md-10 d-lg-none offset-md-1 mt-5">
+    <div class="col-md-10 d-lg-none offset-md-1 mt-5 pl-md-0">
         <div class="dropdown d-lg-none mt-md-5">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Jump to Section
@@ -35,15 +35,32 @@
 
     <!-- Article Body -->
     {{# article.sections }}
-      <div class="col-md-3 offset-md-1 mt-8 pl-0">
+      <div class="col-md-3 offset-md-1 mt-8 pl-md-0 article-section">
         <h3 class="secondary-2">{{ title }}</h3>
       </div>
-      <div class="col-md-7 mt-8 pr-0">
+
+      <div class="col-md-7 mt-8 pr-md-0">
         <img src="{{ imgSrc }}" class="article-img-cont image w-100">
       </div>
-      <div class="col-md-3 offset-md-1 mt-7">
-        <p class="small">{{ quote }}</p>
+
+      <div class="col-md-3 offset-md-1 mt-7 pl-md-0">
+        <!-- If Support Tip -->
+        {{# support-tip }}
+          <img src="{{ cog }}" alt="Cog" >
+          <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
+          <p class="small d-inline-block w-75">{{ tip }}</p>
+        {{/ support-tip }}
+
+        <!-- If Pull Quote -->
+        {{# pull-quote }}
+          <img src="{{ lsquo }}" alt="quote" >
+          <p class="label bold tertiary-2 w-75 my-3">{{ quote }}</p>
+          <div class="small-rule w-75">&nbsp;</div>
+          <p class="small mt-3 mb-0">{{ author }},</p>
+          <p class="small mb-8">{{ company }}</p>
+        {{/ pull-quote }}
       </div>
+
       <div class="col-md-7 mt-7 mb-8 pr-0">
         <p class="mb-0">{{ copy }}</p>
       </div>

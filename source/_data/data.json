@@ -13,17 +13,23 @@
       {
         "title": "Section 1 Headline",
         "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
+        "support-tip": {
+          "cog": "../../images/icons/nav/cog.svg",
+          "tip-title": "Support Tip",
+          "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin non."
+        }
       },
       {
         "title": "Section 2 Headline",
         "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
-      },
-      {
-        "title": "Section 3 Headline",
-        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat."
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
+        "pull-quote": {
+          "lsquo": "../../images/icons/nav/lsquo.svg",
+          "quote": "Lorem ipsum dolor sit amet elit. Donec luctus id velin non.",
+          "author": "John Doe.",
+          "company": "CEO of Company"
+        }
       }
     ]
   },
