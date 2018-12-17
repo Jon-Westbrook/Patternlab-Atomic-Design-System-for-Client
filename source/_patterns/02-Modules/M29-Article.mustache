@@ -2,8 +2,8 @@
 <div class="container article mt-3">
 
   <div class="row">
-    <div class="col-md-8 offset-md-1 mt-9">
-      <h2 class="secondary-1">{{ article.title }}</h2>
+    <div class="col-md-8 offset-md-1 mt-9 pl-0">
+      <h2>{{ article.title }}</h2>
     </div>
   </div>
 
@@ -23,19 +23,19 @@
     </div>
 
     <!-- Desktop Jump Nav -->
-    <div class="col-lg-3 d-none d-lg-block offset-md-1 mt-8 py-3 pl-lg-7 bg-secondary-3 py-md-5 title">
-      <p class="small my-0 secondary-1 bold">{{ jumpNav.title }}</p>
+    <div class="col-lg-3 d-none d-lg-flex align-items-center offset-md-1 mt-8 py-3 pl-lg-7 bg-secondary-3 py-md-5 title">
+      <p class="small my-0 secondary-2 bold">{{ jumpNav.title }}</p>
     </div>
     {{# jumpNav.links }}
-      <div class="col-lg-2 d-none d-lg-block mt-8 py-3 bg-secondary-3 py-md-5">
+      <div class="col-lg-2 d-none d-lg-flex align-items-center mt-8 py-3 bg-secondary-3 py-md-5">
         <a href="#{{ linkID }}">{{ copy }}</a>
       </div>
     {{/ jumpNav.links }}
-    <div class="col-md-1 d-none d-lg-block mt-8 py-3 bg-secondary-3 py-md-5">&nbsp;</div>
+    <div class="col-md-1 d-none d-lg-flex align-items-center mt-8 py-3 bg-secondary-3 py-md-5">&nbsp;</div>
 
     <!-- Article Body -->
     {{# article.sections }}
-      <div class="col-md-3 offset-md-1 mt-8">
+      <div class="col-md-3 offset-md-1 mt-8 pl-0">
         <h3 class="secondary-2">{{ title }}</h3>
       </div>
       <div class="col-md-7 mt-8 pr-0">
