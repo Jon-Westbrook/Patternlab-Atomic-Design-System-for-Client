@@ -44,11 +44,12 @@
       </div>
 
       <div class="col-md-3 offset-md-1 mt-7 pl-md-0">
+
         <!-- If Support Tip -->
         {{# support-tip }}
-          <img src="{{ cog }}" alt="Cog" >
+          <img src="{{ cog }}" alt="Cog" class="d-inline-block">
           <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
-          <p class="small d-inline-block w-75">{{ tip }}</p>
+          <p class="small w-75">{{ tip }}</p>
         {{/ support-tip }}
 
         <!-- If Pull Quote -->
@@ -59,13 +60,14 @@
           <p class="small mt-3 mb-0">{{ author }},</p>
           <p class="small mb-8">{{ company }}</p>
         {{/ pull-quote }}
+
       </div>
 
       <div class="col-md-7 mt-7 mb-8 pr-0">
         <p class="mb-0">{{ copy }}</p>
       </div>
-      <div class="col-md-10 offset-md-1 rule">
-        &nbsp;
+      <div class="col-md-10 offset-md-1 px-md-0">
+        <div class="w-100 rule">&nbsp;</div>
       </div>
     {{/ article.sections }}
 

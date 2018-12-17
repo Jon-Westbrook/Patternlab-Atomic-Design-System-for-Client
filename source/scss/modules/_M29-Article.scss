@@ -20,11 +20,11 @@
       border-bottom: 2px solid $primary-1;
     }
     .rule {
-      height: 1px;
-      background-color: linear-gradient(to right, $secondary-1, $tertiary-2);
-      &:last-of-type {
-        display: none;
-      }
+      height: 2px;
+      background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
+      // &:last-of-type {
+      //   display: none;
+      // }
     }
     .small-rule {
       height: 1px;
