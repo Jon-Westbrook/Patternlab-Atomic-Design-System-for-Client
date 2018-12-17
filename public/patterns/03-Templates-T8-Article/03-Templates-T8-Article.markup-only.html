@@ -134,13 +134,21 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-lg-4 mt-5 pl-lg-0">
-      <div class="form-group has-search">
-        <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" class="form-control article-search" placeholder="Search keywords, topics, etc...">
-      </div>
+
+      <form class="form-inline article-search">
+        <div class="input-group w-100 mb-3">
+          <input type="search" class="form-control" placeholder="Search keywords, topics, etc..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><img src="../../images/icons/nav/magnifying.svg" alt=""></span>
+          </div>
+        </div>
+      </form>
+
     </div>
+
   </div>
 </div>
+
 
     
 <div class="container article mt-3">
@@ -153,7 +161,7 @@
 
   <div class="row jump-nav">
 
-    <!-- Mobile Drop Down Menu -->
+    <!-- Mobile Jump Nav -->
     <div class="col-md-10 d-lg-none offset-md-1 mt-5">
         <div class="dropdown d-lg-none mt-md-5">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -166,7 +174,7 @@
         </div>
     </div>
 
-    <!-- Jump Nav -->
+    <!-- Desktop Jump Nav -->
     <div class="col-lg-3 d-none d-lg-block offset-md-1 mt-8 py-3 pl-lg-7 bg-secondary-3 py-md-5 title">
       <p class="small my-0 secondary-1 bold">Jump to Section</p>
     </div>
@@ -181,7 +189,7 @@
       </div>
     <div class="col-md-1 d-none d-lg-block mt-8 py-3 bg-secondary-3 py-md-5">&nbsp;</div>
 
-    <!-- Article -->
+    <!-- Article Body -->
       <div class="col-md-3 offset-md-1 mt-8">
         <h3 class="secondary-2">Section 1 Headline</h3>
       </div>

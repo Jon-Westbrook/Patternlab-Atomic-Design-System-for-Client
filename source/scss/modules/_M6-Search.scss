@@ -1,6 +1,13 @@
 
 .article-search {
-	background: $white;
-  border-radius: 2px;
-  border: 1px solid $gray-border;
+  input {
+  	background: $white;
+    border-radius: 2px;
+  }
+  .input-group {
+    border: 1px solid $gray-border;
+  }
+  .input-group-text {
+    background-color: $primary-3;
+  }
 }
