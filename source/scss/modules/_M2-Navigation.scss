@@ -102,23 +102,6 @@
     }
   }
 
-  ul li:hover, ul li:focus {
-    text-decoration: none;
-    a {
-      color: $primary-3;
-    }
-    .default {
-      display: none;
-    }
-    .hover {
-      display: block;
-    }
-    &:before {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
   ul li {
     position: relative;
     &:before {
@@ -142,6 +125,23 @@
     }
     &.submenu {
       color: $secondary-1;
+    }
+  }
+
+  ul li:hover, ul li:focus {
+    text-decoration: none;
+    a {
+      color: $primary-3;
+    }
+    .default {
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
+    &:before {
+      visibility: visible;
+      opacity: 1;
     }
   }
 
