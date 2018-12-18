@@ -1,6 +1,9 @@
 {
   "imagePath": "../../images/",
   "arrow-right": "../../images/icons/nav/arrow-right.svg",
+  "authentication": {
+    "bg": "../../images/bg-authentication.svg"
+  },
   "breadcrumbs": {
     "parent1": "Support",
     "parent2": "CardX Basics",

@@ -1,7 +1,7 @@
 {
   "cacheBust": true,
   "cleanPublic": true,
-  "defaultPattern": "",
+  "defaultPattern": "Templates-T1-Authentication",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
     "s": false,
