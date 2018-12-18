@@ -147,7 +147,7 @@
     "bubble": "../../images/icons/nav/chat-bubble.svg",
     "title": "Can’t find what you’re looking for?",
     "wait-copy": "Current wait time is",
-    "wait-time": "2 Minutes",
+    "wait-time": "999 Minutes",
     "button-copy": "Start Chat"
   }
 }

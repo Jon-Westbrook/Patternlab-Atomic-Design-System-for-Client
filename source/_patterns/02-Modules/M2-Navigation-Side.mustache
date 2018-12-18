@@ -13,7 +13,7 @@
 
   <ul class="list-unstyled mt-5 profile">
     <li>
-      <a href="#profileSubmenu" data-toggle="collapse" aria-expanded="false" class="ml-4 pt-3">Joy Johnson</a>
+      <a href="#profileSubmenu" data-toggle="collapse" aria-expanded="false" class="ml-4 pt-3 primary-3">Joy Johnson</a>
       <!-- <ul class="collapse list-unstyled" id="profileSubmenu">
           <li class="ml-4 submenu">
               <a href="#" class="secondary-1">You got me!</a>
@@ -27,7 +27,7 @@
   <ul class="list-unstyled mt-5">
     {{# mainNav.mainLinks }}
     <li class="{{ activeClass }} mb-3 main-link" tabindex="0" >
-      <a href="{{ URL }}" class="ml-4 py-3">
+      <a href="{{ URL }}" class="ml-4 py-3 primary-3">
         <div class="d-inline-block align-middle">
           <img src="../../images/icons/nav/{{ icon }}" alt="Homepage Icon" class="sidebar-icon mr-2 default">
           <img src="../../images/icons/nav/{{ iconHover }}" alt="Homepage Icon" class="sidebar-icon mr-2 hover">
@@ -38,6 +38,17 @@
       </a>
     </li>
     {{/ mainNav.mainLinks }}
+  </ul>
+
+  <div class="rule ml-4">&nbsp;</div>
+
+  <ul class="list-unstyled mt-4 profile">
+    <li class="">
+      <a href="#" class="ml-4 pt-3 secondary-3">Settings</a>
+    </li>
+    <li>
+      <a href="#" class="ml-4 pt-5 secondary-3">Log Out</a>
+    </li>
   </ul>
 
 </nav>
