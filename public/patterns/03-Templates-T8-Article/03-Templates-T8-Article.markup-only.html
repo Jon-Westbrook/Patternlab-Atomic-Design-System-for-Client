@@ -173,14 +173,15 @@
   <div class="row jump-nav">
 
     <!-- Mobile Jump Nav -->
-    <div class="col-md-10 d-lg-none offset-md-1 mt-7 mt-md-9 pl-md-0">
-        <div class="dropdown d-lg-none mt-md-5">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+    <div class="col-md-10 d-lg-none offset-md-1 mt-5 mt-md-7 pl-md-0">
+        <div class="dropdown d-lg-none">
+          <a class="dropdown-toggle d-inline-block w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jump to Section
+            <img src="../../images/icons/nav/arrow-down.svg" class="arrow-down">
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <a class="dropdown-item" href="#!">Action</a>
-            <a class="dropdown-item" href="#!">Another action</a>
+              <a class="dropdown-item px-2" href="#0">Section 1 Headline</a>
+              <a class="dropdown-item px-2" href="#1">Section 2 Headline</a>
           </div>
         </div>
     </div>
@@ -190,17 +191,21 @@
       <p class="small my-0 secondary-6 bold">Jump to Section</p>
     </div>
       <div class="col-lg-2 d-none d-lg-flex align-items-center mt-8 py-3 bg-gray-purple py-md-5 jump-link">
-        <a href="#section-1">Section Headline 1</a>
+        <a href="#0">Section Headline 1</a>
       </div>
       <div class="col-lg-2 d-none d-lg-flex align-items-center mt-8 py-3 bg-gray-purple py-md-5 jump-link">
-        <a href="#section-2">Section Headline 2</a>
+        <a href="#1">Section Headline 2</a>
       </div>
       <div class="col-lg-2 d-none d-lg-flex align-items-center mt-8 py-3 bg-gray-purple py-md-5 jump-link">
-        <a href="#section-3">Section Headline 3</a>
+        <a href="#2">Section Headline 3</a>
       </div>
     <div class="col-md-1 d-none d-lg-flex align-items-center mt-8 py-3 bg-gray-purple py-md-5 spacer">&nbsp;</div>
 
     <!-- Article Body -->
+
+      <!-- Anchor Tag -->
+      <a id="0"></a>
+
       <div class="col-md-3 offset-md-1 mt-6 mt-md-8 pl-md-0 article-section">
         <h3 class="secondary-6">Section 1 Headline</h3>
       </div>
@@ -232,6 +237,10 @@
       <div class="col-md-10 offset-md-1 px-md-0 rule-container">
         <div class="w-100 rule">&nbsp;</div>
       </div>
+
+      <!-- Anchor Tag -->
+      <a id="1"></a>
+
       <div class="col-md-3 offset-md-1 mt-6 mt-md-8 pl-md-0 article-section">
         <h3 class="secondary-6">Section 2 Headline</h3>
       </div>
@@ -275,7 +284,7 @@
     <div class="col-md-12 d-flex flex-column flex-md-row justify-content-center align-items-center">
       <div class="mx-md-3"><img src="..&#x2F;..&#x2F;images&#x2F;icons&#x2F;nav&#x2F;chat-bubble.svg"></div>
       <div class="display3 primary-2 text-center mt-4 mt-md-0 mx-md-1 mx-lg-3 mx-xl-4">Can’t find what you’re looking for?</div>
-      <div class="display5 medium uppercase primary-2 mt-4 mt-md-0 mx-md-1 mx-lg-3 mx-xl-4 text-center">Current wait time is&nbsp;<span class="bottom-b">2 Minutes</span></div>
+      <div class="display5 medium uppercase primary-2 mt-4 mt-md-0 mx-md-1 mx-lg-3 mx-xl-4 text-center">Current wait time is&nbsp;<span class="border-bottom border-secondary">2 Minutes</span></div>
       <button class="btn mt-5 mt-md-0 mx-md-1 mx-lg-3 mx-xl-4">Start Chat</button>
     </div>
   </div>
