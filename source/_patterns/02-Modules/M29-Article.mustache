@@ -55,11 +55,13 @@
 
         <!-- If Pull Quote -->
         {{# pull-quote }}
-          <img src="{{ lsquo }}" alt="quote" >
-          <p class="label bold tertiary-2 w-75 my-3">{{ quote }}</p>
-          <div class="small-rule w-75">&nbsp;</div>
-          <p class="small mt-3 mb-0">{{ author }},</p>
-          <p class="small mb-8">{{ company }}</p>
+          <div class="pull-quote">
+            <img src="{{ lsquo }}" alt="Pull quote">
+            <p class="small medium tertiary-2 w-75 my-3">{{ quote }}</p>
+            <div class="small-rule">&nbsp;</div>
+            <p class="small mt-3 mb-0">{{ author }},</p>
+            <p class="small mb-8">{{ company }}</p>
+          </div>
         {{/ pull-quote }}
 
       </div>

@@ -31,6 +31,7 @@
     .small-rule {
       height: 1px;
       background-color: $tertiary-2;
+
     }
   }
 
@@ -38,4 +39,11 @@
     height: 250px;
     object-fit: cover;
   }
+
+  .pull-quote {
+    @include media-breakpoint-up(md) {
+      width: 85%;
+    }
+  }
+
 }
