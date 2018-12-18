@@ -12,7 +12,7 @@
   .jump-nav {
     .title {
       color: $primary-2;
-      border-left: 6px solid $primary-2;
+      border-left: 6px solid $secondary-6;
       text-transform: uppercase;
       letter-spacing: .5px;
     }
@@ -31,7 +31,9 @@
     .small-rule {
       height: 1px;
       background-color: $tertiary-2;
-
+    }
+    .title, .jump-link, .spacer {
+      height: 55px;
     }
   }
 
@@ -40,7 +42,7 @@
     object-fit: cover;
   }
 
-  .pull-quote {
+  .pull-quote, .support-tip {
     @include media-breakpoint-up(md) {
       width: 85%;
     }
