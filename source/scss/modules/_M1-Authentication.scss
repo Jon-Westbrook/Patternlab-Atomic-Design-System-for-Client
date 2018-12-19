@@ -5,12 +5,18 @@
     height:100vh;
 
     input {
-      width: 325px;
+      width: 300px;
     }
 
     button {
       width: 225px;
       height: 46px;
+    }
+
+    .contact-us {
+      &:hover {
+        color: $primary-3;
+      }
     }
 
   }

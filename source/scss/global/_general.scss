@@ -25,5 +25,12 @@ body {
    }
 }
 
+.wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  align-items: stretch;
+}
+
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
 // @include debug;
