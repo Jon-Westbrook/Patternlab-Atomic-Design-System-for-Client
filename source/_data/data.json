@@ -21,7 +21,7 @@
       {
         "id": "0",
         "title": "Section 1 Headline",
-        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
+        "image": "../../images/fpo/bg-mall-outdoors.jpg",
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
         "support-tip": {
           "cog": "../../images/icons/nav/cog.svg",
@@ -32,7 +32,14 @@
       {
         "id": "1",
         "title": "Section 2 Headline",
-        "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg",
+        "images": [
+          {
+            "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg"
+          },
+          {
+            "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg"
+          }
+        ],
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
         "pull-quote": {
           "lsquo": "../../images/icons/nav/lsquo.svg",

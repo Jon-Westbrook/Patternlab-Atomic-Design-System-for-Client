@@ -45,10 +45,19 @@
         <h3 class="secondary-6">{{ title }}</h3>
       </div>
 
-      <!-- Article Image -->
+      <!-- Single Image -->
+      {{# image }}
       <div class="col-md-7 mt-6 mt-md-8 pr-md-0">
+        <img src="{{ image }}" class="article-img-cont image w-100">
+      </div>
+      {{/ image }}
+
+      <!-- Two Images-->
+      {{# images }}
+      <div class="col-md-3 mt-6 mt-md-8 pr-md-0">
         <img src="{{ imgSrc }}" class="article-img-cont image w-100">
       </div>
+      {{/ images }}
 
       <div class="col-md-3 offset-md-1 mt-7 pl-md-0">
 
