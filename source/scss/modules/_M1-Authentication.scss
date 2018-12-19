@@ -4,7 +4,7 @@
   .main-col {
     height:100vh;
 
-    input {
+    input, label {
       width: 300px;
     }
 
@@ -13,7 +13,7 @@
       height: 46px;
     }
 
-    .contact-us {
+    .contact-us, .forgetful {
       &:hover {
         color: $primary-3;
       }

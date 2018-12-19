@@ -5,7 +5,8 @@
   "logo": "../../images/logo.svg",
   "authentication": {
     "bg": "../../images/bg-authentication.svg",
-    "heading": "Log in"
+    "heading": "Log in",
+    "forgot-text": "Forgot?"
   },
   "breadcrumbs": {
     "parent1": "Support",
