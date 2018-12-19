@@ -14,7 +14,7 @@
     <link rel="icon" href="../../favicon.ico">
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1545168764375" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1545249703782" media="all">
     <!-- End Pattern Lab -->
 
   </head>
@@ -49,15 +49,34 @@
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<div class="wrapper" style="background-color: #281F56; background-image: url('..&#x2F;..&#x2F;images&#x2F;bg-authentication.svg'); background-repeat: no-repeat; background-attachment: fixed; background-position: right;">
+	<div class="wrapper authentication" style="background-color: #281F56; background-image: url('..&#x2F;..&#x2F;images&#x2F;bg-authentication.svg'); background-repeat: no-repeat; background-attachment: fixed; background-position: right; ">
 
   
-  <div class="container authentication">
-    <div class="row">
-      <div class="col-md-6">&nbsp;</div>
-      <div class="col-md-6">&nbsp;</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 main-col d-flex align-items-center justify-content-center">
+        <div class="wrap">
+
+          <img src="..&#x2F;..&#x2F;images&#x2F;logo.svg" alt="Logo">
+          <h1 class="display1 primary-3 mt-9">Log in</h1>
+
+          <form class="mt-7">
+            <div class="form-group mb-0">
+              <label for="username"  class="primary-3">User Name</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter user name or email">
+            </div>
+            <div class="form-group mt-4">
+              <label for="InputPassword1" class="primary-3">Password</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn mt-4">Continue</button>
+          </form>
+
+        </div>
     </div>
+    <div class="col-md-6">&nbsp;</div>
   </div>
+</div>
 
 
 </div>
@@ -115,17 +134,17 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1545168764375">
+<script id="pl-js-polyfill-insert-1545249703782">
   (function() {
     if (self != top) {
-      var cb = '1545168764375';
+      var cb = '1545249703782';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1545168764375">
+<script id="pl-js-insert-1545249703782">
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

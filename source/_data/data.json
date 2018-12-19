@@ -1,8 +1,11 @@
 {
   "imagePath": "../../images/",
   "arrow-right": "../../images/icons/nav/arrow-right.svg",
+  "close": "../../images/icons/nav/close.svg",
+  "logo": "../../images/logo.svg",
   "authentication": {
-    "bg": "../../images/bg-authentication.svg"
+    "bg": "../../images/bg-authentication.svg",
+    "heading": "Log in"
   },
   "breadcrumbs": {
     "parent1": "Support",

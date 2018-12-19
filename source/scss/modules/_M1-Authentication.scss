@@ -1,4 +1,17 @@
 
 .authentication {
   height:100vh;
+  .main-col {
+    height:100vh;
+
+    input {
+      width: 325px;
+    }
+
+    button {
+      width: 225px;
+      height: 46px;
+    }
+
+  }
 }

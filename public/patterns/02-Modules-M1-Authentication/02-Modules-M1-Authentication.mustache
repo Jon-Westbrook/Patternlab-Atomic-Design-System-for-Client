@@ -1,7 +1,26 @@
 
-  <div class="container authentication">
-    <div class="row">
-      <div class="col-md-6">&nbsp;</div>
-      <div class="col-md-6">&nbsp;</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 main-col d-flex align-items-center justify-content-center">
+        <div class="wrap">
+
+          <img src="{{ logo }}" alt="Logo">
+          <h1 class="display1 primary-3 mt-9">{{ authentication.heading }}</h1>
+
+          <form class="mt-7">
+            <div class="form-group mb-0">
+              <label for="username"  class="primary-3">User Name</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter user name or email">
+            </div>
+            <div class="form-group mt-4">
+              <label for="InputPassword1" class="primary-3">Password</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn mt-4">Continue</button>
+          </form>
+
+        </div>
     </div>
+    <div class="col-md-6">&nbsp;</div>
   </div>
+</div>
