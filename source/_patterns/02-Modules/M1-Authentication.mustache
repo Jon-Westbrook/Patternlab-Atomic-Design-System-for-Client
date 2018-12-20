@@ -24,8 +24,11 @@
                 <a href="#" class="d-inline-block label primary-3 ml-auto forgetful">{{ authentication.forgot-text }}</a></label>
               </label>
               <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+              <div class="invalid-feedback">
+                Please enter a valid
+              </div>
             </div>
-            <button type="submit" class="btn mt-4">Continue</button>
+            <button type="submit" class="btn mt-4">{{ authentication.submit-main }}</button>
 
           </form>
 
