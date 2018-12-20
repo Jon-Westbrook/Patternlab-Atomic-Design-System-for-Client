@@ -19,10 +19,10 @@
     "placeholder": "Search keywords, topics, etc...",
     "sections": [
       {
-        "id": "0",
+        "id": "1",
         "title": "Section 1 Headline",
-        "image": "../../images/fpo/bg-mall-outdoors.jpg",
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
+        "image": "../../images/card-processor.jpg",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "support-tip": {
           "cog": "../../images/icons/nav/cog.svg",
           "tip-title": "Support Tip",
@@ -30,22 +30,30 @@
         }
       },
       {
-        "id": "1",
+        "id": "2",
         "title": "Section 2 Headline",
-        "images": [
-          {
-            "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg"
-          },
-          {
-            "imgSrc": "../../images/fpo/bg-mall-outdoors.jpg"
-          }
-        ],
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat.",
+        "images": {
+          "image1": "../../images/happy-merchant.jpg",
+          "image2": "../../images/credit-card.jpg"
+        }
+        ,
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "pull-quote": {
           "lsquo": "../../images/icons/nav/lsquo.svg",
           "quote": "Never take a shower with your socks on.",
           "author": "Sheila Babayan",
           "company": "Technical Manager, VSA Partners inc."
+        }
+      },
+      {
+        "id": "3",
+        "title": "Section 3 Headline",
+        "no-image": true,
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
+        "quick-tip": {
+          "bulb": "../../images/icons/lightbulb.svg",
+          "tip-title": "Quick Tip",
+          "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin non."
         }
       }
     ]

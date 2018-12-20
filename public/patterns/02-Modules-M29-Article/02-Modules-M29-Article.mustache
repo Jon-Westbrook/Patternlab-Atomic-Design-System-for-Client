@@ -45,26 +45,35 @@
         <h3 class="secondary-6">{{ title }}</h3>
       </div>
 
-      <!-- Single Image -->
+      <!-- If Single Image -->
       {{# image }}
-      <div class="col-md-7 mt-6 mt-md-8 pr-md-0">
-        <img src="{{ image }}" class="article-img-cont image w-100">
-      </div>
+        <div class="col-md-7 mt-6 mt-md-8 pr-md-0">
+          <img src="{{ image }}" class="article-img-cont image w-100">
+        </div>
       {{/ image }}
 
-      <!-- Two Images-->
+      <!-- If Two Images-->
       {{# images }}
-      <div class="col-md-3 mt-6 mt-md-8 pr-md-0">
-        <img src="{{ imgSrc }}" class="article-img-cont image w-100">
-      </div>
+        <div class="col-md-7 mt-6 mt-md-8 pr-md-0 d-flex">
+          <img src="{{ image1 }}" class="article-img-cont smaller image">
+          <img src="{{ image2 }}" class="article-img-cont smaller image ml-auto">
+        </div>
       {{/ images }}
+
+      <!-- If No Image -->
+      {{# no-image }}
+        <div class="col-md-7 mt-6 mt-md-8 pr-md-0 d-flex">
+          &nbsp;
+        </div>
+      {{/ no-image }}
+
 
       <div class="col-md-3 offset-md-1 mt-7 pl-md-0">
 
         <!-- If Support Tip -->
         {{# support-tip }}
           <div class="support-tip">
-            <img src="{{ cog }}" alt="Cog" class="d-inline-block">
+            <img src="{{ cog }}" alt="Gear Icon" class="d-inline-block">
             <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
             <p class="small mb-md-8">{{ tip }}</p>
           </div>
@@ -73,7 +82,7 @@
         <!-- If Pull Quote -->
         {{# pull-quote }}
           <div class="pull-quote">
-            <img src="{{ lsquo }}" alt="Pull quote">
+            <img src="{{ lsquo }}" alt="Pull quote graphic">
             <p class="small medium tertiary-2 w-75 my-3">{{ quote }}</p>
             <div class="small-rule">&nbsp;</div>
             <p class="small mt-3 mb-0">{{ author }},</p>
@@ -81,11 +90,20 @@
           </div>
         {{/ pull-quote }}
 
+        <!-- If Quick Tip -->
+        {{# quick-tip }}
+          <div class="quick-tip">
+            <img src="{{ bulb }}" alt="Lightbulb graphic" class="d-inline-block">
+            <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
+            <p class="small mb-md-8">{{ tip }}</p>
+          </div>
+        {{/ quick-tip }}
+
       </div>
 
       <!-- Article Copy -->
       <div class="col-md-7 mt-5 mt-md-7 mb-8 pr-0">
-        <p class="mb-0">{{ copy }}</p>
+        <p class="mb-0">{{{ copy }}}</p>
       </div>
 
       <!-- Rule -->

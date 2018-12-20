@@ -40,9 +40,13 @@
   .article-img-cont {
     height: 250px;
     object-fit: cover;
+    &.smaller {
+      height: 205px;
+      width: 47%;
+    }
   }
 
-  .pull-quote, .support-tip {
+  .pull-quote, .support-tip, .quick-tip {
     @include media-breakpoint-up(md) {
       width: 85%;
     }
