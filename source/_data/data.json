@@ -2,6 +2,7 @@
   "title": "CardX Design System",
   "imagePath": "../../images/",
   "arrow-right": "../../images/icons/nav/arrow-right.svg",
+  "arrow-back": "../../images/icons/nav/arrow-back.svg",
   "close": "../../images/icons/nav/close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
@@ -9,9 +10,11 @@
     "bg": "../../images/bg-authentication.svg",
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
+    "help-forgot": "Enter your email address we’ll help you reset your password.",
     "forgot-text": "Forgot?",
     "submit-main": "Continue",
-    "submit-reset": "Request Reset Link"
+    "submit-reset": "Request Reset Link",
+    "back-link": "Back to CardX log in"
   },
   "breadcrumbs": {
     "parent1": "Support",
