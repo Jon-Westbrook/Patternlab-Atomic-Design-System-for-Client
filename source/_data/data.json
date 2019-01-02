@@ -3,6 +3,7 @@
   "imagePath": "../../images/",
   "arrow-right": "../../images/icons/nav/arrow-right.svg",
   "arrow-back": "../../images/icons/nav/arrow-back.svg",
+  "resend": "../../images/icons/nav/resend.svg",
   "close": "../../images/icons/nav/close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
@@ -10,11 +11,16 @@
     "bg": "../../images/bg-authentication.svg",
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
-    "help-forgot": "Enter your email address we’ll help you reset your password.",
+    "heading-reset": "Password reset  link has been sent",
+    "copy-forgot": "Enter your email address we’ll help you reset your password.",
+    "copy-reset-1": "A message has been sent to",
+    "copy-reset-2": "containing a link to reset your password.<br><br>For security reasons, the link can only be used for one hour. If you do not receive your email within 5 minutes, check your spam folder.",
+    "username": "jane@joycatering.com",
     "forgot-text": "Forgot?",
     "submit-main": "Continue",
     "submit-reset": "Request Reset Link",
-    "back-link": "Back to CardX log in"
+    "link-back": "Back to CardX log in",
+    "link-resend": "Resend reset link"
   },
   "breadcrumbs": {
     "parent1": "Support",

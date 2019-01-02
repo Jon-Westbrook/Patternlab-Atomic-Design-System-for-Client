@@ -1,8 +1,8 @@
 
 .authentication {
-  height:100vh;
+  min-height:100vh;
   .main-col {
-    height:100vh;
+    overflow: auto;
 
     input, label {
       width: 300px;
@@ -21,12 +21,17 @@
   }
 
   &.forgot-password {
-    background: linear-gradient(315deg, #9B2795 0%, #690894 29.93%, #281F56 100%);
+    @include media-breakpoint-up(sm) {
+      background: linear-gradient(315deg, #9B2795 0%, #690894 29.93%, #281F56 100%);
+    }
     .wrap {
-      max-width: 538px;
-      border-radius: 6px;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        max-width: 538px;
+        border-radius: 6px;
+        box-shadow: -3px -3px 10px 8px rgba(40,46,75,0.5);
+      }
       padding: 0 100px;
-      box-shadow: -3px -3px 10px 8px rgba(40,46,75,0.5);
       .inner-wrap {
         max-width: 334px;
       }

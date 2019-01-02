@@ -1,5 +1,5 @@
 ---
-title: M6-Article
+title: M29-Article
 ---
 
 Article module.

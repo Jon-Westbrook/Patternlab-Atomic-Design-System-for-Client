@@ -134,8 +134,18 @@
 
 
   <!-- Page Content  -->
-  <section id="content">
-    <!-- <div class="container">
+  <section id="content" class="pb-8">
+
+    
+<nav class="navbar navbar-expand-lg bg-secondary d-lg-none hamburger-menu">
+  <div class="container-fluid">
+    <button type="button" id="sidebarCollapse" class="">
+      <img src="../../images/icons/nav/hamburger-nav.svg" alt="Homepage Icon" class="sidebar-icon mr-2 default">
+    </button>
+  </div>
+</nav>
+
+    <div class="container">
 
   <div class="row" style="border-bottom: 1px solid #372772;">
     <div class="col-6 py-3 bg-info text-light">
@@ -199,19 +209,6 @@
   </div>
 
 </div>
- -->
-    
-<div class="row menu-trigger">
-  <div class="col">
-    <nav class="navbar navbar-expand-lg pl-0 my-1 justify-content-end">
-      <!-- Useful for testing -->
-      <button type="button" id="sidebarCollapse" class="btn btn-primary d-lg-none">
-        <i class="fas fa-align-left"></i>
-        <span>Menu</span>
-      </button>
-    </nav>
-  </div>
-</div>
 
     <div class="container">
   <div class="row">
@@ -240,7 +237,11 @@
 
 
 
+
   </section>
+
+  <!-- Dark Overlay  -->
+  <div class="overlay"></div>
 
 </div>
 <script src="../../js/vendor/jquery.min.js"></script>
@@ -250,7 +251,7 @@
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"Modules-M2-Navigation-Side","lineagePath":"../../patterns/02-Modules-M2-Navigation-Side/02-Modules-M2-Navigation-Side.rendered.html"},{"lineagePattern":"Modules-MX-Grid-Tester","lineagePath":"../../patterns/02-Modules-MX-Grid-Tester/02-Modules-MX-Grid-Tester.rendered.html"},{"lineagePattern":"Modules-M-Menu-Trigger","lineagePath":"../../patterns/02-Modules-M-Menu-Trigger/02-Modules-M-Menu-Trigger.rendered.html"},{"lineagePattern":"Modules-M4-Greeting","lineagePath":"../../patterns/02-Modules-M4-Greeting/02-Modules-M4-Greeting.rendered.html"}],"lineage":[{"lineagePattern":"Modules-M2-Navigation-Side","lineagePath":"../../patterns/02-Modules-M2-Navigation-Side/02-Modules-M2-Navigation-Side.rendered.html"},{"lineagePattern":"Modules-MX-Grid-Tester","lineagePath":"../../patterns/02-Modules-MX-Grid-Tester/02-Modules-MX-Grid-Tester.rendered.html"},{"lineagePattern":"Modules-M-Menu-Trigger","lineagePath":"../../patterns/02-Modules-M-Menu-Trigger/02-Modules-M-Menu-Trigger.rendered.html"},{"lineagePattern":"Modules-M4-Greeting","lineagePath":"../../patterns/02-Modules-M4-Greeting/02-Modules-M4-Greeting.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>The Homepage Dashboard.</p>\n","patternBreadcrumb":{"patternType":"Templates"},"patternExtension":"mustache","patternName":"T2-Home","patternPartial":"Templates-T2-Home","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"Modules-M2-Navigation-Side","lineagePath":"../../patterns/02-Modules-M2-Navigation-Side/02-Modules-M2-Navigation-Side.rendered.html"},{"lineagePattern":"Modules-M35-Navigation-Top","lineagePath":"../../patterns/02-Modules-M35-Navigation-Top/02-Modules-M35-Navigation-Top.rendered.html"},{"lineagePattern":"Modules-MX-Grid-Tester","lineagePath":"../../patterns/02-Modules-MX-Grid-Tester/02-Modules-MX-Grid-Tester.rendered.html"},{"lineagePattern":"Modules-M4-Greeting","lineagePath":"../../patterns/02-Modules-M4-Greeting/02-Modules-M4-Greeting.rendered.html"}],"lineage":[{"lineagePattern":"Modules-M2-Navigation-Side","lineagePath":"../../patterns/02-Modules-M2-Navigation-Side/02-Modules-M2-Navigation-Side.rendered.html"},{"lineagePattern":"Modules-M35-Navigation-Top","lineagePath":"../../patterns/02-Modules-M35-Navigation-Top/02-Modules-M35-Navigation-Top.rendered.html"},{"lineagePattern":"Modules-MX-Grid-Tester","lineagePath":"../../patterns/02-Modules-MX-Grid-Tester/02-Modules-MX-Grid-Tester.rendered.html"},{"lineagePattern":"Modules-M4-Greeting","lineagePath":"../../patterns/02-Modules-M4-Greeting/02-Modules-M4-Greeting.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>The Homepage Dashboard.</p>\n","patternBreadcrumb":{"patternType":"Templates"},"patternExtension":"mustache","patternName":"T2-Home","patternPartial":"Templates-T2-Home","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -286,17 +287,17 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1545342192876">
+<script id="pl-js-polyfill-insert-1546459605265">
   (function() {
     if (self != top) {
-      var cb = '1545342192876';
+      var cb = '1546459605265';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1545342192876">
+<script id="pl-js-insert-1546459605265">
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

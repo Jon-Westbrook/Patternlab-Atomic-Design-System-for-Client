@@ -1,6 +1,6 @@
 
 ---
-title: M2-Authentication
+title: M1-Authentication
 ---
 
 The main login page.

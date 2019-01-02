@@ -1,5 +1,5 @@
 ---
-title: M2-Navigation
+title: M2-Navigation-Side
 ---
 
 The main responsive sidebar navigation, authenticated.

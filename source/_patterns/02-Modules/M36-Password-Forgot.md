@@ -1,6 +1,6 @@
 
 ---
-title: M2-Authentication
+title: M36-Password-Forgot
 ---
 
-The main login page.
+The forgot password screen.
