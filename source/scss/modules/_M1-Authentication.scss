@@ -1,6 +1,7 @@
 
 .authentication {
   min-height:100vh;
+
   .main-col {
     overflow: auto;
 
@@ -17,6 +18,12 @@
       &:hover {
         color: $primary-3;
       }
+    }
+  }
+
+  .form-group {
+    &.password {
+      margin-top: 42px;
     }
   }
 
