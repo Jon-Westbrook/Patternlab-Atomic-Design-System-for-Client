@@ -12,6 +12,9 @@
     button {
       width: 225px;
       height: 46px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
 
     .contact-us, .forgetful {
