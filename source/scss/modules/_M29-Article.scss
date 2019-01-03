@@ -5,9 +5,9 @@
   min-height: 80vh;
   border-radius: 6px;
 
-  @include media-breakpoint-down(md) {
-    border-radius: 0px;
-  }
+  // @include media-breakpoint-down(md) {
+  //   border-radius: 0px;
+  // }
 
   .jump-nav {
     .title {

@@ -25,6 +25,16 @@ body {
    }
 }
 
+@include media-breakpoint-down(sm) {
+  .container {
+    width: 90%;
+    &:not(.article) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
 .wrapper {
   display: flex;
   width: 100%;
