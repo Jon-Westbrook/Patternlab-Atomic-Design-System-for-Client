@@ -45,10 +45,12 @@
     }
   }
 
-  .pull-quote, .support-tip, .quick-tip {
-    @include media-breakpoint-up(md) {
-      width: 85%;
-    }
+  .support-tip, .pull-quote, .quick-tip {
+    width: 70%;
+  }
+
+  .support-tip, .quick-tip {
+    border-bottom: 1px solid $tertiary-2;
   }
 
 }
