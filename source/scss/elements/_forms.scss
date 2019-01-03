@@ -1,0 +1,32 @@
+
+.form-control:focus {
+  &::-webkit-input-placeholder {
+    color: $gray-dark;
+    transition: $transition-base;
+  }
+
+  &::-moz-placeholder {
+    color: $gray-dark;
+    transition: $transition-base;
+  }
+
+  &::-ms-placeholder {
+    color: $gray-dark;
+    transition: $transition-base;
+  }
+
+  &::placeholder {
+    color: $gray-dark;
+    transition: $transition-base;
+  }
+  &~.input-group-append {
+    .input-group-text {
+      background: $secondary-4;
+      transition: $transition-base;
+      border: 1px solid $secondary-4;
+      #icon {
+        fill: $primary-3;
+      }
+    }
+  }
+}
