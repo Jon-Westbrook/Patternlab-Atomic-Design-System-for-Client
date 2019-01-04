@@ -8,7 +8,6 @@
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
   "authentication": {
-    "bg": "../../images/bg-authentication.svg",
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
     "heading-reset": "Password reset  link has been sent",
@@ -41,7 +40,7 @@
         "support-tip": {
           "cog": "../../images/icons/nav/cog.svg",
           "tip-title": "Support Tip",
-          "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin non."
+          "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin."
         }
       },
       {

@@ -46,7 +46,10 @@
   }
 
   .support-tip, .pull-quote, .quick-tip {
-    width: 70%;
+    width: 45%;
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
   }
 
   .support-tip, .quick-tip {

@@ -1,6 +1,14 @@
 
 .authentication {
   min-height:100vh;
+  background-color: #281F56;
+  @include media-breakpoint-up(lg) {
+    background-image: url('../../images/bg-authentication.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+  }
 
   .main-col {
     overflow: auto;
@@ -44,7 +52,7 @@
       }
       padding: 0 100px;
       .inner-wrap {
-        max-width: 334px;
+        width: 413px;
       }
     }
   }
