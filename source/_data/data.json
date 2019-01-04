@@ -12,6 +12,7 @@
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
     "heading-reset": "Password reset  link has been sent",
+    "heading-new": "Enter your new password",
     "copy-forgot": "Enter your email address we’ll help you reset your password.",
     "copy-reset-1": "A message has been sent to",
     "copy-reset-2": "containing a link to reset your password.<br><br>For security reasons, the link can only be used for one hour. If you do not receive your email within 5 minutes, check your spam folder.",
@@ -19,6 +20,7 @@
     "forgot-text": "Forgot?",
     "submit-main": "Continue",
     "submit-reset": "Request Reset Link",
+    "submit-reset-pass": "Reset password",
     "link-back": "Back to CardX log in",
     "link-resend": "Resend reset link"
   },
