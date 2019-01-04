@@ -55,6 +55,14 @@
       .inner-wrap {
         width: 413px;
       }
+      .inner-inner-wrap {
+        width: 334px;
+      }
+      .oops-links:hover {
+        svg g, svg path {
+          fill: $secondary-5;
+        }
+      }
     }
   }
 
