@@ -15,15 +15,15 @@
     "lint": "eslint source/js",
     "imagemin": "imagemin source/images/**/* --out-dir=public/images",
     "upgrade": "npm-check --update",
-    "watch:scss": "nodemon -e 'npm run scss -s' /source/scss/**/*.scss",
-    "watch:js": "watch 'npm run pl:build' source/js",
-    "watch:ui-kit": "watch 'npm run pl:build' source/uikit-workshop/dist",
-    "watch:patterns": "watch 'npm run pl:build -s' source/_patterns",
+    "watch:scss": "nodemon -e scss -w source/scss -x \"npm run scss\"",
+    "watch:js": "nodemon -q --on-change-only -w source/js -x \"npm run pl:build -s\"",
+    "watch:ui-kit": "nodemon -w source/uikit-workshop/dist -x \"npm run pl:build -s\"",
+    "watch:patterns": "nodemon -q --on-change-only -e mustache,md -w source/_patterns -x \"npm run pl:build -p -s\"",
     "watch": "npm run watch:patterns & npm run watch:css & npm run watch:js & npm run watch:ui-kit",
-    "serve": "browser-sync 'public' 'public' -w",
+    "serve": "browser-sync 'public' -w --no-notify --reload-debounce --no-open --reload-delay 350",
     "prebuild": "npm run clean",
-    "build": "npm run scss -s & npm run pl:build -s",
-    "postbuild": "npm run serve & npm run watch"
+    "build": "npm run pl:build -s && npm run scss -s",
+    "postbuild": "npm run serve & npm run watch:js"
   },
   "repository": {
     "type": "git",
@@ -36,21 +36,20 @@
     "@pattern-lab/core": "^3.0.0-beta.1",
     "@pattern-lab/engine-mustache": "^2.0.0-beta.0",
     "@pattern-lab/uikit-workshop": "^1.0.0-beta.0",
-    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap",
-    "bootstrap": "^4.1.3",
-    "auth-static": "^1.0.3"
+    "auth-static": "^1.0.3",
+    "bootstrap": "^4.2.1",
+    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
   },
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
+    "autoprefixer": "^9.4.4",
     "browser-sync": "^2.26.3",
-    "eslint": "^5.9.0",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "imagemin-cli": "^4.0.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "npm-check": "^5.9.0",
-    "postcss-cli": "^6.0.1",
-    "rimraf": "^2.6.2",
-    "watch": "^1.0.2"
+    "postcss-cli": "^6.1.1",
+    "rimraf": "^2.6.3"
   }
 }
