@@ -40,6 +40,7 @@
   }
 
   &.forgot-password {
+    background: #fff;
     @include media-breakpoint-up(sm) {
       background: linear-gradient(315deg, #9B2795 0%, #690894 29.93%, #281F56 100%);
     }
