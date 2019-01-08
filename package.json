@@ -2,6 +2,7 @@
   "name": "3095-001-03-cardx-design-system",
   "version": "1.0.0",
   "main": "index.js",
+  "engines" : { "node" : "10.7.0" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pl:build": "patternlab build --config ./patternlab-config.json",
@@ -24,7 +25,7 @@
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
     "postbuild": "npm run serve & npm run watch",
-    "postinstall": "npm run scss -s && npm run pl:build -s"
+    "preinstall": "npm run scss -s && npm run pl:build -s"
   },
   "repository": {
     "type": "git",
