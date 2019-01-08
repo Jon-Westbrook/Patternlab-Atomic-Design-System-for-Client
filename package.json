@@ -24,7 +24,7 @@
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
     "postbuild": "npm run serve & npm run watch",
-    "prod": "npm run scss -s && npm run pl:build -s"
+    "postinstall": "npm run scss -s && npm run pl:build -s"
   },
   "repository": {
     "type": "git",
@@ -39,18 +39,18 @@
     "@pattern-lab/uikit-workshop": "^1.0.0-beta.0",
     "auth-static": "^1.0.3",
     "bootstrap": "^4.2.1",
-    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
+    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "autoprefixer": "^9.4.4",
+    "imagemin-cli": "^4.0.0",
+    "postcss-cli": "^6.1.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.4",
     "browser-sync": "^2.26.3",
     "eslint": "^5.12.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "imagemin-cli": "^4.0.0",
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
     "npm-check": "^5.9.0",
-    "postcss-cli": "^6.1.1",
     "rimraf": "^2.6.3"
   }
 }
