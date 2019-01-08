@@ -56,7 +56,7 @@
       "data": "./source/_data/",
       "meta": "./source/_meta/",
       "annotations": "./source/_annotations/",
-      "styleguide": "../../../source/uikit-workshop/dist/",
+      "styleguide": "../../../source/uikit-workshop/",
       "patternlabFiles": {
         "general-header": "views/partials/general-header.mustache",
         "general-footer": "views/partials/general-footer.mustache",

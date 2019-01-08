@@ -23,10 +23,12 @@
     "watch:js": "nodemon -q --on-change-only -e js -w source/js -x \"npm run pl:build -s\"",
     "watch:json": "nodemon -q --on-change-only -e json -w source/_data -x \"npm run pl:build -s\"",
     "watch:patterns": "nodemon -q --on-change-only -e mustache,md -w source/_patterns -x \"npm run pl:build -p -s\"",
-    "watch": "npm run watch:patterns & npm run watch:scss & npm run watch:js & npm run watch:json",
-    "serve": "browser-sync 'public' -w --no-notify --reload-debounce --no-open --reload-delay 350",
+    "watch:uikit-workshop": "nodemon -q --on-change-only -e html,js,css -w source/uikit-workshop -x \"npm run pl:build -s\"",
+    "watch": "npm run watch:patterns & npm run watch:scss & npm run watch:js & npm run watch:json & npm run watch:uikit-workshop",
+    "serve": "browser-sync 'public' -w --no-notify --reload-debounce --reload-delay 350",
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
+    "postbuild": "npm run serve & npm run watch",
     "heroku-postbuild": "npm run scss -s && npm run pl:build -s"
   },
   "repository": {

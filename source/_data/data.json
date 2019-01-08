@@ -10,7 +10,7 @@
   "authentication": {
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
-    "heading-reset": "Password reset  link has been sent",
+    "heading-reset": "Password reset link has been sent",
     "heading-new": "Enter your new password",
     "copy-forgot": "Enter your email address we’ll help you reset your password.",
     "copy-reset-1": "A message has been sent to",
