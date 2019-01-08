@@ -23,7 +23,8 @@
     "serve": "browser-sync 'public' -w --no-notify --reload-debounce --no-open --reload-delay 350",
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
-    "postbuild": "npm run serve & npm run watch"
+    "postbuild": "npm run serve & npm run watch",
+    "prod": "npm run scss -s && npm run pl:build -s"
   },
   "repository": {
     "type": "git",
