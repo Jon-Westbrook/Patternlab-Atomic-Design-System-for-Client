@@ -28,7 +28,7 @@
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
     "postbuild": "npm run serve & npm run watch",
-    "heroku-postbuild": "npm run pl:build -s"
+    "heroku-postbuild": "npm run scss -s"
   },
   "repository": {
     "type": "git",
