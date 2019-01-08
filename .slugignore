@@ -1,7 +1,8 @@
-.tmp
-.zip
-source/
-pattern_exports/
+.tmp/
+design-files/
+gwd-src/
+.zip/
+gwd-src-bak/
 
 README.html
 
@@ -15,3 +16,18 @@ README.html
 /license.txt
 /readme.html
 .sass-cache
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn npm
+yarn.lock
