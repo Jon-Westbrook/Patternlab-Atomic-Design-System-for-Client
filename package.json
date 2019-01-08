@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "engines": {
-    "node": "10.7.0"
+    "node": "10.7.0",
+    "npm": "6.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,7 +28,7 @@
     "prebuild": "npm run clean",
     "build": "npm run scss -s && npm run pl:build -s",
     "postbuild": "npm run serve & npm run watch",
-    "heroku-postbuild": "npm run scss -s && npm run pl:build -s"
+    "heroku-postbuild": "npm run pl:build -s"
   },
   "repository": {
     "type": "git",
