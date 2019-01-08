@@ -7,6 +7,7 @@ build
 build/
 design-files/
 gwd-src-bak/
+public/
 
 README.html
 
