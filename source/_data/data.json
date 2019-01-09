@@ -113,15 +113,15 @@
     "links": [
       {
       "copy": "Section Headline 1",
-      "id": "0"
-      },
-      {
-      "copy": "Section Headline 2",
       "id": "1"
       },
       {
-      "copy": "Section Headline 3",
+      "copy": "Section Headline 2",
       "id": "2"
+      },
+      {
+      "copy": "Section Headline 3",
+      "id": "3"
       }
     ]
   },
