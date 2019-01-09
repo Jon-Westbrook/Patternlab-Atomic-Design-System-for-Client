@@ -73,7 +73,7 @@ $secondary:     $primary-2 !default;
 $success:       $green !default;
 $info:          $secondary-4 !default;
 $warning:       $yellow !default;
-$danger:        $tertiary-2 !default;
+$danger:        #E31C62 !default; //
 $light:         $primary-3 !default;
 $dark:          $primary-1 !default;
 
@@ -438,7 +438,7 @@ $input-btn-padding-y:         .5rem !default;
 $input-btn-padding-x:         1rem !default;
 // $input-btn-line-height:       $line-height-base !default;
 
-$input-btn-focus-width:       4px !default;
+$input-btn-focus-width:       0px !default;
 $input-btn-focus-color:       $primary-2 !default;
 $input-btn-focus-box-shadow:  none;
 
@@ -526,7 +526,7 @@ $input-border-color:                    $primary-3 !default;
 $input-focus-bg:                        $primary-3 !default;
 $input-focus-border-color:              $gray-border;
 $input-focus-color:                     $input-color !default;
-// $input-focus-width:                     $input-btn-focus-width !default;
+$input-focus-width:                     $input-btn-focus-width !default;
 // $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
 $input-placeholder-color:               $gray !default;
