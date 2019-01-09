@@ -23,10 +23,10 @@ $(document).ready(function() {
         }
         form.classList.add('was-validated');
 
-        if (form.find(".form-control").hasClass(":invalid")) {
-          console.log("Somethin is wrong")
-          // form.querySelector('.primary-2').style.color = ("green");
-        }
+        // if ($(form).find(".form-control").hasClass(":invalid")) {
+        //   console.log("Somethin is wrong")
+        //   form.querySelector('.primary-2').style.color = ("green");
+        // }
 
       }, false);
     });

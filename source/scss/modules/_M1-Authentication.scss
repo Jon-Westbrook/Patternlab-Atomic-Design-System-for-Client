@@ -2,12 +2,17 @@
 .authentication {
   min-height:100vh;
   background-color: #281F56;
+
   @include media-breakpoint-up(lg) {
     background-image: url('../../images/bg-authentication.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
     background-size: cover;
+  }
+
+  .login-invalid-text {
+    color: #EB6091;
   }
 
   .main-col {
@@ -27,8 +32,8 @@
     }
 
     .contact-us, .forgetful {
-      &:hover {
-        color: $primary-3;
+      &:hover, &:focus {
+        color: $tertiary-3;
       }
     }
   }

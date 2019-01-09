@@ -19,4 +19,9 @@
       background-color: $secondary-4;
     }
   }
+  &.submit-login {
+    &:hover, &:focus {
+      background-color: $tertiary-1;
+    }
+  }
 }
