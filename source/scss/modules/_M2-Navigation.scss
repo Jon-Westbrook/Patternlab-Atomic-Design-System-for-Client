@@ -55,7 +55,7 @@
     right: 18px;
   }
 
-  .active {
+  &.active {
     margin-left: -250px;
   }
 
@@ -105,7 +105,7 @@
         padding: 6px 0px;
       }
     }
-    &.active-link {
+    &.active {
       background-color: $secondary-2;
     }
     &.submenu {
@@ -144,25 +144,17 @@
     }
   }
 
-  .profile-link {
-    li {
-      &:hover, *:focus {
-        &:before {
-          width: 0px;
-        }
+  .profile-link, .settings-link {
+    &:hover, &:focus {
+      a:before {
+        visibility: hidden;
+        opacity: 0;
       }
     }
   }
 
   .settings-link {
     height: 50px;
-    li {
-      &:hover, *:focus {
-        &:before {
-          width: 0px;
-        }
-      }
-    }
   }
 
   .rule {
