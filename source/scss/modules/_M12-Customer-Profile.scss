@@ -1,0 +1,12 @@
+
+.customer {
+	background: $white;
+  box-shadow: -3px 3px 10px 8px #E7E8ED;
+  min-height: 80vh;
+  border-radius: 6px;
+  .cp-heading {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+}
