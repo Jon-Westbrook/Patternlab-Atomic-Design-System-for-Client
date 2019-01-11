@@ -18,20 +18,14 @@ body {
 	font-family: $font-family-sans-serif;
 }
 
-// make the container go full width below LG
-@media (max-width: 992px) {
-   .container {
-      width: 100%;
-   }
-}
 
 @include media-breakpoint-down(md) {
   .container {
     width: 90%;
-    &:not(.article) {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+    // &:not(.article) {
+    //   padding-left: 0px;
+    //   padding-right: 0px;
+    // }
   }
 }
 
@@ -40,6 +34,11 @@ body {
   width: 100%;
   overflow: hidden;
   align-items: stretch;
+}
+
+.rule {
+  height: 2px;
+  background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
 }
 
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
