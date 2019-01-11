@@ -24,9 +24,7 @@
     "link-resend": "Resend reset link"
   },
   "breadcrumbs": {
-    "parent1": "Support",
-    "parent2": "CardX Basics",
-    "currentPage": "Payments & Pricing"
+    "currentPage": "Page Title"
   },
   "article": {
     "page-title": "What are CardX's fees?",
@@ -183,5 +181,22 @@
     "wait-copy": "Current wait time is",
     "wait-time": "2 Minutes",
     "button-copy": "Start Chat"
+  },
+  "customer": {
+    "heading": "Profile Information",
+    "firstName": "Ashley",
+    "lastName": "Smith",
+    "company": "Ashley Furniture",
+    "email": "asmith@ashleyfurniture.com",
+    "phone": "(312) 555-1212"
+  },
+  "card-on-file": {
+    "heading": "Card On File"
+  },
+  "fields": {
+    "name": "Name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone Number"
   }
 }
