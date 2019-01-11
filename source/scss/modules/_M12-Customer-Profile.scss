@@ -1,13 +1,33 @@
+.cp-heading {
+    background: linear-gradient(45.96deg, #4F3D93 0%, #8C2A84 100%, #A94DD9 100%, #AF56E3 100%, #C86DD7 100%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    z-index: 900;
+}
 
 .customer {
 	background: $white;
   box-shadow: -3px 3px 10px 8px #E7E8ED;
-  // min-height: 80vh;
-  border-radius: 6px;
-  .cp-heading {
-    background: linear-gradient(45.96deg, #4F3D93 0%, #8C2A84 100%, #A94DD9 100%, #AF56E3 100%, #C86DD7 100%);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 800;
+  .customer-profile {
+    position: relative;
   }
-
+  .edit {
+    position: absolute;
+    right: 15px;
+    top: 56px;
+    display: block;
+  }
+  .icon-pencil {
+    background-image: url('../../images/icons/pencil.svg');
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 9px;
+  }
 }
+
+
