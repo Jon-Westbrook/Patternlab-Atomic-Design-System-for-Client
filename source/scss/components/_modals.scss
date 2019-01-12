@@ -1,4 +1,28 @@
 
-.modal-content {
-
+.modal-dialog {
+  max-width: none;
+  margin: 0;
+  height: 100%;
+  .modal-content {
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    .modal-header {
+      min-height: 170px;
+      width: 100%;
+      background-image: url('../../images/modal-header.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 0;
+    }
+    .modal-body {
+      background-image: url('../../images/modal-pattern.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .modal-footer {
+      border: none;
+      border-radius: 0;
+    }
+  }
 }
