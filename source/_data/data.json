@@ -188,7 +188,8 @@
     "lastName": "Smith",
     "company": "Ashley Furniture",
     "email": "asmith@ashleyfurniture.com",
-    "phone": "(312) 555-1212"
+    "phone": "(312) 555-1212",
+    "modal-heading-1": "New Customer Profile "
   },
   "card-on-file": {
     "heading": "Card On File"

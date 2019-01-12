@@ -19,6 +19,13 @@
       background-image: url('../../images/modal-pattern.svg');
       background-size: cover;
       background-repeat: no-repeat;
+      .container {
+        margin-top: -40px;
+        background: $white;
+        box-shadow: -3px 3px 10px 8px #E7E8ED;
+        border: 1px solid $gray-lightest;
+        border-radius: 6px;
+      }
     }
     .modal-footer {
       border: none;
