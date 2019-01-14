@@ -17,17 +17,27 @@
 
       <div class="modal-body py-0">
         <div class="container">
-          <div class="row">
-            <div class="col-md-10 offset-1">
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
+          <div class="row py-6 py-md-8">
+            <div class="col-md-4 offset-md-1">
+              <h2 class="secondary-6">{{ customer.heading }}</h2>
+            </div>
+            <div class="col-md-6">
+              <div class="field-group mt-5 mt-md-0">
+                <p class="label mb-1">{{ fields.name }}</p>
+                <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.company }}</p>
+                <p>{{ customer.company }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.email }}</p>
+                <p>{{ customer.email }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.phone }}</p>
+                <p class="mb-0">{{ customer.phone }}</p>
+              </div>
             </div>
           </div>
         </div>

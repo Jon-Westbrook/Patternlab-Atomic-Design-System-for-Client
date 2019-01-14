@@ -4,6 +4,19 @@
     border-top-right-radius: 6px;
     position: relative;
     z-index: 900;
+    .caret {
+      background-image: url('../../images/icons/caret.svg');
+      background-size: 14px 8px;
+      background-repeat: no-repeat;
+      height: 8px;
+      width: 14px;
+    }
+    a {
+      color: $primary-3;
+      &:hover {
+        color: $tertiary-3;
+      }
+    }
 }
 
 .customer {
@@ -28,6 +41,9 @@
     height: 9px;
     width: 9px;
   }
+
 }
+
+
 
 
