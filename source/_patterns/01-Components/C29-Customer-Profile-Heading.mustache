@@ -2,16 +2,13 @@
   <div class="row py-6">
     <div class="col-md-10 offset-md-1">
       <div class="">
-        <a href="javascript:void(0);" data-target="#customerMenu" class="display2 primary-3 d-flex align-items-center mb-3" data-toggle="collapse" aria-expanded="false">{{ customer.firstName }}&nbsp;{{ customer.lastName }} <span class="d-inline-block caret ml-2">&nbsp;</span></a>
-        <ul class="collapse list-unstyled mb-0" id="customerMenu">
-          <li class="py-1">
-            <a href="#" data-toggle="modal" data-target="#exampleModalLong" data-backdrop="false" class="mt-2">Create New Customer</a>
-          </li>
-          <li class="py-1">
-            <a href="#" data-toggle="modal" data-target="#exampleModalLong" data-backdrop="false">Action Link Number Two</a>
-          </li>
-
-        </ul>
+        <a href="javascript:void(0);" id="customerDropdown" class="display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" >{{ customer.firstName }}&nbsp;{{ customer.lastName }} <span class="d-inline-block caret ml-2">&nbsp;</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            {{# customer.dropdown-items }}
+              <a href="{{ url }}" data-toggle="modal" data-target="#{{ data-target }}" data-backdrop="false" class="dropdown-item">{{ link-copy }}</a>
+            {{/ customer.dropdown-items }}
+          </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 
 ---
-title: M37-Password-Reset
+title: M24a-Modal-New-Customer
 ---
 
-The screen when the password reset email has been sent.
+Create a new customer.

@@ -189,7 +189,26 @@
     "company": "Ashley Furniture",
     "email": "asmith@ashleyfurniture.com",
     "phone": "(312) 555-1212",
-    "modal-heading-1": "New Customer Profile "
+    "modal-heading-1": "New Customer Profile",
+    "dropdown-items": [
+      {
+        "url": "",
+        "link-copy": "Process new transaction"
+      },
+      {
+        "url": "",
+        "link-copy": "Bill with invoice"
+      },
+      {
+        "url": "",
+        "link-copy": "View transaction history"
+      },
+      {
+        "url": "",
+        "link-copy": "Edit customer profile",
+        "data-target": "exampleModalLong"
+      }
+    ]
   },
   "card-on-file": {
     "heading": "Card On File"

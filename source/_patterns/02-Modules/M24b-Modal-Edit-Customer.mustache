@@ -1,0 +1,48 @@
+<!-- Modals -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header py-0">
+        <div class="container">
+          <div class="row mt-8">
+            <div class="col-md-12 d-flex flex-column flex-md-row px-0">
+              <h1 class="primary-3">{{ customer.modal-heading-1 }}</h1>
+              <button type="button" class="btn btn-outline ml-md-auto" data-dismiss="modal" aria-label="cancel">Cancel</button>
+              <button type="button" class="btn ml-5" aria-label="save">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body py-0">
+        <div class="container">
+          <div class="row py-6 py-md-8">
+            <div class="col-md-4 offset-md-1">
+              <h2 class="secondary-6">{{ customer.heading }}</h2>
+            </div>
+            <div class="col-md-6">
+              <div class="field-group mt-5 mt-md-0">
+                <p class="label mb-1">{{ fields.name }}</p>
+                <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.company }}</p>
+                <p>{{ customer.company }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.email }}</p>
+                <p>{{ customer.email }}</p>
+              </div>
+              <div class="field-group mt-5">
+                <p class="label mb-1">{{ fields.phone }}</p>
+                <p class="mb-0">{{ customer.phone }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
