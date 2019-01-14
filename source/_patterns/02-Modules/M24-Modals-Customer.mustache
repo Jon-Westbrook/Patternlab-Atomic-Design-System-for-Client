@@ -1,5 +1,4 @@
-<!-- Modals -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="false">
+<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="New Customer" aria-hidden="false">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 
@@ -7,9 +6,9 @@
         <div class="container">
           <div class="row mt-8">
             <div class="col-md-12 d-flex flex-column flex-md-row px-0">
-              <h1 class="primary-3">{{ customer.modal-heading-1 }}</h1>
+              <h1 class="primary-3">{{ heading }}</h1>
               <button type="button" class="btn btn-outline ml-md-auto" data-dismiss="modal" aria-label="cancel">Cancel</button>
-              <button type="button" class="btn ml-5" aria-label="save">Save</button>
+              <button type="button" class="btn ml-5" aria-label="save">{{ btn-save }}</button>
             </div>
           </div>
         </div>

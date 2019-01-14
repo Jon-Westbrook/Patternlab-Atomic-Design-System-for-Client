@@ -1,26 +1,24 @@
-<!-- Should be in C21 -->
-<div class="row mt-8">
+<div class="row">
   <div class="col-md-10 offset-md-1">
-    <h2 class="secondary-6">{{ card-on-file.heading }}</h2>
+    <a href="#" class="edit secondary-4 small bold" data-toggle="modal" data-target="#customerEditProfile" data-backdrop="false"><span class="d-inline-block icon-pencil {{ top }}"></span>&nbsp;Edit</a>
+    <h2 class="secondary-6 mt-8">{{ customer.heading-cards }}</h2>
   </div>
 </div>
 
 <div class="row mt-8">
-  <div class="col-md-5 offset-md-1">
+  <div class="col-md-5 offset-md-1 d-flex flex-column flex-md-row">
     <div class="card bg-gray-light">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Card</h5>
         <div class="field-group mt-5">
           <p class="label mb-1">{{ fields.name }}</p>
           <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-md-5">
     <div class="card bg-gray-light">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Card</h5>
         <div class="field-group mt-5">
           <p class="label mb-1">{{ fields.name }}</p>
           <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>

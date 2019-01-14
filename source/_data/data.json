@@ -183,13 +183,38 @@
     "button-copy": "Start Chat"
   },
   "customer": {
-    "heading": "Profile Information",
+    "modals": [
+      {
+        "id": "customerNew",
+        "heading": "New Customer Profile",
+        "btn-save": "Save"
+      },
+      {
+        "id": "customerEditProfile",
+        "heading": "Edit Customer Profile",
+        "btn-save": "Save Changes"
+      },
+      {
+        "id": "customerEditCard",
+        "heading": "Edit Customer Profile",
+        "btn-save": "Save Changes"
+      },
+      {
+        "id": "customerEditBilling",
+        "heading": "Edit Customer Profile",
+        "btn-save": "Save Changes"
+      }
+    ],
+    "heading-profile": "Profile Information",
+    "heading-cards": "Card On File",
+    "heading-billing": "Billing Plan",
     "firstName": "Ashley",
     "lastName": "Smith",
     "company": "Ashley Furniture",
     "email": "asmith@ashleyfurniture.com",
     "phone": "(312) 555-1212",
-    "modal-heading-1": "New Customer Profile",
+    "heading-new": "New Customer Profile",
+    "heading-edit": "New Customer Profile",
     "dropdown-items": [
       {
         "url": "",
@@ -206,17 +231,8 @@
       {
         "url": "",
         "link-copy": "Edit customer profile",
-        "data-target": "exampleModalLong"
+        "data-target": "customerEditProfile"
       }
     ]
-  },
-  "card-on-file": {
-    "heading": "Card On File"
-  },
-  "fields": {
-    "name": "Name",
-    "company": "Company",
-    "email": "Email",
-    "phone": "Phone Number"
   }
 }
