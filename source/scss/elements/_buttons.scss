@@ -19,24 +19,26 @@
       background-color: $secondary-4;
     }
   }
-  &.btn-outline-light {
-    color: $primary-3;
-    background-color: $primary-2;
-    border: 2px solid $primary-3;
-    box-shadow: none;
-    &:hover, &:focus {
-      color: $primary-3;
-      background-color: $tertiary-3;
-    }
-  }
-  &.btn-outline-white {
+  &.btn-dark {
     color: $primary-2;
     background-color: $primary-3;
     border: 2px solid $primary-3;
     box-shadow: none;
     &:hover, &:focus {
       color: $primary-3;
-      background-color: $tertiary-3;
+      background-color: $secondary-4;
+      border-color: $secondary-4;
+    }
+  }
+  &.btn-dark-outline {
+    color: $primary-3;
+    background-color: transparent;
+    border: 2px solid $primary-3;
+    box-shadow: none;
+    &:hover, &:focus {
+      color: $primary-3;
+      background-color: $secondary-4;
+      border-color: $secondary-4;
     }
   }
   &.submit-login {

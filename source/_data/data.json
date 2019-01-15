@@ -187,16 +187,24 @@
       {
         "id": "customerNew",
         "heading-page": "New Customer Profile",
-        "btn-save": "Save"
+        "btn-cancel": "Cancel",
+        "btn-save": "Save",
+        "sections": [
+          {
+            "profile-info": true
+          }
+        ]
       },
       {
         "id": "customerEditProfile",
         "heading-page": "Edit Customer Profile",
+        "btn-cancel": "Cancel",
         "btn-save": "Save Changes"
       },
       {
         "id": "customerEditCard",
         "heading-page": "Edit Customer Profile",
+        "btn-cancel": "Cancel",
         "btn-save": "Save Changes"
       },
       {
@@ -231,7 +239,7 @@
       {
         "url": "",
         "link-copy": "Edit customer profile",
-        "data-target": "customerEditProfile"
+        "data-target": "customerNew"
       }
     ]
   }

@@ -7,8 +7,14 @@
           <div class="row mt-8">
             <div class="col-md-12 d-flex flex-column flex-md-row px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
-              <button type="button" class="btn btn-outline-light ml-md-auto" data-dismiss="modal" aria-label="cancel">Cancel</button>
-              <button type="button" class="btn btn-outline-white ml-5" aria-label="save">{{ btn-save }}</button>
+              <div class="btn-wrap ml-auto">
+                {{# btn-cancel }}
+                  <button type="button" class="btn btn-dark-outline" data-dismiss="modal" aria-label="cancel">{{ btn-cancel }}</button>
+                {{/ btn-cancel }}
+                {{# btn-save }}
+                  <button type="button" class="btn btn-dark ml-5" aria-label="save">{{ btn-save }}</button>
+                {{/ btn-save }}
+              </div>
             </div>
           </div>
         </div>
@@ -16,9 +22,10 @@
 
       <div class="modal-body py-0">
         <div class="container">
+          {{# sections.profile-info }}
           <div class="row py-6 py-md-8">
             <div class="col-md-4 offset-md-1">
-              <h2 class="secondary-6">{{ customer.heading }}</h2>
+              <h2 class="secondary-6">{{ heading }}</h2>
             </div>
             <div class="col-md-6">
               <div class="field-group mt-5 mt-md-0">
@@ -39,6 +46,7 @@
               </div>
             </div>
           </div>
+          {{/ sections.profile-info }}
         </div>
       </div>
 
