@@ -186,22 +186,22 @@
     "modals": [
       {
         "id": "customerNew",
-        "heading": "New Customer Profile",
+        "heading-page": "New Customer Profile",
         "btn-save": "Save"
       },
       {
         "id": "customerEditProfile",
-        "heading": "Edit Customer Profile",
+        "heading-page": "Edit Customer Profile",
         "btn-save": "Save Changes"
       },
       {
         "id": "customerEditCard",
-        "heading": "Edit Customer Profile",
+        "heading-page": "Edit Customer Profile",
         "btn-save": "Save Changes"
       },
       {
         "id": "customerEditBilling",
-        "heading": "Edit Customer Profile",
+        "heading-page": "Edit Customer Profile",
         "btn-save": "Save Changes"
       }
     ],
