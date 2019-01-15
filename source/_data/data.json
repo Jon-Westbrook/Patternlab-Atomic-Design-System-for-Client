@@ -191,13 +191,16 @@
         "btn-save": "Save",
         "sections": [
           {
-            "heading": "Profile Information"
+            "heading": "Profile Information",
+            "profile-info": true
           },
           {
-            "heading": "Card on File"
+            "heading": "Card on File",
+            "card-on-file": true
           },
           {
-            "heading": "Set up Billing Plan"
+            "heading": "Set up Billing Plan",
+            "card-on-file": true
           }
         ]
       },
