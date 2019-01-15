@@ -200,7 +200,7 @@
           },
           {
             "heading": "Set up Billing Plan",
-            "card-on-file": true
+            "set-up-billing": true
           }
         ]
       },
@@ -208,7 +208,21 @@
         "id": "customerEditProfile",
         "heading-page": "Edit Customer Profile",
         "btn-cancel": "Cancel",
-        "btn-save": "Save Changes"
+        "btn-save": "Save Changes",
+        "sections": [
+          {
+            "heading": "Profile Information",
+            "profile-info": true
+          },
+          {
+            "heading": "Card on File",
+            "card-on-file": true
+          },
+          {
+            "heading": "Set up Billing Plan",
+            "set-up-billing": true
+          }
+        ]
       },
       {
         "id": "customerEditCard",
