@@ -2,7 +2,7 @@ const server = require('auth-static');
 
 server({
   options: {
-    cache: 0,
+    cache: 3600,
     gzip: true
   },
   password: process.env.PASSWORD,
