@@ -211,7 +211,7 @@
         "btn-save": "Save Changes",
         "sections": [
           {
-            "heading": "Profile Information",
+            "heading": "Personal Information",
             "profile-info": true
           }
         ]
@@ -220,12 +220,28 @@
         "id": "customerEditCard",
         "heading-page": "Edit Customer Profile",
         "btn-cancel": "Cancel",
-        "btn-save": "Save Changes"
+        "btn-save": "Save Changes",
+        "sections": [
+          {
+            "heading": "Card on File",
+            "card-on-file": true
+          }
+        ]
       },
       {
         "id": "customerEditBilling",
         "heading-page": "Edit Customer Profile",
-        "btn-save": "Save Changes"
+        "btn-cancel": "Cancel",
+        "btn-save": "Save",
+        "sections": [
+          {
+            "heading": "Billing Plan",
+            "set-up-billing": true
+          },
+          {
+            "set-up-billing": true
+          }
+        ]
       }
     ],
     "heading-profile": "Profile Information",
@@ -254,7 +270,7 @@
       {
         "url": "",
         "link-copy": "Edit customer profile",
-        "data-target": "customerNew"
+        "data-target": "customerEditProfile"
       }
     ]
   }
