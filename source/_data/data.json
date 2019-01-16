@@ -2,6 +2,7 @@
   "title": "CardX Design System",
   "imagePath": "../../images/",
   "arrow-right": "../../images/icons/nav/arrow-right.svg",
+  "arrow-left": "../../images/icons/nav/arrow-left.svg",
   "arrow-back": "../../images/icons/nav/arrow-back.svg",
   "resend": "../../images/icons/nav/resend.svg",
   "close": "../../images/icons/nav/close.svg",

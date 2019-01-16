@@ -1,11 +1,18 @@
 
 <div class="container">
 
+
   <div class="row breadcrumbs">
     <div class="col-md-8 mt-0 mt-6 pl-lg-0 small">
-      <a href="#">{{ breadcrumbs.parent1 }}</a>&nbsp;&nbsp;<img src="{{ arrow-right }}">&nbsp;&nbsp;<a href="#">{{ breadcrumbs.parent2 }}</a>
+      {{^ breadcrumbs.parent2 }}
+        <img src="{{ arrow-left }}">&nbsp;&nbsp;<a href="#">{{ breadcrumbs.parent1 }}</a>
+      {{/ breadcrumbs.parent2 }}
+      {{# breadcrumbs.parent2 }}
+        <a href="#">{{ breadcrumbs.parent1 }}</a>&nbsp;&nbsp;<img src="{{ arrow-right }}">&nbsp;&nbsp;<a href="#">{{ breadcrumbs.parent2 }}</a>
+      {{/ breadcrumbs.parent2 }}
     </div>
   </div>
+
 
   <div class="row">
     <div class="col-md-12 mt-5 pl-lg-0">
