@@ -5,11 +5,12 @@
     border-radius: 2px;
     border: $input-border-width solid $input-focus-border-color ;
   }
-  .input-group-text {
-    background-color: $primary-3;
-  }
-  .input-group-append {
-    cursor: pointer;
-    border: $input-border-width solid $input-focus-border-color ;
-  }
+  // .input-group-text {
+  //   width: 50px;
+  //   background-color: $primary-3;
+  // }
+  // .input-group-append {
+  //   cursor: pointer;
+  //   border: $input-border-width solid $input-focus-border-color ;
+  // }
 }

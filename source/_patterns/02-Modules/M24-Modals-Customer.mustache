@@ -50,15 +50,18 @@
                 <div class="col-md-10 offset-md-1"><div class="w-100 rule">&nbsp;</div></div>
               </div>
             {{/ sections }}
-            {{# btn-save }}
               <div class="row mt-8">
                 <div class="col-md-10 offset-md-1 d-flex">
                   <div class="ml-auto">
-                  <button type="submit" class="btn ml-5" aria-label="save">{{ btn-save }}</button>
-                </div>
+                    {{# btn-cancel }}
+                      <button type="button" class="btn btn-outline" data-dismiss="modal" aria-label="cancel">{{ btn-cancel }}</button>
+                    {{/ btn-cancel }}
+                    {{# btn-save }}
+                      <button type="submit" class="btn ml-5" aria-label="save">{{ btn-save }}</button>
+                    {{/ btn-save }}
+                  </div>
                 </div>
               </div>
-            {{/ btn-save }}
 
           </form>
         </div>

@@ -1,53 +1,79 @@
+<div class="form-row px-1">
+  <div class="input-group mb-3">
+    <input type="search" class="form-control search-input" placeholder="{{ article.placeholder }}" aria-label="Search">
+    <div class="input-group-append magnifier-button">
+      <span class="input-group-text" id="basic-addon2">
+        <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>icon</title>
+          <defs>
+            <path d="M366.878784,24.4182454 L362.408512,19.9893325 C363.309238,18.7239288 363.776282,17.1255242 363.54276,15.4272193 C363.142437,12.5634109 360.80722,10.2990043 357.904878,10.0326036 C353.96837,9.63300241 350.632345,12.9630121 351.032668,16.9257236 C351.29955,19.7895319 353.568047,22.1538388 356.437028,22.55344 C358.1384,22.7865407 359.739692,22.3203393 361.007381,21.4212367 L365.444294,25.8501496 C365.644455,26.0499501 365.944698,26.0499501 366.144859,25.8501496 L366.845424,25.1508475 C367.045586,24.9510469 367.045586,24.618046 366.878784,24.4182454 L366.878784,24.4182454 Z M353,16.5 C353,14.0232558 355.023256,12 357.5,12 C359.976744,12 362,14.0232558 362,16.5 C362,18.9767442 359.976744,21 357.5,21 C355.023256,21 353,19.0116279 353,16.5 L353,16.5 Z" id="path-1"></path>
+          </defs>
+          <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="5_T8_Article@2x" transform="translate(-564.000000, -132.000000)">
+              <g id="Search" transform="translate(213.000000, 122.000000)">
+                <mask id="mask-2" fill="white">
+                  <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon" fill="#919193" xlink:href="#path-1"></use>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
 
 <div class="form-row">
-  <div class="form-group col-md-8 mb-3">
-    <label for="validationCustom01" class="primary-2">Card Number</label>
-    <input type="text" class="form-control" id="validationCustom01" aria-describedby="validationCustom01" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
   <div class="form-group col-md-6 mb-3">
-    <label for="validationCustom02" class="primary-2">Expiration Date</label>
-    <input type="text" class="form-control" id="validationCustom02" aria-describedby="validationCustom02" required>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="form-group col-md-6 mb-3">
-    <label for="exampleInputEmail1" class="primary-2">Security Code</label>
-    <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="exampleInputEmail1">
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="form-group col-md-12 mb-3">
-    <label for="exampleInputPhone1" class="primary-2">Billing Address</label>
-    <input type="tel" class="form-control w-100" id="exampleInputPhone1" aria-describedby="exampleInputPhone1">
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="form-group col-md-6 mb-3">
-    <label for="validationCustom05" class="primary-2">Zip</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
+    <label for="validationCustom05" class="primary-2">Amount Owed</label>
+    <input type="text" class="form-control" id="validationCustom05" placeholder="$" required>
     <div class="invalid-feedback">
       Please provide a valid zip.
     </div>
   </div>
-  <div class="form-group col-md-3 mb-3">
-    <label for="validationCustom03" class="primary-2">City</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
+  <div class="form-group col-md-6 mb-3">
+    <label for="validationCustom06" class="primary-2">Start Date</label>
+    <input type="text" class="form-control" id="validationCustom06" required>
     <div class="invalid-feedback">
-      Please provide a valid city.
+      Please provide a valid zip.
     </div>
   </div>
-  <div class="form-group col-md-3 mb-3">
-    <label for="validationCustom04" class="primary-2">State</label>
-    <input type="text" class="form-control" id="validationCustom04" required>
-    <div class="invalid-feedback">
-      Please provide a valid state.
-    </div>
-  </div>
-
 </div>
+
+<div class="form-row">
+  <div class="form-group col-md-6 mb-3">
+    <label for="validationCustom05" class="primary-2">Due</label>
+    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>03/22/19</option>
+      </select>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="form-group col-md-6 mb-3">
+    <label for="validationCustom05" class="primary-2">Amount Per Cycle</label>
+    <input type="text" class="form-control" id="validationCustom05" placeholder="$" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="form-group col-md-6 mb-3">
+    <label for="validationCustom05" class="primary-2">Repeat Every</label>
+    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Week</option>
+        <option>Two Weeks</option>
+        <option>Month</option>
+      </select>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+</div>
+
+
