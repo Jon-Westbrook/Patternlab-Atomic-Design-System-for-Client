@@ -12,11 +12,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 0;
+      // background-attachment: fixed;
     }
     .modal-body {
       background-image: url('../../images/modal-pattern.svg');
       background-size: cover;
       background-repeat: no-repeat;
+      // background-attachment: fixed;
       .container {
         margin-top: -40px;
         background: $white;
