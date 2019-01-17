@@ -1,26 +1,48 @@
 
-<div class="row billing-plan">
+<div class="row billing-plans">
+
   <div class="col-md-10 offset-md-1">
     <a href="#" class="edit secondary-4 small bold" data-toggle="modal" data-target="#customerEditBilling" data-backdrop="false"><span class="d-inline-block icon-pencil"></span>&nbsp;Edit</a>
-    <h2 class="secondary-6 mt-8">{{ customer.heading-billing }}</h2>
+    <h2 class="secondary-6 mt-8">{{ customer.heading-billing-plans }}</h2>
   </div>
-  <div class="col-md-5 offset-md-1 mt-7">
 
-    <div class="bg-secondary-3 amount-due">
-      <div class="row h-100">
-        <div class="col-4">
-          <div class="h-100 d-flex align-items-center left-border">
-            <label class="mb-0 ml-5 ml-md-7">Amount Due</label>
+  {{# customer.billing-plans }}
+    <div class="col-md-5 mt-7 {{# odd-number-card }}offset-md-1{{/ odd-number-card }}">
+        <div class="bg-secondary-3 amount-due">
+          <div class="row h-100">
+            <div class="col-4">
+              <div class="h-100 d-flex align-items-center left-border">
+                <label class="mb-0 ml-5 ml-md-7">Amount Due</label>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="h-100 d-flex align-items-center">
+                <p class="display2 mb-0">{{ amount }}</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-8">
-          <div class="h-100 d-flex align-items-center justify-content-center">
-            <p class="display2 mb-0">$2,049.79</p>
+        <div class="row">
+          <div class="col-4 mt-5 d-inline-block">
+            <p class="label mb-1 mr-0">Invoice</p>
+            <p class="mb-0 mr-0">{{ invoice-# }}</p>
+          </div>
+          <div class="col-8 mt-5">
+            <p class="label mb-1">Billing Cycle</p>
+            <p class="mb-0">{{ cycle }}</p>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-4 mt-5 pr-0 d-inline-block">
+            <p class="label mb-1 mr-0">Start Date</p>
+            <p class="mb-0">{{ start-date }}</p>
+          </div>
+          <div class="col-8 mt-5">
+            <p class="label mb-1">Due</p>
+            <p class="mb-0">{{ due }}</p>
+          </div>
+        </div>
     </div>
+  {{/ customer.billing-plans }}
 
-
-  </div>
 </div>

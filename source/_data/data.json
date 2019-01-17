@@ -195,7 +195,7 @@
   "customer": {
     "heading-profile": "Profile Information",
     "heading-cards": "Card On File",
-    "heading-billing": "Billing Plan",
+    "heading-billing-plans": "Billing Plans",
     "firstName": "Ashley",
     "lastName": "Smith",
     "company": "Ashley Furniture",
@@ -288,6 +288,23 @@
         "state-abbrv": "NY",
         "zip": "60630-4532",
         "card-thumb": "../../images/mastercard.jpg"
+      }
+    ],
+    "billing-plans": [
+      {
+        "odd-number-card": true,
+        "amount": "$2,049.79",
+        "invoice-#": "0001",
+        "cycle": "$50 every month",
+        "start-date": "October 18, 2018",
+        "due": "When paid"
+      },
+      {
+        "amount": "$2,049.79",
+        "invoice-#": "0001",
+        "cycle": "$50 every month",
+        "start-date": "October 18, 2018",
+        "due": "When paid"
       }
     ],
     "heading-new": "New Customer Profile",
