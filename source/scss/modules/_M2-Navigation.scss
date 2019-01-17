@@ -57,6 +57,9 @@
 
   &.active {
     margin-left: -250px;
+    &~#content {
+      position: fixed;
+    }
   }
 
   .sidebar-header {
@@ -181,6 +184,11 @@ a[data-toggle="collapse"] {
   z-index: 1000;
 }
 
+// Prevent body content from scrolling when sidebar is open
+nav#sidebar.active ~#content {
+  position: fixed;
+}
+
 /* ---------------------------------------------------
     Overlay
 ----------------------------------------------------- */
@@ -209,10 +217,12 @@ a[data-toggle="collapse"] {
 @include media-breakpoint-down(md) {
   #sidebar {
     margin-left: -147px;
+    overflow-y: auto;
     position: fixed;
   }
 
   #sidebar.active {
     margin-left: 0;
+    position: relative;
   }
 }

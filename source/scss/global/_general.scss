@@ -9,7 +9,6 @@ html,
 body {
 	max-width: 100%;
 	overflow-x: hidden;
-  overflow-y: scroll !important;
 	-webkit-font-smoothing: antialiased;
 	/* the slickest text out there */
 	-moz-osx-font-smoothing: grayscale;
@@ -40,6 +39,11 @@ body {
 .rule {
   height: 2px;
   background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
+}
+
+// Prevent body content from scrolling when sidebar is open
+.nav#sidebar.active ~#content {
+  position: fixed;
 }
 
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
