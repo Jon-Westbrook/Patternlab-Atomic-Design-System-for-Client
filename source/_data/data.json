@@ -193,6 +193,15 @@
     "button-copy": "Start Chat"
   },
   "customer": {
+    "heading-profile": "Profile Information",
+    "heading-cards": "Card On File",
+    "heading-billing": "Billing Plan",
+    "firstName": "Ashley",
+    "lastName": "Smith",
+    "company": "Ashley Furniture",
+    "email": "asmith@ashleyfurniture.com",
+    "phone": "(312) 555-1212",
+    "add-card": "+ Add new card",
     "modals": [
       {
         "id": "customerNew",
@@ -254,14 +263,33 @@
         ]
       }
     ],
-    "heading-profile": "Profile Information",
-    "heading-cards": "Card On File",
-    "heading-billing": "Billing Plan",
-    "firstName": "Ashley",
-    "lastName": "Smith",
-    "company": "Ashley Furniture",
-    "email": "asmith@ashleyfurniture.com",
-    "phone": "(312) 555-1212",
+    "cards": [
+      {
+        "odd-number-card": true,
+        "firstName": "Ashley",
+        "lastName": "Smith",
+        "company": "Ashley Furniture",
+        "email": "asmith@ashleyfurniture.com",
+        "phone": "(312) 555-1212",
+        "address": "1234 Morton St.",
+        "city": "New York",
+        "state-abbrv": "NY",
+        "zip": "60630-4532",
+        "card-thumb": "../../images/mastercard.jpg"
+      },
+      {
+        "firstName": "Ashley",
+        "lastName": "Smith",
+        "company": "Ashley Furniture",
+        "email": "asmith@ashleyfurniture.com",
+        "phone": "(312) 555-1212",
+        "address": "1234 Morton St.",
+        "city": "New York",
+        "state-abbrv": "NY",
+        "zip": "60630-4532",
+        "card-thumb": "../../images/mastercard.jpg"
+      }
+    ],
     "heading-new": "New Customer Profile",
     "heading-edit": "New Customer Profile",
     "dropdown-items": [
