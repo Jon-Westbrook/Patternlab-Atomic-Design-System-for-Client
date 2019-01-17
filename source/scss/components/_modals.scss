@@ -21,6 +21,13 @@ body.modal-open {
         background-size: cover;
         background-repeat: no-repeat;
       }
+      .ellipse-button {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        top: 4px;
+      }
     }
     .modal-body {
       background-color: $primary-3;
