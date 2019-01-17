@@ -8,6 +8,7 @@
   "close": "../../images/icons/nav/close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
+  "link-home": "link.Templates-T2-Home",
   "authentication": {
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
@@ -22,7 +23,9 @@
     "submit-reset": "Request Reset Link",
     "submit-reset-pass": "Reset password",
     "link-back": "Back to CardX log in",
-    "link-resend": "Resend reset link"
+    "link-resend": "Resend reset link",
+    "url-forgot": "link.Templates-T1b-Password-Forgot",
+    "url-back-to-login": "link.Templates-T1-Authentication"
   },
   "breadcrumbs": {
     "currentPage": "Page Title"
@@ -72,38 +75,44 @@
       "icon": "Home_icn.svg",
       "iconHover": "Home_icn_active.svg",
       "copy": "Home",
-      "URL": "#"
+      "url": "link.Templates-T2-Home"
       },
       {
       "icon": "Virtual_terminal_icn.svg",
       "iconHover": "Virtual_terminal_icn_active.svg",
       "copy": "Virtual Terminal",
-      "URL": "#"
+      "url": "#"
       },
       {
       "icon": "Sales_icn.svg",
       "iconHover": "Sales_icn_active.svg",
       "copy": "Reporting",
-      "URL": "#"
+      "url": "#"
       },
       {
       "activeClass": "active",
       "icon": "Customer_icn.svg",
       "iconHover": "Customer_icn_active.svg",
       "copy": "Customers",
-      "URL": "#"
+      "url": "link.Templates-T7-Customer-Profile"
       },
       {
       "icon": "Invoice_icn.svg",
       "iconHover": "Invoice_icn_active.svg",
       "copy": "Invoices",
-      "URL": "#"
+      "url": "#"
       },
       {
       "icon": "Support_icn.svg",
       "iconHover": "Support_icn_active.svg",
       "copy": "Support",
-      "URL": "#"
+      "url": "#"
+      },
+      {
+      "icon": "Support_icn.svg",
+      "iconHover": "Support_icn_active.svg",
+      "copy": "Account",
+      "url": "#"
       }
     ]
   },

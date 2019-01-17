@@ -6,16 +6,23 @@
 </div>
 
 <div class="row mt-8">
-  <div class="col-md-5 offset-md-1 d-flex flex-column flex-md-row">
-    <div class="card bg-gray-light">
-      <div class="card-body">
-        <h5 class="card-title">Card</h5>
-        <div class="field-group mt-5">
-          <p class="label mb-1">{{ fields.name }}</p>
+  <div class="col-md-5 offset-md-1">
+    <div class="card bg-gray-purple">
+      <div class="card-body py-0">
+        <div class="field-group mt-7">
+          <p class="label mb-1">Card</p>
+          <p class="label d-inline-block mb-1">XXXX XXXX XXXX 4456</p><img src="../../images/mastercard.jpg" >
+          <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
+        </div>
+        <div class="field-group mt-7">
+          <p class="label mb-1">Address</p>
+          <p class="label d-inline-block mb-1">XXXX XXXX XXXX 4456</p><img src="../../images/mastercard.jpg" >
           <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-md-5">
     <div class="card bg-gray-light">
       <div class="card-body">
         <h5 class="card-title">Card</h5>
