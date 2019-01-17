@@ -1,7 +1,7 @@
 {
   "cacheBust": true,
   "cleanPublic": true,
-  "defaultPattern": "",
+  "defaultPattern": "Templates-T7-Customer-Profile",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
     "s": false,
