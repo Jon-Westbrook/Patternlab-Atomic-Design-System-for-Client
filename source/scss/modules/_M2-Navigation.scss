@@ -44,7 +44,7 @@
   background: $primary-2;
   color: #fff;
   transition: $transition-base;
-  z-index: 1040;
+  z-index: 1045;
   min-height: 100vh;
   position: relative;
 
@@ -200,7 +200,7 @@ nav#sidebar.active ~#content {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.1);
-  z-index: 5000;
+  z-index: 1043;
   opacity: 0;
   transition: $transition-base;
 }

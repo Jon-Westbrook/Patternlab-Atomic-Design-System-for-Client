@@ -7,15 +7,16 @@
           <div class="row">
             <div class="col-12">
               <div class="ellipse-button">
-                <a href="javascript:void(0);" id="customerDropdown" class="display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" ></a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            {{# customer.modal-action-menu-items }}
-              <a href="{{ url }}" data-toggle="modal" data-target="#{{ data-target }}" data-backdrop="false" class="dropdown-item">{{ link-copy }}</a>
-            {{/ customer.modal-action-menu-items }}
-          </div>
+                <div class="">
+                  <a href="javascript:void(0);" id="customerDropdown" class="display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" ><span class="d-inline-block caret ml-2">&nbsp;</span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      {{# customer.dropdown-items }}
+                        <a href="{{ url }}" data-toggle="modal" data-target="#{{ data-target }}" data-backdrop="false" class="dropdown-item">{{ link-copy }}</a>
+                      {{/ customer.dropdown-items }}
+                    </div>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
