@@ -11,17 +11,17 @@
 
     <!-- Mobile Jump Nav -->
     <div class="col-md-10 d-lg-none offset-md-1 mt-3 pl-md-0">
-        <div class="dropdown d-lg-none">
-          <a class="dropdown-toggle d-inline-block w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Jump to Section
-            <img src="../../images/icons/nav/arrow-down.svg" class="arrow-down">
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            {{# article.sections }}
-              <a class="dropdown-item px-2" href="#{{ id }}">{{ title }}</a>
-            {{/ article.sections }}
-          </div>
+      <div class="dropdown d-lg-none">
+        <a class="dropdown-toggle d-inline-block w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Jump to Section
+          <img src="../../images/icons/nav/arrow-down.svg" class="arrow-down">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          {{# article.sections }}
+            <a class="dropdown-item px-2" href="#{{ id }}">{{ title }}</a>
+          {{/ article.sections }}
         </div>
+      </div>
     </div>
 
     <!-- Desktop Jump Nav -->
@@ -62,7 +62,7 @@
 
       <!-- If No Image -->
       {{# no-image }}
-        <div class="col-md-7 mt-6 mt-md-8 pr-md-0 d-flex mb-5">
+        <div class="col-md-7 mt-6 mt-md-8 pr-md-0 mb-5">
           {{{ copy }}}
         </div>
       {{/ no-image }}
