@@ -1,7 +1,7 @@
 {
   "cacheBust": true,
   "cleanPublic": true,
-  "defaultPattern": "Templates-T7-Customer-Profile",
+  "defaultPattern": "Templates-T0-Patternlab-Splash",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
     "s": false,
