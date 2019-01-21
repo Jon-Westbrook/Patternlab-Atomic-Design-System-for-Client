@@ -261,6 +261,55 @@
             "set-up-billing": true
           }
         ]
+      },
+      {
+        "id": "customerCreateInvoice",
+        "heading-page": "Create New Invoice",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          },
+          {
+            "classes": "dropdown-item",
+            "aria-label": "Preview ",
+            "btn-copy": "Preview"
+          }
+        ],
+        "btns-desktop": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          }
+        ],
+        "btn-cancel": "Cancel",
+        "btn-save": "Save Draft",
+        "btn-preview": "Preview",
+        "sections": [
+          {
+            "heading": "Billing Plan",
+            "set-up-billing": true
+          },
+          {
+            "set-up-billing": true
+          }
+        ]
       }
     ],
     "cards": [
@@ -316,6 +365,7 @@
       },
       {
         "url": "",
+        "data-target": "customerCreateInvoice",
         "link-copy": "Bill with invoice"
       },
       {
@@ -326,16 +376,6 @@
         "url": "",
         "link-copy": "Edit customer profile",
         "data-target": "customerEditProfile"
-      }
-    ],
-    "menu-actions": [
-      {
-        "url": "",
-        "link-copy": "Save Changes"
-      },
-      {
-        "url": "",
-        "link-copy": "Cancel"
       }
     ]
   },

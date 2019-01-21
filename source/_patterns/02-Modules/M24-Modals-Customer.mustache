@@ -12,14 +12,12 @@
                   <a href="javascript:void(0);" id="customerDropdown" class="display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" ><span class="d-inline-block caret ml-2">&nbsp;</span></a>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    {{# btn-cancel }}
-                      <a href="{{ url }}" class="dropdown-item" data-dismiss="modal" aria-label="cancel">{{ btn-cancel }}
-                      </a>
-                    {{/ btn-cancel }}
+                    {{# menu-mobile }}
+                      <a href="{{ url }}" class="{{ classes }}" data-dismiss="{{ data-dismiss }}" aria-label="{{ aria-label }}">{{ btn-copy }}</a>
+                    {{/ menu-mobile }}
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -29,12 +27,9 @@
             <div class="col-md-12 d-flex flex-column flex-md-row align-items-center px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
-                {{# btn-cancel }}
-                  <button type="button" class="btn btn-dark-outline" data-dismiss="modal" aria-label="cancel">{{ btn-cancel }}</button>
-                {{/ btn-cancel }}
-                {{# btn-save }}
-                  <button type="button" class="btn btn-dark ml-5" aria-label="save">{{ btn-save }}</button>
-                {{/ btn-save }}
+                {{# btns-desktop }}
+                  <button type="button" class="{{ classes }}" data-dismiss="{{ data-dismiss }}" aria-label="{{ aria-label }}">{{ btn-copy }}</button>
+                {{/ btns-desktop }}
               </div>
             </div>
           </div>
