@@ -134,8 +134,7 @@
       }
     ]
   },
-  "header":
-    {
+  "header": {
       "mainLinks": [
       {
         "navLink": "Who We Are",
@@ -338,6 +337,13 @@
         "url": "",
         "link-copy": "Cancel"
       }
+    ]
+  },
+  "home":{
+    "salesType": [
+      {"label":"CARDX TERMINAL", "number": 28, "class": "ct"},
+      {"label":"VIRTUAL TERMINAL", "number": 18, "class": "vt"},
+      {"label":"LIGHTBOX", "number": 11, "class": "lb"}
     ]
   }
 }
