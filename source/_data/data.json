@@ -328,6 +328,16 @@
         "link-copy": "Edit customer profile",
         "data-target": "customerEditProfile"
       }
+    ],
+    "menu-actions": [
+      {
+        "url": "",
+        "link-copy": "Save Changes"
+      },
+      {
+        "url": "",
+        "link-copy": "Cancel"
+      }
     ]
   }
 }

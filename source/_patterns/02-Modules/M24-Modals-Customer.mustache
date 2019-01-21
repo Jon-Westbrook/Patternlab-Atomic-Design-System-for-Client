@@ -6,24 +6,27 @@
         <div class="container d-md-none">
           <div class="row">
             <div class="col-12">
+
               <div class="ellipse-button">
                 <div class="">
                   <a href="javascript:void(0);" id="customerDropdown" class="display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" ><span class="d-inline-block caret ml-2">&nbsp;</span></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      {{# customer.dropdown-items }}
-                        <a href="{{ url }}" data-toggle="modal" data-target="#{{ data-target }}" data-backdrop="false" class="dropdown-item">{{ link-copy }}</a>
-                      {{/ customer.dropdown-items }}
-                    </div>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    {{# btn-cancel }}
+                      <a href="{{ url }}" class="dropdown-item" data-dismiss="modal" aria-label="cancel">{{ btn-cancel }}
+                      </a>
+                    {{/ btn-cancel }}
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
 
         <div class="container d-none d-md-block">
-          <div class="row mt-8">
-            <div class="col-md-12 d-flex flex-column flex-md-row px-0">
+          <div class="row mt-5">
+            <div class="col-md-12 d-flex flex-column flex-md-row align-items-center px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
                 {{# btn-cancel }}
