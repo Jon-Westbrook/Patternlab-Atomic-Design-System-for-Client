@@ -48,3 +48,49 @@ body {
 
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
 // @include debug;
+
+.home{
+  background: $white;
+  box-shadow: -3px 3px 10px 8px #E7E8ED;
+  border-radius: 0px 6px 6px 0px;
+  position: relative;
+
+  .line{
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:6px;
+    height:100%;
+    background-color: $primary-2;
+  }
+
+  .data-sales{
+    // height: 96px;
+    .sales-type{
+      //display: flex; 
+      //flex-direction: row;
+      height: 100%;
+      color: $primary-3;
+
+      .col{
+        flex: 1;
+        align-items: center;
+        display: flex;
+
+        .col-inner{
+          align-self: center;
+        }
+      }
+      .ct{
+        background-color: $primary-2;
+      }
+      .vt{
+        background-color: $secondary-2;
+      }
+      .lb{
+        background-color: $tertiary-1;
+      }
+    }
+  }
+}

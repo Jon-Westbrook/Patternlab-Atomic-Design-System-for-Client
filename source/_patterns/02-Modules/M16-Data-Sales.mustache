@@ -1,0 +1,28 @@
+
+  
+
+<div class="container home">
+  <div class="line my-0"></div>
+  <div class="row data-sales">
+    <div class="col-md-2 align-self-center text-center secondary-1 bold my-5">
+      SALES
+    </div>
+    <div class="col-md-6">
+      <div class="sales-type d-flex flex-column flex-md-row">
+      {{#home.salesType}}
+        <div class="col {{class}}">
+          <div class="col-inner my-2">
+            <div class="label">{{label}}</div>
+            <div class="display2">{{number}}</div>
+          </div>
+        </div>
+        {{/home.salesType}}
+      </div>
+    </div>
+    <div class="col-md-4 align-self-center text-center my-5">
+      <button type="button" class="btn btn-outline">View Sales</button>
+    </div>
+  </div>
+</div>
+
+
