@@ -628,5 +628,74 @@
         ]
       }
     ],
+  },
+  "invoice": {
+    "modals": [
+      {
+        "id": "customerCreateInvoice",
+        "heading-page": "Create New Invoice",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          },
+          {
+            "classes": "dropdown-item",
+            "aria-label": "Preview ",
+            "btn-copy": "Preview"
+          }
+        ],
+        "btns-desktop-top": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          },
+          {
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Preview",
+            "btn-copy": "Preview"
+          }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Preview",
+            "btn-copy": "Preview"
+          }
+        ],
+        "sections": [
+        ]
+      }
+    ],
   }
 }
