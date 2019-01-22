@@ -55,6 +55,10 @@ body {
   border-radius: 0px 6px 6px 0px;
   position: relative;
 
+  .col-f-1{
+    flex:1;
+  }
+
   .line{
     position: absolute;
     top:0px;
@@ -64,7 +68,6 @@ body {
     height:100%;
     background-color: $primary-2;
   }
-
   .data-sales{
     // height: 96px;
     .sales-type{
@@ -90,6 +93,26 @@ body {
       }
       .lb{
         background-color: $tertiary-1;
+      }
+    }
+  }
+
+  .data-chart{
+    .ct-series-a{
+      stroke: $tertiary-1 !important;
+    }
+    .ct-series-b{
+      stroke: $tertiary-3 !important;
+    }
+    .data-chart-nav{
+      background-color: #fff;
+      color: $secondary-4;
+      border-bottom: 2px solid #fff;
+      margin: 0.5rem 1rem;
+      padding: 0px;
+
+      &:hover, &:active, &.active{
+       border-bottom: 2px solid $secondary-4;
       }
     }
   }
