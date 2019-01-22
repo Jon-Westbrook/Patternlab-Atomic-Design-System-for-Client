@@ -202,12 +202,72 @@
     "email": "asmith@ashleyfurniture.com",
     "phone": "(312) 555-1212",
     "add-card": "+ Add new card",
+    "dropdown-items": [
+      {
+        "url": "",
+        "link-copy": "Process new transaction"
+      },
+      {
+        "url": "",
+        "data-target": "customerCreateInvoice",
+        "link-copy": "Bill with invoice"
+      },
+      {
+        "url": "",
+        "link-copy": "View transaction history"
+      },
+      {
+        "url": "",
+        "link-copy": "Edit customer profile",
+        "data-target": "customerEditProfile"
+      }
+    ],
     "modals": [
       {
         "id": "customerNew",
         "heading-page": "New Customer Profile",
-        "btn-cancel": "Cancel",
-        "btn-save": "Save",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save",
+            "btn-copy": "Save"
+          }
+        ],
+        "btns-desktop-top": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Save",
+            "btn-copy": "Save"
+          }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Save",
+            "btn-copy": "Save"
+          }
+        ],
         "sections": [
           {
             "heading": "Profile Information",
@@ -226,8 +286,48 @@
       {
         "id": "customerEditProfile",
         "heading-page": "Edit Customer Profile",
-        "btn-cancel": "Cancel",
-        "btn-save": "Save Changes",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-top": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
         "sections": [
           {
             "heading": "Personal Information",
@@ -240,6 +340,48 @@
         "heading-page": "Edit Customer Profile",
         "btn-cancel": "Cancel",
         "btn-save": "Save Changes",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-top": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
         "sections": [
           {
             "heading": "Card on File",
@@ -250,8 +392,48 @@
       {
         "id": "customerEditBilling",
         "heading-page": "Edit Customer Profile",
-        "btn-cancel": "Cancel",
-        "btn-save": "Save",
+        "menu-mobile": [
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "dropdown-item",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-top": [
+          {
+            "classes": "btn btn-dark-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Save Changes",
+            "btn-copy": "Save Changes"
+          }
+        ],
         "sections": [
           {
             "heading": "Billing Plan",
@@ -284,7 +466,7 @@
             "btn-copy": "Preview"
           }
         ],
-        "btns-desktop": [
+        "btns-desktop-top": [
           {
             "classes": "btn btn-dark-outline",
             "data-dismiss": "modal",
@@ -296,19 +478,35 @@
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
-          }
-        ],
-        "btn-cancel": "Cancel",
-        "btn-save": "Save Draft",
-        "btn-preview": "Preview",
-        "sections": [
-          {
-            "heading": "Billing Plan",
-            "set-up-billing": true
           },
           {
-            "set-up-billing": true
+            "classes": "btn btn-dark",
+            "data-dismiss": "",
+            "aria-label": "Preview",
+            "btn-copy": "Preview"
           }
+        ],
+        "btns-desktop-bottom": [
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "modal",
+            "aria-label": "cancel",
+            "btn-copy": "Cancel"
+          },
+          {
+            "classes": "btn btn-outline",
+            "data-dismiss": "",
+            "aria-label": "Save Draft",
+            "btn-copy": "Save Draft"
+          },
+          {
+            "classes": "btn",
+            "data-dismiss": "",
+            "aria-label": "Preview",
+            "btn-copy": "Preview"
+          }
+        ],
+        "sections": [
         ]
       }
     ],
@@ -356,28 +554,6 @@
         "due": "When paid"
       }
     ],
-    "heading-new": "New Customer Profile",
-    "heading-edit": "New Customer Profile",
-    "dropdown-items": [
-      {
-        "url": "",
-        "link-copy": "Process new transaction"
-      },
-      {
-        "url": "",
-        "data-target": "customerCreateInvoice",
-        "link-copy": "Bill with invoice"
-      },
-      {
-        "url": "",
-        "link-copy": "View transaction history"
-      },
-      {
-        "url": "",
-        "link-copy": "Edit customer profile",
-        "data-target": "customerEditProfile"
-      }
-    ]
   },
   "home":{
     "salesType": [
