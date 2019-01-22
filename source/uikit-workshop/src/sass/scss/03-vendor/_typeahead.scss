@@ -39,9 +39,11 @@
     width: 100%;
   }
 
-  .tt-input {
+  .tt-input, ::-webkit-input-placeholder {
     background: $pl-primary-bg;
-    color:  $pl-primary-color;
+    color:  #fff;
+
+    .pl-c-header
 
     &:hover {
       color: $pl-primary-color;
