@@ -123,104 +123,74 @@ $(document).ready(function() {
       }
     }
   };
-  /*
-  var responsiveOptions = [
-    [
-      "screen and (min-width: 641px) and (max-width: 1024px)",
-      {
-        showPoint: false,
-        axisX: {
-          labelInterpolationFnc: function(value) {
-            return "Week " + value;
-          }
-        }
-      }
-    ],
-    [
-      "screen and (max-width: 640px)",
-      {
-        showLine: false,
-        axisX: {
-          labelInterpolationFnc: function(value) {
-            return "W" + value;
-          }
-        }
-      }
-    ]
-  ];
-*/
+
   var responsiveOptions = "";
-  /*
-  new Chartist.Bar(".ct-week", dataWeek, options, responsiveOptions).on(
-    "draw",
-    function(data) {
+
+
+  if ($('.data-chart')[0]) {
+
+    console.log("chart is there");
+
+    var ctWeek = new Chartist.Bar(
+      "#ct-week",
+      dataWeek,
+      options,
+      responsiveOptions
+    ).on("draw", function(data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 20px"
+          style: "stroke-width: 20px;"
         });
       }
-    }
-  );
-  */
-  var ctWeek = new Chartist.Bar(
-    "#ct-week",
-    dataWeek,
-    options,
-    responsiveOptions
-  ).on("draw", function(data) {
-    if (data.type === "bar") {
-      data.element.attr({
-        style: "stroke-width: 20px;"
-      });
-    }
-  });
+    });
 
-  var ctMonth = new Chartist.Bar(
-    "#ct-month",
-    dataMonth,
-    options,
-    responsiveOptions
-  ).on("draw", function(data) {
-    if (data.type === "bar") {
-      data.element.attr({
-        style: "stroke-width: 20px;"
-      });
-    }
-  });
+    var ctMonth = new Chartist.Bar(
+      "#ct-month",
+      dataMonth,
+      options,
+      responsiveOptions
+    ).on("draw", function(data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
 
-  var ctQuarter = new Chartist.Bar(
-    "#ct-quarter",
-    dataQuarter,
-    options,
-    responsiveOptions
-  ).on("draw", function(data) {
-    if (data.type === "bar") {
-      data.element.attr({
-        style: "stroke-width: 20px;"
-      });
-    }
-  });
+    var ctQuarter = new Chartist.Bar(
+      "#ct-quarter",
+      dataQuarter,
+      options,
+      responsiveOptions
+    ).on("draw", function(data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
 
-  var ctYear = new Chartist.Bar(
-    "#ct-year",
-    dataYear,
-    options,
-    responsiveOptions
-  ).on("draw", function(data) {
-    if (data.type === "bar") {
-      data.element.attr({
-        style: "stroke-width: 20px;"
-      });
-    }
-  });
+    var ctYear = new Chartist.Bar(
+      "#ct-year",
+      dataYear,
+      options,
+      responsiveOptions
+    ).on("draw", function(data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
 
-  $('a[data-toggle="pill"]').on("shown.bs.tab", function(event) {
-    ctWeek.update();
-    ctMonth.update();
-    ctQuarter.update();
-    ctYear.update();
-    console.log("yellow");
-  });
+    $('a[data-toggle="pill"]').on("shown.bs.tab", function(event) {
+      ctWeek.update();
+      ctMonth.update();
+      ctQuarter.update();
+      ctYear.update();
+      console.log("yellow");
+    });
 
-  // end to make chart
+  }
+
 });
