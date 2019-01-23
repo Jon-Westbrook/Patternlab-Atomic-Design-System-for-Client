@@ -220,6 +220,11 @@
         "url": "",
         "link-copy": "Edit customer profile",
         "data-target": "customerEditProfile"
+      },
+      {
+        "url": "",
+        "link-copy": "New Customer",
+        "data-target": "customerNew"
       }
     ],
     "modals": [
