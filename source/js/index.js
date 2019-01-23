@@ -170,7 +170,7 @@ $(document).ready(function() {
   ).on("draw", function(data) {
     if (data.type === "bar") {
       data.element.attr({
-        style: "stroke-width: 20px"
+        style: "stroke-width: 20px;"
       });
     }
   });
@@ -183,7 +183,7 @@ $(document).ready(function() {
   ).on("draw", function(data) {
     if (data.type === "bar") {
       data.element.attr({
-        style: "stroke-width: 20px"
+        style: "stroke-width: 20px;"
       });
     }
   });
@@ -196,7 +196,7 @@ $(document).ready(function() {
   ).on("draw", function(data) {
     if (data.type === "bar") {
       data.element.attr({
-        style: "stroke-width: 20px"
+        style: "stroke-width: 20px;"
       });
     }
   });
@@ -209,7 +209,7 @@ $(document).ready(function() {
   ).on("draw", function(data) {
     if (data.type === "bar") {
       data.element.attr({
-        style: "stroke-width: 20px"
+        style: "stroke-width: 20px;"
       });
     }
   });
