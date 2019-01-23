@@ -28,9 +28,9 @@
     "watch": "npm run watch:patterns & npm run watch:scss & npm run watch:js & npm run watch:json & npm run watch:uikit-workshop",
     "serve": "browser-sync 'public' -w --no-notify --reload-debounce --reload-delay 350",
     "prebuild": "npm run clean",
-    "build": "npm run scss -s && npm run copyCSS && npm run pl:build -s",
+    "build": "npm run scss -s && npm run pl:build -s",
     "postbuild": "npm run serve & npm run watch",
-    "heroku-postbuild": "npm run scss -s && npm run pl:build -s"
+    "heroku-postbuild": "npm run scss -s && npm run copyCSS && npm run pl:build -s"
   },
   "repository": {
     "type": "git",
