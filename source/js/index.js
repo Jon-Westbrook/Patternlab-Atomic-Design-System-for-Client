@@ -1,4 +1,9 @@
+// HOUSEKEEPING
+var $ = jQuery;
+var $window = $(window);
+
 $(document).ready(function() {
+
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
     $(".overlay").addClass("active");
@@ -38,6 +43,7 @@ $(document).ready(function() {
     },
     false
   );
+
   // To make chart
   var dataWeek = {
     labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
@@ -46,6 +52,7 @@ $(document).ready(function() {
       [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000]
     ]
   };
+
   var dataMonth = {
     labels: ["01/07", "01/14", "01/21", "01/28"],
     series: [
@@ -61,53 +68,11 @@ $(document).ready(function() {
       [800000, 1200000, 1400000, 1300000]
     ]
   };
+
   var dataYear = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    series: [
-      [
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000,
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000
-      ],
-      [
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000,
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000
-      ]
-    ]
-  };
-  var options = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    series: [[800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000 ], [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000 ] ] };
+    var options = {
     stackBars: true,
     plugins: [
       Chartist.plugins.tooltip({
@@ -126,10 +91,8 @@ $(document).ready(function() {
 
   var responsiveOptions = "";
 
-
+  // If chart container exists on page, init
   if ($('.data-chart')[0]) {
-
-    console.log("chart is there");
 
     var ctWeek = new Chartist.Bar(
       "#ct-week",
@@ -190,7 +153,29 @@ $(document).ready(function() {
       ctYear.update();
       console.log("yellow");
     });
-
   }
+  // End Chart Init
+
+  // Begin Custom Modal Behavior
+
+  var modal_scrollTop = $('#modalBody').scrollTop();
+  var modal_scrollHeight = $('#modalBody').prop('scrollHeight');
+  var modal_innerHeight = $('#modalBody').innerHeight();
+  console.log("Am i alive");
+
+  $('.modal').scroll(function() {
+    console.log("Am i scrolling?");
+
+    // Write to console log to debug:
+    console.log('modal_scrollTop: ' + modal_scrollTop);
+    console.log('modal_innerHeight: ' + modal_innerHeight);
+    console.log('modal_scrollHeight: ' + modal_scrollHeight);
+
+    // Bottom reached:
+    if (modal_scrollTop + modal_innerHeight >= (modal_scrollHeight - 100)) {
+        alert('reached bottom');
+    }
+
+  });
 
 });

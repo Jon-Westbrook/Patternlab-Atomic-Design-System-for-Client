@@ -13,7 +13,7 @@ body.modal-open {
     height: 100vh;
     .modal-header {
       position: fixed;
-      z-index: 1030;
+      z-index: 1020;
       top: 0;
       right: 0;
       left: 0;
@@ -21,7 +21,8 @@ body.modal-open {
       min-height: 50px;
       background-color: $primary-2;
       @include media-breakpoint-up(md) {
-        min-height: 88px;
+        z-index: 1020;
+        height: 170px;
         background-image: url('../../images/modal-header.svg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -46,7 +47,7 @@ body.modal-open {
         background-image: url('../../images/modal-pattern.svg');
         background-size: cover;
         background-repeat: no-repeat;
-        // background-attachment: fixed;
+        background-attachment: fixed;
       }
       .container {
         background: $primary-3;
@@ -54,7 +55,11 @@ body.modal-open {
         padding-right: 0;
         border-radius: 0;
         margin-top: 50px;
+        z-index: 1020;
+
         @include media-breakpoint-up(md) {
+          position: relative;
+          z-index: 9000;
           margin-top: 120px;
           padding-left: 15px;
           padding-right: 15px;

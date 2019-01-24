@@ -561,6 +561,7 @@
     ],
   },
   "home":{
+    "last-deposit": "$123,456.78",
     "salesType": [
       {"label":"CARDX TERMINAL", "number": 28, "class": "ct"},
       {"label":"VIRTUAL TERMINAL", "number": 18, "class": "vt"},
