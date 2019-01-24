@@ -71,8 +71,12 @@ $(document).ready(function() {
 
   var dataYear = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    series: [[800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000 ], [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000 ] ] };
-    var options = {
+    series: [
+      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000],
+      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000]
+    ]
+  };
+  var options = {
     stackBars: true,
     plugins: [
       Chartist.plugins.tooltip({
@@ -170,11 +174,6 @@ $(document).ready(function() {
     console.log('modal_scrollTop: ' + modal_scrollTop);
     console.log('modal_innerHeight: ' + modal_innerHeight);
     console.log('modal_scrollHeight: ' + modal_scrollHeight);
-
-    // Bottom reached:
-    if (modal_scrollTop + modal_innerHeight >= (modal_scrollHeight - 100)) {
-        alert('reached bottom');
-    }
 
   });
 

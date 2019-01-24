@@ -8,7 +8,7 @@ body.modal-open {
   max-width: none;
   margin: 0;
   .modal-content {
-    border: none;
+    border: 0;
     border-radius: 0;
     height: 100vh;
     .modal-header {
@@ -64,7 +64,7 @@ body.modal-open {
           padding-left: 15px;
           padding-right: 15px;
           border-radius: 6px;
-          box-shadow: 0px 6px 10px 0px #E7E8ED;
+          box-shadow: 0 6px 10px 0 #E7E8ED;
           border: 1px solid $gray-lightest;
         }
 
@@ -72,7 +72,7 @@ body.modal-open {
       }
     }
     .modal-footer {
-      border: none;
+      border: 0;
       border-radius: 0;
     }
   }
