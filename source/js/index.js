@@ -1,13 +1,16 @@
-// HOUSEKEEPING
-var $ = jQuery;
-var $window = $(window);
-
 $(document).ready(function() {
 
+  // HOUSEKEEPING
+  var $ = jQuery;
+  var $window = $(window);
+
+
+  // Toggle Sidebar
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
     $(".overlay").addClass("active");
   });
+
   $("#dismiss, .overlay").on("click", function() {
     // hide sidebar
     $("#sidebar").removeClass("active");
@@ -44,7 +47,7 @@ $(document).ready(function() {
     false
   );
 
-  // To make chart
+  // To Make Homepage Chart
   var dataWeek = {
     labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
     series: [
@@ -155,26 +158,24 @@ $(document).ready(function() {
       ctMonth.update();
       ctQuarter.update();
       ctYear.update();
-      console.log("yellow");
     });
   }
   // End Chart Init
 
-  // Begin Custom Modal Behavior
+  // Fire a modal immediately for debugging
+  $('#customerNew').modal('show');
 
-  var modal_scrollTop = $('#modalBody').scrollTop();
-  var modal_scrollHeight = $('#modalBody').prop('scrollHeight');
-  var modal_innerHeight = $('#modalBody').innerHeight();
-  console.log("Am i alive");
+  // Begin Custom Modal Behavior
+  var $element = $('#validationCustom01');
+  var element_height = $element.outerHeight();
+  var element_top_position = $element.offsetTop;
+  var element_bottom_position = (element_top_position + element_height);
 
   $('.modal').scroll(function() {
-    console.log("Am i scrolling?");
-
-    // Write to console log to debug:
-    console.log('modal_scrollTop: ' + modal_scrollTop);
-    console.log('modal_innerHeight: ' + modal_innerHeight);
-    console.log('modal_scrollHeight: ' + modal_scrollHeight);
-
+    console.log($element);
+    console.log(element_height);
+    console.log(element_top_position);
+    console.log(element_bottom_position);
   });
 
 });

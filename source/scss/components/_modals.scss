@@ -1,16 +1,10 @@
-body.modal-open {
-  overflow: hidden;
-  // position: fixed;
-  // width: 100%;
-}
 
 .modal-dialog {
-  max-width: none;
   margin: 0;
   .modal-content {
     border: 0;
     border-radius: 0;
-    height: 100vh;
+    // height: 100vh;
     .modal-header {
       position: fixed;
       z-index: 1020;
@@ -18,7 +12,6 @@ body.modal-open {
       right: 0;
       left: 0;
       height: 50px;
-      min-height: 50px;
       background-color: $primary-2;
       @include media-breakpoint-up(md) {
         z-index: 1020;
@@ -67,8 +60,6 @@ body.modal-open {
           box-shadow: 0 6px 10px 0 #E7E8ED;
           border: 1px solid $gray-lightest;
         }
-
-
       }
     }
     .modal-footer {
