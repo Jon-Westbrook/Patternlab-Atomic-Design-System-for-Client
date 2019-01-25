@@ -163,19 +163,35 @@ $(document).ready(function() {
   // End Chart Init
 
   // Fire a modal immediately for debugging
-  $('#customerNew').modal('show');
+  // $('#customerNew').modal('show');
 
   // Begin Custom Modal Behavior
-  var $element = $('#validationCustom01');
-  var element_height = $element.outerHeight();
-  var element_top_position = $element.offsetTop;
-  var element_bottom_position = (element_top_position + element_height);
+  // var $element = $('#modalBody');
+  // var element_height = $element.outerHeight();
+  // var element_top_position = $element.offset().top;
+  // var element_bottom_position = (element_top_position + element_height);
 
-  $('.modal').scroll(function() {
-    console.log($element);
-    console.log(element_height);
-    console.log(element_top_position);
-    console.log(element_bottom_position);
+  // var scrollTop   = $(window).scrollTop(),
+  // elementOffset = $('#modalBody').offset().top,
+  // distance      = (elementOffset - scrollTop);
+
+
+  var header = $('.modal-header');
+  var mainBox = $('.mainBox');
+
+  $(".modal").on('shown.bs.modal', function(){
+    alert('The modal is fully shown.');
   });
+
+  // console.log(modal);
+  var menuHeight;
+  var topOffset;
+
+  // modal.scroll(function() {
+  //   console.log(modal.scrollTop());
+  //   menuHeight = Math.max(70, 170 - modal.scrollTop());
+  //   topOffset = 100 - menuHeight;
+  //   header.height(menuHeight);
+  // });
 
 });

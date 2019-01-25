@@ -46,9 +46,17 @@ body {
   position: fixed;
 }
 
+// body.modal-open {
+//   position: fixed;
+//   overflow-y: hidden;
+//   width: 100%;
+// }
+
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
 // @include debug;
 
+
+// usman this should all be in the chart scss module file
 .home{
   background: $white;
   box-shadow: -3px 3px 10px 8px #E7E8ED;
@@ -71,7 +79,7 @@ body {
   .data-sales{
     // height: 96px;
     .sales-type{
-      //display: flex; 
+      //display: flex;
       //flex-direction: row;
       height: 100%;
       color: $primary-3;

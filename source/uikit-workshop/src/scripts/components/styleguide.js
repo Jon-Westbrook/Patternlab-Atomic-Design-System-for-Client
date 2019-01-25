@@ -583,7 +583,7 @@ import { patternFinder } from './pattern-finder';
       patternPath !== ''
         ? baseIframePath + patternPath + '?' + Date.now()
         : iFramePath;
-    document.getElementById('title').innerHTML = 'Pattern Lab - ' + patternName;
+    document.getElementById('title').innerHTML = 'CardX Design System | ' + patternName;
     window.history.replaceState(
       {
         pattern: patternName,

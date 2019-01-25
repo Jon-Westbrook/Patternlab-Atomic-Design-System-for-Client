@@ -26,7 +26,7 @@
     "link-back": "Back to CardX log in",
     "link-resend": "Resend reset link",
     "url-forgot": "link.Templates-T1b-Password-Forgot",
-    "url-back-to-login": "link.Templates-T1-Authentication"
+    "url-back-to-login": "link.Templates-T1a-Authentication"
   },
   "breadcrumbs": {
     "currentPage": "Page Title"
