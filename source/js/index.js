@@ -163,7 +163,7 @@ $(document).ready(function() {
   // End Chart Init
 
   // Fire a modal immediately for debugging
-  // $('#customerNew').modal('show');
+  $('#customerNew').modal('show');
 
   // Begin Custom Modal Behavior
   // var $element = $('#modalBody');
@@ -176,15 +176,29 @@ $(document).ready(function() {
   // distance      = (elementOffset - scrollTop);
 
 
-  var header = $('.modal-header');
-  var mainBox = $('.mainBox');
+  // Detect which modal is shown
+  $('.modal').on('shown.bs.modal', function(){
+    var modal = $(this);
+    var header = $('.modal.fade.show .modal-header');
+    var heading = $('.modal.fade.show .modal-header .heading-col');
+    var mainBox = $('.modal.fade.show .mainBox');
 
-  $(".modal").on('shown.bs.modal', function(){
-    alert('The modal is fully shown.');
+    modal.scroll(function() {
+      var scrollTop = modal.scrollTop();
+      if (scrollTop > 10) {
+        header.addClass('shrink');
+        mainBox.css('z-index', '1010');
+        heading.removeClass('pb-5');
+      } else {
+        header.removeClass('shrink');
+        mainBox.css('z-index', '1020');
+        heading.addClass('pb-5');
+      }
+    });
   });
 
   // console.log(modal);
-  var menuHeight;
+
   var topOffset;
 
   // modal.scroll(function() {

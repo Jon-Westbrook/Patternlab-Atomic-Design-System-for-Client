@@ -5,11 +5,12 @@
 
       <div class="modal-header py-0">
         <!-- Mobile Header -->
-        <div class="container d-md-none">
-          <div class="row">
-            <div class="col-12">
+        <div class="container h-100 d-md-none pl-0">
+          <div class="row h-100">
+            <div class="col-12 px-0 d-flex align-items-center">
+              <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ellipse-button">
-                <div class="">
+                <div>
                   <a href="javascript:void(0);" class="mobile-ellipse-trigger display2 primary-3 d-flex align-items-center" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false" ><span class="d-inline-block caret ml-2">&nbsp;</span></a>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -24,9 +25,9 @@
         </div>
 
         <!-- Desktop Header -->
-        <div class="container d-none d-md-block">
-          <div class="row mt-5">
-            <div class="col-md-12 d-flex flex-column flex-md-row align-items-center px-0">
+        <div class="container d-none d-md-block h-100">
+          <div class="row h-100">
+            <div class="col-md-12 heading-col d-flex flex-column flex-md-row align-items-center px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
                 {{# btns-desktop-top }}

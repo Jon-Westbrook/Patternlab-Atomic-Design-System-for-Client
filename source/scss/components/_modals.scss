@@ -17,10 +17,12 @@
       @include media-breakpoint-up(md) {
         z-index: 1020;
         height: 170px;
-        background-image: url('../../images/modal-header.svg');
+        background-color: $primary-2;
+        // background-image: url('../../images/modal-header.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        transition: all .35s ease-in-out;
       }
       @include media-breakpoint-down(sm) {
         .ellipse-button {
@@ -35,12 +37,20 @@
           top: 4px;
         }
       }
+      &.shrink {
+        @include media-breakpoint-up(md) {
+          height: 76px;
+          background-image: none;
+          transition: all .35s ease-in-out;
+        }
+      }
     }
     .modal-body {
       display: block;
       visibility: visible;
-      background-color: $gray-lightest;
+      background-color: $primary-3;
       @include media-breakpoint-up(md) {
+        background-color: $gray-lightest;
         background-image: url('../../images/modal-pattern.svg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -53,10 +63,8 @@
         border-radius: 0;
         margin-top: 50px;
         z-index: 1020;
-
         @include media-breakpoint-up(md) {
           position: relative;
-          z-index: 9000;
           margin-top: 120px;
           padding-left: 15px;
           padding-right: 15px;
