@@ -1,6 +1,6 @@
 
 ---
-title: M36-Password-Forgot
+title: M1b-Password-Forgot
 ---
 
 The forgot password screen.

@@ -1,6 +1,6 @@
 
 ---
-title: M1-Authentication
+title: M1a-Authentication
 ---
 
 The main login page.
