@@ -1,10 +1,11 @@
 
 .modal-dialog {
+  max-width: none;
   margin: 0;
   .modal-content {
     border: 0;
     border-radius: 0;
-    // height: 100vh;
+    height: 50px;
     .modal-header {
       position: fixed;
       z-index: 1020;
@@ -19,6 +20,7 @@
         background-image: url('../../images/modal-header.svg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
       }
       @include media-breakpoint-down(sm) {
         .ellipse-button {
@@ -35,7 +37,9 @@
       }
     }
     .modal-body {
-      background-color: $primary-3;
+      display: block;
+      visibility: visible;
+      background-color: $gray-lightest;
       @include media-breakpoint-up(md) {
         background-image: url('../../images/modal-pattern.svg');
         background-size: cover;
