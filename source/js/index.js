@@ -180,17 +180,23 @@ $(document).ready(function() {
     var heading = $('.modal.fade.show .modal-header .heading-col');
     var mainBox = $('.modal.fade.show .mainBox');
 
+
     modal.scroll(function() {
       var scrollTop = modal.scrollTop();
       if (scrollTop > 0) {
         header.addClass('shrink');
+        console.log(scrollTop);
         if (header.height() === 76) {
-          console.log(header.height());
           mainBox.css('z-index', 1010 );
+          mainBox.css('position', 'relative' );
         }
       } else {
         header.removeClass('shrink');
         mainBox.css('z-index', 1020 );
+        if (header.height() === 170) {
+          mainBox.css('z-index', 1010 );
+          mainBox.css('position', 'fixed' );
+        }
       }
     });
 
