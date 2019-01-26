@@ -14,6 +14,7 @@
       left: 0;
       height: 50px;
       background-color: $primary-2;
+      border: 0;
       @include media-breakpoint-up(md) {
         z-index: 1020;
         height: 170px;
@@ -22,7 +23,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        transition: all .35s ease-in-out;
+        transition: all .1s ease-in-out;
       }
       @include media-breakpoint-down(sm) {
         .ellipse-button {
@@ -41,7 +42,7 @@
         @include media-breakpoint-up(md) {
           height: 76px;
           background-image: none;
-          transition: all .35s ease-in-out;
+          transition: all .1s ease-in-out;
         }
       }
     }
@@ -56,7 +57,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      .container {
+      .mainBox {
         background: $primary-3;
         padding-left: 0;
         padding-right: 0;

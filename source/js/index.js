@@ -171,9 +171,6 @@ $(document).ready(function() {
   // var element_top_position = $element.offset().top;
   // var element_bottom_position = (element_top_position + element_height);
 
-  // var scrollTop   = $(window).scrollTop(),
-  // elementOffset = $('#modalBody').offset().top,
-  // distance      = (elementOffset - scrollTop);
 
 
   // Detect which modal is shown
@@ -185,17 +182,25 @@ $(document).ready(function() {
 
     modal.scroll(function() {
       var scrollTop = modal.scrollTop();
-      if (scrollTop > 10) {
+      if (scrollTop > 0) {
         header.addClass('shrink');
-        mainBox.css('z-index', '1010');
-        heading.removeClass('pb-5');
+        if (header.height() === 76) {
+          console.log(header.height());
+          mainBox.css('z-index', 1010 );
+        }
       } else {
         header.removeClass('shrink');
-        mainBox.css('z-index', '1020');
-        heading.addClass('pb-5');
+        mainBox.css('z-index', 1020 );
       }
     });
+
   });
+
+
+
+
+
+
 
   // console.log(modal);
 
