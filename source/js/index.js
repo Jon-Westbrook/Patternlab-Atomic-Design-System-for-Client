@@ -165,15 +165,7 @@ $(document).ready(function() {
   // Fire a modal immediately for debugging
   $('#customerNew').modal('show');
 
-  // Begin Custom Modal Behavior
-  // var $element = $('#modalBody');
-  // var element_height = $element.outerHeight();
-  // var element_top_position = $element.offset().top;
-  // var element_bottom_position = (element_top_position + element_height);
-
-
-
-  // Detect which modal is shown
+  // Begin Custom Modal Behaviors
   $('.modal').on('shown.bs.modal', function(){
     var modal = $(this);
     var header = $('.modal.fade.show .modal-header');
@@ -183,32 +175,17 @@ $(document).ready(function() {
 
     modal.scroll(function() {
       var scrollTop = modal.scrollTop();
-      if (scrollTop > 0) {
+      if (scrollTop > 0 ) {
         header.addClass('shrink');
-        console.log(scrollTop);
-        if (header.height() === 76) {
+        if (header.height() <= 160 && header.height() >= 76 ) {
           mainBox.css('z-index', 1010 );
-          mainBox.css('position', 'relative' );
         }
       } else {
         header.removeClass('shrink');
         mainBox.css('z-index', 1020 );
-        if (header.height() === 170) {
-          mainBox.css('z-index', 1010 );
-          mainBox.css('position', 'fixed' );
-        }
       }
     });
-
   });
-
-
-
-
-
-
-
-  // console.log(modal);
 
   var topOffset;
 
