@@ -1,9 +1,7 @@
 $(document).ready(function() {
-
   // HOUSEKEEPING
   var $ = jQuery;
   var $window = $(window);
-
 
   // Toggle Sidebar
   $("#sidebarCollapse").on("click", function() {
@@ -73,15 +71,57 @@ $(document).ready(function() {
   };
 
   var dataYear = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
     series: [
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000],
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000]
+      [
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000,
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000
+      ],
+      [
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000,
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000
+      ]
     ]
   };
   var options = {
     stackBars: true,
     plugins: [
+      Chartist.plugins.legend({
+        legendNames: ["Credit", "Debit"]
+      }),
       Chartist.plugins.tooltip({
         currency: "$",
         class: "class1",
@@ -99,8 +139,7 @@ $(document).ready(function() {
   var responsiveOptions = "";
 
   // If chart container exists on page, init
-  if ($('.data-chart')[0]) {
-
+  if ($(".data-chart")[0]) {
     var ctWeek = new Chartist.Bar(
       "#ct-week",
       dataWeek,
@@ -166,7 +205,8 @@ $(document).ready(function() {
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
-      var context = this, args = arguments;
+      var context = this,
+        args = arguments;
       var later = function() {
         timeout = null;
         if (!immediate) func.apply(context, args);
@@ -181,27 +221,25 @@ $(document).ready(function() {
   // Modal Animation
   // $('#customerCreateInvoice').modal('show');
 
-  $('.modal').on('shown.bs.modal', function() {
+  $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
-    var header = $('.modal.fade.show .modal-header');
-    var heading = $('.modal.fade.show .modal-header .heading-col');
-    var mainBox = $('.modal.fade.show .mainBox');
+    var header = $(".modal.fade.show .modal-header");
+    var heading = $(".modal.fade.show .modal-header .heading-col");
+    var mainBox = $(".modal.fade.show .mainBox");
 
     function animateModalHeader() {
       var scrollTop = modal.scrollTop();
-      if (scrollTop > 10 ) {
-        header.addClass('shrink');
-        if (header.height() < 160 && header.height() >= 76 ) {
-          mainBox.css('z-index', 1010 );
+      if (scrollTop > 10) {
+        header.addClass("shrink");
+        if (header.height() < 160 && header.height() >= 76) {
+          mainBox.css("z-index", 1010);
         }
       } else {
-        header.removeClass('shrink');
-        mainBox.css('z-index', 1020 );
+        header.removeClass("shrink");
+        mainBox.css("z-index", 1020);
       }
     }
 
     modal.scroll(debounce(animateModalHeader, 10));
-
   });
-
 });
