@@ -5,25 +5,21 @@
   .modal-content {
     border: 0;
     border-radius: 0;
-    height: 50px;
+    background-color: transparent;
     .modal-header {
       position: fixed;
-      z-index: 1020;
-      top: 0;
-      right: 0;
-      left: 0;
+      z-index: 1025;
       height: 50px;
-      background-color: $primary-2;
+      width: 100%;
       border: 0;
+      background-color: $primary-2;
+      transition: $transition-modal-animation;
+      .heading-row {
+        z-index: 1020;
+      }
       @include media-breakpoint-up(md) {
         z-index: 1020;
         height: 170px;
-        background-color: $primary-2;
-        // background-image: url('../../images/modal-header.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        transition: all .1s ease-in-out;
       }
       @include media-breakpoint-down(sm) {
         .ellipse-button {
@@ -38,46 +34,65 @@
           top: 4px;
         }
       }
+      .header-img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transition: $transition-modal-animation;
+        z-index: 900;
+      }
       &.shrink {
         @include media-breakpoint-up(md) {
           height: 76px;
-          background-image: none;
-          transition: all .1s ease-in-out;
+          transition: $transition-modal-animation;
+        }
+        .header-img {
+          height: 76px;
+          opacity: 0;
+          transition: $transition-modal-animation;
         }
       }
     }
     .modal-body {
-      display: block;
-      visibility: visible;
       background-color: $primary-3;
+      height: 100vh;
       @include media-breakpoint-up(md) {
-        background-color: $gray-lightest;
+        background-color: transparent;
+      }
+      &::before {
         background-image: url('../../images/modal-pattern.svg');
-        background-size: cover;
+        background-color: $gray-lightest;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-position: center top;
+        background-size: cover;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: -1;
       }
       .mainBox {
         background: $primary-3;
+        position: relative;
         padding-left: 0;
         padding-right: 0;
         border-radius: 0;
         margin-top: 50px;
         z-index: 1020;
         @include media-breakpoint-up(md) {
-          position: relative;
-          margin-top: 130px;
+          margin-top: 140px;
           padding-left: 15px;
           padding-right: 15px;
           border-radius: 6px;
-          box-shadow: 0 6px 10px 0 #E7E8ED;
+          box-shadow: 0 6px 10px 0 #e7e8ed;
           border: 1px solid $gray-lightest;
         }
       }
-    }
-    .modal-footer {
-      border: 0;
-      border-radius: 0;
     }
   }
 }

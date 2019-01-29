@@ -201,6 +201,7 @@ $(document).ready(function() {
   }
   // End Chart Init
 
+<<<<<<< HEAD
   // Fire a modal immediately for debugging
   $("#customerNew").modal("show");
 
@@ -238,13 +239,57 @@ $(document).ready(function() {
   });
 
   // console.log(modal);
+=======
+  // Debounce
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
 
-  var topOffset;
+  // Modal Animation
+  // $('#customerCreateInvoice').modal('show');
 
+  $('.modal').on('shown.bs.modal', function() {
+    var modal = $(this);
+    var header = $('.modal.fade.show .modal-header');
+    var heading = $('.modal.fade.show .modal-header .heading-col');
+    var mainBox = $('.modal.fade.show .mainBox');
+
+    function animateModalHeader() {
+      var scrollTop = modal.scrollTop();
+      if (scrollTop > 10 ) {
+        header.addClass('shrink');
+        if (header.height() < 160 && header.height() >= 76 ) {
+          mainBox.css('z-index', 1010 );
+        }
+      } else {
+        header.removeClass('shrink');
+        mainBox.css('z-index', 1020 );
+      }
+    }
+>>>>>>> 087d8a7f8110e8b8adce23661bb13ae081b0ae9b
+
+    modal.scroll(debounce(animateModalHeader, 10));
+
+<<<<<<< HEAD
   // modal.scroll(function() {
   //   console.log(modal.scrollTop());
   //   menuHeight = Math.max(70, 170 - modal.scrollTop());
   //   topOffset = 100 - menuHeight;
   //   header.height(menuHeight);
   // });
+=======
+  });
+
+>>>>>>> 087d8a7f8110e8b8adce23661bb13ae081b0ae9b
 });

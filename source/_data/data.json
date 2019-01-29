@@ -1,11 +1,11 @@
 {
   "title": "CardX Design System",
   "imagePath": "../../images/",
-  "arrow-right": "../../images/icons/nav/arrow-right.svg",
-  "arrow-left": "../../images/icons/nav/arrow-left.svg",
-  "arrow-back": "../../images/icons/nav/arrow-back.svg",
-  "resend": "../../images/icons/nav/resend.svg",
-  "close": "../../images/icons/nav/close.svg",
+  "arrow-right": "../../images/icons/arrow-right.svg",
+  "arrow-left": "../../images/icons/arrow-left.svg",
+  "arrow-back": "../../images/icons/arrow-back.svg",
+  "resend": "../../images/icons/resend.svg",
+  "close": "../../images/icons/close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
   "link-home": "link.Templates-T2-Home",
@@ -41,7 +41,7 @@
         "image": "../../images/card-processor.jpg",
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><ul class='pl-4'><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li></ul>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "support-tip": {
-          "cog": "../../images/icons/nav/cog.svg",
+          "cog": "../../images/icons/cog.svg",
           "tip-title": "Support Tip",
           "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin."
         }
@@ -56,7 +56,7 @@
         ,
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "pull-quote": {
-          "lsquo": "../../images/icons/nav/lsquo.svg",
+          "lsquo": "../../images/icons/lsquo.svg",
           "quote": "Never take a shower with your socks on.",
           "author": "Sheila Babayan",
           "company": "Technical Manager, VSA Partners inc."
@@ -73,45 +73,45 @@
   "mainNav": {
     "mainLinks": [
       {
-      "icon": "Home_icn.svg",
-      "iconHover": "Home_icn_active.svg",
+      "icon": "home_icn.svg",
+      "iconHover": "home_icn_active.svg",
       "copy": "Home",
       "url": "link.Templates-T2-Home"
       },
       {
-      "icon": "Virtual_terminal_icn.svg",
-      "iconHover": "Virtual_terminal_icn_active.svg",
+      "icon": "virtualterminal_icn.svg",
+      "iconHover": "virtualterminal_icn_active.svg",
       "copy": "Virtual Terminal",
       "url": "#"
       },
       {
-      "icon": "Sales_icn.svg",
-      "iconHover": "Sales_icn_active.svg",
+      "icon": "reporting_icn.svg",
+      "iconHover": "reporting_icn_active.svg",
       "copy": "Reporting",
       "url": "#"
       },
       {
       "activeClass": "active",
-      "icon": "Customer_icn.svg",
-      "iconHover": "Customer_icn_active.svg",
+      "icon": "customers_icn.svg",
+      "iconHover": "customers_icn_active.svg",
       "copy": "Customers",
       "url": "link.Templates-T7-Customer-Profile"
       },
       {
-      "icon": "Invoice_icn.svg",
-      "iconHover": "Invoice_icn_active.svg",
+      "icon": "invoices_icn.svg",
+      "iconHover": "invoices_icn_active.svg",
       "copy": "Invoices",
       "url": "#"
       },
       {
-      "icon": "Support_icn.svg",
-      "iconHover": "Support_icn_active.svg",
+      "icon": "support_icn.svg",
+      "iconHover": "support_icn_active.svg",
       "copy": "Support",
       "url": "#"
       },
       {
-      "icon": "Support_icn.svg",
-      "iconHover": "Support_icn_active.svg",
+      "icon": "account_icn.svg",
+      "iconHover": "account_icn_active.svg",
       "copy": "Account",
       "url": "#"
       }
@@ -186,7 +186,7 @@
     }
   ],
   "chat": {
-    "bubble": "../../images/icons/nav/chat-bubble.svg",
+    "bubble": "../../images/icons/chat-bubble.svg",
     "title": "Can’t find what you’re looking for?",
     "wait-copy": "Current wait time is",
     "wait-time": "2 Minutes",
@@ -604,10 +604,26 @@
             "btn-copy": "Save Draft"
           },
           {
-            "classes": "btn btn-dark",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
+            "classes": "btn btn-dark-outline active",
+            "id": "pills-edit-tab",
+            "data-toggle": "pill",
+            "href": "#pills-edit",
+            "aria-label": "Edit ",
+            "btn-copy": "Edit",
+            "role": "tab",
+            "aria-controls": "pills-edit",
+            "aria-selected": "true"
+          },
+          {
+            "classes": "btn btn-dark ",
+            "id": "pills-preview-tab",
+            "data-toggle": "pill",
+            "href": "#pills-preview",
+            "aria-label": "Preview ",
+            "btn-copy": "Preview",
+            "role": "tab",
+            "aria-controls": "pills-preview",
+            "aria-selected": "false"
           }
         ],
         "btns-desktop-bottom": [
@@ -630,78 +646,33 @@
             "btn-copy": "Preview"
           }
         ],
-        "sections": [
+        "tab-panes": [
+          {
+            "classes": "show active",
+            "id": "pills-edit",
+            "aria-labelledby": "pills-edit-tab",
+            "heading": "Im a heading",
+            "sections": [
+              {
+                "heading": "Profile Information",
+                "profile-info": true
+              }
+            ]
+          },
+          {
+            "classes": "",
+            "id": "pills-preview",
+            "aria-labelledby": "pills-preview-tab",
+            "heading": "Im a different heading",
+            "sections": [
+              {
+                "heading": "Profile Information",
+                "set-up-billing": true
+              }
+            ]
+          },
         ]
       }
     ],
   },
-  "invoice": {
-    "modals": [
-      {
-        "id": "customerCreateInvoice",
-        "heading-page": "Create New Invoice",
-        "menu-mobile": [
-          {
-            "classes": "dropdown-item",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "dropdown-item",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "dropdown-item",
-            "aria-label": "Preview ",
-            "btn-copy": "Preview"
-          }
-        ],
-        "btns-desktop-top": [
-          {
-            "classes": "btn btn-dark-outline",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "btn btn-dark-outline",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn btn-dark",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
-          }
-        ],
-        "btns-desktop-bottom": [
-          {
-            "classes": "btn btn-outline",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "btn btn-outline",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
-          }
-        ],
-        "sections": [
-        ]
-      }
-    ],
-  }
 }
