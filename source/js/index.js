@@ -201,50 +201,12 @@ $(document).ready(function() {
   }
   // End Chart Init
 
-<<<<<<< HEAD
-  // Fire a modal immediately for debugging
-  $("#customerNew").modal("show");
-
-  // Begin Custom Modal Behavior
-  // var $element = $('#modalBody');
-  // var element_height = $element.outerHeight();
-  // var element_top_position = $element.offset().top;
-  // var element_bottom_position = (element_top_position + element_height);
-
-  // Detect which modal is shown
-  $(".modal").on("shown.bs.modal", function() {
-    var modal = $(this);
-    var header = $(".modal.fade.show .modal-header");
-    var heading = $(".modal.fade.show .modal-header .heading-col");
-    var mainBox = $(".modal.fade.show .mainBox");
-
-    modal.scroll(function() {
-      var scrollTop = modal.scrollTop();
-      if (scrollTop > 0) {
-        header.addClass("shrink");
-        console.log(scrollTop);
-        if (header.height() === 76) {
-          mainBox.css("z-index", 1010);
-          mainBox.css("position", "relative");
-        }
-      } else {
-        header.removeClass("shrink");
-        mainBox.css("z-index", 1020);
-        if (header.height() === 170) {
-          mainBox.css("z-index", 1010);
-          mainBox.css("position", "fixed");
-        }
-      }
-    });
-  });
-
-  // console.log(modal);
-=======
   // Debounce
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
-      var context = this, args = arguments;
+      var context = this,
+        args = arguments;
       var later = function() {
         timeout = null;
         if (!immediate) func.apply(context, args);
@@ -259,37 +221,25 @@ $(document).ready(function() {
   // Modal Animation
   // $('#customerCreateInvoice').modal('show');
 
-  $('.modal').on('shown.bs.modal', function() {
+  $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
-    var header = $('.modal.fade.show .modal-header');
-    var heading = $('.modal.fade.show .modal-header .heading-col');
-    var mainBox = $('.modal.fade.show .mainBox');
+    var header = $(".modal.fade.show .modal-header");
+    var heading = $(".modal.fade.show .modal-header .heading-col");
+    var mainBox = $(".modal.fade.show .mainBox");
 
     function animateModalHeader() {
       var scrollTop = modal.scrollTop();
-      if (scrollTop > 10 ) {
-        header.addClass('shrink');
-        if (header.height() < 160 && header.height() >= 76 ) {
-          mainBox.css('z-index', 1010 );
+      if (scrollTop > 10) {
+        header.addClass("shrink");
+        if (header.height() < 160 && header.height() >= 76) {
+          mainBox.css("z-index", 1010);
         }
       } else {
-        header.removeClass('shrink');
-        mainBox.css('z-index', 1020 );
+        header.removeClass("shrink");
+        mainBox.css("z-index", 1020);
       }
     }
->>>>>>> 087d8a7f8110e8b8adce23661bb13ae081b0ae9b
 
     modal.scroll(debounce(animateModalHeader, 10));
-
-<<<<<<< HEAD
-  // modal.scroll(function() {
-  //   console.log(modal.scrollTop());
-  //   menuHeight = Math.max(70, 170 - modal.scrollTop());
-  //   topOffset = 100 - menuHeight;
-  //   header.height(menuHeight);
-  // });
-=======
   });
-
->>>>>>> 087d8a7f8110e8b8adce23661bb13ae081b0ae9b
 });
