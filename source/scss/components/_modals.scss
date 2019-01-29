@@ -5,14 +5,12 @@
   .modal-content {
     border: 0;
     border-radius: 0;
-    height: 100vh;
+    background-color: transparent;
     .modal-header {
       position: fixed;
       z-index: 1025;
-      top: 0;
-      right: 0;
-      left: 0;
       height: 50px;
+      width: 100%;
       border: 0;
       background-color: $primary-2;
       transition: $transition-modal-animation;
@@ -38,7 +36,7 @@
       }
       .header-img {
         position: absolute;
-        height: 170px;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         object-position: center center;
@@ -58,14 +56,24 @@
       }
     }
     .modal-body {
-      display: block;
       background-color: $primary-3;
       @include media-breakpoint-up(md) {
-        background-color: $gray-lightest;
+        background-color: transparent;
+      }
+      &::before {
         background-image: url('../../images/modal-pattern.svg');
-        background-size: cover;
+        background-color: $gray-lightest;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-position: center top;
+        background-size: cover;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: -1;
       }
       .mainBox {
         background: $primary-3;
@@ -80,7 +88,7 @@
           padding-left: 15px;
           padding-right: 15px;
           border-radius: 6px;
-          box-shadow: 0 6px 10px 0 #E7E8ED;
+          box-shadow: 0 6px 10px 0 #e7e8ed;
           border: 1px solid $gray-lightest;
         }
       }

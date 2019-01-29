@@ -179,10 +179,8 @@ $(document).ready(function() {
   }
 
   // Modal Animation
-
   $('#customerNew').modal('show');
 
-  // Begin Custom Modal Behaviors
   $('.modal').on('shown.bs.modal', function() {
     var modal = $(this);
     var header = $('.modal.fade.show .modal-header');
@@ -193,7 +191,7 @@ $(document).ready(function() {
       var scrollTop = modal.scrollTop();
       if (scrollTop > 10 ) {
         header.addClass('shrink');
-        if (header.height() <= 160 && header.height() >= 76 ) {
+        if (header.height() < 160 && header.height() >= 76 ) {
           mainBox.css('z-index', 1010 );
         }
       } else {
