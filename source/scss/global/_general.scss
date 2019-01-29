@@ -8,24 +8,15 @@
 html,
 body {
 	max-width: 100%;
-	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	/* the slickest text out there */
 	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-	font-family: $font-family-sans-serif;
 }
 
 
 @include media-breakpoint-down(md) {
   .container {
     width: 90%;
-    // &:not(.article) {
-    //   padding-left: 0px;
-    //   padding-right: 0px;
-    // }
   }
 }
 
@@ -46,82 +37,85 @@ body {
   position: fixed;
 }
 
-// body.modal-open {
-//   position: fixed;
-//   overflow-y: hidden;
-//   width: 100%;
-// }
 
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
-// @include debug;
+//  @include debug;
 
 
 // usman this should all be in the chart scss module file
-.home{
+.home {
   background: $white;
-  box-shadow: -3px 3px 10px 8px #E7E8ED;
-  border-radius: 0px 6px 6px 0px;
+  box-shadow: -3px 3px 10px 8px #e7e8ed;
+  border-radius: 0 6px 6px 0;
   position: relative;
 
-  .col-f-1{
-    flex:1;
+  .col-f-1 {
+    flex: 1;
   }
 
-  .line{
+  .line {
     position: absolute;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    width:6px;
-    height:100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 6px;
+    height: 100%;
     background-color: $primary-2;
   }
-  .data-sales{
+
+  .data-sales {
+
     // height: 96px;
-    .sales-type{
+    .sales-type {
       //display: flex;
       //flex-direction: row;
       height: 100%;
       color: $primary-3;
 
-      .col{
+      .col {
         flex: 1;
         align-items: center;
         display: flex;
 
-        .col-inner{
+        .col-inner {
           align-self: center;
         }
       }
-      .ct{
+
+      .ct {
         background-color: $primary-2;
       }
-      .vt{
+
+      .vt {
         background-color: $secondary-2;
       }
-      .lb{
+
+      .lb {
         background-color: $tertiary-1;
       }
     }
   }
 
-  .data-chart{
+  .data-chart {
     .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
       stroke: $tertiary-1 !important;
     }
+
     .ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
       stroke: $tertiary-3 !important;
     }
-    .data-chart-nav{
+
+    .data-chart-nav {
       background-color: #fff;
       color: $secondary-4;
       border-bottom: 2px solid #fff;
       margin: 0.5rem 1rem;
-      padding: 0px;
+      padding: 0;
 
-      &:hover, &:active, &.active{
-       border-bottom: 2px solid $secondary-4;
+      &:hover, &:active, &.active {
+        border-bottom: 2px solid $secondary-4;
       }
     }
   }
 }
+
