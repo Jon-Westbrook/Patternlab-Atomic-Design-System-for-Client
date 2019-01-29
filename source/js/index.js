@@ -220,7 +220,6 @@ $(document).ready(function() {
 
   // Modal Animation
   // $('#customerCreateInvoice').modal('show');
-
   $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
     var header = $(".modal.fade.show .modal-header");
@@ -239,7 +238,21 @@ $(document).ready(function() {
         mainBox.css("z-index", 1020);
       }
     }
-
     modal.scroll(debounce(animateModalHeader, 10));
   });
+
+  // Modal Invoice Hide/Show Modify Header when switching tabs
+  $('button[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+    e.target // newly activated tab
+    console.log(e.target);
+    e.relatedTarget // previous active tab
+    console.log(e.relatedTarget);
+  })
+
+
+
+
+
+
+
 });

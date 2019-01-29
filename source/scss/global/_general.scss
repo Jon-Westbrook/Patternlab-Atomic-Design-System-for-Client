@@ -30,6 +30,10 @@ body {
 .rule {
   height: 2px;
   background-image: linear-gradient(to right, $secondary-1, $tertiary-2);
+  &.plain {
+    background-image: none;
+    backgound-color: $primary-3;
+  }
 }
 
 // Prevent body content from scrolling when sidebar is open
