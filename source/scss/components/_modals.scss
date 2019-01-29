@@ -57,6 +57,7 @@
     }
     .modal-body {
       background-color: $primary-3;
+      height: 100vh;
       @include media-breakpoint-up(md) {
         background-color: transparent;
       }

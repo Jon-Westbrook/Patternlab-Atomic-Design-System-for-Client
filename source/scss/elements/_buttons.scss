@@ -5,7 +5,7 @@
   letter-spacing: 1px;
   color: $primary-3;
   background-color: $secondary-4;
-  &:hover, &:focus {
+  &:hover, &:focus, .active {
     background-color: $secondary-5;
     color: $primary-3;
   }
@@ -14,7 +14,7 @@
     background-color: $primary-3;
     border: 2px solid $secondary-4;
     box-shadow: none;
-    &:hover, &:focus {
+    &:hover, &:focus, .active {
       color: $primary-3;
       background-color: $secondary-4;
     }
@@ -24,10 +24,10 @@
     background-color: $primary-3;
     border: 2px solid $primary-3;
     box-shadow: none;
-    &:hover, &:focus {
+    &:hover, &:focus, .active {
       color: $primary-3;
-      background-color: $secondary-4;
-      border-color: $secondary-4;
+      background-color: $secondary-4 !important;
+      border-color: $secondary-4 !important;
     }
   }
   &.btn-dark-outline {
@@ -35,15 +35,15 @@
     background-color: transparent;
     border: 2px solid $primary-3;
     box-shadow: none;
-    &:hover, &:focus {
+    &:hover, &:focus, .active {
       color: $primary-3;
       background-color: $secondary-4;
       border-color: $secondary-4;
     }
   }
   &.submit-login {
-    &:hover, &:focus {
-      background-color:  #7259CB;
+    &:hover, &:focus, .active {
+      background-color: #7259cb;
     }
   }
 }

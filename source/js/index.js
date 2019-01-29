@@ -179,7 +179,7 @@ $(document).ready(function() {
   }
 
   // Modal Animation
-  $('#customerNew').modal('show');
+  // $('#customerCreateInvoice').modal('show');
 
   $('.modal').on('shown.bs.modal', function() {
     var modal = $(this);
