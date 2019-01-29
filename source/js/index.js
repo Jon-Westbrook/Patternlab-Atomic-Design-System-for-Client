@@ -1,9 +1,7 @@
 $(document).ready(function() {
-
   // HOUSEKEEPING
   var $ = jQuery;
   var $window = $(window);
-
 
   // Toggle Sidebar
   $("#sidebarCollapse").on("click", function() {
@@ -73,15 +71,57 @@ $(document).ready(function() {
   };
 
   var dataYear = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
     series: [
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000],
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000]
+      [
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000,
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000
+      ],
+      [
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000,
+        800000,
+        1200000,
+        1400000,
+        1300000,
+        800000,
+        1200000
+      ]
     ]
   };
   var options = {
     stackBars: true,
     plugins: [
+      Chartist.plugins.legend({
+        legendNames: ["Credit", "Debit"]
+      }),
       Chartist.plugins.tooltip({
         currency: "$",
         class: "class1",
@@ -99,8 +139,7 @@ $(document).ready(function() {
   var responsiveOptions = "";
 
   // If chart container exists on page, init
-  if ($('.data-chart')[0]) {
-
+  if ($(".data-chart")[0]) {
     var ctWeek = new Chartist.Bar(
       "#ct-week",
       dataWeek,
@@ -163,7 +202,7 @@ $(document).ready(function() {
   // End Chart Init
 
   // Fire a modal immediately for debugging
-  $('#customerNew').modal('show');
+  $("#customerNew").modal("show");
 
   // Begin Custom Modal Behavior
   // var $element = $('#modalBody');
@@ -171,42 +210,32 @@ $(document).ready(function() {
   // var element_top_position = $element.offset().top;
   // var element_bottom_position = (element_top_position + element_height);
 
-
-
   // Detect which modal is shown
-  $('.modal').on('shown.bs.modal', function(){
+  $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
-    var header = $('.modal.fade.show .modal-header');
-    var heading = $('.modal.fade.show .modal-header .heading-col');
-    var mainBox = $('.modal.fade.show .mainBox');
-
+    var header = $(".modal.fade.show .modal-header");
+    var heading = $(".modal.fade.show .modal-header .heading-col");
+    var mainBox = $(".modal.fade.show .mainBox");
 
     modal.scroll(function() {
       var scrollTop = modal.scrollTop();
       if (scrollTop > 0) {
-        header.addClass('shrink');
+        header.addClass("shrink");
         console.log(scrollTop);
         if (header.height() === 76) {
-          mainBox.css('z-index', 1010 );
-          mainBox.css('position', 'relative' );
+          mainBox.css("z-index", 1010);
+          mainBox.css("position", "relative");
         }
       } else {
-        header.removeClass('shrink');
-        mainBox.css('z-index', 1020 );
+        header.removeClass("shrink");
+        mainBox.css("z-index", 1020);
         if (header.height() === 170) {
-          mainBox.css('z-index', 1010 );
-          mainBox.css('position', 'fixed' );
+          mainBox.css("z-index", 1010);
+          mainBox.css("position", "fixed");
         }
       }
     });
-
   });
-
-
-
-
-
-
 
   // console.log(modal);
 
@@ -218,5 +247,4 @@ $(document).ready(function() {
   //   topOffset = 100 - menuHeight;
   //   header.height(menuHeight);
   // });
-
 });

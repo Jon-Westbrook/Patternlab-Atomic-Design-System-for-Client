@@ -67,14 +67,27 @@ body {
     flex:1;
   }
 
+  .w-sm-100{
+    width: 85%;
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
   .line{
     position: absolute;
     top:0px;
     left:0px;
     bottom:0px;
-    width:6px;
-    height:100%;
+    width:100%;
+    height:6px;
     background-color: $primary-2;
+    border: $primary-2;
+
+    @include media-breakpoint-up(sm) {
+      position: absolute;
+      width:6px;
+      height:100%;
+    }
   }
   .data-sales{
     // height: 96px;
@@ -113,14 +126,17 @@ body {
       stroke: $tertiary-3 !important;
     }
     .data-chart-nav{
+      color: $gray-medium;
       background-color: #fff;
-      color: $secondary-4;
       border-bottom: 2px solid #fff;
       margin: 0.5rem 1rem;
       padding: 0px;
+      padding-top: 10px;
+      font-weight: 500;
 
       &:hover, &:active, &.active{
        border-bottom: 2px solid $secondary-4;
+       color: $secondary-4;
       }
     }
   }
