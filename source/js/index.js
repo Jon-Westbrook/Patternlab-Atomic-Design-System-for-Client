@@ -7,6 +7,7 @@ $(document).ready(function() {
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
     $(".overlay").addClass("active");
+    $('#dismiss').triggerHandler( "focus" );
   });
 
   $("#dismiss, .overlay").on("click", function() {

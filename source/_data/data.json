@@ -592,7 +592,7 @@
         ],
         "btns-desktop-top": [
           {
-            "classes": "btn btn-dark-outline",
+            "classes": "btn btn-dark-outline cancel",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
@@ -632,7 +632,7 @@
         ],
         "btns-desktop-bottom": [
           {
-            "classes": "btn btn-outline",
+            "classes": "btn btn-outline cancel",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
@@ -679,7 +679,7 @@
             "sections": [
               {
                 "heading": "Profile Information",
-                "profile-info": true
+                "customer-info": true
               }
             ]
           },
