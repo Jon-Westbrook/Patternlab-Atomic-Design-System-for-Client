@@ -134,7 +134,7 @@
     }
   }
 
-  ul li:hover, ul li:focus {
+  ul li:hover, ul li:focus, ul li.active {
     text-decoration: none;
 
     .top {
