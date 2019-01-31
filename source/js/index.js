@@ -220,7 +220,7 @@ $(document).ready(function() {
   }
 
   // Modal Animation
-  // $('#customerCreateInvoice').modal('show');
+  $('#customerCreateInvoice').modal('show');
 
   $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
@@ -248,7 +248,6 @@ $(document).ready(function() {
 
   // Modal Invoice - Hide/Show Modify Header when switching tabs
   $("button.pills-preview-tab").on("shown.bs.tab", function(e) {
-    console.log("preview was shown");
     $(".invoice-save-draft").hide();
     $(".pills-edit-tab").show();
     $(".invoice-send").show();
@@ -257,11 +256,19 @@ $(document).ready(function() {
   });
 
   $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
-    console.log("edit was shown");
     $(".invoice-save-draft").show();
     $(".pills-edit-tab").hide();
     $(".invoice-send").hide();
     $(".pills-preview-tab").show();
     $(".invoice-page-heading").html("Create Invoice");
   });
+
+  // Datatables - Modal Invoice
+  $('.modal-invoice-table').DataTable({
+    "ordering": false,
+    "searching": false,
+    "paging": false,
+    "info": false
+  });
+
 });

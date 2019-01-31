@@ -685,6 +685,10 @@
               {
                 "invoice-details": true,
                 "heading": "Invoice Details"
+              },
+              {
+                "invoice-line-items": true,
+                "heading": "Line Items"
               }
             ]
           },
