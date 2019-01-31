@@ -220,8 +220,6 @@ $(document).ready(function() {
   }
 
   // Modal Animation
-  $('#customerCreateInvoice').modal('show');
-
   $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
     var header = $(".modal.fade.show .modal-header");
@@ -246,14 +244,9 @@ $(document).ready(function() {
   $(".pills-edit-tab").hide();
   $(".invoice-send").hide();
 
+  // $('#customerCreateInvoice').modal('show');
+
   // Modal Invoice - Hide/Show Modify Header when switching tabs
-  $("button.pills-preview-tab").on("shown.bs.tab", function(e) {
-    $(".invoice-save-draft").hide();
-    $(".pills-edit-tab").show();
-    $(".invoice-send").show();
-    $(".pills-preview-tab").hide();
-    $(".invoice-page-heading").html("Preview Invoice");
-  });
 
   $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
     $(".invoice-save-draft").show();
@@ -262,6 +255,16 @@ $(document).ready(function() {
     $(".pills-preview-tab").show();
     $(".invoice-page-heading").html("Create Invoice");
   });
+
+  $("button.pills-preview-tab").on("shown.bs.tab", function(e) {
+    $(".invoice-save-draft").hide();
+    $(".pills-edit-tab").show();
+    $(".invoice-send").show();
+    $(".pills-preview-tab").hide();
+    $(".invoice-page-heading").html("Preview Invoice");
+  });
+
+  // $('button.pills-preview-tab').trigger('click');
 
   // Datatables - Modal Invoice
   $('.modal-invoice-table').DataTable({
