@@ -678,7 +678,7 @@
             "heading": "Im a heading",
             "sections": [
               {
-                "heading": "Profile Information",
+                "heading": "Customer Information",
                 "customer-info": true
               }
             ]
