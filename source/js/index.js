@@ -268,7 +268,14 @@ $(document).ready(function() {
     "ordering": false,
     "searching": false,
     "paging": false,
-    "info": false
+    "info": false,
+    "autoWidth": false,
+    "columnDefs": [
+      { "width": "50%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "10%", "targets": 0 }
+    ]
   });
 
 });
