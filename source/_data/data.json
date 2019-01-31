@@ -536,6 +536,7 @@
         "email": "asmith@ashleyfurniture.com",
         "phone": "(312) 555-1212",
         "address": "1234 Morton St.",
+        "address2": "Unit 1",
         "city": "New York",
         "state-abbrv": "NY",
         "zip": "60630-4532",

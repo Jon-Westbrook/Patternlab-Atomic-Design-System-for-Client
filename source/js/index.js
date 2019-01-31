@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
     $(".overlay").addClass("active");
-    $('#dismiss').triggerHandler( "focus" );
+    document.getElementById("closeMenu").focus();
   });
 
   $("#dismiss, .overlay").on("click", function() {
@@ -243,28 +243,25 @@ $(document).ready(function() {
     modal.scroll(debounce(animateModalHeader, 10));
   });
 
-  $('.pills-edit-tab').hide();
-  $('.invoice-send').hide();
+  $(".pills-edit-tab").hide();
+  $(".invoice-send").hide();
 
   // Modal Invoice - Hide/Show Modify Header when switching tabs
-  $('button.pills-preview-tab').on('shown.bs.tab', function (e) {
+  $("button.pills-preview-tab").on("shown.bs.tab", function(e) {
     console.log("preview was shown");
-    $('.invoice-save-draft').hide();
-    $('.pills-edit-tab').show();
-    $('.invoice-send').show();
-    $('.pills-preview-tab').hide();
-    $('.invoice-page-heading').html("Preview Invoice");
+    $(".invoice-save-draft").hide();
+    $(".pills-edit-tab").show();
+    $(".invoice-send").show();
+    $(".pills-preview-tab").hide();
+    $(".invoice-page-heading").html("Preview Invoice");
   });
 
-  $('button.pills-edit-tab').on('shown.bs.tab', function (e) {
+  $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
     console.log("edit was shown");
-    $('.invoice-save-draft').show();
-    $('.pills-edit-tab').hide();
-    $('.invoice-send').hide();
-    $('.pills-preview-tab').show();
-    $('.invoice-page-heading').html("Create Invoice");
-  })
-
-
-
+    $(".invoice-save-draft").show();
+    $(".pills-edit-tab").hide();
+    $(".invoice-send").hide();
+    $(".pills-preview-tab").show();
+    $(".invoice-page-heading").html("Create Invoice");
+  });
 });
