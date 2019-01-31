@@ -44,9 +44,23 @@
             <div class="tab-pane fade {{ classes }}" id="{{ id }}" role="tab-panel" aria-labelledby="{{ aria-labelledby }}">
               <form class="w-100 needs-validation" novalidate>
                 {{# sections }}
-                {{# customer-info}}
-                {{> Components-C33-Invoice-Info }}
-                {{/ customer-info}}
+
+                  {{#  invoice-info }}
+                    {{> Components-C33-Invoice-Info }}
+                  {{/ invoice-info }}
+
+                  {{# invoice-details }}
+                    {{> Components-C34-Invoice-Details }}
+                  {{/ invoice-details }}
+
+                  {{# invoice-line-items }}
+                    {{> Components-C35-Invoice-Line-Items }}
+                  {{/ invoice-line-items }}
+
+                  {{# invoice-preview }}
+                    {{> Components-C36-Invoice-Preview }}
+                  {{/ invoice-preview }}
+
                 {{/ sections }}
               </form>
             </div>

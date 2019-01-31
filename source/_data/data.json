@@ -678,8 +678,12 @@
             "heading": "Im a heading",
             "sections": [
               {
-                "heading": "Customer Information",
-                "customer-info": true
+                "invoice-info": true,
+                "heading": "Customer Information"
+              },
+              {
+                "invoice-details": true,
+                "heading": "Invoice Details"
               }
             ]
           },
@@ -690,8 +694,8 @@
             "heading": "Im a different heading",
             "sections": [
               {
+                "invoice-preview": true,
                 "heading": "Profile Information",
-                "set-up-billing": true
               }
             ]
           },
