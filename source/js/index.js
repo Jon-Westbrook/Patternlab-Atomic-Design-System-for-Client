@@ -7,6 +7,7 @@ $(document).ready(function() {
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
     $(".overlay").addClass("active");
+    document.getElementById("closeMenu").focus();
   });
 
   $("#dismiss, .overlay").on("click", function() {
@@ -242,17 +243,10 @@ $(document).ready(function() {
   });
 
   // Modal Invoice Hide/Show Modify Header when switching tabs
-  $('button[data-toggle="pill"]').on('shown.bs.tab', function (e) {
-    e.target // newly activated tab
+  $('button[data-toggle="pill"]').on("shown.bs.tab", function(e) {
+    e.target; // newly activated tab
     console.log(e.target);
-    e.relatedTarget // previous active tab
+    e.relatedTarget; // previous active tab
     console.log(e.relatedTarget);
-  })
-
-
-
-
-
-
-
+  });
 });

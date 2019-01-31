@@ -27,7 +27,8 @@
  * Header Link Style
  */
 @mixin linkStyle() {
-  background: $pl-primary-bg;
+  //background: $pl-primary-bg;
+  background: $pl-topnav-color;
   color: $pl-primary-color;
   text-decoration: none;
   line-height: 1.5;

@@ -15,7 +15,8 @@
      */
   .pl-c-typeahead {
     border: 0;
-    background: $pl-primary-bg !important;
+    //background: $pl-primary-bg !important;
+    background: $pl-topnav-color !important;
     color: $pl-primary-color;
     width: 100%;
     right: 0;
@@ -40,7 +41,8 @@
   }
 
   .tt-input, ::-webkit-input-placeholder {
-    background: $pl-primary-bg;
+    //background: $pl-primary-bg;
+    background: $pl-topnav-color;
     color:  #fff;
 
     .pl-c-header
