@@ -593,20 +593,19 @@
         ],
         "btns-desktop-top": [
           {
-            "classes": "btn btn-dark-outline",
+            "classes": "btn btn-dark-outline cancel",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
-            "classes": "btn btn-dark-outline",
+            "classes": "btn btn-dark-outline invoice-save-draft",
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
           },
           {
-            "classes": "btn btn-dark-outline active",
-            "id": "pills-edit-tab",
+            "classes": "btn btn-dark-outline pills-edit-tab",
             "data-toggle": "pill",
             "href": "#pills-edit",
             "aria-label": "Edit ",
@@ -616,8 +615,7 @@
             "aria-selected": "true"
           },
           {
-            "classes": "btn btn-dark ",
-            "id": "pills-preview-tab",
+            "classes": "btn btn-dark pills-preview-tab",
             "data-toggle": "pill",
             "href": "#pills-preview",
             "aria-label": "Preview ",
@@ -625,26 +623,52 @@
             "role": "tab",
             "aria-controls": "pills-preview",
             "aria-selected": "false"
+          },
+          {
+            "classes": "btn btn-dark invoice-send",
+            "data-dismiss": "modal",
+            "aria-label": "Send",
+            "btn-copy": "Send"
           }
         ],
         "btns-desktop-bottom": [
           {
-            "classes": "btn btn-outline",
+            "classes": "btn btn-outline cancel",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
-            "classes": "btn btn-outline",
+            "classes": "btn btn-outline invoice-save-draft",
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
           },
           {
-            "classes": "btn",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
+            "classes": "btn btn-outline pills-edit-tab",
+            "data-toggle": "pill",
+            "href": "#pills-edit",
+            "aria-label": "Edit ",
+            "btn-copy": "Edit",
+            "role": "tab",
+            "aria-controls": "pills-edit",
+            "aria-selected": "true"
+          },
+          {
+            "classes": "btn pills-preview-tab",
+            "data-toggle": "pill",
+            "href": "#pills-preview",
+            "aria-label": "Preview ",
+            "btn-copy": "Preview",
+            "role": "tab",
+            "aria-controls": "pills-preview",
+            "aria-selected": "false"
+          },
+          {
+            "classes": "btn invoice-send",
+            "data-dismiss": "modal",
+            "aria-label": "Send",
+            "btn-copy": "Send"
           }
         ],
         "tab-panes": [
@@ -655,8 +679,8 @@
             "heading": "Im a heading",
             "sections": [
               {
-                "heading": "Profile Information",
-                "profile-info": true
+                "heading": "Customer Information",
+                "customer-info": true
               }
             ]
           },
