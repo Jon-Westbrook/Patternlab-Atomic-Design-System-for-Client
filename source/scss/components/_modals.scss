@@ -111,6 +111,20 @@
             width: 100%;
           }
         }
+        .dollar-wrapper {
+          position: relative;
+          &:before {
+            content: '$';
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            z-index: 1;
+          }
+          input {
+            padding-left: 22px;
+          }
+        }
+
       }
     }
   }
