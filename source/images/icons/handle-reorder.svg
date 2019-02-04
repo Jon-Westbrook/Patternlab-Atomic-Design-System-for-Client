@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="7px" viewBox="0 0 16 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>re-order</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="M23_Modal_Invoices@2x" transform="translate(-1048.000000, -1276.000000)" fill-rule="nonzero" stroke="#919193">
+            <g id="Line-items" transform="translate(335.000000, 1160.000000)">
+                <g id="icons" transform="translate(683.000000, 113.000000)">
+                    <g id="re-order" transform="translate(31.000000, 2.000000)">
+                        <path d="M0.2625,1.5 L13.7375,1.5" id="Line-4"></path>
+                        <path d="M0.2625,7.5 L13.7375,7.5" id="Line-4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

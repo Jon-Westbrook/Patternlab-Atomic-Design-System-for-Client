@@ -243,23 +243,24 @@ $(document).ready(function() {
 
   $(".pills-edit-tab").hide();
   $(".invoice-send").hide();
-  $('#customerCreateInvoice').modal('show');
+  // $('#customerCreateInvoice').modal('show');
 
   // Modal Invoice - Hide/Show Modify Header when switching tabs
 
   // Datatables - Modal Invoice
   var editTable = $('#invoice-edit-table').DataTable({
     "scrollX": true,
-    "ordering": false,
     "searching": false,
+    "rowReorder":  true,
     "paging": false,
     "info": false,
     "autoWidth": false,
+    "rowReorder": {
+        "selector": "td:last-child"
+    },
     "columnDefs": [
-      { "width": "50%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
-      { "width": "10%", "targets": 0 }
+      { orderable: false, targets: '_all' },
+      { "targets": 0, width: "80%", "visible": false }
     ]
   });
 
@@ -273,8 +274,8 @@ $(document).ready(function() {
     "autoWidth": false,
     "columnDefs": [
       { "width": "50%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
+      { "width": "20%", "targets": 0 },
+      { "width": "20%", "targets": 0 },
       { "width": "10%", "targets": 0 }
     ]
   });
@@ -302,17 +303,35 @@ $(document).ready(function() {
       .columns.adjust();
   });
 
+  var rowCounter = 3;
   $('.add-additional').on('click', function(){
-    console.log('Something is working');
+    console.log(rowCounter);
     var rowNode = editTable
-      .row.add( [ '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" placeholder=\"Enter Item Name\">', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', ''] )
+      .row.add([
+        rowCounter,
+        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" placeholder=\"Enter Item Name\">',
+        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
+        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
+        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
+        '<a href=\"\"class=\"d-inline-block icon-delete\"><img src=\"../../images/icons/close-gray.svg\"></a>',
+        '<a href=\"\"class=\"d-inline-block handle-reorder\"><img src=\"../../images/icons/handle-reorder.svg\"></a>'
+      ])
       .draw()
       .node();
+
+      rowCounter++;
 
     $( rowNode )
       .css( 'color', 'red' )
       .animate( { color: 'black' } );
   });
+
+  $('#invoice-edit-table tbody').on( 'click', '.icon-delete', function () {
+    editTable
+      .row( $(this).parents('tr') )
+      .remove()
+      .draw();
+    });
 
 });
 // End document ready
