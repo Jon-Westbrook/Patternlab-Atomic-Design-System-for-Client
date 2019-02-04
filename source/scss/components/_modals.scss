@@ -92,6 +92,19 @@
           box-shadow: 0 6px 10px 0 #e7e8ed;
           border: 1px solid $gray-lightest;
         }
+        .left-border {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 6px;
+            background-color: $primary-2;
+            z-index: 999;
+          }
+        }
       }
     }
   }

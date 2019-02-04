@@ -19,6 +19,9 @@ $secondary-5: #003967;
 $secondary-6: #7259CB;
 $secondary-7: #F3E9F2;
 
+// Blue on Modal Invoice
+$secondary-8: #f1f2f7;
+
 $tertiary-1: #8C2A84;
 $tertiary-2: #E7417A;
 $tertiary-3: #A47BC5;
@@ -206,7 +209,7 @@ $container-max-widths: (
   sm: 729px,
   md: 730px,
   lg: 800px,
-  xl: 1030px
+  xl: 1100px
 ) !default;
 
 // @include _assert-ascending($container-max-widths, "$container-max-widths");

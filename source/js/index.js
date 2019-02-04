@@ -243,10 +243,11 @@ $(document).ready(function() {
 
   $(".pills-edit-tab").hide();
   $(".invoice-send").hide();
-
-  // $('#customerCreateInvoice').modal('show');
+  $('#customerCreateInvoice').modal('show');
 
   // Modal Invoice - Hide/Show Modify Header when switching tabs
+
+
 
   $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
     $(".invoice-save-draft").show();
@@ -264,7 +265,7 @@ $(document).ready(function() {
     $(".invoice-page-heading").html("Preview Invoice");
   });
 
-  // $('button.pills-preview-tab').trigger('click');
+  $('button.pills-preview-tab').trigger('click');
 
   // Datatables - Modal Invoice
   $('.modal-invoice-table').DataTable({
