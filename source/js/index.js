@@ -263,12 +263,17 @@ $(document).ready(function() {
     $(".invoice-send").show();
     $(".pills-preview-tab").hide();
     $(".invoice-page-heading").html("Preview Invoice");
+
+    // recalculate column widths in table when preview modal is shown
+    $($.fn.dataTable.tables(true)).DataTable()
+      .columns.adjust();
   });
 
   $('button.pills-preview-tab').trigger('click');
 
   // Datatables - Modal Invoice
   $('.modal-invoice-table').DataTable({
+    "scrollX": true,
     "ordering": false,
     "searching": false,
     "paging": false,

@@ -2,7 +2,7 @@
 .modal-invoice-table {
   border-width: 0;
   border: 0 !important;
-  min-width: 500px;
+
 
   tr, td {
     border-width: 0;
@@ -11,6 +11,10 @@
 
   input {
     border: 0;
+  }
+
+  .even {
+    background-color: $secondary-8;
   }
 
 }
