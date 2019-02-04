@@ -73,7 +73,6 @@
   "mainNav": {
     "mainLinks": [
       {
-      "activeClass": "active",
       "icon": "home_icn.svg",
       "iconHover": "home_icn_active.svg",
       "copy": "Home",
@@ -110,6 +109,7 @@
       "url": "#"
       },
       {
+      "activeClass": "active",
       "icon": "account_icn.svg",
       "iconHover": "account_icn_active.svg",
       "copy": "Account",
