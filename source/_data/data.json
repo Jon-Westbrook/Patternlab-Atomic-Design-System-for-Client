@@ -586,9 +586,24 @@
             "btn-copy": "Save Draft"
           },
           {
-            "classes": "dropdown-item",
+            "classes": "dropdown-item pills-edit-tab",
+            "data-toggle": "pill",
+            "href": "#pills-edit",
+            "aria-label": "Edit ",
+            "btn-copy": "Edit",
+            "role": "tab",
+            "aria-controls": "pills-edit",
+            "aria-selected": "true"
+          },
+          {
+            "classes": "dropdown-item pills-preview-tab",
+            "data-toggle": "pill",
+            "href": "#pills-preview",
             "aria-label": "Preview ",
-            "btn-copy": "Preview"
+            "btn-copy": "Preview",
+            "role": "tab",
+            "aria-controls": "pills-preview",
+            "aria-selected": "false"
           }
         ],
         "btns-desktop-top": [

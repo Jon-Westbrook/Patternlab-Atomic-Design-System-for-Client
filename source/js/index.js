@@ -247,7 +247,37 @@ $(document).ready(function() {
 
   // Modal Invoice - Hide/Show Modify Header when switching tabs
 
+  // Datatables - Modal Invoice
+  var editTable = $('#invoice-edit-table').DataTable({
+    "scrollX": true,
+    "ordering": false,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+    "columnDefs": [
+      { "width": "50%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "10%", "targets": 0 }
+    ]
+  });
 
+  // Datatables - Modal Invoice
+  $('#invoice-preview-table').DataTable({
+    "scrollX": true,
+    "ordering": false,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+    "columnDefs": [
+      { "width": "50%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "5%", "targets": 0 },
+      { "width": "10%", "targets": 0 }
+    ]
+  });
 
   $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
     $(".invoice-save-draft").show();
@@ -263,28 +293,26 @@ $(document).ready(function() {
     $(".invoice-send").show();
     $(".pills-preview-tab").hide();
     $(".invoice-page-heading").html("Preview Invoice");
-
-    // recalculate column widths in table when preview modal is shown
     $($.fn.dataTable.tables(true)).DataTable()
       .columns.adjust();
   });
 
-  $('button.pills-preview-tab').trigger('click');
+  $('#customerCreateInvoice').on('shown.bs.modal', function(e){
+    $($.fn.dataTable.tables(true)).DataTable()
+      .columns.adjust();
+  });
 
-  // Datatables - Modal Invoice
-  $('.modal-invoice-table').DataTable({
-    "scrollX": true,
-    "ordering": false,
-    "searching": false,
-    "paging": false,
-    "info": false,
-    "autoWidth": false,
-    "columnDefs": [
-      { "width": "50%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
-      { "width": "5%", "targets": 0 },
-      { "width": "10%", "targets": 0 }
-    ]
+  $('.add-additional').on('click', function(){
+    console.log('Something is working');
+    var rowNode = editTable
+      .row.add( [ '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" placeholder=\"Enter Item Name\">', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >', ''] )
+      .draw()
+      .node();
+
+    $( rowNode )
+      .css( 'color', 'red' )
+      .animate( { color: 'black' } );
   });
 
 });
+// End document ready

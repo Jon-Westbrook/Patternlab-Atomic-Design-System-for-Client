@@ -1,20 +1,19 @@
 
-.modal-invoice-table {
+#invoice-preview-table, #invoice-edit-table {
   border-width: 0;
   border: 0 !important;
-
 
   tr, td {
     border-width: 0;
     border: 0 !important;
   }
-
   input {
     border: 0;
   }
+}
 
+#invoice-preview-table {
   .even {
     background-color: $secondary-8;
   }
-
 }
