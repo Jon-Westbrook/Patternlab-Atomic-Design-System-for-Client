@@ -18,12 +18,11 @@ $secondary-4: #0071CE;
 $secondary-5: #003967;
 $secondary-6: #7259CB;
 $secondary-7: #F3E9F2;
-
 // Blue on Modal Invoice
 $secondary-8: #f1f2f7;
 
 $tertiary-1: #8C2A84;
-$tertiary-2: #E7417A;
+$tertiary-2: #E31C62;
 $tertiary-3: #A47BC5;
 
 
@@ -40,8 +39,6 @@ $gray-border:               #C7C6C7;
 $gray-light:                #F1F2F7;
 $gray-lightest:             #F5F6FA;
 $gray-purple:               #F3F1F9;
-
-
 
 
 // Semantic Colors
@@ -78,7 +75,7 @@ $secondary:     $primary-2 !default;
 $success:       $green !default;
 $info:          $secondary-4 !default;
 $warning:       $yellow !default;
-$danger:        #E31C62 !default; //
+$danger:        $tertiary-2 !default;
 $light:         $primary-3 !default;
 $dark:          $primary-1 !default;
 
