@@ -10,14 +10,10 @@
   input {
     border: 0;
   }
-  // testing reordering
-  // .even {
-  //   background-color: $tertiary-3;
-  // }
 }
 
 #invoice-preview-table {
   .even {
-    background-color: $secondary-8;
+    background-color: $gray-light;
   }
 }
