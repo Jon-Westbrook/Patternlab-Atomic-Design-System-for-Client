@@ -209,7 +209,7 @@ $container-max-widths: (
   sm: 729px,
   md: 730px,
   lg: 800px,
-  xl: 1100px
+  xl: 1110px
 ) !default;
 
 // @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -314,11 +314,11 @@ $display1-line-height-md : (52 / 16)+rem;
 $display1-line-height-lg : (52 / 16)+rem;
 $display1-line-height-xl : (52 / 16)+rem;
 
-$display2-size-xs        : (32 / 16)+rem;
-$display2-size-sm        : (32 / 16)+rem;
-$display2-size-md        : (32 / 16)+rem;
-$display2-size-lg        : (32 / 16)+rem;
-$display2-size-xl        : (32 / 16)+rem;
+$display2-size-xs        : (36 / 16)+rem;
+$display2-size-sm        : (36 / 16)+rem;
+$display2-size-md        : (36 / 16)+rem;
+$display2-size-lg        : (36 / 16)+rem;
+$display2-size-xl        : (36 / 16)+rem;
 $display2-line-height-xs : (37 / 16)+rem;
 $display2-line-height-sm : (37 / 16)+rem;
 $display2-line-height-md : (37 / 16)+rem;
