@@ -14,7 +14,7 @@
   padding-left: 23px;
   margin-right: 10px;
   margin-bottom: 3px;
-  cursor: pointer;
+  /*cursor: pointer;*/
   display: inline-block;
 }
 .ct-legend li:before {

@@ -121,7 +121,8 @@ $(document).ready(function() {
     stackBars: true,
     plugins: [
       Chartist.plugins.legend({
-        legendNames: ["Credit", "Debit"]
+        legendNames: ["Credit", "Debit"],
+        clickable: false
       }),
       Chartist.plugins.tooltip({
         currency: "$",
