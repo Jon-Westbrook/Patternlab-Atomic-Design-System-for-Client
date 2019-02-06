@@ -54,7 +54,7 @@
           "image2": "../../images/credit-card.jpg"
         }
         ,
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "pull-quote": {
           "lsquo": "../../images/icons/lsquo.svg",
           "quote": "Never take a shower with your socks on.",
@@ -280,7 +280,8 @@
           },
           {
             "heading": "Card on File",
-            "card-on-file": true
+            "card-on-file": true,
+            "card-thumb": "../../images/card-icons.png"
           },
           {
             "heading": "Set up Billing Plan",
