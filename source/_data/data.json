@@ -8,7 +8,7 @@
   "close": "../../images/icons/close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
-  "link-home": "link.Templates-T2-Home",
+  "link-home": "link.Templates-T02-Home",
   "authentication": {
     "heading": "Log in",
     "heading-forgot": "Need help with your password?",
@@ -25,8 +25,8 @@
     "submit-reset-pass": "Reset password",
     "link-back": "Back to CardX log in",
     "link-resend": "Resend reset link",
-    "url-forgot": "link.Templates-T1b-Password-Forgot",
-    "url-back-to-login": "link.Templates-T1a-Authentication"
+    "url-forgot": "link.Templates-T01b-Password-Forgot",
+    "url-back-to-login": "link.Templates-T01a-Authentication"
   },
   "breadcrumbs": {
     "currentPage": "Page Title"
@@ -76,7 +76,7 @@
       "icon": "home_icn.svg",
       "iconHover": "home_icn_active.svg",
       "copy": "Home",
-      "url": "link.Templates-T2-Home"
+      "url": "link.Templates-T02-Home"
       },
       {
       "icon": "virtualterminal_icn.svg",
@@ -94,7 +94,7 @@
       "icon": "customers_icn.svg",
       "iconHover": "customers_icn_active.svg",
       "copy": "Customers",
-      "url": "link.Templates-T7-Customer-Profile"
+      "url": "link.Templates-T07-Customer-Profile"
       },
       {
       "icon": "invoices_icn.svg",

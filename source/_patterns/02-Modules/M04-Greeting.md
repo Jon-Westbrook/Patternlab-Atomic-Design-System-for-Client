@@ -1,5 +1,5 @@
 ---
-title: M4-Greeting
+title: M04-Greeting
 ---
 
 A greeting module for the dashboard.

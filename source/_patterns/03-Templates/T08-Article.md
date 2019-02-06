@@ -1,5 +1,5 @@
 ---
-title: T8-Article
+title: T08-Article
 ---
 
 An example template article.
