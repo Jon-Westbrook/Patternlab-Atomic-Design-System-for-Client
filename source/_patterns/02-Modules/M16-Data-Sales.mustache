@@ -1,4 +1,4 @@
-<div class="container home pl-lg-0 my-5">
+<div class="container home-module pl-lg-0 my-5">
   <div class="line my-0"></div>
   <div class="row data-sales">
     <div class="col-md-2 align-self-center secondary-1 bold my-5">
@@ -6,14 +6,14 @@
     </div>
     <div class="col-md-6">
       <div class="sales-type d-flex flex-column flex-lg-row">
-      {{#home.salesType}}
+        {{#home.salesType}}
         <div class="col {{class}}">
           <div class="col-inner my-2 d-flex justify-content-between flex-row flex-lg-column mb-3 w-100">
             <div class="label align-self-center align-self-lg-start">{{label}}</div>
             <div class="display2">{{number}}</div>
           </div>
         </div>
-      {{/home.salesType}}
+        {{/home.salesType}}
       </div>
     </div>
     <div class="col-md-4 align-self-center text-center my-5">

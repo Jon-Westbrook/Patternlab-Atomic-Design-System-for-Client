@@ -1,0 +1,35 @@
+.home-module {
+  background: $white;
+  box-shadow: -3px 3px 10px 8px #e7e8ed;
+  border-radius: 0 6px 6px 0;
+  position: relative;
+
+  .col-f-1 {
+    flex: 1;
+  }
+
+  .w-sm-100 {
+    width: 85%;
+
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: $primary-2;
+    border: $primary-2;
+
+    @include media-breakpoint-up(sm) {
+      position: absolute;
+      width: 6px;
+      height: 100%;
+    }
+  }
+}
