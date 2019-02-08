@@ -1,6 +1,5 @@
 .data-sales {
   .sales-type {
-
     height: 100%;
     color: $primary-3;
 
@@ -25,5 +24,10 @@
     .lb {
       background-color: $tertiary-1;
     }
+  }
+
+  .sales-button {
+    margin-top: 32px;
+    margin-bottom: 28px;
   }
 }

@@ -1,23 +1,23 @@
-<div class="container home-module pl-lg-0 my-5">
+<div class="container home-module pl-lg-0 mt-8">
   <div class="line my-0"></div>
   <div class="row data-sales">
     <div class="col-md-2 align-self-center secondary-1 bold my-5">
-      <span class="ml-md-5">SALES</span>
+      <span class="ml-md-7">SALES</span>
     </div>
-    <div class="col-md-6 pr-md-0">
+    <div class="col-md-7 pr-md-0">
       <div class="sales-type d-flex flex-column flex-lg-row">
         {{#home.salesType}}
-        <div class="col {{class}}">
-          <div class="col-inner my-2 d-flex justify-content-between flex-row flex-lg-column mb-3 w-100">
+        <div class="col pl-4 {{class}}">
+          <div class="col-inner my-2 d-flex justify-content-between flex-row flex-lg-column w-100">
             <div class="label align-self-center align-self-lg-start">{{label}}</div>
-            <div class="display2">{{number}}</div>
+            <div class="display2 mt-3">{{number}}</div>
           </div>
         </div>
         {{/home.salesType}}
       </div>
     </div>
-    <div class="col-md-4 align-self-center text-center my-5">
-      <button type="button" class="btn btn-outline w-sm-100">View Sales</button>
+    <div class="col-md-3 align-self-center text-center">
+      <button type="button" class="btn btn-outline w-sm-100 sales-button">View Sales</button>
     </div>
   </div>
 </div>
