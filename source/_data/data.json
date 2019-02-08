@@ -209,8 +209,8 @@
       },
       {
         "url": "",
-        "data-target": "",
-        "link-copy": "Bill with invoice"
+        "link-copy": "Bill with invoice",
+        "data-target": "customerCreateInvoice"
       },
       {
         "url": "",
