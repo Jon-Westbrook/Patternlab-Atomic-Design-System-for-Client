@@ -395,7 +395,14 @@
         "sections": [
           {
             "heading": "Card on File",
-            "card-on-file": true
+            "card-on-file": true,
+            "pre-pop-exp": "Ashley Smith",
+            "pre-pop-code": "Ashley Furniture",
+            "pre-pop-billing": "asmith@ashleyfurniture.com",
+            "pre-pop-addr": "(312) 555-1212",
+            "pre-pop-zip": "(312) 555-1212",
+            "pre-pop-city": "(312) 555-1212",
+            "pre-pop-state": "(312) 555-1212"
           }
         ]
       },
@@ -564,7 +571,7 @@
         "start-date": "October 18, 2018",
         "due": "When paid"
       }
-    ],
+    ]
   },
   "home":{
     "last-deposit": "$456.89",
@@ -720,12 +727,12 @@
             "sections": [
               {
                 "invoice-preview": true,
-                "heading": "Profile Information",
+                "heading": "Profile Information"
               }
             ]
-          },
+          }
         ]
       }
-    ],
-  },
+    ]
+  }
 }

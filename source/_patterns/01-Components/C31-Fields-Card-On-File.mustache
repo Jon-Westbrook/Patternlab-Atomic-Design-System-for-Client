@@ -1,8 +1,8 @@
 
 <div class="form-row">
   <div class="form-group col-md-8 mb-5">
-    <label for="validationCustom01" class="primary-2">Card Number</label>
-    <input type="text" class="form-control d-inline-block" id="validationCustom01" aria-describedby="validationCustom01" required>
+    <label for="validationCustom01" class="primary-2">Card Number 1</label>
+    <input type="text" class="form-control d-inline-block" id="validationCustom01" aria-describedby="validationCustom01" value="{{ pre-pop-card }}" required>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -12,42 +12,42 @@
   </div>
   <div class="form-group col-md-6 mb-5">
     <label for="validationCustom02" class="primary-2">Expiration Date</label>
-    <input type="text" class="form-control" id="validationCustom02" aria-describedby="validationCustom02" required>
+    <input type="text" class="form-control" id="validationCustom02" aria-describedby="validationCustom02" value="{{ pre-pop-exp }}" required>
     <div class="valid-feedback">
       Looks good!
     </div>
   </div>
   <div class="form-group col-md-6 mb-5">
     <label for="exampleInputEmail1" class="primary-2">Security Code</label>
-    <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="exampleInputEmail1">
+    <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="exampleInputEmail1" value="{{ pre-pop-code }}">
     <div class="valid-feedback">
       Looks good!
     </div>
   </div>
   <div class="form-group col-md-12 mb-5">
     <label for="exampleInputPhone1" class="primary-2">Billing Address</label>
-    <input type="tel" class="form-control w-100" id="exampleInputPhone1" aria-describedby="exampleInputPhone1">
+    <input type="tel" class="form-control w-100" id="exampleInputPhone1" aria-describedby="exampleInputPhone1" value="{{ pre-pop-addr }}">
     <div class="valid-feedback">
       Looks good!
     </div>
   </div>
   <div class="form-group col-md-6 mb-5">
     <label for="validationCustom05" class="primary-2">Zip</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
+    <input type="text" class="form-control" id="validationCustom05" value="{{ pre-pop-zip }}" required>
     <div class="invalid-feedback">
       Please provide a valid zip.
     </div>
   </div>
   <div class="form-group col-md-3 mb-5">
     <label for="validationCustom03" class="primary-2">City</label>
-    <input type="text" class="form-control" id="validationCustom03" required>
+    <input type="text" class="form-control" id="validationCustom03" value="{{ pre-pop-city }}" required>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
   <div class="form-group col-md-3 mb-5">
     <label for="validationCustom04" class="primary-2">State</label>
-    <input type="text" class="form-control" id="validationCustom04" required>
+    <input type="text" class="form-control" id="validationCustom04" value="{{ pre-pop-state }}" required>
     <div class="invalid-feedback">
       Please provide a valid state.
     </div>
