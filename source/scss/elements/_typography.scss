@@ -190,24 +190,24 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: $display4-size-xs;
-  line-height: $display4-line-height-xs;
+  font-size: $display5-size-xs;
+  line-height: $display5-line-height-xs;
   font-weight: 400;
   @include media-breakpoint-only(sm) {
-    font-size: $display4-size-sm;
-    line-height: $display4-line-height-sm;
+    font-size: $display5-size-sm;
+    line-height: $display5-line-height-sm;
   }
   @include media-breakpoint-only(md) {
-    font-size: $display4-size-md;
-    line-height: $display4-line-height-md;
+    font-size: $display5-size-md;
+    line-height: $display5-line-height-md;
   }
   @include media-breakpoint-only(lg) {
-    font-size: $display4-size-lg;
-    line-height: $display4-line-height-lg;
+    font-size: $display5-size-lg;
+    line-height: $display5-line-height-lg;
   }
   @include media-breakpoint-only(xl) {
-    font-size: $display4-size-xl;
-    line-height: $display4-line-height-xl;
+    font-size: $display5-size-xl;
+    line-height: $display5-line-height-xl;
   }
 }
 
