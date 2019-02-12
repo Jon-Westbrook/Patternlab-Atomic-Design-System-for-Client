@@ -120,7 +120,7 @@
 .display6 {
   font-size: $display6-size-xs;
   line-height: $display6-line-height-xs;
-  font-weight: 600;
+  font-weight: 400;
   font-family: $font-family-sans-serif;
   @include media-breakpoint-only(sm) {
     font-size: $display6-size-sm;

@@ -11,6 +11,8 @@
 }
 .ct-legend li {
   position: relative;
+  font-size: .75rem;
+  line-height: 1rem;
   padding-left: 23px;
   margin-right: 10px;
   margin-bottom: 3px;
