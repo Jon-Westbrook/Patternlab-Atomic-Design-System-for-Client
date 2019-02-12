@@ -284,7 +284,8 @@
           },
           {
             "heading": "Set up Billing Plan",
-            "set-up-billing": true
+            "set-up-billing": true,
+            "placeholder-search": "Search invoices..."
           }
         ]
       },
