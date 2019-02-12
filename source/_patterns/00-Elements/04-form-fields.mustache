@@ -1,5 +1,20 @@
 <div class="container pb-6 pb-md-8">
 
+  <div class="row">
+    <div class="form-group col-md-2">
+      <label for="validationCustom05" class="primary-2">Repeat Every</label>
+      <select id="inputState" class="custom-select">
+          <option selected>Choose...</option>
+          <option>Week</option>
+          <option>Two Weeks</option>
+          <option>Month</option>
+        </select>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+
   <div class="row mt-6 mt-md-8">
     <div class="col-md-6 d-flex justify-content-left">
       <form class="w-100 needs-validation" novalidate>
@@ -101,7 +116,7 @@
     </div>
   </div>
 
-  <div class="form-row mt-6 mt-md-8">
+  <div class="row mt-6 mt-md-8">
     <div class="input-group col-md-6 mb-3">
       <input type="search" class="form-control search-input" placeholder="{{ article.placeholder }}" aria-label="Search" >
       <div class="input-group-append magnifier-button">

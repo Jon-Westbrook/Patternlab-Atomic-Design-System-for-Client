@@ -55,3 +55,16 @@
   }
 }
 
+.custom-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15px' height='9px' viewBox='0 0 15 9' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eLine 3%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg id='Layout' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='square'%3e%3cg id='M24_Customer-Modal%402x' transform='translate(-753.000000, -1120.000000)' fill-rule='nonzero' stroke='%23372772' stroke-width='2'%3e%3cg id='Set-up-Billing-Plan' transform='translate(333.000000, 946.000000)'%3e%3cg id='Due' transform='translate(287.000000, 140.000000)'%3e%3cpolyline id='Line-3' points='135 36 140.562439 41 146 36'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+  background-position: 92% center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  &:focus {
+    background-color: #FFF;
+    border-color: #C7C6C7;
+  }
+}
