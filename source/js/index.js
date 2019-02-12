@@ -307,6 +307,7 @@ $(document).ready(function() {
     $(".pills-edit-tab").show();
     $(".invoice-send").show();
     $(".pills-preview-tab").hide();
+    $(".cancel").html("Close");
     $(".invoice-page-heading").html("Preview Invoice");
     $($.fn.dataTable.tables(true)).DataTable()
       .columns.adjust();
