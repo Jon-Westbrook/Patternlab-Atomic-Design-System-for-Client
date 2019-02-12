@@ -3,6 +3,19 @@ $(document).ready(function() {
   var $ = jQuery;
   var $window = $(window);
 
+  // Detect Current URL and give active class to menu item
+  var current_path = location.pathname.split('/');
+  $('.main-link a').each(function() {
+    var fullLink = $( this ).attr('href');
+    var lastPart = fullLink.split('/');
+    if (current_path[current_path.length - 2] === lastPart[lastPart.length - 2]) {
+      $( this ).parent().addClass('active');
+    }
+  });
+
+  // Add active class to nav item that matches current location
+  $('.main-link a[href$="/' + current_path[current_path.length - 5] + '/"]').addClass('active');
+
   // Toggle Sidebar
   $("#sidebarCollapse").on("click", function() {
     $("#sidebar").toggleClass("active");
