@@ -396,13 +396,14 @@
           {
             "heading": "Card on File",
             "card-on-file": true,
-            "pre-pop-exp": "Ashley Smith",
-            "pre-pop-code": "Ashley Furniture",
-            "pre-pop-billing": "asmith@ashleyfurniture.com",
-            "pre-pop-addr": "(312) 555-1212",
-            "pre-pop-zip": "(312) 555-1212",
-            "pre-pop-city": "(312) 555-1212",
-            "pre-pop-state": "(312) 555-1212"
+            "card-thumb": "../../images/mastercard.jpg",
+            "pre-pop-exp": "12/21",
+            "pre-pop-code": "123",
+            "pre-pop-card": "2510 4485 4587 3241",
+            "pre-pop-addr": "1234 Magnolia St.",
+            "pre-pop-zip": "60630",
+            "pre-pop-city": "Chicago",
+            
           }
         ]
       },
