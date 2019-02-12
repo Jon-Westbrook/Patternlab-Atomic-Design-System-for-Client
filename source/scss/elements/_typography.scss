@@ -74,7 +74,7 @@
 .display4 {
   font-size: $display4-size-xs;
   line-height: $display4-line-height-xs;
-  font-weight: 300;
+  font-weight: 400;
   font-family: $font-family-sans-serif;
   @include media-breakpoint-only(sm) {
     font-size: $display4-size-sm;
@@ -97,7 +97,7 @@
 .display5 {
   font-size: $display5-size-xs;
   line-height: $display5-line-height-xs;
-  font-weight: 300;
+  font-weight: 400;
   font-family: $font-family-sans-serif;
   @include media-breakpoint-only(sm) {
     font-size: $display5-size-sm;
@@ -120,7 +120,7 @@
 .display6 {
   font-size: $display6-size-xs;
   line-height: $display6-line-height-xs;
-  font-weight: 300;
+  font-weight: 600;
   font-family: $font-family-sans-serif;
   @include media-breakpoint-only(sm) {
     font-size: $display6-size-sm;
@@ -140,29 +140,52 @@
   }
 }
 
+.display7 {
+  font-size: $display7-size-xs;
+  line-height: $display7-line-height-xs;
+  font-weight: 600;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(sm) {
+    font-size: $display7-size-sm;
+    line-height: $display7-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display7-size-md;
+    line-height: $display7-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display7-size-lg;
+    line-height: $display7-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display7-size-xl;
+    line-height: $display7-line-height-xl;
+  }
+}
+
 
 // Headings
 // ========
 
 h1, .h1 {
-  font-size: $display2-size-xs;
-  line-height: $display2-line-height-xs;
+  font-size: $display3-size-xs;
+  line-height: $display3-line-height-xs;
   font-weight: 400;
   @include media-breakpoint-only(sm) {
-    font-size: $display2-size-sm;
-    line-height: $display2-line-height-sm;
+    font-size: $display3-size-sm;
+    line-height: $display3-line-height-sm;
   }
   @include media-breakpoint-only(md) {
-    font-size: $display2-size-md;
-    line-height: $display2-line-height-md;
+    font-size: $display3-size-md;
+    line-height: $display3-line-height-md;
   }
   @include media-breakpoint-only(lg) {
-    font-size: $display2-size-lg;
-    line-height: $display2-line-height-lg;
+    font-size: $display3-size-lg;
+    line-height: $display3-line-height-lg;
   }
   @include media-breakpoint-only(xl) {
-    font-size: $display2-size-xl;
-    line-height: $display2-line-height-xl;
+    font-size: $display3-size-xl;
+    line-height: $display3-line-height-xl;
   }
 }
 
@@ -189,28 +212,6 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: $display4-size-xs;
-  line-height: $display4-line-height-xs;
-  font-weight: 400;
-  @include media-breakpoint-only(sm) {
-    font-size: $display4-size-sm;
-    line-height: $display4-line-height-sm;
-  }
-  @include media-breakpoint-only(md) {
-    font-size: $display4-size-md;
-    line-height: $display4-line-height-md;
-  }
-  @include media-breakpoint-only(lg) {
-    font-size: $display4-size-lg;
-    line-height: $display4-line-height-lg;
-  }
-  @include media-breakpoint-only(xl) {
-    font-size: $display4-size-xl;
-    line-height: $display4-line-height-xl;
-  }
-}
-
-h4, .h4 {
   font-size: $display5-size-xs;
   line-height: $display5-line-height-xs;
   font-weight: 400;
@@ -232,12 +233,11 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: $display6-size-xs;
   line-height: $display6-line-height-xs;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
   @include media-breakpoint-only(sm) {
     font-size: $display6-size-sm;
     line-height: $display6-line-height-sm;
@@ -253,6 +253,30 @@ h5, .h5 {
   @include media-breakpoint-only(xl) {
     font-size: $display6-size-xl;
     line-height: $display6-line-height-xl;
+  }
+}
+
+h5, .h5 {
+  font-size: $display7-size-xs;
+  line-height: $display7-line-height-xs;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @include media-breakpoint-only(sm) {
+    font-size: $display7-size-sm;
+    line-height: $display7-line-height-sm;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: $display7-size-md;
+    line-height: $display7-line-height-md;
+  }
+  @include media-breakpoint-only(lg) {
+    font-size: $display7-size-lg;
+    line-height: $display7-line-height-lg;
+  }
+  @include media-breakpoint-only(xl) {
+    font-size: $display7-size-xl;
+    line-height: $display7-line-height-xl;
   }
 }
 
