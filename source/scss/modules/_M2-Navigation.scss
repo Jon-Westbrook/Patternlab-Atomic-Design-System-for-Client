@@ -3,14 +3,14 @@
 ----------------------------------------------------- */
 
 .navbar {
-  border: none;
+  border: 0;
   border-radius: 0;
 }
 
 .navbar-btn {
-  box-shadow: none;
-  outline: none !important;
-  border: none;
+  box-shadow: 0;
+  outline: 0 !important;
+  border: 0;
 }
 
 .line {
@@ -26,7 +26,7 @@
   button {
     cursor: pointer;
     background-color: $primary-2;
-    border: none;
+    border: 0;
     &:active {
       background-color: $secondary-1;
     }
@@ -43,7 +43,7 @@
   max-width: 147px;
   background: $primary-2;
   color: #fff;
-  // transition: $transition-base;
+  transition: $transition-base;
   z-index: 1045;
   min-height: 100vh;
   position: relative;
@@ -57,6 +57,7 @@
 
   &.active {
     margin-left: -250px;
+    transition: $transition-base;
     &~#content {
       position: fixed;
     }
@@ -88,18 +89,7 @@
     font-weight: 500;
   }
 
-  ul li a {
-    font-size: .875rem;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    .copy {
-      max-width: 94px;
-    }
-    .bottom {
-      opacity: 0;
-    }
-  }
+
 
   ul li {
     position: relative;
@@ -118,6 +108,10 @@
     }
     a {
       color: $primary-3;
+      font-size: .875rem;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
       &:before {
         content: "";
         visibility: hidden;
@@ -130,6 +124,12 @@
         background-color: $secondary-2;
         z-index: 999;
         transition: $transition-base;
+      }
+      .copy {
+        max-width: 94px;
+      }
+      .bottom {
+        opacity: 0;
       }
     }
   }
@@ -205,7 +205,6 @@ nav#sidebar.active ~#content {
   height: 100vh;
   background: rgba(0, 0, 0, 0.1);
   z-index: 1043;
-  opacity: 0;
   transition: $transition-base;
 }
 
