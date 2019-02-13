@@ -1,21 +1,62 @@
 <div class="container pb-6 pb-md-8">
 
-  <div class="row">
-    <div class="form-group col-md-2 mb-0">
+  <div class="form-row mt-5">
+    <div class="input-group col-md-6">
+      <input type="search" class="form-control search-input" placeholder="{{ placeholder-search }}" aria-label="Search">
+      <div class="input-group-append magnifier-button">
+        <span class="input-group-text" id="basic-addon2">
+          <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>icon</title>
+            <defs>
+              <path
+                d="M366.878784,24.4182454 L362.408512,19.9893325 C363.309238,18.7239288 363.776282,17.1255242 363.54276,15.4272193 C363.142437,12.5634109 360.80722,10.2990043 357.904878,10.0326036 C353.96837,9.63300241 350.632345,12.9630121 351.032668,16.9257236 C351.29955,19.7895319 353.568047,22.1538388 356.437028,22.55344 C358.1384,22.7865407 359.739692,22.3203393 361.007381,21.4212367 L365.444294,25.8501496 C365.644455,26.0499501 365.944698,26.0499501 366.144859,25.8501496 L366.845424,25.1508475 C367.045586,24.9510469 367.045586,24.618046 366.878784,24.4182454 L366.878784,24.4182454 Z M353,16.5 C353,14.0232558 355.023256,12 357.5,12 C359.976744,12 362,14.0232558 362,16.5 C362,18.9767442 359.976744,21 357.5,21 C355.023256,21 353,19.0116279 353,16.5 L353,16.5 Z"
+                id="path-1"></path>
+            </defs>
+            <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="5_T8_Article@2x" transform="translate(-564.000000, -132.000000)">
+                <g id="Search" transform="translate(213.000000, 122.000000)">
+                  <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                  </mask>
+                  <use id="icon" fill="#919193" xlink:href="#path-1"></use>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row mt-3">
+    <div class="form-group col-md-6 mb-5">
+      <label for="example-date-input" class="primary-2">Start Date</label>
+      <div class="input-group">
+        <input class="form-control custom-date date" type="text" name="date" value="Mar 28, 2019">
+        <div class="invalid-feedback">
+          Please select a valid date.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row mt-3">
+    <div class="form-group col-md-3">
       <label for="validationCustom05" class="primary-2">Repeat Every</label>
       <select id="inputState" class="custom-select">
-          <option selected>Select...</option>
-          <option>Week</option>
-          <option>Two Weeks</option>
-          <option>Month</option>
-        </select>
+        <option selected>Select...</option>
+        <option>Week</option>
+        <option>Two Weeks</option>
+        <option>Month</option>
+      </select>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
     </div>
   </div>
 
-  <div class="row mt-6 mt-md-8">
+  <div class="form-row mt-3">
     <div class="col-md-6 d-flex justify-content-left">
       <form class="w-100 needs-validation" novalidate>
         <div class="form-group">
@@ -27,7 +68,7 @@
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1" class="primary-2">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" >
+          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="form-group">
           <div class="form-check">
@@ -46,7 +87,7 @@
   </div>
 
 
-  <div class="row mt-6 mt-md-8">
+  <div class="form-row mt-6">
     <div class="col-md-6 d-flex justify-content-left">
       <form class="needs-validation" novalidate>
         <div class="form-row">
@@ -70,7 +111,8 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
               </div>
-              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                required>
               <div class="invalid-feedback">
                 Please choose a username.
               </div>
@@ -116,51 +158,25 @@
     </div>
   </div>
 
-  <div class="row mt-6 mt-md-8">
-    <div class="input-group col-md-6 mb-3">
-      <input type="search" class="form-control search-input" placeholder="{{ article.placeholder }}" aria-label="Search" >
-      <div class="input-group-append magnifier-button">
-        <span class="input-group-text" id="basic-addon2">
-          <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>icon</title>
-            <defs>
-              <path d="M366.878784,24.4182454 L362.408512,19.9893325 C363.309238,18.7239288 363.776282,17.1255242 363.54276,15.4272193 C363.142437,12.5634109 360.80722,10.2990043 357.904878,10.0326036 C353.96837,9.63300241 350.632345,12.9630121 351.032668,16.9257236 C351.29955,19.7895319 353.568047,22.1538388 356.437028,22.55344 C358.1384,22.7865407 359.739692,22.3203393 361.007381,21.4212367 L365.444294,25.8501496 C365.644455,26.0499501 365.944698,26.0499501 366.144859,25.8501496 L366.845424,25.1508475 C367.045586,24.9510469 367.045586,24.618046 366.878784,24.4182454 L366.878784,24.4182454 Z M353,16.5 C353,14.0232558 355.023256,12 357.5,12 C359.976744,12 362,14.0232558 362,16.5 C362,18.9767442 359.976744,21 357.5,21 C355.023256,21 353,19.0116279 353,16.5 L353,16.5 Z" id="path-1"></path>
-            </defs>
-            <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="5_T8_Article@2x" transform="translate(-564.000000, -132.000000)">
-                <g id="Search" transform="translate(213.000000, 122.000000)">
-                  <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                  </mask>
-                  <use id="icon" fill="#919193" xlink:href="#path-1"></use>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </span>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 </script>

@@ -3,32 +3,18 @@
   &.search-input {
     background: $white;
     border-radius: 2px;
-    border: $input-border-width solid $input-focus-border-color ;
+    border: $input-border-width solid $input-focus-border-color;
   }
 
   ~.magnifier-button {
     cursor: pointer;
-    border: $input-border-width solid $input-focus-border-color ;
+    border: $input-border-width solid $input-focus-border-color;
     .input-group-text {
-      border: none;
+      border: 0;
     }
   }
 
   &:focus {
-    &::-webkit-input-placeholder {
-      color: $gray-dark;
-      transition: $transition-base;
-    }
-
-    &::-moz-placeholder {
-      color: $gray-dark;
-      transition: $transition-base;
-    }
-
-    &::-ms-placeholder {
-      color: $gray-dark;
-      transition: $transition-base;
-    }
 
     &::placeholder {
       color: $gray-dark;
@@ -59,12 +45,46 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   width: 100%;
+  border: $input-border-width solid $input-focus-border-color;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15px' height='9px' viewBox='0 0 15 9' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eLine 3%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg id='Layout' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='square'%3e%3cg id='M24_Customer-Modal%402x' transform='translate(-753.000000, -1120.000000)' fill-rule='nonzero' stroke='%23372772' stroke-width='2'%3e%3cg id='Set-up-Billing-Plan' transform='translate(333.000000, 946.000000)'%3e%3cg id='Due' transform='translate(287.000000, 140.000000)'%3e%3cpolyline id='Line-3' points='135 36 140.562439 41 146 36'%3e%3c/polyline%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
   background-position: 92% center;
   background-size: 15px;
   background-repeat: no-repeat;
   &:focus {
-    background-color: #FFF;
-    border-color: #C7C6C7;
+    background-color: $primary-3;
+    border-color: $gray-border;
+  }
+}
+
+.custom-date {
+  width: 100%;
+  border-radius: 2px;
+  border: $input-border-width solid $input-focus-border-color;
+  background-position: 92% center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  &:focus {
+    background-color: $primary-3;
+    border-color: $gray-border;
+  }
+}
+
+.ui-datepicker-trigger {
+  border: $input-border-width solid $input-focus-border-color;
+  border-left: 0;
+  width: 50px;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+    background-color: $secondary-4;
+  }
+}
+
+.calendar-button {
+  cursor: pointer;
+  border: $input-border-width solid $input-focus-border-color;
+  .input-group-text {
+    background: $primary-3;
+    border: 0;
   }
 }

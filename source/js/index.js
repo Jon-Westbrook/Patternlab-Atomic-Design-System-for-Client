@@ -1,27 +1,44 @@
+// HOUSEKEEPING
+
+var $window = $(window);
+
+function initDatepickers() {
+  $(".date").datepicker({
+    showOn: "both",
+    buttonImage: "../../images/icons/calendar.svg",
+    dateFormat: "M d, yy"
+  });
+}
+
+function highlightMenuItem(current_path) {
+  $('.main-link a').each(function () {
+    var fullLink = $(this).attr('href');
+    var lastPart = fullLink.split('/');
+    if (current_path[current_path.length - 2] === lastPart[lastPart.length - 2]) {
+      $(this).parent().addClass('active');
+    }
+  });
+}
+
+function openSidebar() {
+  $("#sidebar").toggleClass("active");
+  $(".overlay").addClass("active");
+  document.getElementById("closeMenu").focus();
+}
+
 $(document).ready(function() {
-  // HOUSEKEEPING
-  var $ = jQuery;
-  var $window = $(window);
+
+  // Init Datepickers
+  initDatepickers();
 
   // Detect Current URL and give active class to menu item
   var current_path = location.pathname.split('/');
-  $('.main-link a').each(function() {
-    var fullLink = $( this ).attr('href');
-    var lastPart = fullLink.split('/');
-    if (current_path[current_path.length - 2] === lastPart[lastPart.length - 2]) {
-      $( this ).parent().addClass('active');
-    }
-  });
+  highlightMenuItem(current_path);
 
-  // Add active class to nav item that matches current location
-  $('.main-link a[href$="/' + current_path[current_path.length - 5] + '/"]').addClass('active');
+
 
   // Toggle Sidebar
-  $("#sidebarCollapse").on("click", function() {
-    $("#sidebar").toggleClass("active");
-    $(".overlay").addClass("active");
-    document.getElementById("closeMenu").focus();
-  });
+  $("#sidebarCollapse").on("click", openSidebar);
 
   $("#dismiss, .overlay").on("click", function() {
     // hide sidebar
@@ -29,6 +46,7 @@ $(document).ready(function() {
     // hide overlay
     $(".overlay").removeClass("active");
   });
+
 
   // Listen for Submit Events and Validate Form Field
   window.addEventListener(
@@ -224,12 +242,12 @@ $(document).ready(function() {
         args = arguments;
       var later = function() {
         timeout = null;
-        if (!immediate) func.apply(context, args);
+        if (!immediate) {func.apply(context, args);}
       };
       var callNow = immediate && !timeout;
       clearTimeout(timeout);
       timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
+      if (callNow) {func.apply(context, args);}
     };
   }
 
@@ -265,7 +283,6 @@ $(document).ready(function() {
   var editTable = $('#invoice-edit-table').DataTable({
     "scrollX": true,
     "searching": false,
-    "rowReorder":  true,
     "paging": false,
     "info": false,
     "autoWidth": false,
@@ -320,16 +337,15 @@ $(document).ready(function() {
 
   var rowCounter = 3;
   $('.add-additional').on('click', function(){
-    console.log(rowCounter);
     var rowNode = editTable
       .row.add([
         rowCounter,
-        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" placeholder=\"Enter Item Name\">',
-        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
-        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
-        '<input type=\"text\" class=\"w-100 bg-gray-light p-3\" >',
-        '<a href=\"\"class=\"d-inline-block icon-delete\"><img src=\"../../images/icons/close-gray.svg\"></a>',
-        '<a href=\"\"class=\"d-inline-block handle-reorder\"><img src=\"../../images/icons/handle-reorder.svg\"></a>'
+        '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
+        '<input type="text" class="w-100 bg-gray-light p-3" >',
+        '<input type="text" class="w-100 bg-gray-light p-3" >',
+        '<input type="text" class="w-100 bg-gray-light p-3" >',
+        '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
+        '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
       ])
       .draw()
       .node();
@@ -346,7 +362,9 @@ $(document).ready(function() {
       .row( $(this).parents('tr') )
       .remove()
       .draw();
-    });
+  });
 
-});
-// End document ready
+}); // End document ready
+
+
+
