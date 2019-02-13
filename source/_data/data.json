@@ -88,7 +88,7 @@
       "icon": "reporting_icn.svg",
       "iconHover": "reporting_icn_active.svg",
       "copy": "Reporting",
-      "url": "#"
+      "url": "link.Templates-T03a-Tables-Reporting"
       },
       {
       "icon": "customers_icn.svg",
@@ -402,8 +402,7 @@
             "pre-pop-card": "2510 4485 4587 3241",
             "pre-pop-addr": "1234 Magnolia St.",
             "pre-pop-zip": "60630",
-            "pre-pop-city": "Chicago",
-            
+            "pre-pop-city": "Chicago"
           }
         ]
       },
@@ -735,5 +734,8 @@
         ]
       }
     ]
+  },
+  "reporting": {
+    "pageTitle": "Reporting"
   }
 }
