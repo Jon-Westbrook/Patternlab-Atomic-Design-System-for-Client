@@ -1,6 +1,15 @@
 
-.table-wrap {
+.reporting {
 
+  .nav-tabs {
+    border: 0;
+  }
 
-
+  #sales-tab, #deposits-tab {
+    width: 120px;
+    border-bottom: 6px solid #E6E6ED;
+    &.active {
+      border-bottom: 6px solid $secondary-4;
+    }
+  }
 }

@@ -52,8 +52,7 @@
         "images": {
           "image1": "../../images/happy-merchant.jpg",
           "image2": "../../images/credit-card.jpg"
-        }
-        ,
+        },
         "copy": "Lorem ipsum dolor sit amet: <code>&lt;html&gt;I am inner HTML code.&lt;/html&gt;</code> Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><div class=\"code-block mb-5 p-5\"><code>&lt;p&gt;Sample text here...&lt;/p&gt;<br />&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></div>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "pull-quote": {
           "lsquo": "../../images/icons/lsquo.svg",
@@ -73,46 +72,46 @@
   "mainNav": {
     "mainLinks": [
       {
-      "icon": "home_icn.svg",
-      "iconHover": "home_icn_active.svg",
-      "copy": "Home",
-      "url": "link.Templates-T02-Home"
+        "icon": "home_icn.svg",
+        "iconHover": "home_icn_active.svg",
+        "copy": "Home",
+        "url": "link.Templates-T02-Home"
       },
       {
-      "icon": "virtualterminal_icn.svg",
-      "iconHover": "virtualterminal_icn_active.svg",
-      "copy": "Virtual Terminal",
-      "url": "#"
+        "icon": "virtualterminal_icn.svg",
+        "iconHover": "virtualterminal_icn_active.svg",
+        "copy": "Virtual Terminal",
+        "url": "#"
       },
       {
-      "icon": "reporting_icn.svg",
-      "iconHover": "reporting_icn_active.svg",
-      "copy": "Reporting",
-      "url": "link.Templates-T03a-Tables-Reporting"
+        "icon": "reporting_icn.svg",
+        "iconHover": "reporting_icn_active.svg",
+        "copy": "Reporting",
+        "url": "link.Templates-T03a-Tables-Reporting"
       },
       {
-      "icon": "customers_icn.svg",
-      "iconHover": "customers_icn_active.svg",
-      "copy": "Customers",
-      "url": "link.Templates-T07-Customer-Profile"
+        "icon": "customers_icn.svg",
+        "iconHover": "customers_icn_active.svg",
+        "copy": "Customers",
+        "url": "link.Templates-T07-Customer-Profile"
       },
       {
-      "icon": "invoices_icn.svg",
-      "iconHover": "invoices_icn_active.svg",
-      "copy": "Invoices",
-      "url": "#"
+        "icon": "invoices_icn.svg",
+        "iconHover": "invoices_icn_active.svg",
+        "copy": "Invoices",
+        "url": "#"
       },
       {
-      "icon": "support_icn.svg",
-      "iconHover": "support_icn_active.svg",
-      "copy": "Support",
-      "url": "link.Templates-T08-Article"
+        "icon": "support_icn.svg",
+        "iconHover": "support_icn_active.svg",
+        "copy": "Support",
+        "url": "link.Templates-T08-Article"
       },
       {
-      "icon": "account_icn.svg",
-      "iconHover": "account_icn_active.svg",
-      "copy": "Account",
-      "url": "#"
+        "icon": "account_icn.svg",
+        "iconHover": "account_icn_active.svg",
+        "copy": "Account",
+        "url": "#"
       }
     ]
   },
@@ -120,68 +119,70 @@
     "title": "Jump to Section",
     "links": [
       {
-      "copy": "Section Headline 1",
-      "id": "1"
+        "copy": "Section Headline 1",
+        "id": "1"
       },
       {
-      "copy": "Section Headline 2",
-      "id": "2"
+        "copy": "Section Headline 2",
+        "id": "2"
       },
       {
-      "copy": "Section Headline 3",
-      "id": "3"
+        "copy": "Section Headline 3",
+        "id": "3"
       }
     ]
   },
   "header": {
-      "mainLinks": [
+    "mainLinks": [
       {
         "navLink": "Who We Are",
         "subLinks": [
-        {
-          "name": "Our Mission",
-          "route": "routerLink=\"\/mission\""
-        },
-        {
-          "name": "Our Leadership",
-          "route": "routerLink=\"\/leadership\""
-        },
-        {
-          "name": "Foundation",
-          "route": "routerLink=\"\/foundation\""
-        },
-        {
-          "name": "Community Development",
-          "route": "routerLink=\"\/community-development\""
-        },
-        {
-          "name": "Volunteer",
-          "route": "routerLink=\"\/volunteer\""
-        },
-        {
-          "name": "Awards and Recognition",
-          "route": "routerLink=\"\/awards\""
-        }]
-      }]
-    },
+          {
+            "name": "Our Mission",
+            "route": "routerLink=\"\/mission\""
+          },
+          {
+            "name": "Our Leadership",
+            "route": "routerLink=\"\/leadership\""
+          },
+          {
+            "name": "Foundation",
+            "route": "routerLink=\"\/foundation\""
+          },
+          {
+            "name": "Community Development",
+            "route": "routerLink=\"\/community-development\""
+          },
+          {
+            "name": "Volunteer",
+            "route": "routerLink=\"\/volunteer\""
+          },
+          {
+            "name": "Awards and Recognition",
+            "route": "routerLink=\"\/awards\""
+          }
+        ]
+      }
+    ]
+  },
   "arrayOfObjects": [
     {
-      "title"   : "Tax reform",
-      "desc"    : "Stay informed throughout the tax reform legislative process with this toolkit. It features the latest news and action items for retail real estate professionals.",
-      "imgSrc"  : "../../images/artwork-1-taxreform.svg",
-      "reverse"  : true
+      "title": "Tax reform",
+      "desc": "Stay informed throughout the tax reform legislative process with this toolkit. It features the latest news and action items for retail real estate professionals.",
+      "imgSrc": "../../images/artwork-1-taxreform.svg",
+      "reverse": true
     },
     {
-      "title"   : "ADA lawsuit reform",
-      "desc"    : "Congress should restore the integrity of the American Disabilities Act by providing clearer rules for identifying and correcting access violations.",
-      "imgSrc"  : "../../images/artwork-2-lawsuitreform.svg",
-      "reverse"  : false
+      "title": "ADA lawsuit reform",
+      "desc": "Congress should restore the integrity of the American Disabilities Act by providing clearer rules for identifying and correcting access violations.",
+      "imgSrc": "../../images/artwork-2-lawsuitreform.svg",
+      "reverse": false
     },
     {
-      "title"   : "E-Fairness",
-      "desc"    : "This legislation modernizes the sales tax collection system and levels the playing field between online-only sellers and brick and mortar retailers.",
-      "imgSrc"  : "../../images/artwork-3-efairness.svg",
-      "reverse"  : true
+      "title": "E-Fairness",
+      "desc": "This legislation modernizes the sales tax collection system and levels the playing field between online-only sellers and brick and mortar retailers.",
+      "imgSrc": "../../images/artwork-3-efairness.svg",
+      "reverse": true
     }
   ],
   "chat": {
@@ -523,8 +524,7 @@
             "btn-copy": "Preview"
           }
         ],
-        "sections": [
-        ]
+        "sections": []
       }
     ],
     "cards": [
@@ -573,12 +573,24 @@
       }
     ]
   },
-  "home":{
+  "home": {
     "last-deposit": "$456.89",
     "salesType": [
-      {"label":"CARDX TERMINAL", "number": 28, "class": "ct"},
-      {"label":"VIRTUAL TERMINAL", "number": 18, "class": "vt"},
-      {"label":"LIGHTBOX", "number": 11, "class": "lb"}
+      {
+        "label": "CARDX TERMINAL",
+        "number": 28,
+        "class": "ct"
+      },
+      {
+        "label": "VIRTUAL TERMINAL",
+        "number": 18,
+        "class": "vt"
+      },
+      {
+        "label": "LIGHTBOX",
+        "number": 11,
+        "class": "lb"
+      }
     ],
     "modals": [
       {
@@ -736,6 +748,57 @@
     ]
   },
   "reporting": {
-    "pageTitle": "Reporting"
+    "pageTitle": "Reporting",
+    "tabs-desktop": [
+      {
+        "tab-copy": "Sales",
+        "id": "sales-tab",
+        "classes": "active",
+        "data-toggle": "tab",
+        "href": "#sales-pane",
+        "aria-label": "Edit ",
+        "btn-copy": "Edit",
+        "role": "tab",
+        "aria-controls": "sales-pane",
+        "aria-selected": "true"
+      },
+      {
+        "tab-copy": "Deposits",
+        "id": "deposits-tab",
+        "classes": "",
+        "data-toggle": "tab",
+        "href": "#deposits-pane",
+        "aria-label": "Edit ",
+        "btn-copy": "Edit",
+        "role": "tab",
+        "aria-controls": "pills-edit",
+        "aria-selected": "false"
+      }
+    ],
+    "tab-panes": [
+      {
+        "classes": "show active",
+        "id": "sales-pane",
+        "aria-labelledby": "sales-tab",
+        "sections": [
+          {
+            "filter-table": true
+          },
+          {
+            "sales-table": true
+          }
+        ]
+      },
+      {
+        "classes": "",
+        "id": "deposits-pane",
+        "aria-labelledby": "deposits-tab",
+        "sections": [
+          {
+            "deposits-table": true
+          }
+        ]
+      }
+    ]
   }
 }
