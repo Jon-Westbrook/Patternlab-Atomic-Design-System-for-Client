@@ -2,6 +2,12 @@
 .modal-dialog {
   max-width: none;
   margin: 0;
+  .pills-edit-tab {
+    display: none;
+  }
+  .invoice-send {
+    display: none;
+  }
   .modal-content {
     border: 0;
     border-radius: 0;

@@ -1,153 +1,75 @@
-// HOUSEKEEPING
+// Global Variables
+const $window = $(window);
+let rowCounter = 0;
 
-var $window = $(window);
+// Hompage Chart Data and Options
+let responsiveOptions;
 
-function initDatepickers() {
-  $(".date").datepicker({
-    showOn: "both",
-    buttonImage: "../../images/icons/calendar.svg",
-    dateFormat: "M d, yy"
+let dataWeek = {
+  labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
+  series: [[800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000], [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000]]
+};
+
+let dataMonth = {
+  labels: ["01/07", "01/14", "01/21", "01/28"],
+  series: [[800000, 1200000, 1400000, 1300000], [800000, 1200000, 1400000, 1300000]]
+};
+
+let dataQuarter = {
+  labels: ["Q1", "Q2", "Q3", "Q4"],
+  series: [[800000, 1200000, 1400000, 1300000], [800000, 1200000, 1400000, 1300000]]
+};
+
+let dataYear = {
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  series: [[800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000], [800000, 1200000, 1400000, 1300000, 800000, 1200000, 800000, 1200000, 1400000, 1300000, 800000, 1200000]]
+};
+
+
+$(document).ready(function () {
+
+  let current_path = location.pathname.split('/');
+
+  // Create Invoice Edit Table
+  let invoiceEditTable = $('#invoice-edit-table').DataTable({
+    "scrollX": true,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+    "rowReorder": {
+      "selector": "td:last-child"
+    },
+    "columnDefs": [
+      { orderable: false, targets: '_all' },
+      { "targets": 0, width: "80%", "visible": false }
+    ]
   });
-}
-
-function highlightMenuItem(current_path) {
-  $('.main-link a').each(function () {
-    var fullLink = $(this).attr('href');
-    var lastPart = fullLink.split('/');
-    if (current_path[current_path.length - 2] === lastPart[lastPart.length - 2]) {
-      $(this).parent().addClass('active');
-    }
-  });
-}
-
-function openSidebar() {
-  $("#sidebar").toggleClass("active");
-  $(".overlay").addClass("active");
-  document.getElementById("closeMenu").focus();
-}
-
-$(document).ready(function() {
 
   // Init Datepickers
   initDatepickers();
 
   // Detect Current URL and give active class to menu item
-  var current_path = location.pathname.split('/');
-  highlightMenuItem(current_path);
+  activateMenuItem(current_path);
 
+  // Datatables - Modal Invoice Preview Table
+  initInvoicePreviewTable();
 
-
-  // Toggle Sidebar
+  // Sidebar Open/Close
   $("#sidebarCollapse").on("click", openSidebar);
+  $("#dismiss, .overlay").on("click", closeSidebar);
 
-  $("#dismiss, .overlay").on("click", function() {
-    // hide sidebar
-    $("#sidebar").removeClass("active");
-    // hide overlay
-    $(".overlay").removeClass("active");
-  });
+  // Listen for Submit Events and Validate Form Fields
+  window.addEventListener("load", initFormValidation);
 
+  // Modal Button and Table Manipulations
+  $("button.pills-edit-tab").on("shown.bs.tab", initEditPane);
+  $("button.pills-preview-tab").on("shown.bs.tab", initPreviewPane);
+  $('#customerCreateInvoice').on('shown.bs.modal', adjustTableColumnsWidths);
+  $('.add-additional').on('click', addInvoiceEditTableRow);
+  $('#invoice-edit-table tbody').on('click', '.icon-delete', rmInvoiceEditTableRow);
 
-  // Listen for Submit Events and Validate Form Field
-  window.addEventListener(
-    "load",
-    function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName("needs-validation");
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener(
-          "submit",
-          function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add("was-validated");
-
-            // if ($(form).find(".form-control").hasClass(":invalid")) {
-            //   console.log("Somethin is wrong")
-            //   form.querySelector('.primary-2').style.color = ("green");
-            // }
-          },
-          false
-        );
-      });
-    },
-    false
-  );
-
-  // To Make Homepage Chart
-  var dataWeek = {
-    labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
-    series: [
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000],
-      [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000]
-    ]
-  };
-
-  var dataMonth = {
-    labels: ["01/07", "01/14", "01/21", "01/28"],
-    series: [
-      [800000, 1200000, 1400000, 1300000],
-      [800000, 1200000, 1400000, 1300000]
-    ]
-  };
-
-  var dataQuarter = {
-    labels: ["Q1", "Q2", "Q3", "Q4"],
-    series: [
-      [800000, 1200000, 1400000, 1300000],
-      [800000, 1200000, 1400000, 1300000]
-    ]
-  };
-
-  var dataYear = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    series: [
-      [
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000,
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000
-      ],
-      [
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000,
-        800000,
-        1200000,
-        1400000,
-        1300000,
-        800000,
-        1200000
-      ]
-    ]
-  };
+  // Draw Homepage Chart
   var options = {
     stackBars: true,
     plugins: [
@@ -163,96 +85,17 @@ $(document).ready(function() {
       })
     ],
     axisY: {
-      labelInterpolationFnc: function(value) {
+      labelInterpolationFnc: function (value) {
         return value / 1000 + "k";
       }
     }
   };
+  drawHomepageChart(options);
+  // End Draw Homepage Chart
 
-  var responsiveOptions = "";
 
-  // If chart container exists on page, init
-  if ($(".data-chart")[0]) {
-    var ctWeek = new Chartist.Bar(
-      "#ct-week",
-      dataWeek,
-      options,
-      responsiveOptions
-    ).on("draw", function(data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-
-    var ctMonth = new Chartist.Bar(
-      "#ct-month",
-      dataMonth,
-      options,
-      responsiveOptions
-    ).on("draw", function(data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-
-    var ctQuarter = new Chartist.Bar(
-      "#ct-quarter",
-      dataQuarter,
-      options,
-      responsiveOptions
-    ).on("draw", function(data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-
-    var ctYear = new Chartist.Bar(
-      "#ct-year",
-      dataYear,
-      options,
-      responsiveOptions
-    ).on("draw", function(data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-
-    $('a[data-toggle="pill"]').on("shown.bs.tab", function(event) {
-      ctWeek.update();
-      ctMonth.update();
-      ctQuarter.update();
-      ctYear.update();
-    });
-  }
-  // End Chart Init
-
-  // Debounce
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this,
-        args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) {func.apply(context, args);}
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) {func.apply(context, args);}
-    };
-  }
-
-  // Modal Animation
-  $(".modal").on("shown.bs.modal", function() {
+  // Modal Animation - Needs Updating
+  $(".modal").on("shown.bs.modal", function () {
     var modal = $(this);
     var header = $(".modal.fade.show .modal-header");
     var heading = $(".modal.fade.show .modal-header .heading-col");
@@ -273,29 +116,126 @@ $(document).ready(function() {
     modal.scroll(debounce(animateModalHeader, 10));
   });
 
-  $(".pills-edit-tab").hide();
-  $(".invoice-send").hide();
-  // $('#customerCreateInvoice').modal('show');
+  // $(".pills-edit-tab").hide();
+  // $(".invoice-send").hide();
 
-  // Modal Invoice - Hide/Show Modify Header when switching tabs
+}); // End document ready
 
-  // Datatables - Modal Invoice
-  var editTable = $('#invoice-edit-table').DataTable({
-    "scrollX": true,
-    "searching": false,
-    "paging": false,
-    "info": false,
-    "autoWidth": false,
-    "rowReorder": {
-        "selector": "td:last-child"
-    },
-    "columnDefs": [
-      { orderable: false, targets: '_all' },
-      { "targets": 0, width: "80%", "visible": false }
-    ]
+
+// Global Functions
+
+function rmInvoiceEditTableRow(invoiceEditTable) {
+  invoiceEditTable
+    .row($(this).parents('tr'))
+    .remove()
+    .draw();
+}
+
+function addInvoiceEditTableRow() {
+  var rowNode = invoiceEditTable
+    .row.add([
+      rowCounter,
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
+      '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
+    ])
+    .draw()
+    .node();
+
+  rowCounter++;
+
+  $(rowNode)
+    .css('color', 'red')
+    .animate({ color: 'black' });
+};
+
+function adjustTableColumnsWidths() {
+  $($.fn.dataTable.tables(true)).DataTable()
+    .columns.adjust();
+}
+
+function initPreviewPane() {
+  $(".invoice-save-draft").hide();
+  $(".pills-edit-tab").show();
+  $(".invoice-send").show();
+  $(".pills-preview-tab").hide();
+  $(".cancel").html("Close");
+  $(".invoice-page-heading").html("Preview Invoice");
+  $($.fn.dataTable.tables(true)).DataTable()
+    .columns.adjust();
+}
+
+// Debouncer
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this,
+      args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) { func.apply(context, args); }
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) { func.apply(context, args); }
+  };
+}
+
+// Inject jQuery-UI Datepickers
+function initDatepickers() {
+  $(".date").datepicker({
+    showOn: "both",
+    buttonImage: "../../images/icons/calendar.svg",
+    dateFormat: "M d, yy"
   });
+}
 
-  // Datatables - Modal Invoice
+// Give active state to current menu item
+function activateMenuItem(current_path) {
+  $('.main-link a').each(function () {
+    var fullLink = $(this).attr('href');
+    var lastPart = fullLink.split('/');
+    if (current_path[current_path.length - 2] === lastPart[lastPart.length - 2]) {
+      $(this).parent().addClass('active');
+    }
+  });
+}
+
+// Open Sidebar
+function openSidebar() {
+  $("#sidebar").toggleClass("active");
+  $(".overlay").addClass("active");
+  document.getElementById("closeMenu").focus();
+}
+
+// Close Sidebar
+function closeSidebar() {
+  $("#sidebar").removeClass("active");
+  // hide overlay
+  $(".overlay").removeClass("active");
+}
+
+// Prevent Submit and Validate Form Fields
+function initFormValidation() {
+  var forms = document.getElementsByClassName("needs-validation");
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function (form) {
+    form.addEventListener("submit", function (event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  });
+}
+
+// Build Modal Invoice Table
+function initInvoicePreviewTable() {
   $('#invoice-preview-table').DataTable({
     "scrollX": true,
     "ordering": false,
@@ -310,61 +250,52 @@ $(document).ready(function() {
       { "width": "10%", "targets": 0 }
     ]
   });
+}
 
-  $("button.pills-edit-tab").on("shown.bs.tab", function(e) {
-    $(".invoice-save-draft").show();
-    $(".pills-edit-tab").hide();
-    $(".invoice-send").hide();
-    $(".pills-preview-tab").show();
-    $(".invoice-page-heading").html("Create Invoice");
-  });
+function initEditPane() {
+  $(".invoice-save-draft").show();
+  $(".pills-edit-tab").hide();
+  $(".invoice-send").hide();
+  $(".pills-preview-tab").show();
+  $(".invoice-page-heading").html("Create Invoice");
+}
 
-  $("button.pills-preview-tab").on("shown.bs.tab", function(e) {
-    $(".invoice-save-draft").hide();
-    $(".pills-edit-tab").show();
-    $(".invoice-send").show();
-    $(".pills-preview-tab").hide();
-    $(".cancel").html("Close");
-    $(".invoice-page-heading").html("Preview Invoice");
-    $($.fn.dataTable.tables(true)).DataTable()
-      .columns.adjust();
-  });
-
-  $('#customerCreateInvoice').on('shown.bs.modal', function(e){
-    $($.fn.dataTable.tables(true)).DataTable()
-      .columns.adjust();
-  });
-
-  var rowCounter = 3;
-  $('.add-additional').on('click', function(){
-    var rowNode = editTable
-      .row.add([
-        rowCounter,
-        '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
-        '<input type="text" class="w-100 bg-gray-light p-3" >',
-        '<input type="text" class="w-100 bg-gray-light p-3" >',
-        '<input type="text" class="w-100 bg-gray-light p-3" >',
-        '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
-        '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
-      ])
-      .draw()
-      .node();
-
-      rowCounter++;
-
-    $( rowNode )
-      .css( 'color', 'red' )
-      .animate( { color: 'black' } );
-  });
-
-  $('#invoice-edit-table tbody').on( 'click', '.icon-delete', function () {
-    editTable
-      .row( $(this).parents('tr') )
-      .remove()
-      .draw();
-  });
-
-}); // End document ready
-
-
+function drawHomepageChart(options) {
+  if ($(".data-chart")[0]) {
+    var ctWeek = new Chartist.Bar("#ct-week", dataWeek, options, responsiveOptions).on("draw", function (data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
+    var ctMonth = new Chartist.Bar("#ct-month", dataMonth, options, responsiveOptions).on("draw", function (data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
+    var ctQuarter = new Chartist.Bar("#ct-quarter", dataQuarter, options, responsiveOptions).on("draw", function (data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
+    var ctYear = new Chartist.Bar("#ct-year", dataYear, options, responsiveOptions).on("draw", function (data) {
+      if (data.type === "bar") {
+        data.element.attr({
+          style: "stroke-width: 20px;"
+        });
+      }
+    });
+    $('a[data-toggle="pill"]').on("shown.bs.tab", function (event) {
+      ctWeek.update();
+      ctMonth.update();
+      ctQuarter.update();
+      ctYear.update();
+    });
+  }
+}
 
