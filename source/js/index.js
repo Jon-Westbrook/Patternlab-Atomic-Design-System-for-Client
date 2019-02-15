@@ -52,6 +52,9 @@ $(document).ready(function () {
   // Datatables - Init Invoice Preview Table
   initReportingSalesTable();
 
+  // Datatables - Init Invoice Preview Table
+  initReportingDepositsTable();
+
   // Init Datepickers
   initDatepickers();
 
@@ -68,9 +71,18 @@ $(document).ready(function () {
   window.addEventListener("load", initFormValidation);
 
   // Modal Button and Table Manipulations
-  $("button.pills-edit-tab").on("shown.bs.tab", initEditPane);
-  $("button.pills-preview-tab").on("shown.bs.tab", initPreviewPane);
+  $(".pills-edit-tab").on("shown.bs.tab", initEditPane);
+  $(".pills-preview-tab").on("shown.bs.tab", initPreviewPane);
+
+  // Redraw Table when Modal is Shown Table Manipulations
+  $("#sales-tab").on("shown.bs.tab", adjustTableColumnsWidths);
+  $("#deposits-tab").on("shown.bs.tab", adjustTableColumnsWidths);
   $('#customerCreateInvoice').on('shown.bs.modal', adjustTableColumnsWidths);
+
+  $("#sales-tab").on("shown.bs.tab", function() {
+    console.log("Sales tab shown");
+  });
+
   $('.add-additional').on('click', addInvoiceEditTableRow);
   $('#invoice-edit-table tbody').on('click', '.icon-delete', rmInvoiceEditTableRow);
 
@@ -130,41 +142,41 @@ $(document).ready(function () {
 function initReportingSalesTable() {
   $('#sales-table').DataTable({
     "scrollX": true,
-    "ordering": true,
     "searching": false,
     "paging": false,
     "info": false,
     "autoWidth": false,
+    "columnDefs": [
+      { orderable: false, targets: '_all' },
+      { "targets": 0, "visible": false }
+    ]
   });
 }
 
 // Build Reporting Sales Table
-function initReportingSalesTable() {
+function initReportingDepositsTable() {
   $('#deposits-table').DataTable({
     "scrollX": true,
-    "ordering": true,
     "searching": false,
     "paging": false,
     "info": false,
     "autoWidth": false,
+    "columnDefs": [
+      { orderable: false, targets: '_all' },
+      { "targets": 0, "visible": false }
+    ]
   });
 }
 
 // Build Modal Invoice Preview Table
 function initInvoicePreviewTable() {
   $('#invoice-preview-table').DataTable({
-    "scrollX": true,
+    "scrollX": false,
     "ordering": false,
     "searching": false,
     "paging": false,
     "info": false,
-    "autoWidth": false,
-    "columnDefs": [
-      { "width": "50%", "targets": 0 },
-      { "width": "20%", "targets": 0 },
-      { "width": "20%", "targets": 0 },
-      { "width": "10%", "targets": 0 }
-    ]
+    "autoWidth": true
   });
 }
 
@@ -200,8 +212,7 @@ function addInvoiceEditTableRow() {
 
 // Resize Table Rows
 function adjustTableColumnsWidths() {
-  $($.fn.dataTable.tables(true)).DataTable()
-    .columns.adjust();
+  $($.fn.dataTable.tables(true)).DataTable().columns.adjust();
 }
 
 function initPreviewPane() {
