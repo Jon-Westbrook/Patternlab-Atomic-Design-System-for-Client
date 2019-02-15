@@ -30,7 +30,7 @@ $(document).ready(function () {
 
   let current_path = location.pathname.split('/');
 
-  // Create Invoice Edit Table
+  // Datatables - Init Edit Preview Table
   let invoiceEditTable = $('#invoice-edit-table').DataTable({
     "scrollX": true,
     "searching": false,
@@ -46,14 +46,19 @@ $(document).ready(function () {
     ]
   });
 
+  // Datatables - Init Invoice Preview Table
+  initInvoicePreviewTable();
+
+  // Datatables - Init Invoice Preview Table
+  initReportingSalesTable();
+
   // Init Datepickers
   initDatepickers();
 
   // Detect Current URL and give active class to menu item
   activateMenuItem(current_path);
 
-  // Datatables - Modal Invoice Preview Table
-  initInvoicePreviewTable();
+
 
   // Sidebar Open/Close
   $("#sidebarCollapse").on("click", openSidebar);
@@ -116,14 +121,54 @@ $(document).ready(function () {
     modal.scroll(debounce(animateModalHeader, 10));
   });
 
-  // $(".pills-edit-tab").hide();
-  // $(".invoice-send").hide();
-
 }); // End document ready
 
 
-// Global Functions
+// GLOBAL FUNCTIONS
 
+// Build Reporting Sales Table
+function initReportingSalesTable() {
+  $('#sales-table').DataTable({
+    "scrollX": true,
+    "ordering": true,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+  });
+}
+
+// Build Reporting Sales Table
+function initReportingSalesTable() {
+  $('#deposits-table').DataTable({
+    "scrollX": true,
+    "ordering": true,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+  });
+}
+
+// Build Modal Invoice Preview Table
+function initInvoicePreviewTable() {
+  $('#invoice-preview-table').DataTable({
+    "scrollX": true,
+    "ordering": false,
+    "searching": false,
+    "paging": false,
+    "info": false,
+    "autoWidth": false,
+    "columnDefs": [
+      { "width": "50%", "targets": 0 },
+      { "width": "20%", "targets": 0 },
+      { "width": "20%", "targets": 0 },
+      { "width": "10%", "targets": 0 }
+    ]
+  });
+}
+
+// Remove Modal Invoice Edit Row
 function rmInvoiceEditTableRow(invoiceEditTable) {
   invoiceEditTable
     .row($(this).parents('tr'))
@@ -131,6 +176,7 @@ function rmInvoiceEditTableRow(invoiceEditTable) {
     .draw();
 }
 
+// Add Modal Invoice Edit Row
 function addInvoiceEditTableRow() {
   var rowNode = invoiceEditTable
     .row.add([
@@ -152,6 +198,7 @@ function addInvoiceEditTableRow() {
     .animate({ color: 'black' });
 };
 
+// Resize Table Rows
 function adjustTableColumnsWidths() {
   $($.fn.dataTable.tables(true)).DataTable()
     .columns.adjust();
@@ -234,23 +281,6 @@ function initFormValidation() {
   });
 }
 
-// Build Modal Invoice Table
-function initInvoicePreviewTable() {
-  $('#invoice-preview-table').DataTable({
-    "scrollX": true,
-    "ordering": false,
-    "searching": false,
-    "paging": false,
-    "info": false,
-    "autoWidth": false,
-    "columnDefs": [
-      { "width": "50%", "targets": 0 },
-      { "width": "20%", "targets": 0 },
-      { "width": "20%", "targets": 0 },
-      { "width": "10%", "targets": 0 }
-    ]
-  });
-}
 
 function initEditPane() {
   $(".invoice-save-draft").show();
