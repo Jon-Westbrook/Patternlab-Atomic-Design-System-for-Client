@@ -7,57 +7,41 @@
         <div class="nav nav-tabs" role="tablist">
 
             {{# tabs-desktop }}
-                <a class="h4 pb-4 bold secondary-1 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
-                  href="{{ href }}" role="{{ role }}" aria-controls="{{ aria-controls }}"
-                  aria-selected="{{ aria-selected }}">{{ tab-copy }}</a>
+              <a class="h4 pb-4 bold secondary-1 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
+                href="{{ href }}" role="{{ role }}" aria-controls="{{ aria-controls }}"
+                aria-selected="{{ aria-selected }}">{{ tab-copy }}</a>
             {{/ tabs-desktop }}
+                <span class="flex-grow-1 d-none d-sm-inline-block" style="border-bottom: 6px solid #E6E6ED"></span>
 
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-12 px-lg-0">
 
-        <div class="tab-content" id="nav-tabContent">
-          {{# tab-panes }}
-            <div class="tab-pane fade {{ classes }}" id="{{ id }}" role="tab-panel" aria-labelledby="{{ aria-labelledby }}">
 
-                {{# sections }}
+    <div class="tab-content" id="nav-tabContent">
+      {{# tab-panes }}
+        <div class="tab-pane fade {{ classes }}" id="{{ id }}" role="tab-panel" aria-labelledby="{{ aria-labelledby }}">
 
-                  <div class="dynamic-rule">
-                    <div class="row">
-                      <div class="col-md-1 {{ classes }}"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                      <div class="col-md-1"></div>
-                    </div>
-                  </div>
+            <div class="d-flex flex-column">
+              {{# sections }}
 
-                  {{# filter-table }}
-                    {{> Components-C08-Filter-Table }}
-                  {{/ filter-table }}
+                    {{# filter-table }}
+                      {{> Components-C08-Filter-Table }}
+                    {{/ filter-table }}
 
-                  {{# sales-table }}
-                    {{> Components-C09-Table-Sales }}
-                  {{/ sales-table }}
+                    {{# sales-table }}
+                      {{> Components-C09-Table-Sales }}
+                    {{/ sales-table }}
 
-                {{/ sections }}
-
+              {{/ sections }}
             </div>
-          {{/ tab-panes }}
-        </div>
 
-      </div>
+        </div>
+      {{/ tab-panes }}
     </div>
+
+
 
   </div>
 {{/ reporting }}
