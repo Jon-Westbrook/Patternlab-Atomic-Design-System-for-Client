@@ -68,11 +68,10 @@
     background-color: transparent;
     border: 1px solid $gray-border;
     border-radius: 0;
-
     box-shadow: none;
     &:hover, &:focus, .active {
       color: $primary-3;
-      background-color: $gray;
+      background-color: $secondary-4;
     }
   }
   &.submit-login {
