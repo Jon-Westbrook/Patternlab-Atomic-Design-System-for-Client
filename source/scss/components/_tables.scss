@@ -12,8 +12,12 @@
   }
 }
 
-#invoice-preview-table, #sales-table {
+#invoice-preview-table, #sales-table, #deposits-table {
+  box-shadow: -3px 3px 10px 8px #E7E8ED;
   .even {
     background-color: $gray-light;
+  }
+  .odd {
+    background-color: $primary-3;
   }
 }

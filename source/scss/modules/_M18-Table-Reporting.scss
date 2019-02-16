@@ -1,6 +1,8 @@
 
 .reporting {
 
+
+
   .nav-tabs {
     border: 0;
   }
@@ -12,4 +14,11 @@
       border-bottom: 6px solid $secondary-4;
     }
   }
+
+  .reporting-summary {
+    box-shadow: 0px 0px 10px 5px #E7E8ED;
+    border-left: 6px solid $secondary-1;
+    min-height: 58px;
+  }
+
 }

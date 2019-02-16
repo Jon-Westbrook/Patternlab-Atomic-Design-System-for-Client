@@ -782,10 +782,17 @@
         "aria-labelledby": "sales-tab",
         "sections": [
           {
-            "filter-table": true
+            "filter-table": true,
+            "btn-copy": "Filter"
           },
           {
-            "summary-table": true
+            "summary-table": true,
+            "total-heading": "Total Revenue",
+            "total-revenue": "$12,345.67",
+            "startDate": "Dec 28, 2018",
+            "endDate": "Jan 28, 2018",
+            "total-type": "Sales",
+            "total-number": "987"
           },
           {
             "sales-table": true
@@ -801,7 +808,13 @@
             "filter-table": true
           },
           {
-            "summary-table": true
+            "summary-table": true,
+            "total-heading": "Deposit Total",
+            "total-revenue": "$123,456.89",
+            "startDate": "Dec 28, 2018",
+            "endDate": "Jan 28, 2018",
+            "total-type": "Deposits",
+            "total-number": "45"
           },
           {
             "deposits-table": true
