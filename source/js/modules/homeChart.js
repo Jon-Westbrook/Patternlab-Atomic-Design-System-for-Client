@@ -47,28 +47,28 @@ export function drawChart(options) {
     var ctWeek = new Chartist.Bar("#ct-week", dataWeek, options, responsiveOptions).on("draw", function (data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 20px;"
+          style: "stroke-width: 10px;"
         });
       }
     });
     var ctMonth = new Chartist.Bar("#ct-month", dataMonth, options, responsiveOptions).on("draw", function (data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 20px;"
+          style: "stroke-width: 10px;"
         });
       }
     });
     var ctQuarter = new Chartist.Bar("#ct-quarter", dataQuarter, options, responsiveOptions).on("draw", function (data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 20px;"
+          style: "stroke-width: 10px;"
         });
       }
     });
     var ctYear = new Chartist.Bar("#ct-year", dataYear, options, responsiveOptions).on("draw", function (data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 20px;"
+          style: "stroke-width: 10px;"
         });
       }
     });
