@@ -1,3 +1,7 @@
+import * as sidebar from './modules/sidebar.js';
+import * as homeChart from './modules/homeChart.js';
+
+
 // Global Variables
 const $window = $(window);
 let rowCounter = 0;
@@ -61,11 +65,9 @@ $(document).ready(function () {
   // Detect Current URL and give active class to menu item
   activateMenuItem(current_path);
 
-
-
   // Sidebar Open/Close
-  $("#sidebarCollapse").on("click", openSidebar);
-  $("#dismiss, .overlay").on("click", closeSidebar);
+  $("#sidebarCollapse").on("click", sidebar.openSidebar);
+  $("#dismiss, .overlay").on("click", sidebar.closeSidebar);
 
   // Listen for Submit Events and Validate Form Fields
   window.addEventListener("load", initFormValidation);
@@ -87,29 +89,7 @@ $(document).ready(function () {
   $('#invoice-edit-table tbody').on('click', '.icon-delete', rmInvoiceEditTableRow);
 
   // Draw Homepage Chart
-  var options = {
-    stackBars: true,
-    plugins: [
-      Chartist.plugins.legend({
-        legendNames: ["Credit", "Debit"],
-        clickable: false
-      }),
-      Chartist.plugins.tooltip({
-        currency: "$",
-        class: "class1",
-        pointClass: "my-cool-point",
-        appendToBody: false
-      })
-    ],
-    axisY: {
-      labelInterpolationFnc: function (value) {
-        return value / 1000 + "k";
-      }
-    }
-  };
-  drawHomepageChart(options);
-  // End Draw Homepage Chart
-
+  homeChart.drawChart(homeChart.options);
 
   // Modal Animation - Needs Updating
   $(".modal").on("shown.bs.modal", function () {
@@ -263,20 +243,6 @@ function activateMenuItem(current_path) {
   });
 }
 
-// Open Sidebar
-function openSidebar() {
-  $("#sidebar").toggleClass("active");
-  $(".overlay").addClass("active");
-  document.getElementById("closeMenu").focus();
-}
-
-// Close Sidebar
-function closeSidebar() {
-  $("#sidebar").removeClass("active");
-  // hide overlay
-  $(".overlay").removeClass("active");
-}
-
 // Prevent Submit and Validate Form Fields
 function initFormValidation() {
   var forms = document.getElementsByClassName("needs-validation");
@@ -292,7 +258,6 @@ function initFormValidation() {
   });
 }
 
-
 function initEditPane() {
   $(".invoice-save-draft").show();
   $(".pills-edit-tab").hide();
@@ -301,42 +266,5 @@ function initEditPane() {
   $(".invoice-page-heading").html("Create Invoice");
 }
 
-function drawHomepageChart(options) {
-  if ($(".data-chart")[0]) {
-    var ctWeek = new Chartist.Bar("#ct-week", dataWeek, options, responsiveOptions).on("draw", function (data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-    var ctMonth = new Chartist.Bar("#ct-month", dataMonth, options, responsiveOptions).on("draw", function (data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-    var ctQuarter = new Chartist.Bar("#ct-quarter", dataQuarter, options, responsiveOptions).on("draw", function (data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-    var ctYear = new Chartist.Bar("#ct-year", dataYear, options, responsiveOptions).on("draw", function (data) {
-      if (data.type === "bar") {
-        data.element.attr({
-          style: "stroke-width: 20px;"
-        });
-      }
-    });
-    $('a[data-toggle="pill"]').on("shown.bs.tab", function (event) {
-      ctWeek.update();
-      ctMonth.update();
-      ctQuarter.update();
-      ctYear.update();
-    });
-  }
-}
+
 
