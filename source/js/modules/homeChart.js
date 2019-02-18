@@ -35,6 +35,9 @@ export var options = {
       appendToBody: false
     })
   ],
+  axisX: {
+    showGrid: false
+  },
   axisY: {
     labelInterpolationFnc: function (value) {
       return value / 1000 + "k";
