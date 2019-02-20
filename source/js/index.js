@@ -1,84 +1,13 @@
+/* eslint-disable func-names */
 /* eslint-disable import/extensions */
+
 import * as sidebar from "./modules/sidebar.js";
 import * as homeChart from "./modules/homeChart.js";
+import * as salesTable from "./modules/salesTable.js";
 
 // Global Variables
 const $window = $(window);
 let rowCounter = 0;
-
-// Hompage Chart Data and Options
-let responsiveOptions;
-
-const dataWeek = {
-  labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
-  series: [
-    [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000],
-    [800000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000]
-  ]
-};
-
-const dataMonth = {
-  labels: ["01/07", "01/14", "01/21", "01/28"],
-  series: [
-    [800000, 1200000, 1400000, 1300000],
-    [800000, 1200000, 1400000, 1300000]
-  ]
-};
-
-const dataQuarter = {
-  labels: ["Q1", "Q2", "Q3", "Q4"],
-  series: [
-    [800000, 1200000, 1400000, 1300000],
-    [800000, 1200000, 1400000, 1300000]
-  ]
-};
-
-const dataYear = {
-  labels: [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec"
-  ],
-  series: [
-    [
-      800000,
-      1200000,
-      1400000,
-      1300000,
-      800000,
-      1200000,
-      800000,
-      1200000,
-      1400000,
-      1300000,
-      800000,
-      1200000
-    ],
-    [
-      800000,
-      1200000,
-      1400000,
-      1300000,
-      800000,
-      1200000,
-      800000,
-      1200000,
-      1400000,
-      1300000,
-      800000,
-      1200000
-    ]
-  ]
-};
 
 $(document).ready(function() {
   const current_path = location.pathname.split("/");
@@ -103,7 +32,7 @@ $(document).ready(function() {
   initInvoicePreviewTable();
 
   // Datatables - Init Invoice Preview Table
-  initReportingSalesTable();
+  salesTable.initReportingSalesTable();
 
   // Datatables - Init Invoice Preview Table
   initReportingDepositsTable();
@@ -164,21 +93,6 @@ $(document).ready(function() {
 }); // End document ready
 
 // GLOBAL FUNCTIONS
-
-// Build Reporting Sales Table
-function initReportingSalesTable() {
-  $("#sales-table").DataTable({
-    scrollX: true,
-    searching: false,
-    paging: false,
-    info: false,
-    autoWidth: false,
-    columnDefs: [
-      { orderable: false, targets: "_all" },
-      { targets: 0, visible: false }
-    ]
-  });
-}
 
 // Build Reporting Sales Table
 function initReportingDepositsTable() {

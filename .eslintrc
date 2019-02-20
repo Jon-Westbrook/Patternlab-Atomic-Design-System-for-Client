@@ -8,30 +8,47 @@
     "ecmaVersion": 8,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
-  "extends": ["airbnb", "prettier"],
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
   "rules": {
     "prettier/prettier": "error",
     "no-console": 1,
     "block-scoped-var": 0,
     "camelcase": 0,
     "consistent-return": 2,
-    "curly": [2, "all"],
+    "curly": [
+      2,
+      "all"
+    ],
     "dot-notation": [
       1,
       {
         "allowKeywords": true
       }
     ],
-    "eqeqeq": [2, "allow-null"],
-    "global-strict": [0, "never"],
+    "eqeqeq": [
+      2,
+      "allow-null"
+    ],
+    "global-strict": [
+      0,
+      "never"
+    ],
     "guard-for-in": 2,
     "key-spacing": 0,
     "new-cap": 0,
     "no-alert": 1,
     "no-bitwise": 2,
     "no-caller": 2,
-    "no-cond-assign": [2, "except-parens"],
+    "no-cond-assign": [
+      2,
+      "except-parens"
+    ],
     "no-debugger": 2,
     "no-dupe-args": 2,
     "no-dupe-keys": 2,
@@ -67,7 +84,10 @@
     "no-useless-concat": 2,
     "no-var": 0,
     "no-with": 2,
-    "quotes": [0, "single"],
+    "quotes": [
+      0,
+      "single"
+    ],
     "radix": 2,
     "strict": 0,
     "valid-typeof": 2,

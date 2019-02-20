@@ -1,6 +1,6 @@
 export let responsiveOptions;
 
-export var dataWeek = {
+const dataWeek = {
   labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
   series: [
     [2200, 1200000, 1400000, 1300000, 800000, 1200000, 1400000],
@@ -8,7 +8,7 @@ export var dataWeek = {
   ]
 };
 
-export const dataMonth = {
+const dataMonth = {
   labels: ["01/07", "01/14", "01/21", "01/28"],
   series: [
     [800000, 1200000, 1400000, 1300000],
@@ -16,7 +16,7 @@ export const dataMonth = {
   ]
 };
 
-export const dataQuarter = {
+const dataQuarter = {
   labels: ["Q1", "Q2", "Q3", "Q4"],
   series: [
     [800000, 1200000, 1400000, 1300000],
@@ -24,7 +24,7 @@ export const dataQuarter = {
   ]
 };
 
-export const dataYear = {
+const dataYear = {
   labels: [
     "Jan",
     "Feb",
@@ -71,7 +71,7 @@ export const dataYear = {
   ]
 };
 
-export var options = {
+export const options = {
   stackBars: true,
   plugins: [
     Chartist.plugins.legend({
@@ -93,8 +93,8 @@ export var options = {
     low: 0,
     onlyInteger: true,
     divisor: 1000,
-    labelInterpolationFnc: function(value) {
-      return "$" + value;
+    labelInterpolationFnc(value) {
+      return `$${value}`;
     }
   }
 };

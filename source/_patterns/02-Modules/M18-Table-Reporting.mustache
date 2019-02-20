@@ -1,55 +1,47 @@
-
 {{# reporting }}
-  <div class="container reporting">
+<div class="container reporting">
 
-    <div class="row mt-7">
-      <div class="col-md-12 px-0">
-        <div class="nav nav-tabs" role="tablist">
-
-            {{# tabs-desktop }}
-              <a class="h4 pb-4 bold secondary-1 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
-                href="{{ href }}" role="{{ role }}" aria-controls="{{ aria-controls }}"
-                aria-selected="{{ aria-selected }}">{{ tab-copy }}</a>
-            {{/ tabs-desktop }}
-                <span class="flex-grow-1 d-none d-sm-inline-block" style="border-bottom: 6px solid #E6E6ED"></span>
-
-        </div>
+  <div class="row mt-7">
+    <div class="col-md-12 px-0">
+      <div class="nav nav-tabs" role="tablist">
+        {{# tabs-desktop }}
+        <a class="h4 pb-4 bold secondary-1 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
+          href="{{ href }}" role="{{ role }}" aria-controls="{{ aria-controls }}"
+          aria-selected="{{ aria-selected }}">{{ tab-copy }}</a>
+        {{/ tabs-desktop }}
+        <span class="flex-grow-1 d-none d-sm-inline-block" style="border-bottom: 6px solid #E6E6ED"></span>
       </div>
     </div>
+  </div>
 
+  <div class="tab-content" id="nav-tabContent">
 
+    {{# tab-panes }}
+    <div class="tab-pane fade {{ classes }}" id="{{ id }}" role="tab-panel" aria-labelledby="{{ aria-labelledby }}">
+      <div class="d-flex flex-column">
 
-    <div class="tab-content" id="nav-tabContent">
-      {{# tab-panes }}
-        <div class="tab-pane fade {{ classes }}" id="{{ id }}" role="tab-panel" aria-labelledby="{{ aria-labelledby }}">
+        {{# sections }}
+          {{# filter-table }}
+          {{> Components-C08-Filter-Table }}
+          {{/ filter-table }}
 
-            <div class="d-flex flex-column">
-              {{# sections }}
+          {{# summary-table }}
+          {{> Components-C06-Summary-Table }}
+          {{/ summary-table }}
 
-                    {{# filter-table }}
-                      {{> Components-C08-Filter-Table }}
-                    {{/ filter-table }}
+          {{# sales-table }}
+          {{> Components-C09-Table-Sales }}
+          {{/ sales-table }}
 
-                    {{# summary-table }}
-                      {{> Components-C06-Summary-Table }}
-                    {{/ summary-table }}
+          {{# deposits-table }}
+          {{> Components-C10-Table-Deposits }}
+          {{/ deposits-table }}
+        {{/ sections }}
 
-                    {{# sales-table }}
-                      {{> Components-C09-Table-Sales }}
-                    {{/ sales-table }}
-
-                    {{# deposits-table }}
-                      {{> Components-C10-Table-Deposits }}
-                    {{/ deposits-table }}
-
-              {{/ sections }}
-            </div>
-
-        </div>
-      {{/ tab-panes }}
+      </div>
     </div>
-
-
+    {{/ tab-panes }}
 
   </div>
+</div>
 {{/ reporting }}
