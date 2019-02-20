@@ -1,4 +1,5 @@
-export default function initReportingSalesTable() {
+/* eslint-disable import/prefer-default-export */
+export function initReportingSalesTable() {
   $("#sales-table").DataTable({
     scrollX: true,
     searching: false,

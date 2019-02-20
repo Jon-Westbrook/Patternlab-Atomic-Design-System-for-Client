@@ -1,12 +1,11 @@
 .form-control {
-
   &.search-input {
     background: $white;
     border-radius: 2px;
     border: $input-border-width solid $input-focus-border-color;
   }
 
-  ~.magnifier-button {
+  ~ .magnifier-button {
     cursor: pointer;
     border: $input-border-width solid $input-focus-border-color;
     .input-group-text {
@@ -15,13 +14,12 @@
   }
 
   &:focus {
-
     &::placeholder {
       color: $gray-dark;
       transition: $transition-base;
     }
 
-    &~.magnifier-button {
+    & ~ .magnifier-button {
       .input-group-text {
         background: $secondary-4;
         transition: $transition-base;
@@ -33,7 +31,8 @@
   }
 }
 
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control:valid,
+.form-control.is-valid {
   border-color: $gray-border;
   background-image: none;
   &:focus {

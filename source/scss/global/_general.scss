@@ -50,7 +50,7 @@ body {
 }
 
 .ui-datepicker {
-  z-index: 99999;
+  z-index: 99999 !important;
 }
 
 // Debug utility that makes grey boxes behind all blocks, for layout debugging
