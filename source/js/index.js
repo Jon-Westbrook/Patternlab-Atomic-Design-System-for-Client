@@ -1,5 +1,6 @@
-import * as sidebar from "./modules/sidebar";
-import * as homeChart from "./modules/homeChart";
+/* eslint-disable import/extensions */
+import * as sidebar from "./modules/sidebar.js";
+import * as homeChart from "./modules/homeChart.js";
 
 // Global Variables
 const $window = $(window);
@@ -229,7 +230,7 @@ function addInvoiceEditTableRow() {
     .draw()
     .node();
 
-  rowCounter++;
+  rowCounter += 1;
 
   $(rowNode)
     .css("color", "red")
