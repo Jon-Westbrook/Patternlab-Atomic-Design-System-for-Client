@@ -22,6 +22,7 @@ $secondary-8: #f1f2f7;
 $tertiary-1: #8c2a84;
 $tertiary-2: #e31c62;
 $tertiary-3: #a47bc5;
+$tertiary-4: #cc1958;
 
 // Basic Colors
 $white: $primary-3 !default;
@@ -41,7 +42,7 @@ $blue: $secondary-4 !default;
 $purple: $primary-1 !default;
 $green: #28a745 !default;
 $yellow: #ffc107 !default;
-$red: #d0021b !default;
+$red: $tertiary-4 !default;
 
 // $orange : #fd7e14 !default;
 // $teal   : #20c997 !default;
@@ -70,7 +71,7 @@ $secondary: $primary-2 !default;
 $success: $green !default;
 $info: $secondary-4 !default;
 $warning: $yellow !default;
-$danger: $tertiary-2 !default;
+$danger: $tertiary-4 !default;
 $light: $primary-3 !default;
 $dark: $primary-1 !default;
 
