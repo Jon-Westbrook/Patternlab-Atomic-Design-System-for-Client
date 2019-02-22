@@ -19,7 +19,7 @@ export const initReportingSalesTable = () => {
   const salesTable = $("#sales-table").DataTable({
     ajax: "../../js/modules/table-data/100.js",
     deferRender: true,
-    scrollY: 500,
+    scrollY: 688,
     scrollCollapse: true,
     scroller: true,
     searching: false,
