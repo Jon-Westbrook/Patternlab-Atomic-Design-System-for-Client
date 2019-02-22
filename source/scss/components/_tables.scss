@@ -1,6 +1,7 @@
 #invoice-preview-table,
 #invoice-edit-table,
-#sales-table {
+#sales-table,
+#deposits-table {
   border-width: 0;
   border: 0 !important;
 
@@ -23,6 +24,10 @@
   }
   .odd {
     background-color: $primary-3;
+  }
+  .even,
+  .odd {
+    border-bottom: 1px solid $primary-2;
   }
 }
 
