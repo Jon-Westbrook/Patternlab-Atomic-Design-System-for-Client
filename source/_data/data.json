@@ -139,27 +139,27 @@
         "subLinks": [
           {
             "name": "Our Mission",
-            "route": "routerLink=\"\/mission\""
+            "route": "routerLink=\"/mission\""
           },
           {
             "name": "Our Leadership",
-            "route": "routerLink=\"\/leadership\""
+            "route": "routerLink=\"/leadership\""
           },
           {
             "name": "Foundation",
-            "route": "routerLink=\"\/foundation\""
+            "route": "routerLink=\"/foundation\""
           },
           {
             "name": "Community Development",
-            "route": "routerLink=\"\/community-development\""
+            "route": "routerLink=\"/community-development\""
           },
           {
             "name": "Volunteer",
-            "route": "routerLink=\"\/volunteer\""
+            "route": "routerLink=\"/volunteer\""
           },
           {
             "name": "Awards and Recognition",
-            "route": "routerLink=\"\/awards\""
+            "route": "routerLink=\"/awards\""
           }
         ]
       }
@@ -780,6 +780,7 @@
         "classes": "show active",
         "id": "sales-pane",
         "aria-labelledby": "sales-tab",
+        "placeholder-search": "Search, yo.",
         "sections": [
           {
             "filter-table": true,
@@ -803,6 +804,7 @@
         "classes": "",
         "id": "deposits-pane",
         "aria-labelledby": "deposits-tab",
+        "placeholder-search": "You gonna search, or what?",
         "sections": [
           {
             "filter-table": true

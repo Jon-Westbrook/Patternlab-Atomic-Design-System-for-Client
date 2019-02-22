@@ -1,0 +1,101 @@
+// Datatables - Init Edit Preview Table
+export const invoiceEditTable = $("#invoice-edit-table").DataTable({
+  scrollX: true,
+  searching: false,
+  paging: false,
+  info: false,
+  autoWidth: false,
+  rowReorder: {
+    selector: "td:last-child"
+  },
+  columnDefs: [
+    { orderable: false, targets: "_all" },
+    { targets: 0, width: "80%", visible: false }
+  ]
+});
+
+// Build Reporting Sales Table
+export const initReportingSalesTable = () => {
+  const salesTable = $("#sales-table").DataTable({
+    ajax: "../../js/modules/table-data/100.js",
+    deferRender: true,
+    scrollY: 500,
+    scrollCollapse: true,
+    scroller: true,
+    searching: false,
+    columnDefs: [
+      { targets: 0, visible: false },
+      {
+        targets: 7,
+        orderable: false,
+        createdCell(td, cellData, rowData, row, col) {
+          $(td).css("padding-right", "24px");
+        }
+      }
+    ]
+  });
+};
+
+// Build Reporting Sales Table
+export function initReportingDepositsTable() {
+  $("#deposits-table").DataTable({
+    scrollX: true,
+    searching: false,
+    paging: false,
+    info: false,
+    autoWidth: false,
+    columnDefs: [
+      { orderable: false, targets: "_all" },
+      { targets: 0, visible: false }
+    ]
+  });
+}
+
+// Build Modal Invoice Preview Table
+export function initInvoicePreviewTable() {
+  $("#invoice-preview-table").DataTable({
+    scrollX: false,
+    ordering: false,
+    searching: false,
+    paging: false,
+    info: false,
+    autoWidth: true
+  });
+}
+
+// Remove Modal Invoice Edit Row
+export function rmInvoiceEditTableRow() {
+  invoiceEditTable
+    .row($(this).parents("tr"))
+    .remove()
+    .draw();
+}
+
+// Add Modal Invoice Edit Row
+let invoiceTableRowCounter = 0;
+
+export function addInvoiceEditTableRow() {
+  var rowNode = invoiceEditTable.row
+    .add([
+      invoiceTableRowCounter,
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
+      '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
+    ])
+    .draw()
+    .node();
+  invoiceTableRowCounter += 1;
+  $(rowNode)
+    .css("color", "red")
+    .animate({ color: "black" });
+}
+
+// Resize Table Rows
+export function adjustTableColumnsWidths() {
+  $($.fn.dataTable.tables(true))
+    .DataTable()
+    .columns.adjust();
+}

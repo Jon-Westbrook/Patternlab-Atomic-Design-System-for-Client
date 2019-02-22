@@ -1,4 +1,3 @@
-
 // Open Sidebar
 export function openSidebar() {
   $("#sidebar").toggleClass("active");

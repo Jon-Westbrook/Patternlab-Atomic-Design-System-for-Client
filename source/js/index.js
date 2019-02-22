@@ -1,46 +1,30 @@
 /* eslint-disable func-names */
 /* eslint-disable import/extensions */
 
+import * as tables from "./modules/tables.js";
 import * as sidebar from "./modules/sidebar.js";
 import * as homeChart from "./modules/homeChart.js";
-import * as salesTable from "./modules/salesTable.js";
+import * as modals from "./modules/modals.js";
+import * as util from "./modules/util.js";
 
 // Global Variables
 const $window = $(window);
-let rowCounter = 0;
 
-$(document).ready(function() {
-  const current_path = location.pathname.split("/");
-
-  // Datatables - Init Edit Preview Table
-  const invoiceEditTable = $("#invoice-edit-table").DataTable({
-    scrollX: true,
-    searching: false,
-    paging: false,
-    info: false,
-    autoWidth: false,
-    rowReorder: {
-      selector: "td:last-child"
-    },
-    columnDefs: [
-      { orderable: false, targets: "_all" },
-      { targets: 0, width: "80%", visible: false }
-    ]
-  });
+document.addEventListener("DOMContentLoaded", function(event) {
+  // Datatables - Init Invoice Preview Table
+  tables.initInvoicePreviewTable();
 
   // Datatables - Init Invoice Preview Table
-  initInvoicePreviewTable();
+  tables.initReportingSalesTable();
 
   // Datatables - Init Invoice Preview Table
-  salesTable.initReportingSalesTable();
-
-  // Datatables - Init Invoice Preview Table
-  initReportingDepositsTable();
+  tables.initReportingDepositsTable();
 
   // Init Datepickers
   initDatepickers();
 
   // Detect Current URL and give active class to menu item
+  const current_path = location.pathname.split("/");
   activateMenuItem(current_path);
 
   // Sidebar Open/Close
@@ -51,19 +35,25 @@ $(document).ready(function() {
   window.addEventListener("load", initFormValidation);
 
   // Modal Button and Table Manipulations
-  $(".pills-edit-tab").on("shown.bs.tab", initEditPane);
-  $(".pills-preview-tab").on("shown.bs.tab", initPreviewPane);
+  $(".pills-edit-tab").on("shown.bs.tab", modals.initEditPane);
+  $(".pills-preview-tab").on("shown.bs.tab", modals.initPreviewPane);
 
   // Redraw Table when Modal is Shown Table Manipulations
-  $("#sales-tab").on("shown.bs.tab", adjustTableColumnsWidths);
-  $("#deposits-tab").on("shown.bs.tab", adjustTableColumnsWidths);
-  $("#customerCreateInvoice").on("shown.bs.modal", adjustTableColumnsWidths);
+  $("#sales-tab").on("shown.bs.tab", tables.adjustTableColumnsWidths);
+  $("#deposits-tab").on("shown.bs.tab", tables.adjustTableColumnsWidths);
+  $("#customerCreateInvoice").on(
+    "shown.bs.modal",
+    tables.adjustTableColumnsWidths
+  );
 
-  $(".add-additional").on("click", addInvoiceEditTableRow);
+  // Add a row in Invoice Table
+  $(".add-additional").on("click", tables.addInvoiceEditTableRow);
+
+  // Remove Table when Modal is Shown Table Manipulations
   $("#invoice-edit-table tbody").on(
     "click",
     ".icon-delete",
-    rmInvoiceEditTableRow
+    tables.rmInvoiceEditTableRow
   );
 
   // Draw Homepage Chart
@@ -88,109 +78,9 @@ $(document).ready(function() {
         mainBox.css("z-index", 1020);
       }
     }
-    modal.scroll(debounce(animateModalHeader, 10));
+    modal.scroll(util.debounce(animateModalHeader, 10));
   });
-}); // End document ready
-
-// GLOBAL FUNCTIONS
-
-// Build Reporting Sales Table
-function initReportingDepositsTable() {
-  $("#deposits-table").DataTable({
-    scrollX: true,
-    searching: false,
-    paging: false,
-    info: false,
-    autoWidth: false,
-    columnDefs: [
-      { orderable: false, targets: "_all" },
-      { targets: 0, visible: false }
-    ]
-  });
-}
-
-// Build Modal Invoice Preview Table
-function initInvoicePreviewTable() {
-  $("#invoice-preview-table").DataTable({
-    scrollX: false,
-    ordering: false,
-    searching: false,
-    paging: false,
-    info: false,
-    autoWidth: true
-  });
-}
-
-// Remove Modal Invoice Edit Row
-function rmInvoiceEditTableRow(invoiceEditTable) {
-  invoiceEditTable
-    .row($(this).parents("tr"))
-    .remove()
-    .draw();
-}
-
-// Add Modal Invoice Edit Row
-function addInvoiceEditTableRow() {
-  var rowNode = invoiceEditTable.row
-    .add([
-      rowCounter,
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
-      '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
-    ])
-    .draw()
-    .node();
-
-  rowCounter += 1;
-
-  $(rowNode)
-    .css("color", "red")
-    .animate({ color: "black" });
-}
-
-// Resize Table Rows
-function adjustTableColumnsWidths() {
-  $($.fn.dataTable.tables(true))
-    .DataTable()
-    .columns.adjust();
-}
-
-function initPreviewPane() {
-  $(".invoice-save-draft").hide();
-  $(".pills-edit-tab").show();
-  $(".invoice-send").show();
-  $(".pills-preview-tab").hide();
-  $(".cancel").html("Close");
-  $(".invoice-page-heading").html("Preview Invoice");
-  $($.fn.dataTable.tables(true))
-    .DataTable()
-    .columns.adjust();
-}
-
-// Debouncer
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this;
-
-    var args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) {
-        func.apply(context, args);
-      }
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) {
-      func.apply(context, args);
-    }
-  };
-}
+}); // End DOM Content Loaded
 
 // Inject jQuery-UI Datepickers
 function initDatepickers() {
@@ -233,12 +123,4 @@ function initFormValidation() {
       false
     );
   });
-}
-
-function initEditPane() {
-  $(".invoice-save-draft").show();
-  $(".pills-edit-tab").hide();
-  $(".invoice-send").hide();
-  $(".pills-preview-tab").show();
-  $(".invoice-page-heading").html("Create Invoice");
 }

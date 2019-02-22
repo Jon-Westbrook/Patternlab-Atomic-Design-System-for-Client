@@ -1,9 +1,11 @@
-
-#invoice-preview-table, #invoice-edit-table, #sales-table {
+#invoice-preview-table,
+#invoice-edit-table,
+#sales-table {
   border-width: 0;
   border: 0 !important;
 
-  tr, td {
+  tr,
+  td {
     border-width: 0;
     border: 0 !important;
   }
@@ -12,12 +14,20 @@
   }
 }
 
-#invoice-preview-table, #sales-table, #deposits-table {
-  box-shadow: -3px 3px 10px 8px #E7E8ED;
+#invoice-preview-table,
+#sales-table,
+#deposits-table {
+  box-shadow: -3px 3px 10px 8px #e7e8ed;
   .even {
     background-color: $gray-light;
   }
   .odd {
     background-color: $primary-3;
+  }
+}
+
+#sales-table {
+  .ellipse {
+    cursor: pointer;
   }
 }
