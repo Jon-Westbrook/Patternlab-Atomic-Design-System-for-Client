@@ -11,6 +11,12 @@ import * as util from "./modules/util.js";
 const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
+  $(".btn-filter").on("click", toggleDates);
+
+  function toggleDates() {
+    $(".from, .to").slideToggle(500);
+  }
+
   // Datatables - Init Invoice Preview Table
   tables.initInvoicePreviewTable();
 

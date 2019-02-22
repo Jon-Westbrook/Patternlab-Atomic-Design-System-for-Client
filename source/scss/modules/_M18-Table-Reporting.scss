@@ -19,6 +19,12 @@
     min-height: 58px;
   }
   .reporting-filters {
+    .from,
+    .to {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
     .from-date,
     .to-date {
       @include media-breakpoint-down(md) {
