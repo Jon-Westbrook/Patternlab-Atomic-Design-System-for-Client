@@ -23,13 +23,18 @@ export const initReportingSalesTable = () => {
     scrollCollapse: true,
     scroller: true,
     searching: false,
+    responsive: {
+      details: {
+        display: $.fn.dataTable.Responsive.display.modal()
+      }
+    },
     columnDefs: [
       { targets: 0, visible: false },
       {
         targets: 7,
         orderable: false,
         createdCell(td, cellData, rowData, row, col) {
-          $(td).css("padding-right", "24px");
+          // $(td).css("padding-right", "24px");
         }
       }
     ]
@@ -45,6 +50,7 @@ export const initReportingDepositsTable = () => {
     scrollCollapse: true,
     scroller: true,
     searching: false,
+    responsive: true,
     columnDefs: [
       { targets: 0, visible: false },
       {
