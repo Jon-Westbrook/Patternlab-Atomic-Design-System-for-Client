@@ -86,7 +86,7 @@
       "<p class=\"mt-4 mb-0\">Jun 15th, 2019</p><p class=\"mb-4 small\">5:41 am</p>",
       "<p class=\"mt-4 mb-0\">Sherman Cruz</p><p class=\"mb-4 small\">aliquip@ipsum.info</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -106,7 +106,7 @@
       "<p class=\"mt-4 mb-0\">Jun 14th, 2019</p><p class=\"mb-4 small\">6:23 am</p>",
       "<p class=\"mt-4 mb-0\">Sharron Aguirre</p><p class=\"mb-4 small\">commodo@sit.tv</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -136,7 +136,7 @@
       "<p class=\"mt-4 mb-0\">May 3rd, 2019</p><p class=\"mb-4 small\">8:53 am</p>",
       "<p class=\"mt-4 mb-0\">Hill Perkins</p><p class=\"mb-4 small\">nisi@veniam.me</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -156,7 +156,7 @@
       "<p class=\"mt-4 mb-0\">May 28th, 2019</p><p class=\"mb-4 small\">3:26 am</p>",
       "<p class=\"mt-4 mb-0\">Mejia Knapp</p><p class=\"mb-4 small\">qui@enim.us</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -206,7 +206,7 @@
       "<p class=\"mt-4 mb-0\">Jun 9th, 2019</p><p class=\"mb-4 small\">5:20 am</p>",
       "<p class=\"mt-4 mb-0\">Bruce Hernandez</p><p class=\"mb-4 small\">enim@eiusmod.info</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -256,7 +256,7 @@
       "<p class=\"mt-4 mb-0\">Apr 24th, 2019</p><p class=\"mb-4 small\">1:30 pm</p>",
       "<p class=\"mt-4 mb-0\">Frazier Avila</p><p class=\"mb-4 small\">qui@aliqua.me</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -266,7 +266,7 @@
       "<p class=\"mt-4 mb-0\">Apr 6th, 2019</p><p class=\"mb-4 small\">9:38 am</p>",
       "<p class=\"mt-4 mb-0\">Araceli Chen</p><p class=\"mb-4 small\">irure@reprehenderit.biz</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -276,7 +276,7 @@
       "<p class=\"mt-4 mb-0\">Mar 8th, 2019</p><p class=\"mb-4 small\">2:53 am</p>",
       "<p class=\"mt-4 mb-0\">Carter Wolf</p><p class=\"mb-4 small\">voluptate@anim.us</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -376,7 +376,7 @@
       "<p class=\"mt-4 mb-0\">Feb 24th, 2019</p><p class=\"mb-4 small\">1:45 pm</p>",
       "<p class=\"mt-4 mb-0\">Tabatha Albert</p><p class=\"mb-4 small\">do@laboris.me</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -386,7 +386,7 @@
       "<p class=\"mt-4 mb-0\">May 2nd, 2019</p><p class=\"mb-4 small\">1:19 pm</p>",
       "<p class=\"mt-4 mb-0\">Monica Mcdonald</p><p class=\"mb-4 small\">incididunt@sit.biz</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -436,7 +436,7 @@
       "<p class=\"mt-4 mb-0\">Feb 24th, 2019</p><p class=\"mb-4 small\">12:51 am</p>",
       "<p class=\"mt-4 mb-0\">Imelda Foster</p><p class=\"mb-4 small\">fugiat@nostrud.ca</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -476,7 +476,7 @@
       "<p class=\"mt-4 mb-0\">Mar 19th, 2019</p><p class=\"mb-4 small\">12:15 am</p>",
       "<p class=\"mt-4 mb-0\">Logan Lester</p><p class=\"mb-4 small\">in@mollit.biz</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -506,7 +506,7 @@
       "<p class=\"mt-4 mb-0\">May 16th, 2019</p><p class=\"mb-4 small\">11:57 pm</p>",
       "<p class=\"mt-4 mb-0\">Elizabeth Fox</p><p class=\"mb-4 small\">ad@labore.biz</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -566,7 +566,7 @@
       "<p class=\"mt-4 mb-0\">Jun 30th, 2019</p><p class=\"mb-4 small\">10:21 pm</p>",
       "<p class=\"mt-4 mb-0\">Delores Quinn</p><p class=\"mb-4 small\">minim@consequat.info</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -616,7 +616,7 @@
       "<p class=\"mt-4 mb-0\">Mar 13th, 2019</p><p class=\"mb-4 small\">3:58 pm</p>",
       "<p class=\"mt-4 mb-0\">Graves Frank</p><p class=\"mb-4 small\">do@nisi.me</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -646,7 +646,7 @@
       "<p class=\"mt-4 mb-0\">Mar 9th, 2019</p><p class=\"mb-4 small\">2:12 pm</p>",
       "<p class=\"mt-4 mb-0\">Lea James</p><p class=\"mb-4 small\">culpa@id.name</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -666,7 +666,7 @@
       "<p class=\"mt-4 mb-0\">Feb 28th, 2019</p><p class=\"mb-4 small\">5:36 pm</p>",
       "<p class=\"mt-4 mb-0\">Valeria Serrano</p><p class=\"mb-4 small\">et@consectetur.com</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -696,7 +696,7 @@
       "<p class=\"mt-4 mb-0\">May 16th, 2019</p><p class=\"mb-4 small\">12:19 pm</p>",
       "<p class=\"mt-4 mb-0\">Fannie Navarro</p><p class=\"mb-4 small\">laboris@mollit.net</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -716,7 +716,7 @@
       "<p class=\"mt-4 mb-0\">Mar 16th, 2019</p><p class=\"mb-4 small\">4:30 pm</p>",
       "<p class=\"mt-4 mb-0\">Cain Ingram</p><p class=\"mb-4 small\">nisi@quis.biz</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -726,7 +726,7 @@
       "<p class=\"mt-4 mb-0\">May 5th, 2019</p><p class=\"mb-4 small\">5:03 pm</p>",
       "<p class=\"mt-4 mb-0\">Crawford Howe</p><p class=\"mb-4 small\">id@magna.co.uk</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -736,7 +736,7 @@
       "<p class=\"mt-4 mb-0\">Mar 31st, 2019</p><p class=\"mb-4 small\">4:28 am</p>",
       "<p class=\"mt-4 mb-0\">Hampton Dudley</p><p class=\"mb-4 small\">incididunt@eu.me</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -746,7 +746,7 @@
       "<p class=\"mt-4 mb-0\">Jun 3rd, 2019</p><p class=\"mb-4 small\">10:04 pm</p>",
       "<p class=\"mt-4 mb-0\">Mitzi Logan</p><p class=\"mb-4 small\">reprehenderit@tempor.biz</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -756,7 +756,7 @@
       "<p class=\"mt-4 mb-0\">Mar 10th, 2019</p><p class=\"mb-4 small\">5:24 am</p>",
       "<p class=\"mt-4 mb-0\">Morrow Sheppard</p><p class=\"mb-4 small\">cupidatat@proident.us</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -766,7 +766,7 @@
       "<p class=\"mt-4 mb-0\">Mar 20th, 2019</p><p class=\"mb-4 small\">2:02 pm</p>",
       "<p class=\"mt-4 mb-0\">Nash Norman</p><p class=\"mb-4 small\">est@laborum.name</p>",
       "Virtual Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -776,7 +776,7 @@
       "<p class=\"mt-4 mb-0\">May 29th, 2019</p><p class=\"mb-4 small\">5:06 pm</p>",
       "<p class=\"mt-4 mb-0\">Mayo David</p><p class=\"mb-4 small\">amet@excepteur.org</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -816,7 +816,7 @@
       "<p class=\"mt-4 mb-0\">Mar 21st, 2019</p><p class=\"mb-4 small\">9:42 am</p>",
       "<p class=\"mt-4 mb-0\">Bettye Boyle</p><p class=\"mb-4 small\">est@voluptate.net</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -826,7 +826,7 @@
       "<p class=\"mt-4 mb-0\">May 27th, 2019</p><p class=\"mb-4 small\">8:43 pm</p>",
       "<p class=\"mt-4 mb-0\">Jones Mercer</p><p class=\"mb-4 small\">ex@officia.tv</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -856,7 +856,7 @@
       "<p class=\"mt-4 mb-0\">May 29th, 2019</p><p class=\"mb-4 small\">5:08 am</p>",
       "<p class=\"mt-4 mb-0\">Lynda Trevino</p><p class=\"mb-4 small\">nisi@excepteur.me</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -876,7 +876,7 @@
       "<p class=\"mt-4 mb-0\">Jun 25th, 2019</p><p class=\"mb-4 small\">3:40 pm</p>",
       "<p class=\"mt-4 mb-0\">Mcdonald Livingston</p><p class=\"mb-4 small\">do@sunt.us</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -936,7 +936,7 @@
       "<p class=\"mt-4 mb-0\">May 24th, 2019</p><p class=\"mb-4 small\">3:39 pm</p>",
       "<p class=\"mt-4 mb-0\">Colette Small</p><p class=\"mb-4 small\">voluptate@velit.net</p>",
       "Lightbox",
-      "VISA",
+      "Visa",
       "Funded",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
@@ -946,7 +946,7 @@
       "<p class=\"mt-4 mb-0\">Mar 1st, 2019</p><p class=\"mb-4 small\">8:24 pm</p>",
       "<p class=\"mt-4 mb-0\">Opal Hunter</p><p class=\"mb-4 small\">magna@adipisicing.tv</p>",
       "CardX Terminal",
-      "VISA",
+      "Visa",
       "Processing",
       "<img class=\"ellipse\" src=\"../../images/icons/ellipse.svg\">"
     ],
