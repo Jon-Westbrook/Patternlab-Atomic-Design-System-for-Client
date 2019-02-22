@@ -1,6 +1,9 @@
 .reporting {
   .nav-tabs {
     border: 0;
+    a:not(.active) {
+      color: $gray-dark;
+    }
   }
   #sales-tab,
   #deposits-tab {
