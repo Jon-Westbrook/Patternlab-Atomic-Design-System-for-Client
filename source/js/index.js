@@ -10,7 +10,7 @@ import * as util from "./modules/util.js";
 // Global Variables
 const $window = $(window);
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", () => {
   // Datatables - Init Invoice Preview Table
   tables.initInvoicePreviewTable();
 
@@ -60,6 +60,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
   homeChart.drawChart(homeChart.options);
 
   // Modal Animation - Needs Updating
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this;
+
+      var args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) {
+          func.apply(context, args);
+        }
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) {
+        func.apply(context, args);
+      }
+    };
+  }
+
   $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
     var header = $(".modal.fade.show .modal-header");
@@ -78,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         mainBox.css("z-index", 1020);
       }
     }
-    modal.scroll(util.debounce(animateModalHeader, 10));
+    modal.scroll(debounce(animateModalHeader, 10));
   });
 }); // End DOM Content Loaded
 
