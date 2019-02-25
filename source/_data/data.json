@@ -864,38 +864,18 @@
             "btn-copy": "Send"
           }
         ],
-        "tab-panes": [
+        "sections": [
           {
-            "classes": "show active",
-            "id": "pills-edit",
-            "aria-labelledby": "pills-edit-tab",
-            "heading": "Im a heading",
-            "sections": [
-              {
-                "invoice-info": true,
-                "heading": "Customer Information"
-              },
-              {
-                "invoice-details": true,
-                "heading": "Invoice Details"
-              },
-              {
-                "invoice-line-items": true,
-                "heading": "Line Items"
-              }
-            ]
+            "transaction-amount": true,
+            "heading": "Transaction"
           },
           {
-            "classes": "",
-            "id": "pills-preview",
-            "aria-labelledby": "pills-preview-tab",
-            "heading": "Im a different heading",
-            "sections": [
-              {
-                "invoice-preview": true,
-                "heading": "Profile Information"
-              }
-            ]
+            "payment-details": true,
+            "heading": "Payment"
+          },
+          {
+            "billing-info": true,
+            "heading": "Billing"
           }
         ]
       }
