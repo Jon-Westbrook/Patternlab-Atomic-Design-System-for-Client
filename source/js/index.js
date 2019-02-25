@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleDates() {
     $(".from, .to").slideToggle(500);
+    $();
   }
 
   // Datatables - Init Invoice Preview Table
