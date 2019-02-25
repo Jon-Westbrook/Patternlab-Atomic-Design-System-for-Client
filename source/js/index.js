@@ -11,12 +11,11 @@ import * as util from "./modules/util.js";
 const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", toggleDates);
-
-  function toggleDates() {
-    $(".from, .to").slideToggle(500);
-    $();
-  }
+  $(".btn-filter").on("click", function() {
+    $(this).toggleText("Filter", "Hide");
+  });
 
   // Datatables - Init Invoice Preview Table
   tables.initInvoicePreviewTable();

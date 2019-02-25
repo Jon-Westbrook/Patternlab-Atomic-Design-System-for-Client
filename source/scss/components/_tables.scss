@@ -19,17 +19,13 @@
 
 #sales-table,
 #deposits-table {
-  margin-top: 0px !important;
-  tr,
   td {
     border-left: 0;
     border-right: 0;
+    border-bottom: 1px solid $secondary-3;
   }
   input {
     border: 0;
-  }
-  td {
-    border-bottom: 1px solid $secondary-3;
   }
 }
 
@@ -42,10 +38,6 @@
   .odd {
     background-color: $primary-3;
   }
-}
-
-.dataTables_scroll {
-  // box-shadow: 0 0 10px 5px #e7e8ed;
 }
 
 #sales-table {

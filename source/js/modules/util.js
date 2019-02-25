@@ -1,12 +1,11 @@
-/* eslint-disable func-names */
 // Debouncer
-export default function debounce(func, wait, immediate) {
+export function debounce(func, wait, immediate) {
   var timeout;
   return function() {
     var context = this;
 
     var args = arguments;
-    var later = function() {
+    var later () => {
       timeout = null;
       if (!immediate) {
         func.apply(context, args);
@@ -19,4 +18,15 @@ export default function debounce(func, wait, immediate) {
       func.apply(context, args);
     }
   };
+}
+
+// Extend jQuery to Toggle Text in the Filter Button on Mobile
+$.fn.extend({
+  toggleText(a, b) {
+    return this.text(this.text() === b ? a : b);
+  }
+});
+
+export function toggleDates() {
+  $(".from, .to").slideToggle(500);
 }

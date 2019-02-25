@@ -807,7 +807,8 @@
         "placeholder-search": "Search customers, amount...",
         "sections": [
           {
-            "filter-table": true
+            "filter-table": true,
+            "btn-copy": "Filter"
           },
           {
             "summary-table": true,
