@@ -30,12 +30,12 @@ export const initReportingSalesTable = () => {
     },
     columnDefs: [
       { targets: 0, visible: false },
+      { targets: 1, className: "amount text-right pr-5" },
+      { targets: 2, className: "pl-5" },
       {
         targets: 7,
-        orderable: false,
-        createdCell(td, cellData, rowData, row, col) {
-          // $(td).css("padding-right", "24px");
-        }
+        className: "text-center px-5",
+        orderable: false
       }
     ]
   });
