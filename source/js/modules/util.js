@@ -1,25 +1,3 @@
-// Debouncer
-export function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this;
-
-    var args = arguments;
-    var later () => {
-      timeout = null;
-      if (!immediate) {
-        func.apply(context, args);
-      }
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) {
-      func.apply(context, args);
-    }
-  };
-}
-
 // Extend jQuery to Toggle Text in the Filter Button on Mobile
 $.fn.extend({
   toggleText(a, b) {
@@ -30,3 +8,13 @@ $.fn.extend({
 export function toggleDates() {
   $(".from, .to").slideToggle(500);
 }
+
+// Debouncer
+export const debounce = (fn, time) => {
+  let timeout;
+  return (...args) => {
+    const functionCall = () => fn.apply(this, args);
+    clearTimeout(timeout);
+    timeout = setTimeout(functionCall, time);
+  };
+};

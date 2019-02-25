@@ -12,7 +12,7 @@ const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Toggle Filter Bar on Mobile
-  $(".btn-filter").on("click", toggleDates);
+  $(".btn-filter").on("click", util.toggleDates);
   $(".btn-filter").on("click", function() {
     $(this).toggleText("Filter", "Hide");
   });
@@ -65,28 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Draw Homepage Chart
   homeChart.drawChart(homeChart.options);
 
-  // Modal Animation - Needs Updating
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this;
-
-      var args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) {
-          func.apply(context, args);
-        }
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) {
-        func.apply(context, args);
-      }
-    };
-  }
-
   $(".modal").on("shown.bs.modal", function() {
     var modal = $(this);
     var header = $(".modal.fade.show .modal-header");
@@ -105,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mainBox.css("z-index", 1020);
       }
     }
-    modal.scroll(debounce(animateModalHeader, 10));
+    modal.scroll(util.debounce(animateModalHeader, 5));
   });
 }); // End DOM Content Loaded
 
