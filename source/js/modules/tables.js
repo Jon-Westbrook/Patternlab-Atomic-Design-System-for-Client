@@ -53,12 +53,15 @@ export const initReportingDepositsTable = () => {
     responsive: true,
     columnDefs: [
       { targets: 0, visible: false },
+      { targets: 1, className: "text-right pr-9", width: "20%" },
+      { targets: 2, className: "pl-5", width: "20%" },
+      { targets: 3, className: "text-right pr-9", width: "20%" },
+      { targets: 4, className: "pl-5", width: "20%" },
       {
         targets: 5,
         orderable: false,
-        createdCell(td, cellData, rowData, row, col) {
-          $(td).css("padding-right", "24px");
-        }
+        width: "10%",
+        className: "text-center"
       }
     ]
   });

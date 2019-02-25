@@ -42,14 +42,10 @@
   .odd {
     background-color: $primary-3;
   }
-  .even,
-  .odd {
-    border-bottom: 3px solid $primary-2 !important;
-  }
 }
 
 .dataTables_scroll {
-  box-shadow: 0 0 10px 5px #e7e8ed;
+  // box-shadow: 0 0 10px 5px #e7e8ed;
 }
 
 #sales-table {
