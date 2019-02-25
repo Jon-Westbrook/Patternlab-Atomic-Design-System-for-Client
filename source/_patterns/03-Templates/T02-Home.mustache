@@ -1,7 +1,11 @@
 <!-- Modals -->
-{{# home.modals }}
-  {{> Modules-M23-Modal-Invoice }}
-{{/ home.modals }}
+{{# home.invoiceModal }}
+{{> Modules-M23-Modal-Invoice }}
+{{/ home.invoiceModal }}
+
+{{# home.newSaleModal }}
+{{> Modules-M22-Modal-Sale }}
+{{/ home.newSaleModal }}
 
 <div class="wrapper">
 
@@ -10,7 +14,7 @@
   <!-- Page Content  -->
   <section id="content" class="pb-8">
 
-    {{> Modules-M35-Navigation-Top }}
+    {{> Modules-M33-Navigation-Top }}
 
     {{> Modules-M04-Greeting }}
 

@@ -1,6 +1,5 @@
-
 ---
 title: M23-Modal-Invoice
 ---
 
-Create and edit modals for the customer profile.
+Invoice modal with edit and preview screens.
