@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 /* eslint-disable import/extensions */
 
 import * as tables from "./modules/tables.js";
@@ -11,6 +10,8 @@ import * as util from "./modules/util.js";
 const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
+  // $("#customerNew").modal("show");
+
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);
   $(".btn-filter").on("click", function() {

@@ -32,9 +32,9 @@
         <!-- <img class="d-none bottom" src="../../images/modal-header-plain.svg" /> -->
 
         <!-- Desktop Header -->
-        <div class="container d-none d-md-block h-100 heading-row w-100">
+        <div class="container d-none d-md-block h-100 heading-row">
           <div class="row h-100">
-            <div class="col-md-12 heading-col d-flex flex-column flex-md-row align-items-center px-0">
+            <div class="col-xl-10 offset-xl-1 heading-col d-flex flex-column flex-md-row align-items-center px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
                 {{# btns-desktop-top }}
@@ -45,49 +45,52 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="modal-body pt-0 pb-8 px-0 h-100">
-        <div class="container pb-8 mainBox ">
-          <form class="w-100 needs-validation" novalidate>
-            {{# sections }}
-            <div class="row py-6 py-md-8">
-              <div class="col-md-4 offset-md-1 pb-4">
-                <h2 class="secondary-6">{{ heading }}</h2>
-              </div>
-              <div class="col-md-5">
-                {{# transaction-amount }}
-                {{> Components-C41-Sale-Transaction-Amount }}
-                {{/ transaction-amount }}
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-10 offset-xl-1 mainBox pb-8">
+              <form class="w-100 needs-validation" novalidate>
+                {{# sections }}
+                <div class="row py-6 py-md-8">
+                  <div class="col-md-4 offset-md-1 pb-4">
+                    <h2 class="secondary-6">{{ heading }}</h2>
+                  </div>
+                  <div class="col-md-6">
+                    {{# transaction-amount }}
+                    {{> Components-C41-Sale-Transaction-Amount }}
+                    {{/ transaction-amount }}
 
-                {{# payment-details }}
-                {{> Components-C42-Sale-Payment-Details }}
-                {{/ payment-details }}
+                    {{# payment-details }}
+                    {{> Components-C42-Sale-Payment-Details }}
+                    {{/ payment-details }}
 
-                {{# billing-info }}
-                {{> Components-C43-Sale-Billing-Info }}
-                {{/ billing-info }}
-              </div>
-            </div>
-            <!-- I Rule -->
-            <div class="row">
-              <div class="col-md-10 offset-md-1">
-                <div class="w-100 rule">&nbsp;</div>
-              </div>
-            </div>
-            {{/ sections }}
-            <div class="row mt-8">
-              <div class="col-md-10 offset-md-1 d-flex">
-                <div class="ml-auto">
-                  {{# btns-desktop-bottom }}
-                  <button type="button" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
-                    aria-label="{{ aria-label }}">{{ btn-copy }}</button>
-                  {{/ btns-desktop-bottom }}
+                    {{# billing-info }}
+                    {{> Components-C43-Sale-Billing-Info }}
+                    {{/ billing-info }}
+                  </div>
                 </div>
-              </div>
+                <!-- I Rule -->
+                <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                    <div class="w-100 rule">&nbsp;</div>
+                  </div>
+                </div>
+                {{/ sections }}
+                <div class="row mt-8">
+                  <div class="col-md-10 offset-md-1 d-flex">
+                    <div class="ml-auto">
+                      {{# btns-desktop-bottom }}
+                      <button type="button" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
+                        aria-label="{{ aria-label }}">{{ btn-copy }}</button>
+                      {{/ btns-desktop-bottom }}
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
 

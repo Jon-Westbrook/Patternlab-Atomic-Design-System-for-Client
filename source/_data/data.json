@@ -762,26 +762,6 @@
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "dropdown-item pills-edit-tab",
-            "data-toggle": "pill",
-            "href": "#pills-edit",
-            "aria-label": "Edit ",
-            "btn-copy": "Edit",
-            "role": "tab",
-            "aria-controls": "pills-edit",
-            "aria-selected": "true"
-          },
-          {
-            "classes": "dropdown-item pills-preview-tab",
-            "data-toggle": "pill",
-            "href": "#pills-preview",
-            "aria-label": "Preview ",
-            "btn-copy": "Preview",
-            "role": "tab",
-            "aria-controls": "pills-preview",
-            "aria-selected": "false"
           }
         ],
         "btns-desktop-top": [
@@ -796,32 +776,6 @@
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn btn-dark-outline pills-edit-tab",
-            "data-toggle": "pill",
-            "href": "#pills-edit",
-            "aria-label": "Edit ",
-            "btn-copy": "Edit",
-            "role": "tab",
-            "aria-controls": "pills-edit",
-            "aria-selected": "true"
-          },
-          {
-            "classes": "btn btn-dark pills-preview-tab",
-            "data-toggle": "pill",
-            "href": "#pills-preview",
-            "aria-label": "Preview ",
-            "btn-copy": "Preview",
-            "role": "tab",
-            "aria-controls": "pills-preview",
-            "aria-selected": "false"
-          },
-          {
-            "classes": "btn btn-dark invoice-send",
-            "data-dismiss": "modal",
-            "aria-label": "Send",
-            "btn-copy": "Send"
           }
         ],
         "btns-desktop-bottom": [
@@ -836,32 +790,6 @@
             "data-dismiss": "",
             "aria-label": "Save Draft",
             "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn btn-outline pills-edit-tab",
-            "data-toggle": "pill",
-            "href": "#pills-edit",
-            "aria-label": "Edit ",
-            "btn-copy": "Edit",
-            "role": "tab",
-            "aria-controls": "pills-edit",
-            "aria-selected": "true"
-          },
-          {
-            "classes": "btn pills-preview-tab",
-            "data-toggle": "pill",
-            "href": "#pills-preview",
-            "aria-label": "Preview ",
-            "btn-copy": "Preview",
-            "role": "tab",
-            "aria-controls": "pills-preview",
-            "aria-selected": "false"
-          },
-          {
-            "classes": "btn invoice-send",
-            "data-dismiss": "modal",
-            "aria-label": "Send",
-            "btn-copy": "Send"
           }
         ],
         "sections": [
