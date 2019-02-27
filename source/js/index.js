@@ -10,7 +10,7 @@ import * as util from "./modules/util.js";
 const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
-  // $("#customerNew").modal("show");
+  $("#newSale").modal("show");
 
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);

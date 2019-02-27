@@ -1,4 +1,4 @@
-<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
+<div class="modal fade modal-sale" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
   aria-hidden="false">
 
   <div class="modal-dialog" role="document">
@@ -53,9 +53,17 @@
             <div class="col-xl-10 offset-xl-1 mainBox pb-8">
               <form class="w-100 needs-validation" novalidate>
                 {{# sections }}
-                <div class="row py-6 py-md-8">
+                <div class="row pt-6 pb-8 py-md-8">
                   <div class="col-md-4 offset-md-1 pb-4">
                     <h2 class="secondary-6">{{ heading }}</h2>
+                    {{# customer-note }}
+                    <div class="customer-note mt-5 mb-4 w-75">
+                      <img src="{{ note }}" alt="Gear Icon" class="d-inline-block">
+                      <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
+                      <p class="small light mb-0">{{{ tip1 }}}</p>
+                      <p class="small light">{{{ tip2 }}}</p>
+                    </div>
+                    {{/ customer-note }}
                   </div>
                   <div class="col-md-6">
                     {{# transaction-amount }}
