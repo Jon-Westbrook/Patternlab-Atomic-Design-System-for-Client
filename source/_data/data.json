@@ -804,7 +804,8 @@
           },
           {
             "payment-details": true,
-            "heading": "Payment"
+            "heading": "Payment",
+            "card-thumb": "../../images/card-icons.png"
           },
           {
             "billing-info": true,
