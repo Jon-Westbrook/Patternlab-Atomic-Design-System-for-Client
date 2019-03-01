@@ -38,7 +38,7 @@
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
                 {{# btns-desktop-top }}
-                <button type="button" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
+                <button type="{{ type }}" form="{{ form }}" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
                   aria-label="{{ aria-label }}">{{ btn-copy }}</button>
                 {{/ btns-desktop-top }}
               </div>
@@ -51,7 +51,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-10 offset-xl-1 mainBox pb-8">
-              <form class="w-100 needs-validation" novalidate>
+              <form id="newSaleForm" class="w-100 needs-validation" novalidate>
                 {{# sections }}
                 <div class="row pt-6 pb-8 py-md-8">
                   <div class="col-md-4 offset-md-1 pb-4">

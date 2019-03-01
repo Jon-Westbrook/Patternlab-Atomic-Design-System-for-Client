@@ -1,8 +1,8 @@
 <div class="form-row">
-  <div class="form-group col-md-4 mb-2 mb-md-5">
-    <label for="amount01" class="primary-2">Amount Owed</label>
-    <div>
-      <input type="text" class="form-control" id="amount01" required>
+  <div class="form-group col-md-6 mb-5">
+    <label for="amountOwed" class="primary-2">Amount Owed</label>
+    <div class="dollar-wrapper">
+      <input type="text" class="form-control " id="amountOwed" required>
     </div>
     <div class="invalid-feedback">
       Please provide a valid amount.
@@ -17,7 +17,7 @@
         <p class="label mt-3 mb-0 mb-md-3">Subtotal</p>
       </div>
       <div class="col-md-3 d-flex align-items-center justify-content-start justify-content-md-end pr-0">
-        <p class="gray my-3">$00.00</p>
+        <p class="gray my-3 subTotal">$</p>
       </div>
     </div>
     <div class="row mx-0 px-0">
@@ -25,7 +25,7 @@
         <p class="label mt-3 mb-0 mb-md-6">Credit Card Fee (3.5%)</p>
       </div>
       <div class="col-md-3 d-flex align-items-center justify-content-start justify-content-md-end pr-0 mb-3 mb-md-0">
-        <p class="gray my-3">$00.00</p>
+        <p class="gray my-3 taxRate">$00.00</p>
       </div>
     </div>
     <div class="row mx-0">
@@ -38,7 +38,7 @@
         <p class="label mt-3 mb-0">Total Amount</p>
       </div>
       <div class="col-md-3 d-flex align-items-center justify-content-start justify-content-md-end pr-0">
-        <p class="gray mt-3 mb-0">$00.00</p>
+        <p class="gray mt-3 mb-0 total">$00.00</p>
       </div>
     </div>
   </div>

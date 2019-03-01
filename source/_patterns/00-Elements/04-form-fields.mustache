@@ -1,11 +1,11 @@
-<div class="container pb-6 pb-md-8">
+<div class="container py-9">
 
   <form class="needs-validation" novalidate>
 
     <div class="form-row">
-      <div class="input-group col-md-6 mt-5">
+      <div class="input-group col-md-6">
         <input type="search" class="form-control search-input" placeholder="{{ placeholder-search }}"
-          aria-label="Search">
+          aria-label="Search" required>
         <div class="input-group-append magnifier-button">
           <span class="input-group-text" id="basic-addon2">
             <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,9 @@
             </svg>
           </span>
         </div>
+        <div class="invalid-feedback">
+          Invalid search.
+        </div>
       </div>
     </div>
 
@@ -36,7 +39,7 @@
       <div class="form-group col-md-6 mb-5">
         <label for="example-date-input" class="primary-2">Start Date</label>
         <div class="input-group">
-          <input class="form-control custom-date date" type="text" name="date" value="Mar 28, 2019">
+          <input class="form-control custom-date date" type="text" name="date" value="Mar 28, 2019" required>
           <div class="invalid-feedback">
             Please select a valid date.
           </div>
@@ -46,15 +49,15 @@
 
     <div class="form-row mt-3">
       <div class="form-group col-md-3">
-        <label for="validationCustom05" class="primary-2">Repeat Every</label>
-        <select id="inputState" class="custom-select">
-          <option selected>Select...</option>
+        <label for="validationCustom05" class="primary-2" required>Repeat Every</label>
+        <select id="inputState" class="custom-select" required>
+          <option selected></option>
           <option>Week</option>
           <option>Two Weeks</option>
           <option>Month</option>
         </select>
         <div class="invalid-feedback">
-          Please provide a valid zip.
+          Pick it!
         </div>
       </div>
     </div>
@@ -63,13 +66,16 @@
       <div class="form-group col-md-3">
         <label for="exampleInputEmail1" class="primary-2">Email address</label>
         <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="valid-feedback">
-          Looks good!
+        <div class="invalid-feedback">
+          Don't forget an @ symbol.
         </div>
       </div>
       <div class="form-group col-md-3">
         <label for="exampleInputPassword1" class="primary-2">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="invalid-feedback">
+        It better be complicated.
       </div>
     </div>
 
@@ -77,15 +83,15 @@
       <div class="form-group col-md-3 mb-3">
         <label for="validationCustom01" class="primary-2">First name</label>
         <input type="text" class="form-control" id="validationCustom01" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="invalid-feedback">
+          Got a name?
         </div>
       </div>
       <div class="form-group col-md-3 mb-3">
         <label for="validationCustom02" class="primary-2">Last name</label>
         <input type="text" class="form-control" id="validationCustom02" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="invalid-feedback">
+          You should know your last name!
         </div>
       </div>
     </div>
@@ -94,13 +100,9 @@
       <div class="form-group col-md-6 mb-3">
         <label for="validationCustomUsername" class="primary-2">Username</label>
         <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-          </div>
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-            required>
+          <input type="text" class="form-control" id="validationCustomUsername" required>
           <div class="invalid-feedback">
-            Please choose a username.
+            You can do it!
           </div>
         </div>
       </div>
@@ -111,12 +113,12 @@
         <label for="validationCustom03" class="primary-2">City</label>
         <input type="text" class="form-control" id="validationCustom03" required>
         <div class="invalid-feedback">
-          Please provide a valid city.
+          What's your city?
         </div>
       </div>
       <div class="form-group col-md-1 mb-5">
         <label for="stateSelect01" class="primary-2">State</label>
-        <select id="stateSelect01" class="custom-select">
+        <select id="stateSelect01" class="custom-select" required>
           <option selected></option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -171,14 +173,14 @@
           <option value="WY">Wyoming</option>
         </select>
         <div class="invalid-feedback">
-          Please provide a valid city.
+          Choose it!
         </div>
       </div>
       <div class="form-group col-md-2 mb-3">
         <label for="validationCustom05" class="primary-2">Zip</label>
         <input type="text" class="form-control" id="validationCustom05" required>
         <div class="invalid-feedback">
-          Please provide a valid zip.
+          Write it!
         </div>
       </div>
     </div>
@@ -190,7 +192,7 @@
           <label class="small custom-control-label medium" for="customCheck1">Save to Customer Profile</label>
         </div>
         <div class="invalid-feedback">
-          Test message
+          Check me!
         </div>
       </div>
     </div>

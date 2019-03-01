@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function animateModalHeader() {
     var scrollTop = modal.scrollTop();
-    console.log(scrollTop);
     if (scrollTop > 10) {
       header.addClass("shrink");
       if (header.height() < 160 && header.height() >= 76) {
@@ -85,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Animate modal headers when loaded
   $(".modal").on("shown.bs.modal", function() {
     modal = $(this);
     header = $(".modal.fade.show .modal-header");
@@ -92,7 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
     mainBox = $(".modal.fade.show .mainBox");
     modal.scroll(util.debounce(animateModalHeader, 5));
   });
+
+  // Calculate Totals on Modal Sale
+  const amountEntered = document.querySelector("#amountOwed");
+  if (amountEntered !== null) {
+    amountEntered.addEventListener("blur", calculateTotals);
+  }
 }); // End DOM Content Loaded
+
+function calculateTotals() {
+  var subTotal = document.querySelector(".subTotal");
+  subTotal.innerHTML = this.value;
+}
 
 // Inject jQuery-UI Datepickers
 function initDatepickers() {
