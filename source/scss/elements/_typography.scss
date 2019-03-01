@@ -1,4 +1,3 @@
-
 // Custom Responsive Font Sizes
 // ============================
 
@@ -163,11 +162,11 @@
   }
 }
 
-
 // Headings
 // ========
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: $display3-size-xs;
   line-height: $display3-line-height-xs;
   font-weight: 400;
@@ -189,7 +188,8 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: $display5-size-xs;
   line-height: $display5-line-height-xs;
   font-weight: 400;
@@ -211,7 +211,8 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: $display5-size-xs;
   line-height: $display5-line-height-xs;
   font-weight: 400;
@@ -233,7 +234,8 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: $display6-size-xs;
   line-height: $display6-line-height-xs;
   font-weight: 500;
@@ -256,7 +258,8 @@ h4, .h4 {
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: $display7-size-xs;
   line-height: $display7-line-height-xs;
   font-weight: 500;
@@ -281,28 +284,29 @@ h5, .h5 {
 }
 
 p {
-  font-size: (16 / 16)+rem;
-  line-height: (22 / 16)+rem;
+  font-size: (16 / 16) + rem;
+  line-height: (22 / 16) + rem;
   font-weight: 400;
   @include media-breakpoint-only(sm) {
-    font-size: (16 / 16)+rem;
-    line-height: (22 / 16)+rem;
+    font-size: (16 / 16) + rem;
+    line-height: (22 / 16) + rem;
   }
   @include media-breakpoint-only(md) {
-    font-size: (16 / 16)+rem;
-    line-height: (22 / 16)+rem;
+    font-size: (16 / 16) + rem;
+    line-height: (22 / 16) + rem;
   }
   @include media-breakpoint-only(lg) {
-    font-size: (16 / 16)+rem;
-    line-height: (22 / 16)+rem;
+    font-size: (16 / 16) + rem;
+    line-height: (22 / 16) + rem;
   }
   @include media-breakpoint-only(xl) {
-    font-size: (16 / 16)+rem;
-    line-height: (22 / 16)+rem;
+    font-size: (16 / 16) + rem;
+    line-height: (22 / 16) + rem;
   }
 }
 
-code, .code {
+code,
+.code {
   font-size: $display6-size-xs;
   line-height: $display6-line-height-xs;
   color: $primary-2;
@@ -326,49 +330,51 @@ code, .code {
   }
 }
 
-label, .label {
-  font-size: (11 / 16)+rem;
-  line-height: (15 / 16)+rem;
+label,
+.label {
+  font-size: (11 / 16) + rem;
+  line-height: (15 / 16) + rem;
   letter-spacing: 1px;
   font-weight: 500;
   text-transform: uppercase;
   @include media-breakpoint-only(sm) {
-    font-size: (11 / 16)+rem;
-    line-height: (15 / 16)+rem;
+    font-size: (11 / 16) + rem;
+    line-height: (15 / 16) + rem;
   }
   @include media-breakpoint-only(md) {
-    font-size: (11 / 16)+rem;
-    line-height: (15 / 16)+rem;
+    font-size: (11 / 16) + rem;
+    line-height: (15 / 16) + rem;
   }
   @include media-breakpoint-only(lg) {
-    font-size: (11 / 16)+rem;
-    line-height: (15 / 16)+rem;
+    font-size: (11 / 16) + rem;
+    line-height: (15 / 16) + rem;
   }
   @include media-breakpoint-only(xl) {
-    font-size: (11 / 16)+rem;
-    line-height: (15 / 16)+rem;
+    font-size: (11 / 16) + rem;
+    line-height: (15 / 16) + rem;
   }
 }
 
-small, .small {
-  font-size: (12 / 16)+rem;
-  line-height: (16 / 16)+rem;
+small,
+.small {
+  font-size: (12 / 16) + rem;
+  line-height: (16 / 16) + rem;
   font-weight: 400;
   @include media-breakpoint-only(sm) {
-    font-size: (12 / 16)+rem;
-    line-height: (16 / 16)+rem;
+    font-size: (12 / 16) + rem;
+    line-height: (16 / 16) + rem;
   }
   @include media-breakpoint-only(md) {
-    font-size: (12 / 16)+rem;
-    line-height: (16 / 16)+rem;
+    font-size: (12 / 16) + rem;
+    line-height: (16 / 16) + rem;
   }
   @include media-breakpoint-only(lg) {
-    font-size: (12 / 16)+rem;
-    line-height: (16 / 16)+rem;
+    font-size: (12 / 16) + rem;
+    line-height: (16 / 16) + rem;
   }
   @include media-breakpoint-only(xl) {
-    font-size: (12 / 16)+rem;
-    line-height: (16 / 16)+rem;
+    font-size: (12 / 16) + rem;
+    line-height: (16 / 16) + rem;
   }
   a {
     font-weight: 400;
@@ -394,6 +400,10 @@ small, .small {
   font-weight: 300;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -414,6 +424,3 @@ small, .small {
     word-wrap: break-word;
   }
 }
-
-
-

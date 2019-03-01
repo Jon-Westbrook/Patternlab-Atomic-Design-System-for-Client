@@ -1,24 +1,33 @@
-<div class="row customer-profile ">
-  <div class="col-md-10 offset-md-1">
-    <a href="javascript:void(0);" class="edit secondary-4 small bold" data-toggle="modal"
-      data-target="#customerEditProfile" data-backdrop="false"><span
-        class="d-inline-block icon-pencil"></span>&nbsp;Edit</a>
-    <h2 class="secondary-6 mt-8">{{ customer.heading-profile }}</h2>
-    <div class="field-group mt-7">
-      <p class="label mb-1">Name</p>
-      <p>{{ customer.firstName }}&nbsp;{{ customer.lastName }}</p>
+<div class="form-row">
+  <div class="form-group col-md-10">
+    <label for="cardName01" class="primary-2">Name on Card</label>
+    <input type="text" class="form-control d-inline-block" id="cardName01" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
-    <div class="field-group mt-5">
-      <p class="label mb-1">Company</p>
-      <p>{{ customer.company }}</p>
+  </div>
+  <div class="form-group col-md-8 mb-5">
+    <label for="cardNo01" class="primary-2">Card Number</label>
+    <input type="text" class="form-control d-inline-block" id="cardNo01" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
-    <div class="field-group mt-5">
-      <p class="label mb-1">Email</p>
-      <p>{{ customer.email }}</p>
+  </div>
+  <div class="form-group col-md-4">
+    <img class="d-inline-block card-images" src="{{ card-thumb }}" alt="Credit Card Images">
+  </div>
+  <div class="form-group col-md-4 mb-md-2 pr-4">
+    <label for="expDate01" class="primary-2">Expiration Date</label>
+    <input type="text" class="form-control" id="expDate01" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
-    <div class="field-group mt-5">
-      <p class="label mb-1">Phone Number</p>
-      <p class="mb-0">{{ customer.phone }}</p>
+  </div>
+  <div class="form-group col-md-3 mb-md-2">
+    <label for="secCode01" class="primary-2">Security Code</label>
+    <input type="text" class="form-control w-100 col-md-8" id="secCode01" required>
+    <div class="valid-feedback">
+      Looks good!
     </div>
   </div>
 </div>

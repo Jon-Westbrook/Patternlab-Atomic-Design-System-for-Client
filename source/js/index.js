@@ -66,24 +66,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Draw Homepage Chart
   homeChart.drawChart(homeChart.options);
 
-  $(".modal").on("shown.bs.modal", function() {
-    var modal = $(this);
-    var header = $(".modal.fade.show .modal-header");
-    var heading = $(".modal.fade.show .modal-header .heading-col");
-    var mainBox = $(".modal.fade.show .mainBox");
+  let modal;
+  let header;
+  let heading;
+  let mainBox;
 
-    function animateModalHeader() {
-      var scrollTop = modal.scrollTop();
-      if (scrollTop > 10) {
-        header.addClass("shrink");
-        if (header.height() < 160 && header.height() >= 76) {
-          mainBox.css("z-index", 1010);
-        }
-      } else {
-        header.removeClass("shrink");
-        mainBox.css("z-index", 1020);
+  function animateModalHeader() {
+    var scrollTop = modal.scrollTop();
+    console.log(scrollTop);
+    if (scrollTop > 10) {
+      header.addClass("shrink");
+      if (header.height() < 160 && header.height() >= 76) {
+        mainBox.css("z-index", 1010);
       }
+    } else {
+      header.removeClass("shrink");
+      mainBox.css("z-index", 1020);
     }
+  }
+
+  $(".modal").on("shown.bs.modal", function() {
+    modal = $(this);
+    header = $(".modal.fade.show .modal-header");
+    heading = $(".modal.fade.show .modal-header .heading-col");
+    mainBox = $(".modal.fade.show .mainBox");
     modal.scroll(util.debounce(animateModalHeader, 5));
   });
 }); // End DOM Content Loaded
