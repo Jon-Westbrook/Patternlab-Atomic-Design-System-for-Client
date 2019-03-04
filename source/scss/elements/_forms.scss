@@ -110,6 +110,13 @@
   .custom-control-input:checked:hover ~ .custom-control-label::after {
     background-color: $gray-lightest;
   }
+  .custom-control-input:valid ~ .custom-control-label {
+    color: $primary-1;
+  }
+  .custom-control-input:valid ~ .custom-control-label::before,
+  .custom-control-input.is-valid ~ .custom-control-label::before {
+    border-color: $gray-border;
+  }
 }
 
 .ui-datepicker-trigger {
