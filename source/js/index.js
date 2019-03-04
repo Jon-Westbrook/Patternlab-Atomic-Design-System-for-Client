@@ -5,7 +5,6 @@ import * as sidebar from "./modules/sidebar.js";
 import * as homeChart from "./modules/homeChart.js";
 import * as modals from "./modules/modals.js";
 import * as util from "./modules/util.js";
-
 // Global Variables
 const $window = $(window);
 
@@ -101,8 +100,19 @@ document.addEventListener("DOMContentLoaded", () => {
 }); // End DOM Content Loaded
 
 function calculateTotals() {
+  var parsedAmount = parseInt(this.value);
   var subTotal = document.querySelector(".subTotal");
-  subTotal.innerHTML = this.value;
+  var taxRate = document.querySelector(".taxRate");
+  var total = document.querySelector(".total");
+  if (!isNaN(parsedAmount)) {
+    subTotal.innerHTML = parsedAmount.toFixed(2);
+    taxRate.innerHTML = (parsedAmount * 0.035).toFixed(2);
+    total.innerHTML = (parsedAmount * 0.035 + parsedAmount).toFixed(2);
+  } else {
+    subTotal.innerHTML = (0).toFixed(2);
+    taxRate.innerHTML = (0).toFixed(2);
+    total.innerHTML = (0).toFixed(2);
+  }
 }
 
 // Inject jQuery-UI Datepickers
