@@ -1,10 +1,3 @@
-// Extend jQuery to Toggle Text in the Filter Button on Mobile
-$.fn.extend({
-  toggleText(a, b) {
-    return this.text(this.text() === b ? a : b);
-  }
-});
-
 export function toggleDates() {
   $(".from, .to").slideToggle(500);
 }

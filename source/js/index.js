@@ -7,15 +7,25 @@ import * as modals from "./modules/modals.js";
 import * as util from "./modules/util.js";
 // Global Variables
 const $window = $(window);
+let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
   $("#newSale").modal("show");
 
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);
-  $(".btn-filter").on("click", function() {
-    $(this).toggleText("Filter", "Hide");
-  });
+
+  // Listen for Filter Button Clicks => Toggle the Text
+  const filterBtn = document.querySelector("#filterBtn");
+  if (filterBtn !== null) {
+    filterBtn.addEventListener("click", () => {
+      if (filterBtn.innerHTML === "Hide") {
+        filterBtn.innerHTML = "Filter";
+      } else {
+        filterBtn.innerHTML = "Hide";
+      }
+    });
+  }
 
   // Datatables - Init Invoice Preview Table
   tables.initInvoicePreviewTable();
@@ -92,27 +102,40 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.scroll(util.debounce(animateModalHeader, 5));
   });
 
-  // Calculate Totals on Modal Sale
+  // Update Subtotal on New Sale Modal
   const amountEntered = document.querySelector("#amountOwed");
   if (amountEntered !== null) {
-    amountEntered.addEventListener("blur", calculateTotals);
+    amountEntered.addEventListener("blur", updateSubtotal);
   }
-}); // End DOM Content Loaded
 
-function calculateTotals() {
-  var parsedAmount = parseInt(this.value);
-  var subTotal = document.querySelector(".subTotal");
-  var taxRate = document.querySelector(".taxRate");
-  var total = document.querySelector(".total");
+  // Apply Tax after Credit Card is entered
+  const cardEntered = document.querySelector(".creditCard");
+  if (cardEntered !== null) {
+    cardEntered.addEventListener("blur", calculateTotals);
+  }
+}); // END DOM CONTENT LOADED
+
+function updateSubtotal() {
+  const amount = this;
+  const parsedAmount = parseInt(this.value, 10);
+  const subTotal = document.querySelector(".subTotal");
+  const taxRate = document.querySelector(".taxRate");
+  const total = document.querySelector(".total");
   if (!isNaN(parsedAmount)) {
-    subTotal.innerHTML = parsedAmount.toFixed(2);
-    taxRate.innerHTML = (parsedAmount * 0.035).toFixed(2);
-    total.innerHTML = (parsedAmount * 0.035 + parsedAmount).toFixed(2);
+    amount.value = parsedAmount.toFixed(2);
+    saleMount = parsedAmount.toFixed(2);
+    subTotal.innerHTML = `$${parsedAmount.toFixed(2)}`;
   } else {
+    amount.value = (0).toFixed(2);
     subTotal.innerHTML = (0).toFixed(2);
     taxRate.innerHTML = (0).toFixed(2);
     total.innerHTML = (0).toFixed(2);
   }
+}
+
+function calculateTotals() {
+  taxRate.innerHTML = (saleAmount * 0.035).toFixed(2);
+  total.innerHTML = parsedAmount.toFixed(2) * 0.035 + parsedAmount.toFixed(2);
 }
 
 // Inject jQuery-UI Datepickers
