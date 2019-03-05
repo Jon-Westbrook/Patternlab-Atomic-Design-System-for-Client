@@ -775,23 +775,25 @@
           {
             "type": "submit",
             "form": "newSaleForm",
-            "classes": "btn btn-dark-outline invoice-save-draft",
+            "classes": "btn btn-dimmed charge",
             "aria-label": "charge",
             "btn-copy": "Charge"
           }
         ],
         "btns-desktop-bottom": [
           {
+            "type": "button",
             "classes": "btn btn-outline cancel",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
-            "classes": "btn btn-outline invoice-save-draft",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
+            "type": "submit",
+            "form": "newSaleForm",
+            "classes": "btn btn-dimmed charge",
+            "aria-label": "charge",
+            "btn-copy": "Charge"
           }
         ],
         "sections": [

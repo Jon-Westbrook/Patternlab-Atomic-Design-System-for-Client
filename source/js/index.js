@@ -119,11 +119,9 @@ function updateSubtotal() {
   const amount = this;
   const parsedAmount = parseInt(this.value, 10);
   const subTotal = document.querySelector(".subTotal");
-  const taxRate = document.querySelector(".taxRate");
-  const total = document.querySelector(".total");
   if (!isNaN(parsedAmount)) {
     amount.value = parsedAmount.toFixed(2);
-    saleMount = parsedAmount.toFixed(2);
+    saleAmount = parseInt(parsedAmount.toFixed(2), 10);
     subTotal.innerHTML = `$${parsedAmount.toFixed(2)}`;
   } else {
     amount.value = (0).toFixed(2);
@@ -134,8 +132,12 @@ function updateSubtotal() {
 }
 
 function calculateTotals() {
-  taxRate.innerHTML = (saleAmount * 0.035).toFixed(2);
-  total.innerHTML = parsedAmount.toFixed(2) * 0.035 + parsedAmount.toFixed(2);
+  const taxRate = document.querySelector(".taxRate");
+  const total = document.querySelector(".total");
+  const tax = parseFloat((saleAmount * 0.035).toFixed(2));
+  taxRate.innerHTML = `$${tax}`;
+  total.innerHTML = `$${saleAmount + tax}`;
+  $(".charge").html(`Charge $${saleAmount + tax}`);
 }
 
 // Inject jQuery-UI Datepickers
