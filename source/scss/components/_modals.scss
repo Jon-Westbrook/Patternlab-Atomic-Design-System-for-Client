@@ -131,10 +131,15 @@
         }
         .card-images {
           height: 20px;
-          margin-top: 40px;
+          @include media-breakpoint-up(md) {
+            margin-top: 40px;
+          }
         }
         .optional {
           letter-spacing: 0;
+        }
+        .customer-note {
+          border-bottom: 1px solid #e31c62;
         }
       }
     }
