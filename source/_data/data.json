@@ -898,5 +898,67 @@
         ]
       }
     ]
-  }
+  },
+  "modal-lightbox": [
+    {
+      "id": "lightbox",
+      "heading-page": "Run New Sale",
+      "menu-mobile": [
+        {
+          "classes": "dropdown-item",
+          "data-dismiss": "modal",
+          "aria-label": "cancel",
+          "btn-copy": "Cancel"
+        },
+        {
+          "classes": "dropdown-item",
+          "data-dismiss": "",
+          "aria-label": "Save Draft",
+          "btn-copy": "Save Draft"
+        }
+      ],
+      "btns-desktop-top": [
+        {
+          "type": "button",
+          "classes": "btn btn-dark-outline cancel",
+          "data-dismiss": "modal",
+          "aria-label": "cancel",
+          "btn-copy": "Cancel"
+        },
+        {
+          "type": "submit",
+          "form": "newSaleForm",
+          "classes": "btn btn-dimmed charge",
+          "aria-label": "charge",
+          "btn-copy": "Charge"
+        }
+      ],
+      "btns-desktop-bottom": [
+        {
+          "type": "button",
+          "classes": "btn btn-outline cancel",
+          "data-dismiss": "modal",
+          "aria-label": "cancel",
+          "btn-copy": "Cancel"
+        },
+        {
+          "type": "submit",
+          "form": "newSaleForm",
+          "classes": "btn btn-dimmed charge",
+          "aria-label": "charge",
+          "btn-copy": "Charge"
+        }
+      ],
+      "sections": [
+        {
+          "transaction-amount": true,
+          "heading": "Payment Information"
+        },
+        {
+          "payment-details": true,
+          "card-thumb": "../../images/card-icons.png"
+        }
+      ]
+    }
+  ]
 }

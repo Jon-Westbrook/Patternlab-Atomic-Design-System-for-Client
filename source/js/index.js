@@ -10,6 +10,8 @@ const $window = $(window);
 let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
+  $("#lightbox").modal("show");
+
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);
 

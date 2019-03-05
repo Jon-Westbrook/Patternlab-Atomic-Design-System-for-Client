@@ -1,5 +1,26 @@
 // Modal Lightbox Variant
 .modal-lightbox {
+  border: 0;
+  .modal-dialog {
+    @include media-breakpoint-down(xs) {
+      margin: 0;
+    }
+  }
+  .modal-content {
+    border: 0;
+    .modal-header {
+      border: 0;
+      background-color: $primary-2;
+    }
+    .modal-body {
+      .card-images {
+        height: 20px;
+        @include media-breakpoint-up(md) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
 }
 
 // Full Screen Modal Variant
