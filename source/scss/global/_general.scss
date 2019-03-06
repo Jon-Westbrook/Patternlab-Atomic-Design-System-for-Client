@@ -19,6 +19,12 @@ body {
 }
 
 @include media-breakpoint-down(md) {
+  .container:not(.lightbox) {
+    width: 90%;
+  }
+}
+
+@include media-breakpoint-down(xs) {
   .container {
     width: 90%;
   }

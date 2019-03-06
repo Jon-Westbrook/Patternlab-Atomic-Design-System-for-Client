@@ -1,15 +1,21 @@
-
 a {
   color: $secondary-4;
   transition: all 0.2s ease-in-out;
   &:hover {
     color: $secondary-5;
     text-decoration: none;
+    &.terms {
+      text-decoration: underline;
+      color: $primary-3;
+    }
   }
   &.accent {
     word-wrap: break-word;
     &:hover {
       color: $secondary-5;
     }
+  }
+  &.terms {
+    text-decoration: underline;
   }
 }

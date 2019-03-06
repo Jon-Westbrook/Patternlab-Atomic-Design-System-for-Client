@@ -10,6 +10,7 @@ const $window = $(window);
 let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Trigger Lightbox Automagically, can be removed
   $("#lightbox").modal("show");
 
   // Toggle Filter Bar on Mobile

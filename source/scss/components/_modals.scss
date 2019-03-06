@@ -9,7 +9,8 @@
   .modal-content {
     border: 0;
     @include media-breakpoint-up(sm) {
-      border-radius: 6px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
     }
     .modal-header {
       border: 0;
@@ -18,10 +19,17 @@
     .modal-body {
       .card-images {
         height: 20px;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
           margin-top: 40px;
         }
       }
+    }
+    .modal-footer {
+      height: 156px;
+      background-image: url(../../images/bg-lightbox.svg);
+      background-color: #281f56;
+      background-position: center center;
+      background-size: cover;
     }
   }
 }

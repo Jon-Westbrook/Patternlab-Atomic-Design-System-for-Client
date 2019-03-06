@@ -1,18 +1,18 @@
 {{# modal-lightbox }}
-<button type="button" class="btn mx-1 mt-9 ml-9" data-toggle="modal" data-target="#{{ id }}" data-backdrop="true">Run
-  New
-  Sale</button>
+<button type="button" class="btn mx-1 mt-6 ml-6" data-toggle="modal" data-target="#{{ id }}"
+  data-backdrop="true">Example Trigger</button>
 <div class="modal fade modal-lightbox" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
   aria-hidden="false">
 
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-body pt-0 pb-8 px-0 h-100">
-        <div class="container">
+      <form id="lightboxModal" class="w-100 needs-validation" novalidate>
+        <div class="modal-body pt-0 pb-8 px-0 h-100">
+          <div class="container lightbox">
 
-          <div class="row">
-            <div class="col-md-10 offset-md-1 mainBox pb-8 px-0">
-              <form id="lightboxModal" class="w-100 needs-validation" novalidate>
+            <div class="row">
+              <div class="col-sm-10 offset-sm-1 mainBox pt-8 pb-7 px-0">
+
                 {{# sections }}
                 {{# lightbox-info }}
                 {{> Components-C44-Lightbox-Info }}
@@ -20,24 +20,104 @@
                 {{# lightbox-billing }}
                 {{> Components-C45-Lightbox-Billing }}
                 {{/ lightbox-billing }}
-                <div class="col-12 mt-6">
-                  <div class="w-100 rule">&nbsp;</div>
-                </div>
+                <div class="w-100 rule">&nbsp;</div>
                 {{/ sections }}
-              </form>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-6 offset-md-1">
-              Logo
+              </div>
             </div>
-            <div class="col-md-5">
-              totals
+
+            <div class="row">
+              <div class="col-sm-6 offset-sm-1 pl-0">
+                <svg width="52px" height="32px" viewBox="0 0 52 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <polygon id="path-1" points="0 0.127855856 52 0.127855856 52 31.9913514 0 31.9913514"></polygon>
+                  </defs>
+                  <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Lightbox@2x" transform="translate(-500.000000, -531.000000)">
+                      <g id="Short_Lightbox" transform="translate(436.000000, 80.000000)">
+                        <g id="CardX__logo_purple_RGB" transform="translate(64.000000, 451.000000)">
+                          <g>
+                            <g id="Group-7">
+                              <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                              </mask>
+                              <g id="Clip-2"></g>
+                              <path
+                                d="M4.49121111,0.127855856 C2.17504444,0.127855856 0.298566667,2.00043243 0.298566667,4.31221622 L0.298566667,19.8525405 L0.4472,20.0004324 L1.80671111,20.0004324 L1.95678889,19.8525405 L1.95678889,4.31221622 C1.95678889,2.91790991 3.09356667,1.78263063 4.49121111,1.78263063 L47.8064889,1.78263063 C49.2045667,1.78263063 50.3417778,2.91790991 50.3417778,4.31221622 L50.3417778,27.6851892 C50.3417778,29.0799279 49.2045667,30.2147748 47.8064889,30.2147748 L41.6170444,30.2147748 L41.4675444,30.3641081 L41.4675444,31.7039279 L41.6170444,31.8522523 L47.8064889,31.8522523 C50.1235222,31.8522523 52,29.9796757 52,27.6687568 L52,4.31221622 C52,2.00043243 50.1235222,0.127855856 47.8064889,0.127855856"
+                                id="Fill-1" fill="#31295D" mask="url(#mask-2)"></path>
+                              <path
+                                d="M16.1959778,31.8508108 L14.5595667,31.8508108 L14.4105,31.7024865 L14.2614333,31.4058378 L14.1128,31.4058378 C14.1128,31.4058378 13.5172556,31.9995676 12.4763889,31.9995676 C10.8389667,31.9995676 9.79766667,31.1081802 9.79766667,29.6230631 C9.79766667,27.3958919 11.8812778,27.0990991 13.0717889,27.0990991 C13.6663222,27.0990991 14.1128,27.2475676 14.1128,27.2475676 L14.2614333,27.0990991 L14.2614333,26.9503423 C14.2614333,26.2078559 14.1128,26.0595315 13.2199889,26.0595315 C12.7736556,26.0595315 12.3277556,26.0595315 12.1785444,26.5053694 L12.0299111,26.6536937 L10.2444333,26.6536937 L10.0949333,26.5053694 C10.0949333,25.6144144 10.8389667,24.2780541 13.2199889,24.2780541 C15.6010111,24.2780541 16.3446111,25.4656577 16.3446111,27.6934054 L16.3446111,31.7024865 L16.1959778,31.8508108 Z M14.1128,28.7326847 C14.1128,28.7326847 13.8153889,28.5847928 13.2199889,28.5847928 C12.3277556,28.5847928 11.8812778,28.8805766 11.8812778,29.4751712 C11.8812778,29.9207207 12.1785444,30.2173694 12.9222889,30.2173694 C13.6663222,30.2173694 14.2614333,29.7718198 14.2614333,29.1785225 L14.2614333,28.8805766 L14.1128,28.7326847 Z"
+                                id="Fill-3" fill="#31295D" mask="url(#mask-2)"></path>
+                              <path
+                                d="M7.29112222,28.7326847 L7.43975556,28.5847928 L9.22566667,28.5847928 L9.37444444,28.7326847 C9.07616667,30.8115315 7.43975556,31.9995676 5.05931111,31.9995676 C1.78547778,31.9995676 0,29.7718198 0,26.6536937 C0,23.5355676 1.78547778,21.3082523 5.05931111,21.3082523 C7.43975556,21.3082523 9.07616667,22.4954234 9.37444444,24.4259459 L9.22566667,24.5748468 L7.43975556,24.5748468 L7.29112222,24.4259459 C6.99385556,23.5355676 6.24982222,23.0897297 5.05931111,23.0897297 C2.97598889,23.0897297 2.08317778,24.5748468 2.08317778,26.6536937 C2.08317778,28.7326847 2.97598889,30.2173694 5.05931111,30.2173694 C6.24982222,30.2173694 6.99385556,29.7718198 7.29112222,28.7326847"
+                                id="Fill-4" fill="#31295D" mask="url(#mask-2)"></path>
+                              <path
+                                d="M22.1229667,26.2081441 L21.0815222,26.2081441 C19.8910111,26.2081441 19.4442444,26.802018 19.4442444,28.1388108 L19.4442444,31.7023423 L19.2956111,31.8510991 L17.5105667,31.8510991 L17.3609222,31.7023423 L17.3609222,24.5747027 L17.5105667,24.4268108 L19.1469778,24.4268108 L19.2956111,24.5747027 L19.4442444,25.0196757 L19.5928778,25.0196757 C19.5928778,25.0196757 19.8910111,24.4268108 21.2305889,24.4268108 L22.1229667,24.4268108 L22.2711667,24.5747027 L22.2711667,26.0602523 L22.1229667,26.2081441"
+                                id="Fill-5" fill="#31295D" mask="url(#mask-2)"></path>
+                              <path
+                                d="M25.5922333,24.2780541 C26.9312333,24.2780541 27.5267778,25.0202523 27.5267778,25.0202523 L27.6754111,25.0202523 L27.6754111,21.6049009 L27.8240444,21.4565766 L29.6101,21.4565766 L29.7587333,21.6049009 L29.7587333,31.7023423 L29.6101,31.8508108 L27.9731111,31.8508108 L27.8240444,31.7023423 L27.6754111,31.2565045 L27.5267778,31.2565045 C27.5267778,31.2565045 26.9312333,32 25.5922333,32 C23.8066111,32 22.3188333,30.514018 22.3188333,28.1383784 C22.3188333,25.7631712 23.8066111,24.2780541 25.5922333,24.2780541 M26.039,30.2172252 C27.2290778,30.2172252 27.6754111,29.3264144 27.6754111,28.1383784 C27.6754111,26.9503423 27.2290778,26.0593874 26.039,26.0593874 C24.8480556,26.0593874 24.4021556,26.9503423 24.4021556,28.1383784 C24.4021556,29.3264144 24.8480556,30.2172252 26.039,30.2172252"
+                                id="Fill-6" fill="#31295D" mask="url(#mask-2)"></path>
+                            </g>
+                            <polyline id="Fill-8" fill="#31295D"
+                              points="38.8455615 32 37.7602773 32 37.449594 31.8568853 34.5030699 28.2749845 34.3486314 28.2749845 31.4022579 31.8568853 31.0924777 32 30.0062904 32 29.8518519 31.8568853 29.8518519 30.4243475 32.9526639 26.8414731 32.9526639 26.6987757 30.0062904 23.5466362 30.0062904 22.1140984 30.161331 21.9701493 31.2473678 21.9701493 31.5572985 22.1140984 34.3486314 25.2654034 34.5030699 25.2654034 37.2947039 22.1140984 37.6044841 21.9701493 38.6905209 21.9701493 38.8455615 22.1140984 38.8455615 23.5466362 35.899188 26.6987757 35.899188 26.8414731 39 30.4243475 39 31.8568853 38.8455615 32">
+                            </polyline>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <p class="small gray-medium mt-3">To cover the cost of credit card acceptance, we pass on a 3.5% credit
+                  card
+                  fee.</p>
+                <p class="small gray-medium">This fee is not more than the cost of accepting these cards. There is no
+                  fee
+                  for debit
+                  cards.</p>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-7 d-flex align-items-center">
+                    <p class="label mt-3 mb-0 mb-sm-3">Subtotal</p>
+                  </div>
+                  <div class="col-sm-5 d-flex align-items-center justify-content-center">
+                    <span class="gray my-3 subTotal">$0.00</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-7 d-flex align-items-center">
+                    <p class="label mt-3 mb-0 mb-sm-6">3.5% Fee</p>
+                  </div>
+                  <div class="col-sm-5 d-flex align-items-center justify-content-center">
+                    <span class="gray my-3 taxRate">$0.00</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 pr-0">
+                    <div class="rule thin-gray">&nbsp;</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-7 d-flex align-items-center">
+                    <p class="label mt-3 mb-0">Total</p>
+                  </div>
+                  <div class="col-sm-5 d-flex align-items-center justify-content-center">
+                    <span class="mt-3 mb-0 total">$0.00</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="modal-footer d-flex flex-column justify-content-center align-items-top pt-7 pb-0">
+          <button type="submit" class="btn btn-default uppercase px-9">Pay</button>
+          <p class="display7 bold primary-3 mt-4 mb-0">Secure payment powered by CardX</p>
+          <p class="display7 primary-3 light mt-2">By making payment you agree to the <a href="javascript:;"
+              class="primary-3 terms">terms and
+              conditions</a>.</p>
+        </div>
+      </form>
     </div>
   </div>
 </div>

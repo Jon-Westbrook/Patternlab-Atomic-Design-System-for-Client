@@ -1,35 +1,23 @@
-<div class="col-12 mt-6">
-  <div class="form-row ">
-    <div class="form-group col-md-10">
-      <label for="cardName01" class="primary-2">Name on Card</label>
-      <input type="text" class="form-control d-inline-block" id="cardName01" required>
-      <div class="invalid-feedback">
-        Yep, you need the name.
-      </div>
+<div class="form-row py-7">
+  <div class="form-group col-sm-12">
+    <label for="addressName01" class="primary-2">Billing Address</label>
+    <input type="text" class="form-control d-inline-block" id="addressName01" required>
+    <div class="invalid-feedback">
+      Address, please.
     </div>
-    <div class="form-group col-md-8 mb-5">
-      <label for="cardNo01" class="primary-2">Card Number</label>
-      <input type="text" class="form-control d-inline-block creditCard" id="cardNo01" required>
-      <div class="invalid-feedback">
-        Math is not your strong-suit, is it?
-      </div>
+  </div>
+  <div class="form-group col-sm-8 mb-sm-2 pr-4">
+    <label for="expDate01" class="primary-2">City</label>
+    <input type="text" class="form-control" id="expDate01" required>
+    <div class="invalid-feedback">
+      Far, far away...
     </div>
-    <div class="form-group col-md-4">
-      <img class="d-inline-block card-images" src="{{ card-thumb }}" alt="Credit Card Images">
-    </div>
-    <div class="form-group col-md-4 mb-md-2 pr-4">
-      <label for="expDate01" class="primary-2">Expiration Date</label>
-      <input type="text" class="form-control" id="expDate01" required>
-      <div class="invalid-feedback">
-        Far, far away...
-      </div>
-    </div>
-    <div class="form-group col-md-3 mb-md-2">
-      <label for="secCode01" class="primary-2">Security Code</label>
-      <input type="text" class="form-control w-100 col-md-8" id="secCode01" required>
-      <div class="invalid-feedback">
-        3 magical #'s
-      </div>
+  </div>
+  <div class="form-group col-sm-4 mb-sm-2">
+    <label for="secCode01" class="primary-2">Billing Zip Code</label>
+    <input type="text" class="form-control w-100" id="secCode01" required>
+    <div class="invalid-feedback">
+      Zip it in there, quick.
     </div>
   </div>
 </div>

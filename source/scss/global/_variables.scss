@@ -894,8 +894,8 @@ $modal-content-border-radius: 0 !default;
 // $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 // $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
-// $modal-backdrop-bg:                 $black !default;
-// $modal-backdrop-opacity:            .5 !default;
+$modal-backdrop-bg: $gray-dark !default;
+$modal-backdrop-opacity: 0.44 !default;
 // $modal-header-border-color:         $gray-200 !default;
 // $modal-footer-border-color:         $modal-header-border-color !default;
 // $modal-header-border-width:         $modal-content-border-width !default;
@@ -903,7 +903,7 @@ $modal-content-border-radius: 0 !default;
 // $modal-header-padding:              1rem !default;
 
 // $modal-lg:                          800px !default;
-// $modal-md:                          500px !default;
+$modal-md: 569px !default;
 // $modal-sm:                          300px !default;
 
 // $modal-transition:                  transform .3s ease-out !default;
