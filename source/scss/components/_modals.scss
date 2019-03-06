@@ -8,6 +8,9 @@
   }
   .modal-content {
     border: 0;
+    @include media-breakpoint-up(sm) {
+      border-radius: 6px;
+    }
     .modal-header {
       border: 0;
       background-color: $primary-2;

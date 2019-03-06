@@ -7,32 +7,20 @@
 
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-
       <div class="modal-body pt-0 pb-8 px-0 h-100">
         <div class="container">
           <div class="row">
-            <div class="col-xl-10 offset-xl-1 mainBox pb-8">
-              <form id="newSaleForm" class="w-100 needs-validation" novalidate>
+            <div class="col-md-10 offset-md-1 mainBox pb-8 px-0">
+              <form id="lightboxModal" class="w-100 needs-validation" novalidate>
                 {{# sections }}
-                <div class="row pt-6 pb-8 py-md-8">
-                  <div class="col-md-4 offset-md-1 pb-4">
-                    <h2 class="secondary-6">{{ heading }}</h2>
-                  </div>
-                  <div class="col-md-6">
-                    {{# lightbox-info }}
-                    {{> Components-C44-Lightbox-Info }}
-                    {{/ lightbox-info }}
-
-                    {{# lightbox-billing }}
-                    {{> Components-C45-Lightbox-Billing }}
-                    {{/ lightbox-billing }}
-                  </div>
-                </div>
-                <!-- I Rule -->
-                <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                    <div class="w-100 rule">&nbsp;</div>
-                  </div>
+                {{# lightbox-info }}
+                {{> Components-C44-Lightbox-Info }}
+                {{/ lightbox-info }}
+                {{# lightbox-billing }}
+                {{> Components-C45-Lightbox-Billing }}
+                {{/ lightbox-billing }}
+                <div class="col-12 mt-6">
+                  <div class="w-100 rule">&nbsp;</div>
                 </div>
                 {{/ sections }}
               </form>
@@ -40,7 +28,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

@@ -951,11 +951,12 @@
       ],
       "sections": [
         {
-          "transaction-amount": true,
-          "heading": "Payment Information"
+          "lightbox-info": true,
+          "heading": "Payment Information",
+          "card-thumb": "../../images/card-icons.png"
         },
         {
-          "payment-details": true,
+          "lightbox-billing": true,
           "card-thumb": "../../images/card-icons.png"
         }
       ]
