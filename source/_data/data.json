@@ -899,11 +899,12 @@
       }
     ]
   },
-  "modal-lightbox": [
+  "modal-lightboxes": [
     {
-      "id": "lightbox",
+      "id": "lightbox-long",
       "heading-page": "Run New Sale",
       "close-lightbox": "../../images/icons/close-lightbox.svg",
+      "initFunction": "InitLightboxLong();",
       "sections": [
         {
           "lightbox-info": true,
@@ -912,6 +913,23 @@
         },
         {
           "lightbox-billing": true,
+          "card-thumb": "../../images/card-icons.png"
+        }
+      ]
+    },
+    {
+      "id": "lightbox-short",
+      "heading-page": "Run New Sale",
+      "initFunction": "InitLightboxShort();",
+      "close-lightbox": "../../images/icons/close-lightbox.svg",
+      "sections": [
+        {
+          "lightbox-info": true,
+          "heading": "Payment Information",
+          "card-thumb": "../../images/card-icons.png"
+        },
+        {
+          "lightbox-billing": false,
           "card-thumb": "../../images/card-icons.png"
         }
       ]

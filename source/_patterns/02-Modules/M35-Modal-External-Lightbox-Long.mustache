@@ -1,19 +1,25 @@
-{{# modal-lightbox }}
+{{# modal-lightboxes }}
 
 <!-- Modal Trigger Button, should call the lightbox init function -->
 <input type="image" src="../../images/trigger.svg" name="saveForm" class="mt-6 ml-6" id="saveForm"
-  onclick="InitLightbox();" />
+  onclick="{{ initFunction }}" />
 
 <!--  Basic Init Function for Lightbox -->
 <script>
-  function InitLightbox() {
+  function InitLightboxLong() {
+    console.log()
     const subTotal = document.querySelector(".lightboxSubTotal");
-    $("#lightbox").modal("show");
+    $('#lightbox-long').modal("show");
+  }
+  function InitLightboxShort() {
+    console.log()
+    const subTotal = document.querySelector(".lightboxSubTotal");
+    $('#lightbox-short').modal("show");
   }
 </script>
 
 <!-- Modal Trigger Button, should call the lightbox init function -->
-<div class="modal fade modal-lightbox" id="lightbox" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
+<div class="modal fade modal-lightbox" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
   aria-hidden="false">
 
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -139,4 +145,4 @@
     </div>
   </div>
 </div>
-{{/ modal-lightbox }}
+{{/ modal-lightboxes }}
