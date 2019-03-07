@@ -193,6 +193,10 @@
           }
           .customer-note {
             border-bottom: 1px solid #e31c62;
+            width: 100%;
+            @include media-breakpoint-up(md) {
+              width: 75%;
+            }
           }
         }
       }
