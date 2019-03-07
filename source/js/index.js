@@ -11,7 +11,7 @@ let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
   // Trigger Lightbox Automagically, can be removed
-  // $("#lightbox").modal("show");
+  $("#newSale").modal("show");
 
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);
@@ -120,25 +120,32 @@ function updateSubtotal() {
   const amount = this;
   const parsedAmount = parseInt(this.value, 10);
   const subTotal = document.querySelector(".subTotal");
+  const taxRate = document.querySelector(".taxRate");
+  const total = document.querySelector(".total");
   if (!isNaN(parsedAmount)) {
     amount.value = parsedAmount.toFixed(2);
     saleAmount = parseInt(parsedAmount.toFixed(2), 10);
     subTotal.innerHTML = `$${parsedAmount.toFixed(2)}`;
+    taxRate.innerHTML = `—`;
+    total.innerHTML = `—`;
   } else {
     amount.value = (0).toFixed(2);
-    subTotal.innerHTML = (0).toFixed(2);
-    taxRate.innerHTML = (0).toFixed(2);
-    total.innerHTML = (0).toFixed(2);
+    subTotal.innerHTML = `$${(0).toFixed(2)}`;
+    taxRate.innerHTML = `—`;
+    total.innerHTML = `—`;
+    $(".charge").html(`Charge`);
   }
 }
 
 function calculateTotals() {
-  const taxRate = document.querySelector(".taxRate");
-  const total = document.querySelector(".total");
-  const tax = parseFloat((saleAmount * 0.035).toFixed(2));
-  taxRate.innerHTML = `$${tax}`;
-  total.innerHTML = `$${saleAmount + tax}`;
-  $(".charge").html(`Charge $${saleAmount + tax}`);
+  if (!isNaN(parseInt(saleAmount, 10))) {
+    const taxRate = document.querySelector(".taxRate");
+    const total = document.querySelector(".total");
+    const tax = parseFloat((saleAmount * 0.035).toFixed(2));
+    taxRate.innerHTML = `$${tax}`;
+    total.innerHTML = `$${saleAmount + tax}`;
+    $(".charge").html(`Charge $${saleAmount + tax}`);
+  }
 }
 
 // Inject jQuery-UI Datepickers

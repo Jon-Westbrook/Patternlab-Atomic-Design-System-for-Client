@@ -749,6 +749,7 @@
     "newSaleModal": [
       {
         "heading-page": "Run New Sale",
+        "id": "newSale",
         "menu-mobile": [
           {
             "classes": "dropdown-item",
