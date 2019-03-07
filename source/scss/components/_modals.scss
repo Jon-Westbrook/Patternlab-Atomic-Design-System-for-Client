@@ -1,6 +1,14 @@
 // Modal Lightbox Variant
 .modal-lightbox {
   border: 0;
+  .dismiss {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1055;
+  }
   .modal-dialog {
     @include media-breakpoint-down(xs) {
       margin: 0;
@@ -19,8 +27,11 @@
     .modal-body {
       .card-images {
         height: 28px;
-        @include media-breakpoint-up(sm) {
-          margin-top: 34px;
+        @include media-breakpoint-down(sm) {
+          height: 25px;
+        }
+        @include media-breakpoint-up(md) {
+          margin-top: 36px;
         }
       }
     }

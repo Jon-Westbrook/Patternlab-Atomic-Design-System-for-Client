@@ -1,11 +1,28 @@
 {{# modal-lightbox }}
-<button type="button" class="btn mx-1 mt-6 ml-6" data-toggle="modal" data-target="#{{ id }}"
-  data-backdrop="true">Example Trigger</button>
-<div class="modal fade modal-lightbox" id="{{ id }}" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
+
+<!-- Modal Trigger Button, should call the lightbox init function -->
+<input type="image" src="../../images/trigger.svg" name="saveForm" class="mt-6 ml-6" id="saveForm"
+  onclick="InitLightbox();" />
+
+<!--  Basic Init Function for Lightbox -->
+<script>
+  function InitLightbox() {
+    const subTotal = document.querySelector(".lightboxSubTotal");
+    $("#lightbox").modal("show");
+  }
+</script>
+
+<!-- Modal Trigger Button, should call the lightbox init function -->
+<div class="modal fade modal-lightbox" id="lightbox" tabindex="-1" role="dialog" aria-labelledby="{{ heading-page }}"
   aria-hidden="false">
 
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
+      <div class="dismiss d-flex align-items-center justify-content-center">
+        <a href="javascript:;" data-dismiss="modal" aria-label="close">
+          <img src="{{ close-lightbox }}" alt="Close Icon">
+        </a>
+      </div>
       <form id="lightboxModal" class="w-100 needs-validation" novalidate>
         <div class="modal-body pt-0 pb-8 px-0 h-100">
           <div class="container lightbox">
@@ -27,7 +44,7 @@
             </div>
 
             <div class="row">
-              <div class="col-sm-6 offset-sm-1 pl-0">
+              <div class="col-sm-6 offset-sm-1 pl-sm-0">
                 <svg width="52px" height="32px" viewBox="0 0 52 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
@@ -68,7 +85,8 @@
                     </g>
                   </g>
                 </svg>
-                <p class="small gray-medium mt-4">To cover the cost of credit card acceptance, we pass on a 3.5% credit
+                <p class="small gray-medium mt-4">To cover the cost of credit card acceptance, we pass on a 3.5%
+                  credit
                   card
                   fee.</p>
                 <p class="small gray-medium">This fee is not more than the cost of accepting these cards. There is no
@@ -78,31 +96,31 @@
               </div>
               <div class="col-sm-4">
                 <div class="row">
-                  <div class="col-sm-7 d-flex align-items-center">
+                  <div class="col-7 d-flex align-items-center">
                     <p class="label mt-3 mb-0 mb-sm-3">Subtotal</p>
                   </div>
-                  <div class="col-sm-5 d-flex align-items-center justify-content-end">
+                  <div class="col-5 d-flex align-items-center justify-content-end">
                     <span class="my-3 subTotal">$130.00</span>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-7 d-flex align-items-center">
+                  <div class="col-7 d-flex align-items-center">
                     <p class="label mt-3 mb-0 mb-sm-3">3.5% Fee</p>
                   </div>
-                  <div class="col-sm-5 d-flex align-items-center justify-content-end">
+                  <div class="col-5 d-flex align-items-center justify-content-end">
                     <span class="my-3 taxRate">$4.86</span>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12 pr-0">
+                  <div class="col-12 pr-sm-0">
                     <div class="rule thin-gray">&nbsp;</div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-7 d-flex align-items-center">
+                  <div class="col-7 d-flex align-items-center">
                     <p class="label mt-3 mb-0">Total</p>
                   </div>
-                  <div class="col-sm-5 d-flex align-items-center justify-content-end">
+                  <div class="col-5 d-flex align-items-center justify-content-end">
                     <span class="mt-3 mb-0 total">$136.86</span>
                   </div>
                 </div>
@@ -111,7 +129,7 @@
           </div>
         </div>
         <div class="modal-footer d-flex flex-column justify-content-center align-items-top pt-7 pb-0">
-          <button type="submit" class="btn btn-default uppercase px-9">Pay</button>
+          <button type="submit" class="btn btn-default uppercase px-9">Pay $136.86</button>
           <p class="display7 bold primary-3 mt-4 mb-0">Secure payment powered by CardX</p>
           <p class="display7 primary-3 light mt-2">By making payment you agree to the <a href="javascript:;"
               class="primary-3 terms">terms and
