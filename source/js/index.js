@@ -10,7 +10,7 @@ const $window = $(window);
 let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Trigger Lightbox Automagically, can be removed
+  // Trigger Modal Automagically, can be removed
   // $("#newSale").modal("show");
 
   // Toggle Filter Bar on Mobile
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initDatepickers();
 
   // Detect Current URL and give active class to menu item
-  const current_path = location.pathname.split("/");
-  activateMenuItem(current_path);
+  const current_path = window.location.pathname.split("/");
+  sidebar.activateMenuItem(current_path);
 
   // Sidebar Open/Close
   $("#sidebarCollapse").on("click", sidebar.openSidebar);
@@ -95,12 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Animate modal headers when loaded
-  $(".modal").on("shown.bs.modal", function() {
-    modal = $(this);
+  $(".modal").on("shown.bs.modal", () => {
+    modal = this;
     header = $(".modal.fade.show .modal-header");
     heading = $(".modal.fade.show .modal-header .heading-col");
     mainBox = $(".modal.fade.show .mainBox");
-    modal.scroll(util.debounce(animateModalHeader, 5));
+    $(modal).scroll(util.debounce(animateModalHeader, 5));
   });
 
   // Update Subtotal on New Sale Modal
@@ -116,59 +116,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 }); // END DOM CONTENT LOADED
 
-function updateSubtotal() {
-  const amount = this;
-  const parsedAmount = parseInt(this.value, 10);
-  const subTotal = document.querySelector(".subTotal");
-  const taxRate = document.querySelector(".taxRate");
-  const total = document.querySelector(".total");
-  if (!isNaN(parsedAmount)) {
-    amount.value = parsedAmount.toFixed(2);
-    saleAmount = parseInt(parsedAmount.toFixed(2), 10);
-    subTotal.innerHTML = `$${parsedAmount.toFixed(2)}`;
-    taxRate.innerHTML = `—`;
-    total.innerHTML = `—`;
-  } else {
-    amount.value = (0).toFixed(2);
-    subTotal.innerHTML = `$${(0).toFixed(2)}`;
-    taxRate.innerHTML = `—`;
-    total.innerHTML = `—`;
-    $(".charge").html(`Charge`);
-  }
-}
-
-function calculateTotals() {
-  if (!isNaN(parseInt(saleAmount, 10))) {
-    const taxRate = document.querySelector(".taxRate");
-    const total = document.querySelector(".total");
-    const tax = parseFloat((saleAmount * 0.035).toFixed(2));
-    taxRate.innerHTML = `$${tax}`;
-    total.innerHTML = `$${saleAmount + tax}`;
-    $(".charge").html(`Charge $${saleAmount + tax}`);
-  }
-}
-
 // Inject jQuery-UI Datepickers
 function initDatepickers() {
   $(".date").datepicker({
     showOn: "both",
     buttonImage: "../../images/icons/calendar.svg",
     dateFormat: "M d, yy"
-  });
-}
-
-// Give active state to current menu item
-function activateMenuItem(current_path) {
-  $(".main-link a").each(function() {
-    var fullLink = $(this).attr("href");
-    var lastPart = fullLink.split("/");
-    if (
-      current_path[current_path.length - 2] === lastPart[lastPart.length - 2]
-    ) {
-      $(this)
-        .parent()
-        .addClass("active");
-    }
   });
 }
 
