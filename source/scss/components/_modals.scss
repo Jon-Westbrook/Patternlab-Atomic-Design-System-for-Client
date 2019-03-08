@@ -61,7 +61,7 @@
       border-radius: 0;
       background-color: transparent;
       .modal-header {
-        position: fixed;
+        position: relative;
         z-index: 1025;
         height: 50px;
         width: 100%;
@@ -139,7 +139,7 @@
           margin-top: 50px;
           z-index: 1020;
           @include media-breakpoint-up(md) {
-            margin-top: 140px;
+            margin-top: -30px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 6px;

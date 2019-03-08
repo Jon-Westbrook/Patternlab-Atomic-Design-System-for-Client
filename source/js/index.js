@@ -7,7 +7,6 @@ import * as modals from "./modules/modals.js";
 import * as util from "./modules/util.js";
 // Global Variables
 const $window = $(window);
-let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
   // Trigger Modal Automagically, can be removed
@@ -96,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Animate modal headers when loaded
   $(".modal").on("shown.bs.modal", () => {
-    modal = this;
+    modal = $(this);
     header = $(".modal.fade.show .modal-header");
     heading = $(".modal.fade.show .modal-header .heading-col");
     mainBox = $(".modal.fade.show .mainBox");
@@ -106,13 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update Subtotal on New Sale Modal
   const amountEntered = document.querySelector("#amountOwed");
   if (amountEntered !== null) {
-    amountEntered.addEventListener("blur", updateSubtotal);
+    amountEntered.addEventListener("blur", modals.updateSubtotal);
   }
 
   // Apply Tax after Credit Card is entered
   const cardEntered = document.querySelector(".creditCard");
   if (cardEntered !== null) {
-    cardEntered.addEventListener("blur", calculateTotals);
+    cardEntered.addEventListener("blur", modals.calculateTotals);
   }
 }); // END DOM CONTENT LOADED
 

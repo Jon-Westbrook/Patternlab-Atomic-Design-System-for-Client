@@ -21,6 +21,8 @@ export function initPreviewPane() {
 }
 
 // New Sale Modal - Updates Subtotal Field after entering an amount
+let saleAmount;
+
 export function updateSubtotal() {
   const amount = this;
   const parsedAmount = parseInt(this.value, 10);
@@ -38,7 +40,9 @@ export function updateSubtotal() {
     subTotal.innerHTML = `$${(0).toFixed(2)}`;
     taxRate.innerHTML = `—`;
     total.innerHTML = `—`;
-    document.querySelectorAll(".charge").innerHTML(`Charge`);
+    document.querySelectorAll(".charge").forEach(btn => {
+      btn.innerHTML = `Charge`;
+    });
   }
 }
 
@@ -51,6 +55,8 @@ export function calculateTotals() {
     const tax = parseFloat((saleAmount * 0.035).toFixed(2));
     taxRate.innerHTML = `$${tax}`;
     total.innerHTML = `$${saleAmount + tax}`;
-    document.querySelectorAll(p).innerHTML(`Charge $${saleAmount + tax}`);
+    document.querySelectorAll(".charge").forEach(btn => {
+      btn.innerHTML = `Charge $${saleAmount + tax}`;
+    });
   }
 }
