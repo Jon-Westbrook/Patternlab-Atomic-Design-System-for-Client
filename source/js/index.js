@@ -11,7 +11,7 @@ let saleAmount;
 
 document.addEventListener("DOMContentLoaded", () => {
   // Trigger Lightbox Automagically, can be removed
-  $("#newSale").modal("show");
+  // $("#newSale").modal("show");
 
   // Toggle Filter Bar on Mobile
   $(".btn-filter").on("click", util.toggleDates);
