@@ -17,7 +17,7 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
 // Build Reporting Sales Table
 export const initReportingSalesTable = () => {
   const salesTable = $("#sales-table").DataTable({
-    ajax: "../../js/modules/table-data/sales-100.js",
+    ajax: "../../js/modules/table-data/sales-100.json",
     deferRender: true,
     scrollY: 688,
     scrollCollapse: true,
@@ -44,7 +44,7 @@ export const initReportingSalesTable = () => {
 // Build Reporting Deposits Table
 export const initReportingDepositsTable = () => {
   const salesTable = $("#deposits-table").DataTable({
-    ajax: "../../js/modules/table-data/deposits-100.js",
+    ajax: "../../js/modules/table-data/deposits-100.json",
     deferRender: true,
     scrollY: 688,
     scrollCollapse: true,
