@@ -37,7 +37,7 @@
     }
     .modal-footer {
       height: 156px;
-      background-image: url(../../images/bg-lightbox.svg);
+      background-image: url("../../images/bg-lightbox.svg");
       background-color: #281f56;
       background-position: center center;
       background-size: cover;
@@ -60,6 +60,13 @@
       border: 0;
       border-radius: 0;
       background-color: transparent;
+      .mini-header {
+        position: fixed;
+        top: -61px;
+        left: 0;
+        right: 0;
+        z-index: 1025;
+      }
       .modal-header {
         position: relative;
         z-index: 1025;
@@ -71,11 +78,13 @@
         .heading-row {
           z-index: 1020;
         }
+
         @include media-breakpoint-up(md) {
           z-index: 1020;
           height: 170px;
         }
         @include media-breakpoint-down(sm) {
+          position: fixed;
           .ellipse-button {
             position: absolute;
             background-image: url("../../images/more.svg");
@@ -96,17 +105,6 @@
           object-position: center center;
           transition: $transition-modal-animation;
           z-index: 900;
-        }
-        &.shrink {
-          @include media-breakpoint-up(md) {
-            height: 76px;
-            transition: $transition-modal-animation;
-          }
-          .header-img {
-            height: 76px;
-            opacity: 0;
-            transition: $transition-modal-animation;
-          }
         }
       }
       .modal-body {

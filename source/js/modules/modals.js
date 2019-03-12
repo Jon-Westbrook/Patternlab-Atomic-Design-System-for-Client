@@ -1,3 +1,6 @@
+/* eslint-disable import/extensions */
+import * as util from "./util.js";
+
 // Setup the Invoice Modal Edit Pane Buttons, Etc.
 export function initEditPane() {
   $(".invoice-save-draft").show();
@@ -59,4 +62,19 @@ export function calculateTotals() {
       btn.innerHTML = `Charge $${saleAmount + tax}`;
     });
   }
+}
+
+// Modal Header Animation
+export function animateModalHeader(currentModal) {
+  currentModal.addEventListener("scroll", () => {
+    const miniHeader = currentModal.querySelector(".mini-header");
+    const miniRect = miniHeader.getBoundingClientRect();
+    const miniTop = miniRect.top;
+    // const push = currentModal.scrollTop - 170;
+    if (currentModal.scrollTop >= 170) {
+      miniHeader.style.top = `${0}px`;
+    } else {
+      miniHeader.style.top = `${-61}px`;
+    }
+  });
 }
