@@ -70,10 +70,13 @@ export function animateModalHeader(currentModal) {
     const miniHeader = currentModal.querySelector(".mini-header");
     const miniRect = miniHeader.getBoundingClientRect();
     const miniTop = miniRect.top;
-    // const push = currentModal.scrollTop - 170;
-    if (currentModal.scrollTop >= 170) {
+    const push = currentModal.scrollTop - 170;
+    console.log(currentModal.scrollTop);
+    if (currentModal.scrollTop >= 170 && currentModal.scrollTop <= 231) {
+      miniHeader.style.top = `${-61 + push}px`;
+    } else if (currentModal.scrollTop > 231) {
       miniHeader.style.top = `${0}px`;
-    } else {
+    } else if (currentModal.scrollTop < 170) {
       miniHeader.style.top = `${-61}px`;
     }
   });
