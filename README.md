@@ -1,4 +1,4 @@
-# CardX Digital Design System Starterkit ( / Bootstrap 4.1)
+# CardX Digital Design System Starterkit ( / Bootstrap 4.3)
 
 ## Features
 
@@ -8,7 +8,7 @@ https://www.npmjs.com/
 Patternlab (Node Version) 3.0 Beta
 https://github.com/pattern-lab/patternlab-node/
 
-Bootstrap 4.2:
+Bootstrap 4.3:
 https://getbootstrap.com/docs/4.1/getting-started/introduction/
 
 ## Installation
@@ -19,5 +19,6 @@ https://getbootstrap.com/docs/4.1/getting-started/introduction/
    `npm install`
 3. All build tasks are done with npm scripts, so preface each build command with `npm run`. The main dev build task is:
    `npm run build -s`
-4. Modify and save files in the `source/` directory, and watch your browser auto-reload. Files are served from the `public/` folder.
-5. To modify the Patterlnab "wrapper" around the actual patterns, surf to `source/uikit-workshop` and run `npm install`. From there, you can run Webpack build commands such as `npm run build` to build the styleguide from the `src/` folder. Other commands are available and listed in `uikit-workshop/package.json`.
+4. Please use ESLint and Prettier to ensure code quality.
+5. Modify and save files in the `source/` directory, and watch your browser auto-reload. Files are served from the `public/` folder.
+6. To modify the Patterlnab "wrapper" around the actual patterns, surf to `source/uikit-workshop` and run `npm install`. From there, you can run Webpack build commands such as `npm run build` to build the styleguide from the `src/` folder. Other commands are available and listed in `uikit-workshop/package.json`.

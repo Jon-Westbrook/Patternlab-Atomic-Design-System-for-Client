@@ -11,7 +11,7 @@ const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Trigger Modal Automagically, can be removed
-  $("#newSale").modal("show");
+  // $("#newSale").modal("show");
 
   // Animate modal headers when loaded
   $(".modal").on("shown.bs.modal", event => {

@@ -61,11 +61,17 @@
       border-radius: 0;
       background-color: transparent;
       .mini-header {
+        display: none;
         position: fixed;
-        top: -61px;
+        top: -85px;
         left: 0;
         right: 0;
         z-index: 1025;
+        &.show {
+          @include media-breakpoint-up(md) {
+            display: block;
+          }
+        }
       }
       .modal-header {
         position: relative;

@@ -43,14 +43,14 @@
     "@pattern-lab/core": "^3.0.0-beta.1",
     "@pattern-lab/engine-mustache": "^2.0.0-beta.0",
     "@pattern-lab/uikit-workshop": "^1.0.0-beta.0",
-    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap",
     "auth-static": "^1.0.3",
-    "nodemon": "^1.18.9",
-    "node-sass": "^4.11.0",
     "autoprefixer": "^9.4.4",
+    "bootstrap": "^4.3.1",
     "imagemin-cli": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
     "postcss-cli": "^6.1.1",
-    "bootstrap": "^4.2.1"
+    "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
