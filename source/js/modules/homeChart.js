@@ -116,6 +116,7 @@ export const options = {
   }
 };
 
+// TODO: move bar width styling to scss
 export function drawChart(crazy) {
   if ($(".data-chart")[0]) {
     var ctWeek = new Chartist.Bar(
@@ -126,7 +127,7 @@ export function drawChart(crazy) {
     ).on("draw", function(data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 10px;"
+          style: "stroke-width: 12px;"
         });
       }
     });
@@ -138,7 +139,7 @@ export function drawChart(crazy) {
     ).on("draw", function(data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 10px;"
+          style: "stroke-width: 12px;"
         });
       }
     });
@@ -150,7 +151,7 @@ export function drawChart(crazy) {
     ).on("draw", function(data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 10px;"
+          style: "stroke-width: 12px;"
         });
       }
     });
@@ -162,7 +163,7 @@ export function drawChart(crazy) {
     ).on("draw", function(data) {
       if (data.type === "bar") {
         data.element.attr({
-          style: "stroke-width: 10px;"
+          style: "stroke-width: 12px;"
         });
       }
     });
