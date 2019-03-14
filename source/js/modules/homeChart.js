@@ -80,7 +80,7 @@ export const options = {
     }),
     Chartist.plugins.tooltip({
       currency: "$",
-      class: "class1",
+      class: "chart-tooltip",
       pointClass: "my-cool-point",
       appendToBody: false
     })
