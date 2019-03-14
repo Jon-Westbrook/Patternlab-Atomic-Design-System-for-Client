@@ -3,8 +3,8 @@ export let responsiveOptions;
 const dataWeek = {
   labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
   series: [
-    [2200, 1200000, 1400000, 1300000, 800000, 1200000, 1400000],
-    [1000, 1200000, 1400000, 1300000, 800000, 1200000, 1400000]
+    [2200, 1100000, 1500000, 1300000, 800000, 1200000, 1400000],
+    [1000, 1300000, 1300000, 1300000, 800000, 1200000, 1400000]
   ]
 };
 
@@ -89,12 +89,29 @@ export const options = {
     showGrid: false
   },
   axisY: {
-    high: 5000,
+    offset: 50,
     low: 0,
     onlyInteger: true,
-    divisor: 1000,
+    // divisor: 1000,
     labelInterpolationFnc(value) {
-      return `$${value}`;
+      // abbreviations for thousands, up to trillion
+      var abbreviations = [ '', 'K', 'M', 'B', 'T' ];
+
+      // get number of digits in whole number
+      var length = Math.floor(value).toString().length;
+
+      // find number of thousands i.e. 000 that can be abbreviated
+      var thousandSets = Math.floor((length - 1) / 3);
+
+      // limit abbreviation to thousand(K), million(M), billion(B), and trillion(T)
+      var roundingSets = thousandSets > 4 ? 4 : thousandSets;
+
+      // get simplified number to 2 decimals, or original value if not thousandSets
+      var simplified = roundingSets > 0
+        ? Chartist.roundWithPrecision(value / Math.pow(1000, roundingSets), 2)
+        : value;
+
+      return `$${simplified}${abbreviations[roundingSets]}`;
     }
   }
 };
