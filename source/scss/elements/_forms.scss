@@ -103,9 +103,10 @@
     background-color: $gray-light;
   }
   .custom-control-input:checked ~ .custom-control-label::after {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%230071ce' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 10 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3EShape%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Desktop-Components-/State/Checkbox/checked---focus' transform='translate(-5.000000, -7.000000)' fill='%230071CE'%3E%3Cpath d='M5.09394572,10.5177453 C4.96868476,10.3924843 4.96868476,10.1837161 5.09394572,10.0584551 L5.55323591,9.59916493 C5.67849687,9.47390397 5.88726514,9.47390397 6.0125261,9.59916493 L8.60125261,12.2087683 C8.68475992,12.2922756 8.8308977,12.2922756 8.91440501,12.2087683 L13.9874739,7.09394572 C14.1127349,6.96868476 14.3215031,6.96868476 14.4467641,7.09394572 L14.9060543,7.55323591 C15.0313152,7.67849687 15.0313152,7.88726514 14.9060543,8.0125261 L8.99791232,13.9832985 C8.87265136,14.1294363 8.66388309,14.1294363 8.53862213,13.9832985 L5.09394572,10.5177453 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border: 1px solid $gray-border;
     background-color: $white;
+    background-size: 75% 75%;
   }
   .custom-control-input:checked:hover ~ .custom-control-label::after {
     background-color: $gray-lightest;
