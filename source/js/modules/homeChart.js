@@ -1,5 +1,3 @@
-export let responsiveOptions;
-
 const dataWeek = {
   labels: ["Mon", "Tu", "Wed", "Th", "Fri", "Sat", "Sun"],
   series: [
@@ -115,6 +113,56 @@ export const options = {
     }
   }
 };
+
+
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px
+export const responsiveOptions = [
+  [
+    'screen and (max-width: 575px)',
+    {
+      horizontalBars: true,
+      reverseData: true,
+      axisX: {
+        showGrid: true,
+        onlyInteger: true,
+        low: 0,
+        labelOffset: {
+          x: -10
+        },
+        scaleMinSpace: 50,
+        labelInterpolationFnc(value) {
+          // abbreviations for thousands, up to trillion
+          var abbreviations = [ '', 'K', 'M', 'B', 'T' ];
+
+          // get number of digits in whole number
+          var length = Math.floor(value).toString().length;
+
+          // find number of thousands i.e. 000 that can be abbreviated
+          var thousandSets = Math.floor((length - 1) / 3);
+
+          // limit abbreviation to thousand(K), million(M), billion(B), and trillion(T)
+          var roundingSets = thousandSets > 4 ? 4 : thousandSets;
+
+          // get simplified number to 2 decimals, or original value if not thousandSets
+          var simplified = roundingSets > 0
+            ? Chartist.roundWithPrecision(value / Math.pow(1000, roundingSets), 2)
+            : value;
+
+          return `$${simplified}${abbreviations[roundingSets]}`;
+        }
+      },
+      axisY: {
+        showGrid: false,
+        offset: 50,
+        labelInterpolationFnc: Chartist.noop
+      }
+    }
+  ]
+]
 
 // TODO: move bar width styling to scss
 export function drawChart(crazy) {
