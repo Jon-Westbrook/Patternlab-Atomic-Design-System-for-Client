@@ -31,7 +31,11 @@ export const initReportingSalesTable = () => {
     columnDefs: [
       { targets: 0, visible: false },
       { targets: 1, className: "amount text-right pr-5" },
-      { targets: 2, className: "pl-5" },
+      {
+        targets: 2,
+        className: "pl-5",
+        render: renderDate
+      },
       {
         targets: 7,
         className: "text-center px-5",
@@ -54,7 +58,12 @@ export const initReportingDepositsTable = () => {
     columnDefs: [
       { targets: 0, visible: false },
       { targets: 1, className: "text-right pr-9", width: "20%" },
-      { targets: 2, className: "pl-5", width: "20%" },
+      {
+        targets: 2,
+        className: "pl-5",
+        width: "20%",
+        render: renderDate
+      },
       { targets: 3, className: "text-right pr-9", width: "20%" },
       { targets: 4, className: "pl-5", width: "20%" },
       {
@@ -114,4 +123,40 @@ export function adjustTableColumnsWidths() {
   $($.fn.dataTable.tables(true))
     .DataTable()
     .columns.adjust();
+}
+
+
+// PRIVATE FUNCTIONS
+// column rendering functions
+function renderDate (data, type) {
+  // create date obj from ISO string
+  const date = new Date(data)
+
+  if (type === 'display') {
+    // return html-wrapped date and time strings
+    // i18n / internationalization would require change here
+    return `
+      <p class=\"mt-4 mb-0\">
+        ${date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          weekday: undefined
+        })}
+      </p>
+      <p class=\"mb-4 small gray-medium\">
+        ${date.toLocaleTimeString('en-US', {
+          hour: 'numeric',
+          minute: 'numeric',
+          second: undefined
+        })}
+      </p>
+    `
+  } else if (type === 'filter' || type === 'type' || type === 'sort') {
+
+    // return numeric value of datetime as string
+    return new Date(data).getTime().toString()
+  }
+
+  return data
 }
