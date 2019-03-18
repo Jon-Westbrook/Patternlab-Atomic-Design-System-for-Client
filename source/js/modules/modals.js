@@ -55,7 +55,7 @@ export function calculateTotals() {
   if (!isNaN(parseInt(saleAmount, 10))) {
     const taxRate = document.querySelector(".taxRate");
     const total = document.querySelector(".total");
-    const tax = parseFloat((saleAmount * 0.035).toFixed(2));
+    const tax = parseFloat((saleAmount * 0.035)).toFixed(2);
     taxRate.innerHTML = `$${tax}`;
     total.innerHTML = `$${saleAmount + tax}`;
     document.querySelectorAll(".charge").forEach(btn => {
