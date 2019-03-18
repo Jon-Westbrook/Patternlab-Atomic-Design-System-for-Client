@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1146px" height="361px" viewBox="0 0 1146 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Welcome</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.1768823%" y1="100%" x2="104.479079%" y2="-76.1466346%" id="linearGradient-1">
+            <stop stop-color="#372772" offset="0%"></stop>
+            <stop stop-color="#632F76" offset="48.913927%"></stop>
+            <stop stop-color="#E74683" offset="100%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M6,0 L1104,0 C1107.31371,-6.08718376e-16 1110,2.6862915 1110,6 L1110,36.7109375 L1110,319 C1110,322.313708 1107.31371,325 1104,325 L6,325 C2.6862915,325 4.05812251e-16,322.313708 0,319 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="path-2"></path>
+        <filter x="-2.8%" y="-7.8%" width="105.1%" height="117.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-3" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.905882353   0 0 0 0 0.909803922   0 0 0 0 0.929411765  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="T2_Dashboard@2x" transform="translate(-194.000000, -129.000000)" fill-rule="nonzero">
+            <g id="Welcome" transform="translate(215.000000, 144.000000)">
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
