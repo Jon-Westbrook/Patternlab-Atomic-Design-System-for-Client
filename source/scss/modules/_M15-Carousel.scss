@@ -1,10 +1,35 @@
 .carousel-home-cont {
-  #carousel-home {
-    .carousel-indicators li {
-      // background-color: #f7f7fb;
-      width: 8px;
-      height: 8px;
-      max-width: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(
+    20.91deg,
+    #372772 0%,
+    #632f76 48.91%,
+    #e74683 100%,
+    #c86dd7 100%
+  );
+  .carousel-indicators > li {
+    width: 8px;
+    height: 8px;
+    max-width: 8px;
+    border-radius: 50%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 16px;
+    height: 33px;
+  }
+  .copy-wrap {
+    @include media-breakpoint-up(lg) {
+      max-width: 318px;
+    }
+  }
+  .carousel-item {
+    border-radius: 6px;
+  }
+  button {
+    @include media-breakpoint-down(md) {
+      width: 200px;
     }
   }
 }

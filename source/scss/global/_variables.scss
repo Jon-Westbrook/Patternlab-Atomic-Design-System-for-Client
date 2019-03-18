@@ -992,21 +992,21 @@ $modal-fade-transform: scale(0.8);
 // // Carousel
 
 // $carousel-control-color:            $white !default;
-// $carousel-control-width:            15% !default;
+$carousel-control-width: 10% !default;
 // $carousel-control-opacity:          .5 !default;
 
-// $carousel-indicator-width:          30px !default;
-// $carousel-indicator-height:         3px !default;
+// $carousel-indicator-width: 16px !default;
+// $carousel-indicator-height: 33px !default;
 // $carousel-indicator-spacer:         3px !default;
 // $carousel-indicator-active-bg:      $white !default;
 
 // $carousel-caption-width:            70% !default;
 // $carousel-caption-color:            $white !default;
 
-// $carousel-control-icon-width:       20px !default;
+$carousel-control-icon-width: 16px !default;
 
-// $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
-// $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$carousel-control-prev-icon-bg: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='33' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 2L2 17.047l12 14.392' fill-rule='nonzero' stroke='%23FFF' stroke-width='2' fill='none' stroke-linecap='square'/%3e%3c/svg%3e");
+$carousel-control-next-icon-bg: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='33' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 2l12 15.047L2 31.439' fill-rule='nonzero' stroke='%23FFF' stroke-width='2' fill='none' stroke-linecap='square'/%3e%3c/svg%3e") !default;
 
 // $carousel-transition:               transform .6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 
