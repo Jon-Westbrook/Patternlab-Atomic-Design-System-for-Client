@@ -39,17 +39,17 @@ const reportingAjaxOption = url => ({
 
 // Datatables - Init Edit Preview Table
 export const invoiceEditTable = $("#invoice-edit-table").DataTable({
+  scroller: true,
   scrollX: true,
+  scrollCollapse: true,
   searching: false,
   paging: false,
-  info: false,
-  autoWidth: false,
   rowReorder: {
     selector: "td:last-child"
   },
   columnDefs: [
     { orderable: false, targets: "_all" },
-    { targets: 0, width: "80%", visible: false }
+    { targets: 0, visible: false }
   ]
 });
 
