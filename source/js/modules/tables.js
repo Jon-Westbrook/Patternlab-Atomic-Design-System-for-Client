@@ -1,3 +1,42 @@
+import { bootstrapBreakpoints } from './util.js'
+
+const tableBreakpoints = Object.keys(bootstrapBreakpoints).map(
+  (breakpoint, index, arr) => ({
+    name: breakpoint,
+    width: arr[index + 1] ? bootstrapBreakpoints[arr[index + 1]] - 1 : Infinity
+  })
+)
+
+const reportingOptions = {
+  deferRender: true,
+  scrollY: 688,
+  scrollCollapse: true,
+  scroller: true,
+  searching: false,
+  responsive: {
+    breakpoints: tableBreakpoints,
+    details: {
+      display: $.fn.dataTable.Responsive.display.modal(),
+      type: 'column',
+      target: 'td.table-show-details',
+      renderer( api, rowIdx, columns ) {
+        return columns.map(({ title, data, ...column }) => {
+          if (!title) return false
+          if (title === 'ID' || title === '&nbsp;') return false
+          return `<p>${title}: ${data}</p>`
+        })
+      }
+    }
+  }
+}
+
+const reportingAjaxOption = url => ({
+  ajax: {
+    url,
+    dataSrc: parseDataDateString
+  }
+})
+
 // Datatables - Init Edit Preview Table
 export const invoiceEditTable = $("#invoice-edit-table").DataTable({
   scrollX: true,
@@ -17,31 +56,44 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
 // Build Reporting Sales Table
 export const initReportingSalesTable = () => {
   const salesTable = $("#sales-table").DataTable({
-    ajax: {
-      url: "../../js/modules/table-data/sales-100.json",
-      dataSrc: parseDataDateString
-    },
-    deferRender: true,
-    scrollY: 688,
-    scrollCollapse: true,
-    scroller: true,
-    searching: false,
-    responsive: {
-      details: {
-        display: $.fn.dataTable.Responsive.display.modal()
-      }
-    },
+    ...reportingOptions,
+    ...reportingAjaxOption("../../js/modules/table-data/sales-100.json"),
     columnDefs: [
-      { targets: 0, visible: false },
-      { targets: 1, className: "amount text-right pr-5" },
+      {
+        targets: 0,
+        visible: false
+      },
+      {
+        targets: 1,
+        className: "amount text-right pr-5",
+        responsivePriority: 1
+      },
       {
         targets: 2,
-        className: "pl-5",
-        render: renderDate
+        className:
+        "pl-5",
+        render: renderDate,
+        responsivePriority: 3
+      },
+      {
+        targets: 3,
+        responsivePriority: 2
+      },
+      {
+        targets: 4,
+        responsivePriority: 4
+      },
+      {
+        targets: 5,
+        responsivePriority: 6
+      },
+      {
+        targets: 6,
+        responsivePriority: 5
       },
       {
         targets: 7,
-        className: "text-center px-5",
+        className: "text-center px-5 table-show-details",
         orderable: false
       }
     ]
@@ -51,32 +103,38 @@ export const initReportingSalesTable = () => {
 // Build Reporting Deposits Table
 export const initReportingDepositsTable = () => {
   const salesTable = $("#deposits-table").DataTable({
-    ajax: {
-      url: "../../js/modules/table-data/deposits-100.json",
-      dataSrc: parseDataDateString
-    },
-    deferRender: true,
-    scrollY: 688,
-    scrollCollapse: true,
-    scroller: true,
-    searching: false,
-    responsive: true,
+    ...reportingOptions,
+    ...reportingAjaxOption("../../js/modules/table-data/deposits-100.json"),
     columnDefs: [
-      { targets: 0, visible: false },
-      { targets: 1, className: "text-right pr-9", width: "20%" },
+      {
+        targets: 0,
+        visible: false,
+      },
+      {
+        targets: 1,
+        className: "text-right pr-9",
+        responsivePriority: 1
+      },
       {
         targets: 2,
         className: "pl-5",
-        width: "20%",
-        render: renderDate
+        render: renderDate,
+        responsivePriority: 2
       },
-      { targets: 3, className: "text-right pr-9", width: "20%" },
-      { targets: 4, className: "pl-5", width: "20%" },
+      {
+        targets: 3,
+        className: "text-right pr-9",
+        responsivePriority: 3
+      },
+      {
+        targets: 4,
+        className: "pl-5",
+        responsivePriority: 4
+      },
       {
         targets: 5,
         orderable: false,
-        width: "10%",
-        className: "text-center"
+        className: "text-center table-show-details"
       }
     ]
   });
