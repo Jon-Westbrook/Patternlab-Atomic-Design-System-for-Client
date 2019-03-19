@@ -17,7 +17,10 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
 // Build Reporting Sales Table
 export const initReportingSalesTable = () => {
   const salesTable = $("#sales-table").DataTable({
-    ajax: "../../js/modules/table-data/sales-100.json",
+    ajax: {
+      url: "../../js/modules/table-data/sales-100.json",
+      dataSrc: parseDataDateString
+    },
     deferRender: true,
     scrollY: 688,
     scrollCollapse: true,
@@ -48,7 +51,10 @@ export const initReportingSalesTable = () => {
 // Build Reporting Deposits Table
 export const initReportingDepositsTable = () => {
   const salesTable = $("#deposits-table").DataTable({
-    ajax: "../../js/modules/table-data/deposits-100.json",
+    ajax: {
+      url: "../../js/modules/table-data/deposits-100.json",
+      dataSrc: parseDataDateString
+    },
     deferRender: true,
     scrollY: 688,
     scrollCollapse: true,
@@ -126,36 +132,47 @@ export function adjustTableColumnsWidths() {
 }
 
 
-// PRIVATE FUNCTIONS
-// column rendering functions
-function renderDate (data, type) {
-  // create date obj from ISO string
-  const date = new Date(data)
+// PRIVATE
 
+// date formatters
+const formatterDate = Intl.DateTimeFormat('en-US', {
+  weekday: undefined,
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+})
+
+const formatterTime = Intl.DateTimeFormat('en-US', {
+  hour: 'numeric',
+  minute: 'numeric',
+  second: undefined
+})
+
+function parseDataDateString(json) {
+  return json.aaData.map(
+    item => item.map(
+      (subitem, index) => index === 2 ? new Date(subitem) : subitem
+    )
+  )
+}
+
+// column rendering functions
+function renderDate (data, type, row, meta) {
   if (type === 'display') {
     // return html-wrapped date and time strings
     // i18n / internationalization would require change here
     return `
       <p class=\"mt-4 mb-0\">
-        ${date.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          weekday: undefined
-        })}
+        ${formatterDate.format(data)}
       </p>
       <p class=\"mb-4 small gray-medium\">
-        ${date.toLocaleTimeString('en-US', {
-          hour: 'numeric',
-          minute: 'numeric',
-          second: undefined
-        })}
+        ${formatterTime.format(data)}
       </p>
     `
   } else if (type === 'filter' || type === 'type' || type === 'sort') {
 
     // return numeric value of datetime as string
-    return new Date(data).getTime().toString()
+    return data.getTime().toString()
   }
 
   return data
