@@ -55,7 +55,7 @@ export function calculateTotals() {
   if (!isNaN(parseInt(saleAmount, 10))) {
     const taxRate = document.querySelector(".taxRate");
     const total = document.querySelector(".total");
-    const tax = parseFloat((saleAmount * 0.035)).toFixed(2);
+    const tax = parseFloat(saleAmount * 0.035).toFixed(2);
     taxRate.innerHTML = `$${tax}`;
     total.innerHTML = `$${saleAmount + tax}`;
     document.querySelectorAll(".charge").forEach(btn => {
@@ -71,7 +71,6 @@ export function animateModalHeader(currentModal) {
     const miniRect = miniHeader.getBoundingClientRect();
     const miniTop = miniRect.top;
     const push = currentModal.scrollTop - 170;
-    console.log(currentModal.scrollTop);
     if (currentModal.scrollTop >= 170 && currentModal.scrollTop <= 255) {
       miniHeader.classList.add("show");
       miniHeader.style.top = `${-85 + push}px`;
