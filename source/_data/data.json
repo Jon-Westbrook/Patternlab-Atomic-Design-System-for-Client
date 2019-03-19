@@ -575,6 +575,41 @@
   },
   "home": {
     "last-deposit": "$456.89",
+    "carousel-items": [
+      {
+        "data-slide-to": "0",
+        "active": "active",
+        "eyebrow": "Make your first sale",
+        "copy": "Run a sale seamlessly with Virtual Terminal.",
+        "button-copy": "Start a Sale with Virtual Terminal",
+        "img-src": "../../images/line-drawing-1.svg",
+        "img-alt": ""
+      },
+      {
+        "data-slide-to": "1",
+        "eyebrow": "Manage your transactions",
+        "copy": "View, search and download your sales and deposit reports.",
+        "button-copy": "View sales report",
+        "img-src": "../../images/line-drawing-2.svg",
+        "img-alt": ""
+      },
+      {
+        "data-slide-to": "2",
+        "eyebrow": "Find the answers you need",
+        "copy": "Take advantage of live chat, FAQs and demos.",
+        "button-copy": "Explore support",
+        "img-src": "../../images/line-drawing-3.svg",
+        "img-alt": ""
+      },
+      {
+        "data-slide-to": "3",
+        "eyebrow": "Generate payments",
+        "copy": "Create, preview and send invoices with ease.",
+        "button-copy": "Get started",
+        "img-src": "../../images/line-drawing-4.svg",
+        "img-alt": ""
+      }
+    ],
     "salesType": [
       {
         "label": "CARDX TERMINAL",

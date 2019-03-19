@@ -995,9 +995,9 @@ $modal-fade-transform: scale(0.8);
 $carousel-control-width: 10% !default;
 // $carousel-control-opacity:          .5 !default;
 
-// $carousel-indicator-width: 16px !default;
-// $carousel-indicator-height: 33px !default;
-// $carousel-indicator-spacer:         3px !default;
+$carousel-indicator-width: 10px !default;
+$carousel-indicator-height: 10px !default;
+$carousel-indicator-spacer: 10px !default;
 // $carousel-indicator-active-bg:      $white !default;
 
 // $carousel-caption-width:            70% !default;

@@ -1,42 +1,31 @@
 <div class="container carousel-home-cont px-0 my-8">
   <div id="carousel-home" class="carousel slide carousel-fade px-0" data-ride="carousel">
 
+
     <ol class="carousel-indicators">
-      <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-home" data-slide-to="1"></li>
+      {{# home.carousel-items }}
+      <li data-target="#carousel-home" data-slide-to="{{ data-slide-to }}" class="{{ active }}"></li>
+      {{/ home.carousel-items }}
     </ol>
 
     <div class="carousel-inner">
 
-      <div class="carousel-item active">
+      {{# home.carousel-items }}
+      <div class="carousel-item {{ active }}">
         <div class="row">
           <div class="col-sm-6 pr-sm-0 primary-3 d-flex justify-content-center">
             <div class="copy-wrap my-9 m-8 ml-sm-9 mr-sm-0">
-              <p class="display6 medium uppercase mb-3">MAKE YOUR FIRST SALE</p>
-              <p class="display3">Run a sale seamlessly with Virtual Terminal.</p>
-              <button type="button" class="btn btn-dark-outline my-3">Start a Sale with Virtual Terminal</button>
+              <p class="display6 medium uppercase mb-3">{{ eyebrow }}</p>
+              <p class="display3">{{ copy }}</p>
+              <button type="button" class="btn btn-dark-outline my-3">{{ button-copy }}</button>
             </div>
           </div>
           <div class="col-sm-6 pl-sm-0 primary-3 d-none d-sm-flex justify-content-center">
-            <img src="../../images/line-drawing-1.svg" class="d-block">
+            <img src="{{ img-src }}" class="d-block" alt="{{ img-alt }}">
           </div>
         </div>
       </div>
-
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-sm-6 pr-sm-0 primary-3 d-flex justify-content-center">
-            <div class="copy-wrap my-9 m-8 ml-sm-9 mr-sm-0">
-              <p class="display6 medium uppercase mb-3">MANAGE YOUR TRANSACTIONS</p>
-              <p class="display3">View, search and download your sales and deposit reports.</p>
-              <button type="button" class="btn btn-dark-outline my-3">View Sales Report</button>
-            </div>
-          </div>
-          <div class="col-sm-6 pl-sm-0 primary-3 d-none d-sm-flex justify-content-center">
-            <img src="../../images/line-drawing-2.svg" class="d-block">
-          </div>
-        </div>
-      </div>
+      {{/ home.carousel-items }}
 
       <a class="carousel-control-prev" href="javascript:;" data-target="#carousel-home" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

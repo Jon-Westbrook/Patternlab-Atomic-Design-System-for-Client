@@ -10,9 +10,6 @@
     #c86dd7 100%
   );
   .carousel-indicators > li {
-    width: 8px;
-    height: 8px;
-    max-width: 8px;
     border-radius: 50%;
   }
   .carousel-control-prev-icon,
@@ -27,6 +24,7 @@
   }
   .carousel-item {
     border-radius: 6px;
+    min-height: 337px;
   }
   button {
     @include media-breakpoint-down(md) {
