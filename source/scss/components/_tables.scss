@@ -14,6 +14,10 @@
   }
   td {
     border-bottom: 1px solid $secondary-3;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
   }
 }
 
@@ -40,10 +44,8 @@
   }
 }
 
-#sales-table {
-  .ellipse {
-    cursor: pointer;
-  }
+.table-show-details {
+  cursor: pointer;
 }
 
 table.dataTable.dtr-inline.collapsed
