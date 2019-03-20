@@ -195,9 +195,8 @@ export function addInvoiceEditTableRow() {
 
 // Resize Table Rows
 export function adjustTableColumnsWidths() {
-  $($.fn.dataTable.tables(true))
-    .DataTable()
-    .columns.adjust();
+  var tables = $.fn.dataTable.tables({ visible: true, api: true })
+  tables.columns.adjust().responsive.recalc().draw()
 }
 
 
