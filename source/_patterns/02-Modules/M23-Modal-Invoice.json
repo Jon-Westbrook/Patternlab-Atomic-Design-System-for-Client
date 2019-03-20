@@ -1,0 +1,153 @@
+{
+  "demo-button-modules-menu-only": true,
+  "id": "customerCreateInvoice",
+  "heading-page": "Create New Invoice",
+  "menu-mobile": [
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "",
+      "aria-label": "Save Draft",
+      "btn-copy": "Save Draft"
+    },
+    {
+      "classes": "dropdown-item pills-edit-tab",
+      "data-toggle": "pill",
+      "href": "#pills-edit",
+      "aria-label": "Edit ",
+      "btn-copy": "Edit",
+      "role": "tab",
+      "aria-controls": "pills-edit",
+      "aria-selected": "true"
+    },
+    {
+      "classes": "dropdown-item pills-preview-tab",
+      "data-toggle": "pill",
+      "href": "#pills-preview",
+      "aria-label": "Preview ",
+      "btn-copy": "Preview",
+      "role": "tab",
+      "aria-controls": "pills-preview",
+      "aria-selected": "false"
+    }
+  ],
+  "btns-desktop-top": [
+    {
+      "classes": "btn btn-dark-outline cancel",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "btn btn-dark-outline invoice-save-draft",
+      "data-dismiss": "",
+      "aria-label": "Save Draft",
+      "btn-copy": "Save Draft"
+    },
+    {
+      "classes": "btn btn-dark-outline pills-edit-tab",
+      "data-toggle": "pill",
+      "href": "#pills-edit",
+      "aria-label": "Edit ",
+      "btn-copy": "Edit",
+      "role": "tab",
+      "aria-controls": "pills-edit",
+      "aria-selected": "true"
+    },
+    {
+      "classes": "btn btn-dark pills-preview-tab",
+      "data-toggle": "pill",
+      "href": "#pills-preview",
+      "aria-label": "Preview ",
+      "btn-copy": "Preview",
+      "role": "tab",
+      "aria-controls": "pills-preview",
+      "aria-selected": "false"
+    },
+    {
+      "classes": "btn btn-dark invoice-send",
+      "data-dismiss": "modal",
+      "aria-label": "Send",
+      "btn-copy": "Send"
+    }
+  ],
+  "btns-desktop-bottom": [
+    {
+      "classes": "btn btn-outline cancel",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "btn btn-outline invoice-save-draft",
+      "data-dismiss": "",
+      "aria-label": "Save Draft",
+      "btn-copy": "Save Draft"
+    },
+    {
+      "classes": "btn btn-outline pills-edit-tab",
+      "data-toggle": "pill",
+      "href": "#pills-edit",
+      "aria-label": "Edit ",
+      "btn-copy": "Edit",
+      "role": "tab",
+      "aria-controls": "pills-edit",
+      "aria-selected": "true"
+    },
+    {
+      "classes": "btn pills-preview-tab",
+      "data-toggle": "pill",
+      "href": "#pills-preview",
+      "aria-label": "Preview ",
+      "btn-copy": "Preview",
+      "role": "tab",
+      "aria-controls": "pills-preview",
+      "aria-selected": "false"
+    },
+    {
+      "classes": "btn invoice-send",
+      "data-dismiss": "modal",
+      "aria-label": "Send",
+      "btn-copy": "Send"
+    }
+  ],
+  "tab-panes": [
+    {
+      "classes": "show active",
+      "id": "pills-edit",
+      "aria-labelledby": "pills-edit-tab",
+      "heading": "Im a heading",
+      "sections": [
+        {
+          "invoice-info": true,
+          "heading": "Customer Information"
+        },
+        {
+          "invoice-details": true,
+          "heading": "Invoice Details"
+        },
+        {
+          "invoice-line-items": true,
+          "heading": "Line Items"
+        }
+      ]
+    },
+    {
+      "classes": "",
+      "id": "pills-preview",
+      "aria-labelledby": "pills-preview-tab",
+      "heading": "Im a different heading",
+      "sections": [
+        {
+          "invoice-preview": true,
+          "heading": "Profile Information"
+        }
+      ]
+    }
+  ]
+}
