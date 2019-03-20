@@ -14,19 +14,7 @@ const reportingOptions = {
   scroller: true,
   searching: false,
   responsive: {
-    breakpoints: tableBreakpoints,
-    details: {
-      display: $.fn.dataTable.Responsive.display.modal(),
-      type: 'column',
-      target: 'td.table-show-details',
-      renderer( api, rowIdx, columns ) {
-        return columns.map(({ title, data, ...column }) => {
-          if (!title) return false
-          if (title === 'ID' || title === '&nbsp;') return false
-          return `<p>${title}: ${data}</p>`
-        })
-      }
-    }
+    breakpoints: tableBreakpoints
   }
 }
 
@@ -92,8 +80,18 @@ export const initReportingSalesTable = () => {
       },
       {
         targets: 7,
-        className: "text-center px-5 table-show-details",
-        orderable: false
+        className: "text-center px-5",
+        orderable: false,
+        defaultContent: '',
+        render: renderSalesDropdownMenu,
+        responsivePriority: 6
+      },
+      {
+        targets: 8,
+        className: 'table-show-details-cell',
+        orderable: false,
+        defaultContent: '',
+        render: renderSalesDetailsArrow
       }
     ]
   });
@@ -233,4 +231,44 @@ function renderDate (data, type, row, meta) {
   }
 
   return data
+}
+
+const saleDetailsLinkPrefix = 'view-sale-details'
+
+const showMoreMenuOptions = [
+  { text: 'View sale details', linkPrefix: saleDetailsLinkPrefix },
+  { text: 'Process refund', linkPrefix: 'process-refund' },
+  { text: 'View invoice', linkPrefix: 'view-invoice' },
+  { text: 'Print receipt', linkPrefix: 'print-receipt' }
+]
+
+function renderSalesDropdownMenu(data, type, row) {
+  const txid = row[0]
+
+  if (type === 'display') {
+    return `
+      <div class="dropdown" id="sales-dropdown">
+        <button id="sales-dropdown-button" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu" aria-labelledby="sales-dropdown-button">
+          ${showMoreMenuOptions.map(action => `
+            <a class="dropdown-item" href="#${action.linkPrefix}-${txid}">${action.text}</a>
+          `).toString().replace(/,/g, '')}
+        </div>
+      </div>
+    `
+  } else {
+    return ''
+  }
+}
+
+function renderSalesDetailsArrow(data, type, row) {
+  const txid = row[0]
+  
+  if (type === 'display') {
+    return `
+      <a class="table-show-details-link" href="#${saleDetailsLinkPrefix}-${txid}"></div>
+    `
+  } else {
+    return ''
+  }
 }
