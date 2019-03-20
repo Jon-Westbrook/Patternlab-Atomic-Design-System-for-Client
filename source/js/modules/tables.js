@@ -39,7 +39,6 @@ const reportingAjaxOption = url => ({
 
 // Datatables - Init Edit Preview Table
 export const invoiceEditTable = $("#invoice-edit-table").DataTable({
-  scroller: true,
   scrollX: true,
   scrollCollapse: true,
   searching: false,
