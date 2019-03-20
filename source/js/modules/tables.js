@@ -88,7 +88,7 @@ export const initReportingSalesTable = () => {
       },
       {
         targets: 8,
-        className: 'table-show-details-cell',
+        className: 'table-show-details-cell text-center',
         orderable: false,
         defaultContent: '',
         render: renderSalesDetailsArrow
@@ -110,28 +110,42 @@ export const initReportingDepositsTable = () => {
       {
         targets: 1,
         className: "text-right pr-9",
-        responsivePriority: 1
+        responsivePriority: 1,
+        width: '25%'
       },
       {
         targets: 2,
         className: "pl-5",
         render: renderDate,
-        responsivePriority: 2
+        responsivePriority: 2,
+        width: '25%'
       },
       {
         targets: 3,
         className: "text-right pr-9",
-        responsivePriority: 3
+        responsivePriority: 3,
+        width: '25%'
       },
       {
         targets: 4,
         className: "pl-5",
-        responsivePriority: 4
+        responsivePriority: 4,
+        width: '15%'
       },
       {
         targets: 5,
+        className: "text-center",
         orderable: false,
-        className: "text-center table-show-details"
+        defaultContent: '',
+        render: renderDepositsDetailsLink,
+        width: '10%'
+      },
+      {
+        targets: 6,
+        className: 'table-show-details-cell text-center',
+        orderable: false,
+        defaultContent: '',
+        render: renderDepositsDetailsArrow
       }
     ]
   });
@@ -234,6 +248,7 @@ function renderDate (data, type, row, meta) {
 }
 
 const saleDetailsLinkPrefix = 'view-sale-details'
+const depositDetailsLinkPrefix = 'view-deposit-details'
 
 const showMoreMenuOptions = [
   { text: 'View sale details', linkPrefix: saleDetailsLinkPrefix },
@@ -265,10 +280,32 @@ function renderSalesDetailsArrow(data, type, row) {
   const txid = row[0]
   
   if (type === 'display') {
-    return `
-      <a class="table-show-details-link" href="#${saleDetailsLinkPrefix}-${txid}"></div>
-    `
+    return renderArrowLink(saleDetailsLinkPrefix, txid)
   } else {
     return ''
   }
+}
+
+function renderDepositsDetailsLink(data, type, row) {
+  const txid = row[0]
+
+  if (type === 'display') {
+    return `
+      <a class="display7" href="#${depositDetailsLinkPrefix}-${txid}">Details</div>
+    `
+  }
+}
+
+function renderDepositsDetailsArrow(data, type, row) {
+  const txid = row[0]
+
+  if (type === 'display') {
+    return renderArrowLink(depositDetailsLinkPrefix, txid)
+  } else {
+    return ''
+  }
+}
+
+function renderArrowLink(linkPrefix, txid) {
+  return `<a class="table-show-details-link" href="#${linkPrefix}-${txid}"></div>`
 }
