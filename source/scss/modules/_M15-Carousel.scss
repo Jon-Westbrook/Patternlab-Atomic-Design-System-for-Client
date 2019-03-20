@@ -11,6 +11,11 @@
   );
   .carousel-indicators > li {
     border-radius: 50%;
+    opacity: 1;
+    background-color: $tertiary-3;
+    &.active {
+      background-color: $primary-3;
+    }
   }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -24,7 +29,9 @@
   }
   .carousel-item {
     border-radius: 6px;
-    min-height: 337px;
+    @include media-breakpoint-up(sm) {
+      height: 325px;
+    }
   }
   button {
     @include media-breakpoint-down(md) {
