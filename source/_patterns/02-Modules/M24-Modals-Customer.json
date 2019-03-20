@@ -1,0 +1,63 @@
+{
+  "demo-button-modules-menu-only": true,
+  "id": "customerNew",
+  "heading-page": "New Customer Profile",
+  "menu-mobile": [
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "",
+      "aria-label": "Save",
+      "btn-copy": "Save"
+    }
+  ],
+  "btns-desktop-top": [
+    {
+      "classes": "btn btn-dark-outline",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "btn btn-dark",
+      "data-dismiss": "",
+      "aria-label": "Save",
+      "btn-copy": "Save"
+    }
+  ],
+  "btns-desktop-bottom": [
+    {
+      "classes": "btn btn-outline",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "btn",
+      "data-dismiss": "",
+      "aria-label": "Save",
+      "btn-copy": "Save"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Profile Information",
+      "profile-info": true
+    },
+    {
+      "heading": "Card on File",
+      "card-on-file": true,
+      "card-thumb": "../../images/card-icons.png"
+    },
+    {
+      "heading": "Set up Billing Plan",
+      "set-up-billing": true,
+      "placeholder-search": "Search invoices..."
+    }
+  ]
+}
