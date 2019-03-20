@@ -2,7 +2,6 @@
 #invoice-edit-table {
   border-width: 0;
   border: 0 !important;
-  box-shadow: 3px 3px 10px 2px #e7e8ed;
 
   tr,
   td {
@@ -14,7 +13,11 @@
   }
   td {
     border-bottom: 1px solid $secondary-3;
+  }
+}
 
+#invoice-edit-table {
+  td {
     &:first-of-type {
       padding-left: 0;
     }

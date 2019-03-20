@@ -34,6 +34,7 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
   rowReorder: {
     selector: "td:last-child"
   },
+  info: false,
   columnDefs: [
     { orderable: false, targets: "_all" },
     { targets: 0, visible: false }
