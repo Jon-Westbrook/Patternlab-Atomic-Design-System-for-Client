@@ -1,0 +1,7 @@
+.greeting {
+  button {
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+}
