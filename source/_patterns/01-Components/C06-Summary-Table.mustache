@@ -1,14 +1,16 @@
 <div class="row mt-7 order-1 order-lg-2 bg-primary-3 px-0 reporting-summary">
 
   <!-- Mobile -->
-  <div class="col-9 pl-5 bg-primary-3 d-lg-none">
+  <div class="col-12 col-sm-8 pl-5 bg-primary-3 d-lg-none">
     <p class="label uppercase mt-3 mb-0">{{ total-heading }}</p>
-    <p class="display3 secondary-6 mt-1 mb-0">{{ total-revenue }}</p>
-    <p class="display7 small mt-3 mb-3">Totals for {{ startDate }} - {{ endDate }}</p>
+    <p class="display3 secondary-6 mt-0 mt-sm-1 mb-0">{{ total-revenue }}</p>
   </div>
-  <div class="col-3 px-lg-0 bg-primary-3 d-lg-none px-0">
-    <p class="label uppercase mt-3 mb-0">{{ total-type }}</p>
-    <p class="display3 secondary-6 mt-1 mb-0">{{ total-number }}</p>
+  <div class="col-12 col-sm-4 px-lg-0 bg-primary-3 d-lg-none pl-5">
+    <p class="label uppercase mt-2 mt-sm-3 mb-0">{{ total-type }}</p>
+    <p class="display3 secondary-6 mt-0 mt-sm-1 mb-0">{{ total-number }}</p>
+  </div>
+  <div class="col-12 d-lg-none pl-5">
+    <p class="display7 small mt-2 mt-sm-3 mb-3">Totals for {{ startDate }} - {{ endDate }}</p>
   </div>
 
   <!-- Desktop -->
