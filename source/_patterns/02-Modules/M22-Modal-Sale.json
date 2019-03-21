@@ -1,0 +1,72 @@
+{
+  "demo-button-modules-menu-only": true,
+  "heading-page": "Run New Sale",
+  "id": "newSale",
+  "menu-mobile": [
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "classes": "dropdown-item",
+      "data-dismiss": "",
+      "aria-label": "Save Draft",
+      "btn-copy": "Save Draft"
+    }
+  ],
+  "btns-desktop-top": [
+    {
+      "type": "button",
+      "classes": "btn btn-dark-outline cancel",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "type": "submit",
+      "form": "newSaleForm",
+      "classes": "btn btn-dimmed charge",
+      "aria-label": "charge",
+      "btn-copy": "Charge"
+    }
+  ],
+  "btns-desktop-bottom": [
+    {
+      "type": "button",
+      "classes": "btn btn-outline cancel",
+      "data-dismiss": "modal",
+      "aria-label": "cancel",
+      "btn-copy": "Cancel"
+    },
+    {
+      "type": "submit",
+      "form": "newSaleForm",
+      "classes": "btn btn-dimmed charge",
+      "aria-label": "charge",
+      "btn-copy": "Charge"
+    }
+  ],
+  "sections": [
+    {
+      "transaction-amount": true,
+      "heading": "Transaction",
+      "customer-note": {
+        "note": "../../images/icons/note.svg",
+        "tip-title": "Customer Note",
+        "tip1": "&#8226; To cover the cost of credit card acceptance, we pass on a 3.5% credit card fee. <br />&#8226; This fee is not more than the cost of accepting thes cards. There is no fee from debit cards."
+      },
+      "value": "400.00"
+    },
+    {
+      "payment-details": true,
+      "heading": "Payment",
+      "card-thumb": "../../images/card-icons.png"
+    },
+    {
+      "billing-info": true,
+      "heading": "Billing"
+    }
+  ]
+}
