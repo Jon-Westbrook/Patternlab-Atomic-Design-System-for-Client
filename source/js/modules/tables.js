@@ -12,6 +12,8 @@ const reportingOptions = {
   scrollY: 688,
   scrollCollapse: true,
   scroller: true,
+  // lengthChange: false,
+  // pageLength: 25,
   searching: false,
   responsive: {
     breakpoints: tableBreakpoints
@@ -54,7 +56,8 @@ export const initReportingSalesTable = () => {
       {
         targets: 1,
         className: "amount text-right pr-5",
-        responsivePriority: 1
+        responsivePriority: 1,
+        render: renderPrice
       },
       {
         targets: 2,
@@ -65,7 +68,8 @@ export const initReportingSalesTable = () => {
       },
       {
         targets: 3,
-        responsivePriority: 2
+        responsivePriority: 2,
+        render: renderNameAndEmail
       },
       {
         targets: 4,
@@ -112,7 +116,8 @@ export const initReportingDepositsTable = () => {
         targets: 1,
         className: "text-right pr-9",
         responsivePriority: 1,
-        width: '25%'
+        width: '25%',
+        render: renderPrice
       },
       {
         targets: 2,
@@ -125,7 +130,8 @@ export const initReportingDepositsTable = () => {
         targets: 3,
         className: "text-right pr-9",
         responsivePriority: 3,
-        width: '25%'
+        width: '25%',
+        render: renderPrice
       },
       {
         targets: 4,
@@ -308,4 +314,27 @@ function renderDepositsDetailsArrow(data, type, row) {
 
 function renderArrowLink(linkPrefix, txid) {
   return `<a class="table-show-details-link" href="#${linkPrefix}-${txid}"></div>`
+}
+
+function renderPrice(data, type) {
+  if (type === 'display') {
+    return `<span class=\"medium secondary-6\">$${data}</span>`
+  } else {
+    return data
+  }
+}
+
+function renderNameAndEmail(data, type, row, meta) {
+  if (type === 'display') {
+    return `
+      <p class=\"mt-2 mt-md-4 mb-0\">${data.name.split(' ').join(` <br class="d-md-none">`)}</p>
+      <p class="mb-4 small gray-medium d-none d-md-block">${data.email}</p>
+    `
+  } else {
+    // causes last name > first name sort
+    // return data.name.split(' ').reverse().join(' ')
+
+    // causes first name > last name sort
+    return data.name
+  }
 }

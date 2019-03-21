@@ -3,6 +3,11 @@
   border-width: 0;
   border: 0 !important;
 
+  th {
+    border-right: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
   tr,
   td {
     border-width: 0;
@@ -26,6 +31,11 @@
 
 #sales-table,
 #deposits-table {
+  // th {
+  //   border-right: 0;
+  //   padding-bottom: 1rem;
+  //   padding-top: 1rem;
+  // }
   td {
     border-left: 0;
     border-right: 0;
