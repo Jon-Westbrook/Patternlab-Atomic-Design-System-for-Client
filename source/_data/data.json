@@ -535,7 +535,8 @@
         "company": "Ashley Furniture",
         "email": "asmith@ashleyfurniture.com",
         "phone": "(312) 555-1212",
-        "address": "1234 Morton St.",
+        "address": "8591 SouthEast Second Drive",
+        "address2": "Unit 503-B",
         "city": "New York",
         "state-abbrv": "NY",
         "zip": "60630-4532",
@@ -901,7 +902,8 @@
             "startDate": "Dec 28, 2018",
             "endDate": "Jan 28, 2018",
             "total-type": "Sales",
-            "total-number": "987"
+            "total-number": "987",
+            "calendar-toggle": true
           },
           {
             "sales-table": true
