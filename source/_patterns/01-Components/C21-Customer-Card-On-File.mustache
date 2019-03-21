@@ -1,51 +1,61 @@
 <div class="row">
   <div class="col-md-10 offset-md-1">
-    <a href="javascript:void(0);" class="edit secondary-4 small bold" data-toggle="modal" data-target="#customerEditCard" data-backdrop="false"><span class="d-inline-block icon-pencil {{ top }}"></span>&nbsp;Edit</a>
+    <a href="javascript:void(0);" class="edit secondary-4 small bold" data-toggle="modal"
+      data-target="#customerEditCard" data-backdrop="false"><span
+        class="d-inline-block icon-pencil {{ top }}"></span>&nbsp;Edit</a>
     <h2 class="secondary-6 mt-8">{{ customer.heading-cards }}</h2>
   </div>
 </div>
 
 <div class="row">
-  {{# customer.cards }}
-    <div class="col-md-5 mt-7 {{# odd-number-card }}offset-md-1{{/ odd-number-card }}">
-      <div class="card bg-gray-purple">
-        <div class="card-body pt-0 pb-7">
-          <div class="field-group mt-7">
-            <p class="label mb-1">Card</p>
-            <p class="d-inline-block mb-1">XXXX XXXX XXXX 4456</p><img class="ml-5" src="{{ card-thumb }}" >
-          </div>
-          <div class="row">
-            <div class="field-group col-8 mt-5 d-inline-block">
-              <p class="label mb-1">Address</p>
-              <p class="mb-0">{{ address }}</p>
+
+  <div class="col-md-7 col-lg-10 offset-md-1">
+    <div class="row">
+      {{# customer.cards }}
+      <div class="col-md-12 col-lg-6">
+        <div class="card bg-gray-purple mt-7">
+          <div class="card-body pt-0 pb-7">
+            <div class="field-group mt-7">
+              <p class="label mb-1">Card</p>
+              <p class="d-inline-block mb-1">XXXX XXXX XXXX 4456</p><img class="ml-5" src="{{ card-thumb }}">
             </div>
-            <div class="field-group col-4 px-0 mt-5 d-inline-block">
-              <p class="label mb-1">&nbsp;</p>
-              <p class="mb-0">{{ address2 }}</p>
+            <div class="row">
+              <div class="field-group col-8 mt-5 d-inline-block">
+                <p class="label mb-1">Address</p>
+                <p class="mb-0 address">{{ address }}</p>
+              </div>
+              <div class="field-group col-4 px-0 mt-5 d-inline-block">
+                <p class="label mb-1">&nbsp;</p>
+                <p class="mb-0">{{ address2 }}</p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="field-group col-5 mt-5 d-inline-block">
-              <p class="label mb-1">City</p>
-              <p class="mb-0">{{ city }}</p>
-            </div>
-            <div class="field-group col-3 px-0 mt-5 d-inline-block">
-              <p class="label mb-1">State</p>
-              <p class="mb-0">{{ state-abbrv }}</p>
-            </div>
-            <div class="field-group col-3 px-0 mt-5 d-inline-block">
-              <p class="label mb-1">Zipcode</p>
-              <p class="mb-0">{{ zip }}</p>
+            <div class="row">
+              <div class="field-group col-5 mt-5 d-inline-block">
+                <p class="label mb-1">City</p>
+                <p class="mb-0">{{ city }}</p>
+              </div>
+              <div class="field-group col-3 px-0 mt-5 d-inline-block">
+                <p class="label mb-1">State</p>
+                <p class="mb-0">{{ state-abbrv }}</p>
+              </div>
+              <div class="field-group col-4 px-0 mt-5 d-inline-block">
+                <p class="label mb-1">Zipcode</p>
+                <p class="mb-0">{{ zip }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      {{/ customer.cards }}
     </div>
-  {{/ customer.cards }}
+
+  </div>
+
 </div>
 
 <div class="row mt-5">
   <div class="col-md-10 offset-md-1 d-flex">
-    <button type="button" class="btn btn-outline ml-auto" data-dismiss="modal" aria-label="cancel">{{ customer.add-card }}</button>
+    <button type="button" class="btn btn-outline ml-auto" data-dismiss="modal"
+      aria-label="cancel">{{ customer.add-card }}</button>
   </div>
 </div>
