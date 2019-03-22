@@ -59,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
     $(`#${modalId}`).on('shown.bs.modal', function (e) {
       $(this).find('.creditCard').toArray()
         .forEach(el => forms.formatCreditCard(el))
+
+      $(this).find('.exp-date').toArray()
+        .forEach(el => forms.formatExpDate(el))
     })
   })
 

@@ -31,3 +31,10 @@ export function formatCreditCard(el) {
     creditCard: true
   })
 }
+
+export function formatExpDate(el) {
+  var cleave = new Cleave(el, {
+      date: true,
+      datePattern: ['m', 'Y']
+  });
+}
