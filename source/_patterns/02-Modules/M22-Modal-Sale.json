@@ -12,8 +12,8 @@
     {
       "classes": "dropdown-item",
       "data-dismiss": "",
-      "aria-label": "Save Draft",
-      "btn-copy": "Save Draft"
+      "aria-label": "Charge",
+      "btn-copy": "Charge"
     }
   ],
   "btns-desktop-top": [
