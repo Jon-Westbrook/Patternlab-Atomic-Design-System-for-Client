@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Animate modal headers when loaded
-  $(".modal").on("shown.bs.modal", event => {
+  $(".modal-full").on("shown.bs.modal", event => {
     modals.animateModalHeader(event.currentTarget);
   });
 
