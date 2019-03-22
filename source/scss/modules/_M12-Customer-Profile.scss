@@ -48,9 +48,15 @@
     height: 9px;
     width: 9px;
   }
+  .card {
+    @include media-breakpoint-only(lg) {
+      height: 263px;
+    }
+  }
   .address {
     height: 44px;
   }
+
   .billing-plans {
     .amount-due {
       height: 76px;
