@@ -25,3 +25,9 @@ export function initFormValidation() {
     );
   });
 }
+
+export function formatCreditCard(el) {
+  new Cleave(el, {
+    creditCard: true
+  })
+}

@@ -52,6 +52,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Init Datepickers Site-Wide
   forms.initDatepickers();
 
+  // init credit card input formatting
+  const creditCardModals = [ 'newSale', 'customerEditCard' ]
+  
+  creditCardModals.forEach(modalId => {
+    $(`#${modalId}`).on('shown.bs.modal', function (e) {
+      $(this).find('.creditCard').toArray()
+        .forEach(el => forms.formatCreditCard(el))
+    })
+  })
+
   // Highlight Current Sidebar Menu Item
   const current_path = window.location.pathname.split("/");
   sidebar.activateMenuItem(current_path);
