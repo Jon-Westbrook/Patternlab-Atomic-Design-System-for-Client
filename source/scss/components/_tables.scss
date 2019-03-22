@@ -31,11 +31,11 @@
 
 #sales-table,
 #deposits-table {
-  // th {
-  //   border-right: 0;
-  //   padding-bottom: 1rem;
-  //   padding-top: 1rem;
-  // }
+  th {
+    border-right: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
   td {
     border-left: 0;
     border-right: 0;
@@ -83,11 +83,11 @@
   }
 }
 
-.dataTables_scrollHead th {
-  border-right: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
+// .dataTables_scrollHead th {
+//   border-right: 0;
+//   padding-bottom: 1rem;
+//   padding-top: 1rem;
+// }
 
 table.dataTable.dtr-inline.collapsed
   > tbody

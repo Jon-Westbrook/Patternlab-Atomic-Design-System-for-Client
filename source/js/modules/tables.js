@@ -9,11 +9,11 @@ const tableBreakpoints = Object.keys(bootstrapBreakpoints).map(
 
 const reportingOptions = {
   deferRender: true,
-  scrollY: 688,
-  scrollCollapse: true,
-  scroller: true,
-  // lengthChange: false,
-  // pageLength: 25,
+  // scrollY: 688,
+  // scrollCollapse: true,
+  // scroller: true,
+  lengthChange: false,
+  pageLength: 25,
   searching: false,
   responsive: {
     breakpoints: tableBreakpoints
