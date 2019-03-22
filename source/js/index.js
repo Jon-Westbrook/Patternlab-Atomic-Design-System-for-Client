@@ -53,7 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
   forms.initDatepickers();
 
   // init credit card input formatting
-  const creditCardModals = [ 'newSale', 'customerEditCard' ]
+  const creditCardModals = [
+    'newSale',
+    'customerEditCard',
+    'lightbox-long',
+    'lightbox-short'
+  ]
   
   creditCardModals.forEach(modalId => {
     $(`#${modalId}`).on('shown.bs.modal', function (e) {
