@@ -559,18 +559,18 @@
     "billing-plans": [
       {
         "odd-number-card": true,
-        "amount": "$2,049.79",
+        "amount": "$249.79",
         "invoice-#": "0001",
-        "cycle": "$50 every month",
+        "cycle": "$50,000 every two weeks",
         "start-date": "October 18, 2018",
         "due": "When paid"
       },
       {
-        "amount": "$2,049.79",
+        "amount": "$12,049.79",
         "invoice-#": "0001",
-        "cycle": "$50 every month",
+        "cycle": "$50 every day",
         "start-date": "October 18, 2018",
-        "due": "When paid"
+        "due": "Within 90 days of receipt of invoice"
       }
     ]
   },

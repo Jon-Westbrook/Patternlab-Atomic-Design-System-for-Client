@@ -56,7 +56,11 @@
   .address {
     height: 44px;
   }
-
+  .cycle {
+    @include media-breakpoint-only(lg) {
+      height: 44px;
+    }
+  }
   .billing-plans {
     .amount-due {
       height: 76px;

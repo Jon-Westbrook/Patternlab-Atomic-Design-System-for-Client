@@ -1,13 +1,16 @@
-
 <div class="row billing-plans">
 
   <div class="col-md-10 offset-md-1">
-    <a href="javascript:void(0);" class="edit secondary-4 small bold" data-toggle="modal" data-target="#customerEditBilling" data-backdrop="false"><span class="d-inline-block icon-pencil"></span>&nbsp;Edit</a>
+    <a href="javascript:void(0);" class="edit secondary-4 small bold" data-toggle="modal"
+      data-target="#customerEditBilling" data-backdrop="false"><span
+        class="d-inline-block icon-pencil"></span>&nbsp;Edit</a>
     <h2 class="secondary-6 mt-8">{{ customer.heading-billing-plans }}</h2>
   </div>
 
-  {{# customer.billing-plans }}
-    <div class="col-md-5 mt-7 {{# odd-number-card }}offset-md-1{{/ odd-number-card }}">
+  <div class="col-md-7 col-lg-10 offset-md-1">
+    <div class="row">
+      {{# customer.billing-plans }}
+      <div class="col-md-12 col-lg-6 mt-7">
         <div class="bg-secondary-7 amount-due">
           <div class="row h-100">
             <div class="col-5">
@@ -29,7 +32,7 @@
           </div>
           <div class="col-7 mt-5">
             <p class="label mb-1">Billing Cycle</p>
-            <p class="mb-0">{{ cycle }}</p>
+            <p class="mb-0 cycle">{{ cycle }}</p>
           </div>
         </div>
         <div class="row">
@@ -42,7 +45,9 @@
             <p class="mb-0">{{ due }}</p>
           </div>
         </div>
+      </div>
+      {{/ customer.billing-plans }}
     </div>
-  {{/ customer.billing-plans }}
+  </div>
 
 </div>
