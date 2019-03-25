@@ -81,3 +81,9 @@ export function animateModalHeader(currentModal) {
     }
   });
 }
+
+// Reset Modal
+export function resetInvoice() {
+  $("[href='#pills-edit']").tab("show");
+  $("#pills-edit form")[0].reset();
+}
