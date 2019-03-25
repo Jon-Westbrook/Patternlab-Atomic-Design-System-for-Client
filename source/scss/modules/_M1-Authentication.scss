@@ -1,23 +1,32 @@
-
 .authentication {
-  min-height:100vh;
-  background-color: #281F56;
+  min-height: 100vh;
+  background-color: #281f56;
+
+  .logo {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
 
   @include media-breakpoint-up(lg) {
-    background-image: url('../../images/bg-authentication.svg');
+    background-image: url("../../images/bg-authentication.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
   }
 
   .login-invalid-text {
-    color: #EB6091;
+    color: #eb6091;
   }
 
   .main-col {
     overflow: auto;
 
-    input, label {
+    input,
+    label {
       width: 300px;
     }
 
@@ -30,8 +39,10 @@
       }
     }
 
-    .contact-us, .forgetful {
-      &:hover, &:focus {
+    .contact-us,
+    .forgetful {
+      &:hover,
+      &:focus {
         color: $tertiary-3;
       }
     }
@@ -46,7 +57,12 @@
   &.forgot-password {
     background: #fff;
     @include media-breakpoint-up(sm) {
-      background: linear-gradient(315deg, #9B2795 0%, #690894 29.93%, #281F56 100%);
+      background: linear-gradient(
+        315deg,
+        #9b2795 0%,
+        #690894 29.93%,
+        #281f56 100%
+      );
     }
     .wrap {
       width: 100%;
@@ -54,7 +70,7 @@
       @include media-breakpoint-up(sm) {
         max-width: 538px;
         border-radius: 6px;
-        box-shadow: -3px -3px 10px 8px rgba(40,46,75,0.5);
+        box-shadow: -3px -3px 10px 8px rgba(40, 46, 75, 0.5);
       }
       padding: 0 100px;
       .inner-wrap {
@@ -64,11 +80,11 @@
         max-width: 334px;
       }
       .oops-links:hover {
-        svg g, svg path {
+        svg g,
+        svg path {
           fill: $secondary-5;
         }
       }
     }
   }
-
 }
