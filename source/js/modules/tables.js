@@ -39,7 +39,11 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
   info: false,
   columnDefs: [
     { orderable: false, targets: "_all" },
-    { targets: 0, visible: false }
+    { targets: 0, visible: false },
+    { targets: 1, width: '30%' },
+    { targets: 2, width: '15%' },
+    { targets: 3, width: '25%' },
+    { targets: 4, width: '25%' }
   ]
 });
 

@@ -29,10 +29,6 @@
           "heading": "Payment Information",
           "card-thumb": "../../images/card-icons.png",
           "includeZipcode": true
-        },
-        {
-          "lightbox-billing": false,
-          "card-thumb": "../../images/card-icons.png"
         }
       ]
     }
