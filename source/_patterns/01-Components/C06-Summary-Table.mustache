@@ -3,37 +3,26 @@
   <!-- Mobile -->
   <div class="col-12 col-sm-8 pl-5 bg-primary-3 d-lg-none">
     <p class="label uppercase mt-3 mb-0">{{ total-heading }}</p>
-    <p class="display3 secondary-6 mt-0 mt-sm-1 mb-0">{{ total-revenue }}</p>
+    <p class="display3 secondary-6 light mt-0 mt-sm-1 mb-0">{{ total-revenue }}</p>
   </div>
   <div class="col-12 col-sm-4 px-lg-0 bg-primary-3 d-lg-none pl-5">
     <p class="label uppercase mt-2 mt-sm-3 mb-0">{{ total-type }}</p>
-    <p class="display3 secondary-6 mt-0 mt-sm-1 mb-0">{{ total-number }}</p>
+    <p class="display3 secondary-6 light mt-0 mt-sm-1 mb-0">{{ total-number }}</p>
   </div>
   <div class="col-12 d-lg-none pl-5">
     <p class="display7 small mt-2 mt-sm-3 mb-3">Totals for {{ startDate }} - {{ endDate }}</p>
   </div>
 
   <!-- Desktop -->
-  <div class="col-md-2 bg-primary-3 d-none d-lg-flex align-items-center justify-content-end">
-    <p class="label uppercase my-2 d-inline-block">{{ total-heading }}</p>
+  <div class="col-md-6 bg-primary-3 d-none d-lg-flex align-items-center">
+    <p class="label uppercase my-2 d-inline-block text-align-right pr-4">{{ total-heading }}</p>
+    <p class="display3 secondary-6 light my-2 d-inline-block">{{ total-revenue }}</p>
   </div>
-  <div class="col-md-3 bg-primary-3 d-none d-lg-flex align-items-center">
-    <p class="display3 secondary-6 my-2 d-inline-block">{{ total-revenue }}</p>
+  <div class="col-md-4 bg-primary-3 d-none d-lg-flex align-items-center">
+    <p class="label uppercase mt-3 my-2 text-align-right pr-4">{{ total-type }}</p>
+    <p class="display3 secondary-6 light my-2">{{ total-number }}</p>
   </div>
-  <div class="col-md-1 bg-primary-3 d-none d-lg-flex align-items-center justify-content-end">
-    <p class="label uppercase mt-3 my-2">{{ total-type }}</p>
-  </div>
-  <div class="col-md-2 bg-primary-3 d-none d-lg-flex align-items-center">
-    <p class="display3 secondary-6 my-2">{{ total-number }}</p>
-  </div>
-  <div class="col-md-3 bg-primary-3 d-none d-lg-flex align-items-center px-0">
+  <div class="col-md-2 bg-primary-3 d-none d-lg-flex align-items-center px-0">
     <p class="display7 small my-2">Totals for the time period shown</p>
   </div>
-  {{# calendar-toggle }}
-  <div class="col-md-1 bg-primary-3 d-none d-lg-flex align-items-center justify-content-lg-end pl-lg-0">
-    <a href="javascript:;"><img src="../../images/icons/list-calendar-switch.svg"
-        alt="List or Calendar Toggle Switch"></a>
-  </div>
-  {{/ calendar-toggle }}
-
 </div>
