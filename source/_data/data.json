@@ -850,12 +850,11 @@
           {
             "summary-table": true,
             "total-heading": "Total Revenue",
-            "total-revenue": "$12,345.67",
+            "total-revenue": "$111,112,345.67",
             "startDate": "Dec 28, 2018",
             "endDate": "Jan 28, 2018",
             "total-type": "Sales",
-            "total-number": "987",
-            "calendar-toggle": true
+            "total-number": "987"
           },
           {
             "sales-table": true
