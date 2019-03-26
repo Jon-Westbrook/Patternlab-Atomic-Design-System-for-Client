@@ -136,19 +136,12 @@
 }
 
 .color-box {
+  padding-top: 15%;
   position: relative;
   width: 100%;
-  border-radius: 0px;
-  &:before {
-    content: "";
-    display: block;
-    padding-top: 15%;
-    @include media-breakpoint-up(sm) {
-      padding-top: 100%;
-    }
-  }
+    
   @include media-breakpoint-up(sm) {
-    border-radius: 50%;
+    padding-top: 50%;
   }
 }
 

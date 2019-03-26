@@ -48,10 +48,12 @@
 @import "global/line-limits";
 @import "global/tables";
 
+// Custom Foundation Overrides
+@import "foundation/colors";
+@import "foundation/typography";
+@import "foundation/animation";
+
 // Custom Element Overrides
-@import "elements/colors";
-@import "elements/typography";
-@import "elements/animation";
 @import "elements/forms";
 @import "elements/buttons";
 @import "elements/dropdowns";
