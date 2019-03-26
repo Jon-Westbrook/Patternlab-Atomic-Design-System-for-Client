@@ -164,9 +164,8 @@
             }
           }
           .preview-logo {
-            width: 50%;
+            max-width: 140px;
             @include media-breakpoint-up(md) {
-              width: 100%;
             }
           }
           .dollar-wrapper {
