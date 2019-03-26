@@ -288,7 +288,7 @@ function renderSalesDropdownMenu(data, type, row) {
 
 function renderSalesDetailsArrow(data, type, row) {
   const txid = row[0]
-  
+
   if (type === 'display') {
     return renderArrowLink(saleDetailsLinkPrefix, txid)
   } else {
@@ -308,7 +308,6 @@ function renderDepositsDetailsLink(data, type, row) {
 
 function renderDepositsDetailsArrow(data, type, row) {
   const txid = row[0]
-
   if (type === 'display') {
     return renderArrowLink(depositDetailsLinkPrefix, txid)
   } else {
