@@ -54,21 +54,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // init credit card input formatting
   const creditCardModals = [
-    'newSale',
-    'customerEditCard',
-    'lightbox-long',
-    'lightbox-short'
-  ]
-  
-  creditCardModals.forEach(modalId => {
-    $(`#${modalId}`).on('shown.bs.modal', function (e) {
-      $(this).find('.creditCard').toArray()
-        .forEach(el => forms.formatCreditCard(el))
+    "newSale",
+    "customerEditCard",
+    "lightbox-long",
+    "lightbox-short"
+  ];
 
-      $(this).find('.exp-date').toArray()
-        .forEach(el => forms.formatExpDate(el))
-    })
-  })
+  creditCardModals.forEach(modalId => {
+    $(`#${modalId}`).on("shown.bs.modal", function(e) {
+      $(this)
+        .find(".creditCard")
+        .toArray()
+        .forEach(el => forms.formatCreditCard(el));
+
+      $(this)
+        .find(".exp-date")
+        .toArray()
+        .forEach(el => forms.formatExpDate(el));
+    });
+  });
 
   // Highlight Current Sidebar Menu Item
   const current_path = window.location.pathname.split("/");
@@ -80,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Listen for Submit Events and Validate Form Fields
   window.addEventListener("load", forms.initFormValidation);
+
+  // Reset Data on Invoice When Closed and Shown Again
+  $("#customerCreateInvoice").on("hidden.bs.modal", modals.resetInvoice);
 
   // Modal Button and Table Manipulations on Invoice Modal
   $(".pills-edit-tab").on("shown.bs.tab", modals.initEditPane);
