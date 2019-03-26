@@ -409,13 +409,25 @@
           {
             "heading": "Card on File",
             "card-on-file": true,
-            "card-thumb": "../../images/mastercard.jpg",
+            "card-label": "Card Number 1",
+            "card-thumb": "../../images/cards/MC_Credit.png",
             "pre-pop-exp": "12/2021",
             "pre-pop-code": "123",
             "pre-pop-card": "2510448545873241",
             "pre-pop-addr": "8591 SouthEast Second Drive",
             "pre-pop-zip": "60630-1231",
             "pre-pop-city": "Rancho Santa Margarita"
+          },
+          {
+            "card-on-file": true,
+            "card-label": "Card Number 2",
+            "card-thumb": "../../images/cards/Visa_Debit.png",
+            "pre-pop-exp": "12/2099",
+            "pre-pop-code": "999",
+            "pre-pop-card": "2510448545873241",
+            "pre-pop-addr": "95 Morton St. Fl. 7",
+            "pre-pop-zip": "85943",
+            "pre-pop-city": "New York"
           }
         ]
       },
