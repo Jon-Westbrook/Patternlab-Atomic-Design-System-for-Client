@@ -1,206 +1,182 @@
-<div class="container py-9">
+<div class="bg-gray-lightest">
+  <div class="container pb-5 pt-5 pt-md-7">
+    <div class="row">
+      <div class="col">
 
-  <form class="needs-validation" novalidate>
+        <h1 class="display2 mt-5">Form fields</h1>
+        {{!-- <p class="mt-3"></p> --}}
 
-    <div class="form-row">
-      <div class="input-group col-md-6">
-        <input type="search" class="form-control search-input" placeholder="{{ placeholder-search }}"
-          aria-label="Search" required>
-        <div class="input-group-append magnifier-button">
-          <span class="input-group-text" id="basic-addon2">
-            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>icon</title>
-              <defs>
-                <path
-                  d="M366.878784,24.4182454 L362.408512,19.9893325 C363.309238,18.7239288 363.776282,17.1255242 363.54276,15.4272193 C363.142437,12.5634109 360.80722,10.2990043 357.904878,10.0326036 C353.96837,9.63300241 350.632345,12.9630121 351.032668,16.9257236 C351.29955,19.7895319 353.568047,22.1538388 356.437028,22.55344 C358.1384,22.7865407 359.739692,22.3203393 361.007381,21.4212367 L365.444294,25.8501496 C365.644455,26.0499501 365.944698,26.0499501 366.144859,25.8501496 L366.845424,25.1508475 C367.045586,24.9510469 367.045586,24.618046 366.878784,24.4182454 L366.878784,24.4182454 Z M353,16.5 C353,14.0232558 355.023256,12 357.5,12 C359.976744,12 362,14.0232558 362,16.5 C362,18.9767442 359.976744,21 357.5,21 C355.023256,21 353,19.0116279 353,16.5 L353,16.5 Z"
-                  id="path-1"></path>
-              </defs>
-              <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="5_T8_Article@2x" transform="translate(-564.000000, -132.000000)">
-                  <g id="Search" transform="translate(213.000000, 122.000000)">
-                    <mask id="mask-2" fill="white">
-                      <use xlink:href="#path-1"></use>
-                    </mask>
-                    <use id="icon" fill="#919193" xlink:href="#path-1"></use>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </span>
-        </div>
-        <div class="invalid-feedback">
-          Invalid search.
-        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="form-row mt-3">
-      <div class="form-group col-md-6 mb-5">
-        <label for="example-date-input" class="primary-2">Start Date</label>
-        <div class="input-group">
-          <input class="form-control custom-date bg-primary-3 date" type="text" name="date" value="Mar 28, 2019"
-            required>
-          <div class="invalid-feedback">
-            Please select a valid date.
-          </div>
-        </div>
+
+<div class="container pt-8 pb-8">
+
+  <!-- TEXT -->
+  <div class="row">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Text</h2>
+    </div>
+    <div class="form-group col-12">
+      <label for="validationCustom01" class="primary-2">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="invalid-feedback">
+        Got a name?
       </div>
     </div>
+  </div>
 
-    <div class="form-row mt-3">
-      <div class="form-group col-md-3">
-        <label for="validationCustom05" class="primary-2" required>Repeat Every</label>
-        <select id="inputState" class="custom-select" required>
-          <option selected></option>
-          <option>Week</option>
-          <option>Two Weeks</option>
-          <option>Month</option>
-        </select>
-        <div class="invalid-feedback">
-          Pick it!
-        </div>
+  <!-- EMAIL -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Email</h2>
+    </div>
+    <div class="form-group col-12">
+      <label for="exampleInputEmail1" class="primary-2">Email address</label>
+      <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="invalid-feedback">
+        Don't forget an @ symbol.
       </div>
     </div>
+  </div>
 
-    <div class="form-row mt-3">
-      <div class="form-group col-md-3">
-        <label for="exampleInputEmail1" class="primary-2">Email address</label>
-        <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="invalid-feedback">
-          Don't forget an @ symbol.
-        </div>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="exampleInputPassword1" class="primary-2">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
+  <!-- PASSWORD -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Password</h2>
+    </div>
+    <div class="form-group col-12">
+      <label for="exampleInputPassword1" class="primary-2">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
       <div class="invalid-feedback">
         It better be complicated.
       </div>
     </div>
+  </div>
 
-    <div class="form-row">
-      <div class="form-group col-md-3 mb-3">
-        <label for="validationCustom01" class="primary-2">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" required>
-        <div class="invalid-feedback">
-          Got a name?
-        </div>
+  <!-- SELECT -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Select</h2>
+    </div>
+    <div class="form-group col-12">
+      <label for="validationCustom05" class="primary-2" required>Repeat Every</label>
+      <select id="inputState" class="custom-select" required>
+        <option selected></option>
+        <option>Week</option>
+        <option>Two Weeks</option>
+        <option>Month</option>
+      </select>
+      <div class="invalid-feedback">
+        Pick it!
       </div>
-      <div class="form-group col-md-3 mb-3">
-        <label for="validationCustom02" class="primary-2">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" required>
+    </div>
+  </div>
+      
+  <!-- DATE PICKER -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Date picker</h2>
+    </div>
+    <div class="form-group col-12">
+      <label for="example-date-input" class="primary-2">Start Date</label>
+      <div class="input-group">
+        <input class="form-control custom-date bg-primary-3 date" type="text" name="date" value="Mar 28, 2019"
+          required>
         <div class="invalid-feedback">
-          You should know your last name!
+          Please select a valid date.
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="form-row">
-      <div class="form-group col-md-6 mb-3">
-        <label for="validationCustomUsername" class="primary-2">Username</label>
-        <div class="input-group">
-          <input type="text" class="form-control" id="validationCustomUsername" required>
-          <div class="invalid-feedback">
-            You can do it!
-          </div>
-        </div>
+  <!-- CHECKBOX -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Checkbox</h2>
+    </div>
+    <div class="form-group col-12">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="small custom-control-label medium" for="customCheck1">Save to Customer Profile</label>
+      </div>
+      <div class="invalid-feedback">
+        Check me!
       </div>
     </div>
+  </div>
 
-    <div class="form-row">
-      <div class="form-group col-md-3 mb-3">
-        <label for="validationCustom03" class="primary-2">City</label>
-        <input type="text" class="form-control" id="validationCustom03" required>
-        <div class="invalid-feedback">
-          What's your city?
-        </div>
+  <!-- SEARCH -->
+  <div class="row pt-4 pt-md-6 pb-4">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Search</h2>
+    </div>
+    <div class="input-group col-12">
+      <input type="search" class="form-control search-input" placeholder="{{ placeholder-search }}"
+        aria-label="Search" required>
+      <div class="input-group-append magnifier-button">
+        <span class="input-group-text" id="basic-addon2">
+          <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>icon</title>
+            <defs>
+              <path
+                d="M366.878784,24.4182454 L362.408512,19.9893325 C363.309238,18.7239288 363.776282,17.1255242 363.54276,15.4272193 C363.142437,12.5634109 360.80722,10.2990043 357.904878,10.0326036 C353.96837,9.63300241 350.632345,12.9630121 351.032668,16.9257236 C351.29955,19.7895319 353.568047,22.1538388 356.437028,22.55344 C358.1384,22.7865407 359.739692,22.3203393 361.007381,21.4212367 L365.444294,25.8501496 C365.644455,26.0499501 365.944698,26.0499501 366.144859,25.8501496 L366.845424,25.1508475 C367.045586,24.9510469 367.045586,24.618046 366.878784,24.4182454 L366.878784,24.4182454 Z M353,16.5 C353,14.0232558 355.023256,12 357.5,12 C359.976744,12 362,14.0232558 362,16.5 C362,18.9767442 359.976744,21 357.5,21 C355.023256,21 353,19.0116279 353,16.5 L353,16.5 Z"
+                id="path-1"></path>
+            </defs>
+            <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="5_T8_Article@2x" transform="translate(-564.000000, -132.000000)">
+                <g id="Search" transform="translate(213.000000, 122.000000)">
+                  <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                  </mask>
+                  <use id="icon" fill="#919193" xlink:href="#path-1"></use>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
       </div>
-      <div class="form-group col-md-1 mb-5">
-        <label for="stateSelect01" class="primary-2">State</label>
-        <select id="stateSelect01" class="custom-select" required>
-          <option selected></option>
-          <option value="AL">AL</option>
-          <option value="AK">AK</option>
-          <option value="AR">AR</option>
-          <option value="AZ">AZ</option>
-          <option value="CA">CA</option>
-          <option value="CO">CO</option>
-          <option value="CT">CT</option>
-          <option value="DC">DC</option>
-          <option value="DE">DE</option>
-          <option value="FL">FL</option>
-          <option value="GA">GA</option>
-          <option value="HI">HI</option>
-          <option value="IA">IA</option>
-          <option value="ID">ID</option>
-          <option value="IL">IL</option>
-          <option value="IN">IN</option>
-          <option value="KS">KS</option>
-          <option value="KY">KY</option>
-          <option value="LA">LA</option>
-          <option value="MA">MA</option>
-          <option value="MD">MD</option>
-          <option value="ME">ME</option>
-          <option value="MI">MI</option>
-          <option value="MN">MN</option>
-          <option value="MO">MO</option>
-          <option value="MS">MS</option>
-          <option value="MT">MT</option>
-          <option value="NC">NC</option>
-          <option value="NE">NE</option>
-          <option value="NH">NH</option>
-          <option value="NJ">NJ</option>
-          <option value="NM">NM</option>
-          <option value="NV">NV</option>
-          <option value="NY">NY</option>
-          <option value="ND">ND</option>
-          <option value="OH">OH</option>
-          <option value="OK">OK</option>
-          <option value="OR">OR</option>
-          <option value="PA">PA</option>
-          <option value="RI">RI</option>
-          <option value="SC">SC</option>
-          <option value="SD">SD</option>
-          <option value="TN">TN</option>
-          <option value="TX">TX</option>
-          <option value="UT">UT</option>
-          <option value="VT">VT</option>
-          <option value="VA">VA</option>
-          <option value="WA">WA</option>
-          <option value="WI">WI</option>
-          <option value="WV">WV</option>
-          <option value="WY">WY</option>
-        </select>
-        <div class="invalid-feedback">
-          Choose it!
-        </div>
-      </div>
-      <div class="form-group col-md-2 mb-3">
-        <label for="validationCustom05" class="primary-2">Zip</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          Write it!
-        </div>
+      <div class="invalid-feedback">
+        Invalid search.
       </div>
     </div>
+  </div>
+
+
+<!-- CHECKBOX -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Submit</h2>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-group col-12">
+        <button class="btn mt-3" type="submit">Submit form</button>
+      </div>
+  </div>
+   
+        
+
+</div>
+
+
+
+<div class="container py-9">
+
+  <form class="needs-validation" novalidate>
+
+
+  
+      
+     
 
     <div class="form-row mt-3">
-      <div class="form-group col-md-12 pl-2">
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="customCheck1">
-          <label class="small custom-control-label medium" for="customCheck1">Save to Customer Profile</label>
-        </div>
-        <div class="invalid-feedback">
-          Check me!
-        </div>
-      </div>
+      
     </div>
 
-    <div class="form-row mt-3">
-      <button class="btn mt-3" type="submit">Submit form</button>
-    </div>
+   
 
   </form>
 </div>
