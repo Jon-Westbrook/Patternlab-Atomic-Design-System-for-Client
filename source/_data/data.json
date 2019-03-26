@@ -247,12 +247,14 @@
         ],
         "btns-desktop-top": [
           {
+            "type": "button",
             "classes": "btn btn-dark-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn btn-dark",
             "data-dismiss": "",
             "aria-label": "Save",
@@ -261,12 +263,14 @@
         ],
         "btns-desktop-bottom": [
           {
+            "type": "button",
             "classes": "btn btn-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn",
             "data-dismiss": "",
             "aria-label": "Save",
@@ -309,12 +313,14 @@
         ],
         "btns-desktop-top": [
           {
+            "type": "button",
             "classes": "btn btn-dark-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn btn-dark",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -323,12 +329,14 @@
         ],
         "btns-desktop-bottom": [
           {
+            "type": "button",
             "classes": "btn btn-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -367,12 +375,14 @@
         ],
         "btns-desktop-top": [
           {
+            "type": "button",
             "classes": "btn btn-dark-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn btn-dark",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -381,12 +391,14 @@
         ],
         "btns-desktop-bottom": [
           {
+            "type": "button",
             "classes": "btn btn-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -397,13 +409,25 @@
           {
             "heading": "Card on File",
             "card-on-file": true,
-            "card-thumb": "../../images/mastercard.jpg",
+            "card-label": "Card Number 1",
+            "card-thumb": "../../images/cards/MC_Credit.png",
             "pre-pop-exp": "12/2021",
             "pre-pop-code": "123",
             "pre-pop-card": "2510448545873241",
             "pre-pop-addr": "8591 SouthEast Second Drive",
             "pre-pop-zip": "60630-1231",
             "pre-pop-city": "Rancho Santa Margarita"
+          },
+          {
+            "card-on-file": true,
+            "card-label": "Card Number 2",
+            "card-thumb": "../../images/cards/Visa_Debit.png",
+            "pre-pop-exp": "12/2099",
+            "pre-pop-code": "999",
+            "pre-pop-card": "2510448545873241",
+            "pre-pop-addr": "95 Morton St. Fl. 7",
+            "pre-pop-zip": "85943",
+            "pre-pop-city": "New York"
           }
         ]
       },
@@ -426,12 +450,14 @@
         ],
         "btns-desktop-top": [
           {
+            "type": "button",
             "classes": "btn btn-dark-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn btn-dark",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -440,12 +466,14 @@
         ],
         "btns-desktop-bottom": [
           {
+            "type": "button",
             "classes": "btn btn-outline",
             "data-dismiss": "modal",
             "aria-label": "cancel",
             "btn-copy": "Cancel"
           },
           {
+            "type": "submit",
             "classes": "btn",
             "data-dismiss": "",
             "aria-label": "Save Changes",
@@ -461,70 +489,6 @@
             "set-up-billing": true
           }
         ]
-      },
-      {
-        "id": "customerCreateInvoice",
-        "heading-page": "Create New Invoice",
-        "menu-mobile": [
-          {
-            "classes": "dropdown-item",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "dropdown-item",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "dropdown-item",
-            "aria-label": "Preview ",
-            "btn-copy": "Preview"
-          }
-        ],
-        "btns-desktop-top": [
-          {
-            "classes": "btn btn-dark-outline",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "btn btn-dark-outline",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn btn-dark",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
-          }
-        ],
-        "btns-desktop-bottom": [
-          {
-            "classes": "btn btn-outline",
-            "data-dismiss": "modal",
-            "aria-label": "cancel",
-            "btn-copy": "Cancel"
-          },
-          {
-            "classes": "btn btn-outline",
-            "data-dismiss": "",
-            "aria-label": "Save Draft",
-            "btn-copy": "Save Draft"
-          },
-          {
-            "classes": "btn",
-            "data-dismiss": "",
-            "aria-label": "Preview",
-            "btn-copy": "Preview"
-          }
-        ],
-        "sections": []
       }
     ],
     "cards": [

@@ -62,7 +62,7 @@
     {
       "payment-details": true,
       "heading": "Payment",
-      "card-thumb": "../../images/card-icons.png"
+      "card-thumb": "../../images/cards/card-icons.png"
     },
     {
       "billing-info": true,
