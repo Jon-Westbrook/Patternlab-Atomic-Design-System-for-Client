@@ -9,12 +9,12 @@
         {
           "lightbox-info": true,
           "heading": "Payment Information",
-          "card-thumb": "../../images/card-icons.png",
+          "card-thumb": "../../images/cards/card-icons.png",
           "includeZipcode": false
         },
         {
           "lightbox-billing": true,
-          "card-thumb": "../../images/card-icons.png"
+          "card-thumb": "../../images/cards/card-icons.png"
         }
       ]
     },
@@ -27,7 +27,7 @@
         {
           "lightbox-info": true,
           "heading": "Payment Information",
-          "card-thumb": "../../images/card-icons.png",
+          "card-thumb": "../../images/cards/card-icons.png",
           "includeZipcode": true
         }
       ]
