@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>chat icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 17 0 17 17 0 17"></polygon>
+    </defs>
+    <g id="Component-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-423.000000, -1000.000000)">
+            <g id="chat-icon" transform="translate(423.000000, 1000.000000)">
+                <g id="Group-3-Copy" transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000) ">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M13.45465,17 C13.28635,17 13.11975,16.9328433 12.9982,16.8070307 L9.46645,13.179718 C9.2208,12.9272427 9.22505,12.5234523 9.4775,12.2777778 C9.73165,12.0329533 10.1354,12.0380538 10.37935,12.289679 L12.81715,14.7940294 L12.81715,12.7342734 C12.81715,12.3823382 13.10275,12.0967097 13.45465,12.0967097 L15.725,12.0967097 L15.725,1.27512751 L1.275,1.27512751 L1.275,12.0967097 L7.19015,12.0967097 C7.54205,12.0967097 7.82765,12.3823382 7.82765,12.7342734 C7.82765,13.0862086 7.54205,13.3718372 7.19015,13.3718372 L0.6375,13.3718372 C0.2856,13.3718372 0,13.0862086 0,12.7342734 L0,0.637563756 C0,0.285628563 0.2856,0 0.6375,0 L16.3625,0 C16.7144,0 17,0.285628563 17,0.637563756 L17,12.7342734 C17,13.0862086 16.7144,13.3718372 16.3625,13.3718372 L14.09215,13.3718372 L14.09215,16.3624362 C14.09215,16.6217122 13.9349,16.8554855 13.69435,16.9532453 C13.617,16.9846985 13.5354,17 13.45465,17" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+                </g>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="4.97560976" cy="6.88095238" rx="1.24390244" ry="1.21428571"></ellipse>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="8.70731707" cy="6.88095238" rx="1.24390244" ry="1.21428571"></ellipse>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="12.4390244" cy="6.88095238" rx="1.24390244" ry="1.21428571"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
