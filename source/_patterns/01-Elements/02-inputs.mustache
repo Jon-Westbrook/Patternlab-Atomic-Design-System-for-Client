@@ -27,12 +27,13 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- EMAIL -->
   <div class="row pt-4 pt-md-6">
     <div class="col-12 pb-1 pb-sm-4">
       <h2 class="display5">Email</h2>
+      <p class="pt-2 mb-2">Uses native browser <code>type="email"</code> input to provide automated basic validation.</p>
     </div>
     <div class="form-group col-12">
       <label for="exampleInputEmail1" class="primary-2">Email address</label>
@@ -43,12 +44,13 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- PASSWORD -->
   <div class="row pt-4 pt-md-6">
     <div class="col-12 pb-1 pb-sm-4">
       <h2 class="display5">Password</h2>
+      <p class="pt-2 mb-2">Uses native browser <code>type="password"</code> input to provide additional functionality for password entry.</p>
     </div>
     <div class="form-group col-12">
       <label for="exampleInputPassword1" class="primary-2">Password</label>
@@ -59,7 +61,41 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
+
+  <!-- CREDIT CARD NUMBER -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Credit card number</h2>
+      <p class="pt-2 mb-2">Uses cleave.js to auto-format credit card number based on detected card type.</p>
+    </div>
+    <div class="form-group col-12">
+      <label for="cardNo01" class="primary-2">Card Number</label>
+      <input type="text" class="form-control d-inline-block creditCard" id="cardNo01" required>
+      <div class="invalid-feedback">
+        Math is not your strong-suit, is it?
+      </div>
+    </div>
+  </div>
+
+  <div class="rule thin-gray mt-6"></div>
+
+  <!-- EXPIRATION DATE -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Expiration date</h2>
+      <p class="pt-2 mb-2">Uses cleave.js to auto-format expiration dates as MM/YYYY.</p>
+    </div>
+    <div class="form-group col-sm-4 mb-sm-2 pr-4 align-self-end">
+      <label for="expDate01" class="primary-2">Exp. Date</label>
+      <input type="text" class="form-control exp-date" id="expDate01" placeholder="MM/YYYY" required>
+      <div class="invalid-feedback">
+        Far, far away...
+      </div>
+    </div>
+  </div>
+
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- SELECT -->
   <div class="row pt-4 pt-md-6">
@@ -80,7 +116,7 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
       
   <!-- DATE PICKER -->
   <div class="row pt-4 pt-md-6">
@@ -99,7 +135,7 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- CHECKBOX -->
   <div class="row pt-4 pt-md-6">
@@ -117,7 +153,34 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
+
+  <!-- RADIO -->
+  <div class="row pt-4 pt-md-6">
+    <div class="col-12 pb-1 pb-sm-4">
+      <h2 class="display5">Radio</h2>
+    </div>
+    <div class="form-group col-12">
+      <div class="custom-control custom-radio">
+        
+        <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1_option-1">
+        <label class="small custom-control-label medium" for="customRadio1_option-1">Option 1</label>
+
+        <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1_option-2">
+        <label class="small custom-control-label medium" for="customRadio1_option-2">Option 2</label>
+
+        <input type="radio" class="custom-control-input" name="customRadio1" id="customRadio1_option-3">
+        <label class="small custom-control-label medium" for="customRadio1_option-3">Option 3</label>
+
+
+      </div>
+      <div class="invalid-feedback">
+        Check me!
+      </div>
+    </div>
+  </div>
+
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- TOGGLE -->
   <div class="row pt-4 pt-md-6">
@@ -135,7 +198,7 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- SEARCH -->
   <div class="row pt-4 pt-md-6 pb-4">
@@ -174,7 +237,7 @@
     </div>
   </div>
 
-  <div class="rule mt-6"></div>
+  <div class="rule thin-gray mt-6"></div>
 
   <!-- SUBMIT -->
   <div class="row pt-4 pt-md-6 pb-5 pb-lg-9">

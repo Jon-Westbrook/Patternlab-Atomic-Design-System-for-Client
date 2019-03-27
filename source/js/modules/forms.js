@@ -2,7 +2,7 @@
 export function initDatepickers() {
   $(".date").datepicker({
     showOn: "both",
-    buttonImage: "../../images/icons/calendar.svg",
+    buttonImage: "../../images/icons/general-calendar.svg",
     dateFormat: "M d, yy"
   });
 }

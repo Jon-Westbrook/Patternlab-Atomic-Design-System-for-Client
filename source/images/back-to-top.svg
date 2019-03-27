@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Back to top</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 22 0 22 12 0 12"></polygon>
+    </defs>
+    <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="T3a_Tables_Reporting_Transactions@2x" transform="translate(-1348.000000, -1045.000000)">
+            <g id="Back-to-top" transform="translate(1348.000000, 1045.000000)">
+                <g id="Group-3" transform="translate(1.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M21.1463315,12 C20.927756,12 20.7091804,11.9158683 20.5424027,11.7470287 L11.0002135,2.08629259 L1.457455,11.7470287 C1.12389959,12.0841317 0.583721968,12.0841317 0.250166558,11.7470287 C-0.0833888526,11.4093496 -0.0833888526,10.8619175 0.250166558,10.5242383 L10.3962846,0.253259382 C10.72984,-0.084419794 11.2700177,-0.084419794 11.6035731,0.253259382 L21.7502603,10.5242383 C22.0832466,10.8619175 22.0832466,11.4093496 21.7502603,11.7470287 C21.5834826,11.9158683 21.3649071,12 21.1463315,12" id="Fill-1" fill="#372772" mask="url(#mask-2)"></path>
+                </g>
+                <text id="top" font-family="Roboto-Medium, Roboto" font-size="11" font-weight="400" line-spacing="15" letter-spacing="1" fill="#372772">
+                    <tspan x="0.424316406" y="30">TOP</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

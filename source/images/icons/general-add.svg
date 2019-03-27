@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>plus sign</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Component-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-423.000000, -1039.000000)" fill-rule="nonzero" stroke="#000000">
+            <g id="plus-sign" transform="translate(424.000000, 1040.000000)">
+                <circle id="Oval-2" cx="6.5" cy="6.5" r="6.5"></circle>
+                <path d="M6.5,4.13636364 L6.5,8.86363636" id="Line-2" stroke-linecap="square"></path>
+                <path d="M8.86363636,6.5 L4.13636364,6.5" id="Line-2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

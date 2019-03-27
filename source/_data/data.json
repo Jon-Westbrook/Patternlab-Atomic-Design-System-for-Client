@@ -1,11 +1,11 @@
 {
   "title": "CardX Design System",
   "imagePath": "../../images/",
-  "arrow-right": "../../images/icons/arrow-right.svg",
+  "arrow-right": "../../images/icons/general-arrow.svg",
   "arrow-left": "../../images/icons/arrow-left.svg",
   "arrow-back": "../../images/icons/arrow-back.svg",
-  "resend": "../../images/icons/resend.svg",
-  "close": "../../images/icons/close.svg",
+  "resend": "../../images/icons/payment-refund.svg",
+  "close": "../../images/icons/general-close.svg",
   "logo": "../../images/logo.svg",
   "logo-dark": "../../images/logo-dark.svg",
   "link-home": "link.Templates-T02-Home",
@@ -41,7 +41,7 @@
         "image": "../../images/card-processor.jpg",
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><ul class='pl-4'><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li></ul>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "support-tip": {
-          "cog": "../../images/icons/cog.svg",
+          "cog": "../../images/icons/account-support.svg",
           "tip-title": "Support Tip",
           "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin."
         }
@@ -55,7 +55,7 @@
         },
         "copy": "Lorem ipsum dolor sit amet: <code>&lt;html&gt;I am inner HTML code.&lt;/html&gt;</code> Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><div class=\"code-block mb-5 p-5\"><code>&lt;p&gt;Sample text here...&lt;/p&gt;<br />&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></div>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "pull-quote": {
-          "lsquo": "../../images/icons/lsquo.svg",
+          "lsquo": "../../images/icons/general-quote.svg",
           "quote": "Never take a shower with your socks on.",
           "author": "Sheila Babayan",
           "company": "Technical Manager, VSA Partners inc."
@@ -72,44 +72,44 @@
   "mainNav": {
     "mainLinks": [
       {
-        "icon": "home_icn.svg",
-        "iconHover": "home_icn_active.svg",
+        "icon": "nav-home.svg",
+        "iconHover": "nav-home-active.svg",
         "copy": "Home",
         "url": "link.Templates-T02-Home"
       },
       {
-        "icon": "virtualterminal_icn.svg",
-        "iconHover": "virtualterminal_icn_active.svg",
+        "icon": "nav-virtualterminal.svg",
+        "iconHover": "nav-virtualterminal-active.svg",
         "copy": "Virtual Terminal",
         "url": "#"
       },
       {
-        "icon": "reporting_icn.svg",
-        "iconHover": "reporting_icn_active.svg",
+        "icon": "nav-reporting.svg",
+        "iconHover": "nav-reporting-active.svg",
         "copy": "Reporting",
         "url": "link.Templates-T03a-Tables-Reporting"
       },
       {
-        "icon": "customers_icn.svg",
-        "iconHover": "customers_icn_active.svg",
+        "icon": "nav-customers.svg",
+        "iconHover": "nav-customers-active.svg",
         "copy": "Customers",
         "url": "link.Templates-T07-Customer-Profile"
       },
       {
-        "icon": "invoices_icn.svg",
-        "iconHover": "invoices_icn_active.svg",
+        "icon": "nav-invoices.svg",
+        "iconHover": "nav-invoices-active.svg",
         "copy": "Invoices",
         "url": "#"
       },
       {
-        "icon": "support_icn.svg",
-        "iconHover": "support_icn_active.svg",
+        "icon": "nav-support.svg",
+        "iconHover": "nav-support-active.svg",
         "copy": "Support",
         "url": "link.Templates-T08-Article"
       },
       {
-        "icon": "account_icn.svg",
-        "iconHover": "account_icn_active.svg",
+        "icon": "nav-account.svg",
+        "iconHover": "nav-account-active.svg",
         "copy": "Account",
         "url": "#"
       }
@@ -186,7 +186,7 @@
     }
   ],
   "chat": {
-    "bubble": "../../images/icons/chat-bubble.svg",
+    "bubble": "../../images/icons/general-chat.svg",
     "title": "Can’t find what you’re looking for?",
     "wait-copy": "Current wait time is",
     "wait-time": "2 Minutes",
