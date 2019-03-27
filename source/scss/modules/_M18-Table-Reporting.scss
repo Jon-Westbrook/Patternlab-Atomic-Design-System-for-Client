@@ -43,4 +43,10 @@
       top: 18px;
     }
   }
+  .export-link:hover {
+    svg g,
+    svg path {
+      fill: $secondary-5;
+    }
+  }
 }
