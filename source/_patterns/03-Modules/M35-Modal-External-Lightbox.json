@@ -2,6 +2,7 @@
   "modal-lightboxes": [
     {
       "id": "lightbox-long",
+      "variant": "Long",
       "heading-page": "Run New Sale",
       "close-lightbox": "../../images/icons/general-close.svg",
       "initFunction": "InitLightboxLong();",
@@ -20,6 +21,7 @@
     },
     {
       "id": "lightbox-short",
+      "variant": "Short",
       "heading-page": "Run New Sale",
       "initFunction": "InitLightboxShort();",
       "close-lightbox": "../../images/icons/general-close.svg",
