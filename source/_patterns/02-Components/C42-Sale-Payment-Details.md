@@ -1,5 +1,3 @@
 ---
-title: C20-Customer-Profile
+title: C42-Sale-Payment-Details
 ---
-
-Primary profile data for a customer.
