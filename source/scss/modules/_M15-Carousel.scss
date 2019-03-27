@@ -21,16 +21,23 @@
   .carousel-control-next-icon {
     width: 16px;
     height: 33px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   .copy-wrap {
     @include media-breakpoint-up(lg) {
-      max-width: 318px;
+      max-width: 350px;
     }
   }
   .carousel-item {
     border-radius: 6px;
+    height: 325px;
     @include media-breakpoint-up(sm) {
       height: 325px;
+    }
+    .carousel-img {
+      width: 150px;
     }
   }
   button {
