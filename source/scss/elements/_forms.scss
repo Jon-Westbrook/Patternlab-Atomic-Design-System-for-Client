@@ -85,12 +85,16 @@
   }
 }
 
-.custom-checkbox {
+.custom-checkbox,
+.custom-toggle {
   label {
     text-transform: none;
     letter-spacing: 0;
     padding-top: 3px;
   }
+}
+
+.custom-checkbox {
   .custom-control-label:before {
     background-color: $white;
     border: 1px solid $gray-border;
@@ -117,6 +121,67 @@
   .custom-control-input:valid ~ .custom-control-label::before,
   .custom-control-input.is-valid ~ .custom-control-label::before {
     border-color: $gray-border;
+  }
+}
+
+.custom-toggle {
+  padding-left: 2.5rem;
+
+  .custom-control-label::before {
+    // slider bar
+    border: none;
+    background-color: $gray-border;
+    border-radius: 7px;
+    height: .75rem;
+    left: -2.25rem;
+    position: absolute;
+    top: 50%;
+    width: 1.75rem;
+    transform: translateY(-50%);
+    transition: $transition-base;
+  }
+
+  .custom-control-label::after {
+    // slider circle
+    border-radius: 100%;
+    background-color: $white;
+    box-shadow: $gray-border -1px 1px 2px 0;
+    height: 1rem;
+    left: -2.25rem;
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+    transform: translateY(-50%);
+    transition: $transition-base;
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    // not disabled, active slider bar
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::after {
+    // not disabled, active slider circle
+  }
+  
+  .custom-control-input:not(:disabled) ~ .custom-control-label:hover {
+    // not disabled, hover state cursor
+    cursor: pointer;
+  }
+
+  .custom-control-input:not(:disabled):checked ~ .custom-control-label::before {
+    // checked slider circle
+    background-color: $tertiary-3;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    // checked slider circle
+    background-color: $secondary-1;
+    box-shadow: none;
+    left: -1.5rem;
+  }
+  
+  .custom-control-input:checked:disabled ~ .custom-control-label::after {
+    background-color: $gray;
   }
 }
 
