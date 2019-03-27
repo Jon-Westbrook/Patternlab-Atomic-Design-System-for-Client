@@ -5,7 +5,7 @@
     <div class="col-md-12 px-0">
       <div class="nav nav-tabs" role="tablist">
         {{# tabs-desktop }}
-        <a class="h4 pb-4 bold secondary-1 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
+        <a class="h4 pb-4 bold secondary-4 {{ classes }}" id="{{ id }}" data-toggle="{{ data-toggle }}"
           href="{{ href }}" role="{{ role }}" aria-controls="{{ aria-controls }}"
           aria-selected="{{ aria-selected }}">{{ tab-copy }}</a>
         {{/ tabs-desktop }}
@@ -21,21 +21,21 @@
       <div class="d-flex flex-column">
 
         {{# sections }}
-          {{# filter-table }}
-          {{> Components-C08-Filter-Table }}
-          {{/ filter-table }}
+        {{# filter-table }}
+        {{> Components-C08-Filter-Table }}
+        {{/ filter-table }}
 
-          {{# summary-table }}
-          {{> Components-C06-Summary-Table }}
-          {{/ summary-table }}
+        {{# summary-table }}
+        {{> Components-C06-Summary-Table }}
+        {{/ summary-table }}
 
-          {{# sales-table }}
-          {{> Components-C09-Table-Sales }}
-          {{/ sales-table }}
+        {{# sales-table }}
+        {{> Components-C09-Table-Sales }}
+        {{/ sales-table }}
 
-          {{# deposits-table }}
-          {{> Components-C10-Table-Deposits }}
-          {{/ deposits-table }}
+        {{# deposits-table }}
+        {{> Components-C10-Table-Deposits }}
+        {{/ deposits-table }}
         {{/ sections }}
 
       </div>

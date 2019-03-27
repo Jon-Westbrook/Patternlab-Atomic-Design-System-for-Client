@@ -11,6 +11,9 @@
     border-bottom: 6px solid #e6e6ed;
     &.active {
       border-bottom: 6px solid $secondary-4;
+      &:hover {
+        border-bottom: 6px solid $secondary-5;
+      }
     }
   }
   .reporting-summary {
