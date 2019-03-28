@@ -15,6 +15,11 @@ table {
   }
 }
 
+#sales-table,
+#deposits-table {
+  box-shadow: 0 0 10px 5px #e7e8ed;
+}
+
 td,
 th {
   padding: 8px;
