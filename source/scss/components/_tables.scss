@@ -57,6 +57,15 @@
   }
 }
 
+.table-filter-select {
+  background-color: #fff;
+  border: 1px solid $gray-border;
+
+  &:focus {
+    outline: 1px solid $primary-1;
+  }
+}
+
 .table-show-details-cell {
   padding-left: 0;
   padding-right: 0;
