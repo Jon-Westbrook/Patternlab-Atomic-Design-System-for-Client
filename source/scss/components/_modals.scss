@@ -203,6 +203,16 @@
           }
         }
       }
+      .btns-bottom {
+        @include media-breakpoint-only(xs) {
+          width: 100%;
+        }
+        button {
+          @include media-breakpoint-only(xs) {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
