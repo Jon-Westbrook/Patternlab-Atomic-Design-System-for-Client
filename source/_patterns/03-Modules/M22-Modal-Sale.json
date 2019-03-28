@@ -19,7 +19,7 @@
   "btns-desktop-top": [
     {
       "type": "button",
-      "classes": "btn btn-dark-outline cancel",
+      "classes": "btn btn-secondary btn-dark cancel",
       "data-dismiss": "modal",
       "aria-label": "cancel",
       "btn-copy": "Cancel"
@@ -27,7 +27,8 @@
     {
       "type": "submit",
       "form": "newSaleForm",
-      "classes": "btn btn-dimmed charge",
+      "classes": "btn charge",
+      "disabled": true,
       "aria-label": "charge",
       "btn-copy": "Charge"
     }
@@ -35,7 +36,7 @@
   "btns-desktop-bottom": [
     {
       "type": "button",
-      "classes": "btn btn-outline cancel",
+      "classes": "btn btn-secondary cancel",
       "data-dismiss": "modal",
       "aria-label": "cancel",
       "btn-copy": "Cancel"
@@ -43,7 +44,8 @@
     {
       "type": "submit",
       "form": "newSaleForm",
-      "classes": "btn btn-dimmed charge",
+      "classes": "btn charge",
+      "disabled": true,
       "aria-label": "charge",
       "btn-copy": "Charge"
     }
