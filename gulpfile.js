@@ -15,7 +15,7 @@ const manifestDestFile = path.resolve(manifestDestDir, '03-icons.json')
 const iconCategories = [
 	{ category: 'account' },
 	{ category: 'general' },
-	{ category: 'nav', background: 'primary-1', text: 'primary-3' },
+	{ category: 'nav', backgroundColor: 'primary-1', textColor: 'primary-3' },
 	{ category: 'payment' },
 	{ category: 'support' }
 ]
@@ -44,6 +44,7 @@ function rewriteManifestWithoutExtensions() {
 				...iconCategories.map(
 					cat => ({
 						...cat,
+						displayName: cat.category[0].toUpperCase() + cat.category.slice(1),
 						icons: json.icons
 							.filter(icon => icon.indexOf(cat.category) === 0)
 							.map(icon => icon.replace('.svg', ''))
@@ -51,6 +52,8 @@ function rewriteManifestWithoutExtensions() {
 				),
 				{
 					category: 'etc',
+					displayName: 'Etc',
+					last: true,
 					icons: json.icons
 					.filter(icon => iconCategories.every(cat => icon.indexOf(cat.category) !== 0))
 					.map(icon => icon.replace('.svg', ''))
