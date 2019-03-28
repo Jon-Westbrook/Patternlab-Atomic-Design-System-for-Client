@@ -22,8 +22,10 @@ The trigger button should not normally be a part of the modal code. --}}
               <h1 class="primary-3">{{ heading-page }}</h1>
               <div class="ml-auto">
                 {{# btns-desktop-top }}
-                <button type="{{ type }}" form="{{ form }}" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
-                  aria-label="{{ aria-label }}">{{ btn-copy }}</button>
+                <button type="{{ type }}" form="{{ form }}" class="ml-4 {{ classes }}"
+                  data-dismiss="{{ data-dismiss }}"
+                  aria-label="{{ aria-label }}"
+                  {{#disabled}}disabled{{/disabled}}>{{ btn-copy }}</button>
                 {{/ btns-desktop-top }}
               </div>
             </div>
@@ -118,8 +120,10 @@ The trigger button should not normally be a part of the modal code. --}}
                   <div class="col-md-10 offset-md-1 d-flex">
                     <div class="ml-auto">
                       {{# btns-desktop-bottom }}
-                      <button type="button" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
-                        aria-label="{{ aria-label }}">{{ btn-copy }}</button>
+                      <button type="button" class="ml-4 {{ classes }}"
+                        data-dismiss="{{ data-dismiss }}"
+                        aria-label="{{ aria-label }}"
+                        {{#disabled}}disabled{{/disabled}}>{{ btn-copy }}</button>
                       {{/ btns-desktop-bottom }}
                     </div>
                   </div>

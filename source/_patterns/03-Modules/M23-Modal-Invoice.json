@@ -38,19 +38,19 @@
   ],
   "btns-desktop-top": [
     {
-      "classes": "btn btn-dark-outline cancel",
+      "classes": "btn btn-secondary btn-dark cancel",
       "data-dismiss": "modal",
       "aria-label": "cancel",
       "btn-copy": "Cancel"
     },
     {
-      "classes": "btn btn-dark-outline invoice-save-draft",
+      "classes": "btn btn-secondary btn-dark invoice-save-draft",
       "data-dismiss": "",
       "aria-label": "Save Draft",
       "btn-copy": "Save Draft"
     },
     {
-      "classes": "btn btn-dark-outline pills-edit-tab",
+      "classes": "btn btn-secondary btn-dark pills-edit-tab",
       "data-toggle": "pill",
       "href": "#pills-edit",
       "aria-label": "Edit ",
@@ -78,19 +78,19 @@
   ],
   "btns-desktop-bottom": [
     {
-      "classes": "btn btn-outline cancel",
+      "classes": "btn btn-secondary cancel",
       "data-dismiss": "modal",
       "aria-label": "cancel",
       "btn-copy": "Cancel"
     },
     {
-      "classes": "btn btn-outline invoice-save-draft",
+      "classes": "btn btn-secondary invoice-save-draft",
       "data-dismiss": "",
       "aria-label": "Save Draft",
       "btn-copy": "Save Draft"
     },
     {
-      "classes": "btn btn-outline pills-edit-tab",
+      "classes": "btn btn-secondary pills-edit-tab",
       "data-toggle": "pill",
       "href": "#pills-edit",
       "aria-label": "Edit ",
