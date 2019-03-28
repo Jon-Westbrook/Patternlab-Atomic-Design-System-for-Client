@@ -163,11 +163,6 @@
               z-index: 999;
             }
           }
-          .preview-logo {
-            max-width: 140px;
-            @include media-breakpoint-up(md) {
-            }
-          }
           .dollar-wrapper {
             position: relative;
             &:before {
@@ -215,4 +210,9 @@
       }
     }
   }
+}
+
+// Fixes Modal Invoice Preview Logo on the Component Level
+.preview-logo {
+  max-width: 140px;
 }
