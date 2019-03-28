@@ -52,6 +52,10 @@
     background-color: $primary-3;
     border-color: $gray-border;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .was-validated .custom-select:invalid,
@@ -83,6 +87,10 @@
     background-color: $primary-3;
     border-color: $gray-border;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .custom-checkbox,
@@ -100,6 +108,10 @@
     background-color: $white;
     border: 1px solid $gray-border;
     border-radius: 2px;
+  }
+  .custom-control-input:not(:disabled) + .custom-control-label:hover {
+    // not disabled, hover state cursor
+    cursor: pointer;
   }
   .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
     border: 1px solid $gray-border;
@@ -135,6 +147,10 @@
     background-color: $white;
     border: 1px solid $gray-border;
     border-radius: 100%;
+  }
+  .custom-control-input:not(:disabled) + .custom-control-label:hover {
+    // not disabled, hover state cursor
+    cursor: pointer;
   }
   .custom-control-input:not(:disabled):active + .custom-control-label::before {
     border: 1px solid $gray-border;
