@@ -13,13 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Trigger Modal Automagically, can be removed
   // $("#newSale").modal("show");
 
-  // Reporting - Update the Button Copy after Selecting a Dropdown Item
-  $(".contextual a").click(updatedButtonCopy);
-  function updatedButtonCopy() {
-    $(".contextual-btn").text($(this).text());
-    $(".contextual-btn").val($(this).text());
-  }
-
   // Animate modal headers when loaded
   $(".modal-full").on("shown.bs.modal", event => {
     modals.animateModalHeader(event.currentTarget);
