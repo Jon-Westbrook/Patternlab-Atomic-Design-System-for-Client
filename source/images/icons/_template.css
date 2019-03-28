@@ -1,0 +1,6 @@
+.icon-{{ className }} {
+	background-image: url("{{ dataURISchema }}");
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

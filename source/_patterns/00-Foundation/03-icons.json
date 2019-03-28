@@ -1,0 +1,30 @@
+{
+  "icons": [{
+    "category": "account",
+    "displayName": "Account",
+    "icons": ["account-business", "account-help", "account-note", "account-personal", "account-support", "account-tasks"]
+  }, {
+    "category": "general",
+    "displayName": "General",
+    "icons": ["general-add", "general-arrow", "general-calendar", "general-chat", "general-close", "general-edit", "general-export", "general-filter", "general-menu-dropdown", "general-move", "general-print", "general-quote", "general-remove"]
+  }, {
+    "category": "nav",
+    "backgroundColor": "primary-1",
+    "textColor": "primary-3",
+    "displayName": "Nav",
+    "icons": ["nav-account-active", "nav-account", "nav-customers-active", "nav-customers", "nav-home-active", "nav-home", "nav-invoices-active", "nav-invoices", "nav-reporting-active", "nav-reporting", "nav-support-active", "nav-support", "nav-virtualterminal-active", "nav-virtualterminal"]
+  }, {
+    "category": "payment",
+    "displayName": "Payment",
+    "icons": ["payment-deposits", "payment-fraud", "payment-invoice", "payment-payment", "payment-refund-resend", "payment-sales", "payment-send", "payment-virtual-terminal"]
+  }, {
+    "category": "support",
+    "displayName": "Support",
+    "icons": ["support-basics", "support-billing", "support-disputes", "support-security", "support-transactions", "support-transfers"]
+  }, {
+    "category": "etc",
+    "displayName": "Etc",
+    "last": true,
+    "icons": ["arrow-left", "close-gray", "handle-reorder", "note"]
+  }]
+}
