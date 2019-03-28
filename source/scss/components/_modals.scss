@@ -186,6 +186,13 @@
               margin-top: 35px;
             }
           }
+          .edit-card-img {
+            height: 28px;
+            @include media-breakpoint-up(md) {
+              height: 26px;
+              margin-top: 30px;
+            }
+          }
           .optional {
             letter-spacing: 0;
           }

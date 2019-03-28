@@ -52,6 +52,10 @@
     @include media-breakpoint-only(lg) {
       height: 263px;
     }
+    .card-thumb {
+      width: 31px;
+      height: 28px;
+    }
   }
   .address {
     height: 44px;
