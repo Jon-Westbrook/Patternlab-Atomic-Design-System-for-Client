@@ -246,6 +246,7 @@
 .ui-datepicker-trigger {
   border: $input-border-width solid $input-focus-border-color;
   border-left: 0;
+  background-color: $white;
   width: 50px;
   cursor: pointer;
   &:focus {
