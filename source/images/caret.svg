@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="5_T7_Customer-Profile@2x" transform="translate(-517.000000, -165.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+            <g id="Header" transform="translate(215.000000, 122.000000)">
+                <polyline id="arrow" points="304 45 311.079468 53 318 45"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
