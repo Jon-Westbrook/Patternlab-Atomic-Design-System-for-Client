@@ -14,7 +14,7 @@
     width: 100%;
     overflow: hidden;
     max-height: 0; /* 1 */
-    background: $pl-color-black;
+    background: transparent;
     display: flex;
     flex-direction: column;
     transition: max-height $pl-animate-quick ease-out;
@@ -91,7 +91,6 @@
   @include linkStyle();
 }
 
-
 /**
  * Nav sublink
  * 1) Visually differentiate sub-item links from
@@ -110,7 +109,7 @@
      * Dropdown caret after accordion handle
      */
   &:after {
-    content: '\25bc';
+    content: "\25bc";
     color: $pl-color-gray-02;
     display: inline-block;
     font-size: 9px;
