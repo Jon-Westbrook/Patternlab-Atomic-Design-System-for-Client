@@ -95,6 +95,7 @@
             width: 40px;
             right: -30px;
             top: 4px;
+            z-index: 1025;
           }
         }
         @include media-breakpoint-up(md) {
