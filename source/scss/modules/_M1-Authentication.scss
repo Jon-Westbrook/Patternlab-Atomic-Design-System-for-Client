@@ -11,11 +11,16 @@
     -ms-user-select: none;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     background-image: url("../../images/bg-authentication.svg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: unset;
   }
 
   .login-invalid-text {
