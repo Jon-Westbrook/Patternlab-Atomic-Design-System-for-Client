@@ -11,10 +11,16 @@
     -ms-user-select: none;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     background-image: url("../../images/bg-authentication.svg");
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: right -10rem center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: unset;
     background-position: right;
   }
 
