@@ -18,6 +18,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary-3;
+    z-index: 1019;
+  }
+}
+
 @include media-breakpoint-down(md) {
   .container:not(.lightbox) {
     width: 90%;

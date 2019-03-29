@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Animate modal headers when loaded
   $(".modal-full").on("shown.bs.modal", event => {
     modals.animateModalHeader(event.currentTarget);
+
+    // Focus First Input - too specific currently, needs extending for all modals
+    // $("#validationCustom01").trigger("focus");
   });
 
   // Toggle Filter Bar on Mobile
