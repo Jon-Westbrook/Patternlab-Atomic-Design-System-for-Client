@@ -47,6 +47,11 @@
 
 // Full Screen Modal Variant
 .modal-full {
+  position: fixed;
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+  }
   .modal-dialog {
     max-width: none;
     margin: 0;
@@ -59,7 +64,6 @@
     .modal-content {
       border: 0;
       border-radius: 0;
-      background-color: transparent;
       .mini-header {
         display: none;
         position: fixed;
@@ -74,23 +78,13 @@
         }
       }
       .modal-header {
-        position: relative;
-        z-index: 1025;
-        height: 50px;
-        width: 100%;
-        border: 0;
-        background-color: $primary-2;
-        transition: $transition-modal-animation;
-        .heading-row {
-          z-index: 1020;
-        }
-
-        @include media-breakpoint-up(md) {
-          z-index: 1020;
-          height: 170px;
-        }
         @include media-breakpoint-down(sm) {
-          position: fixed;
+          z-index: 1025;
+          height: 50px;
+          width: 100%;
+          border: 0;
+          background-color: $primary-2;
+          transition: $transition-modal-animation;
           .ellipse-button {
             position: absolute;
             background-image: url("../../images/more.svg");
@@ -103,6 +97,14 @@
             top: 4px;
           }
         }
+        @include media-breakpoint-up(md) {
+          z-index: 1020;
+          height: 170px;
+          position: relative;
+        }
+        .heading-row {
+          z-index: 1020;
+        }
         .header-img {
           position: absolute;
           height: 100%;
@@ -113,9 +115,17 @@
           z-index: 900;
         }
       }
+
       .modal-body {
-        background-color: $primary-3;
-        height: 100vh;
+        @include media-breakpoint-down(sm) {
+          height: calc(100vh + 40px);
+          overflow-y: auto;
+          padding-bottom: 0;
+          .container {
+            background-color: $primary-3;
+            width: 100%;
+          }
+        }
         @include media-breakpoint-up(md) {
           background-color: transparent;
         }
@@ -137,10 +147,8 @@
         .mainBox {
           background: $primary-3;
           position: relative;
-          padding-left: 0;
-          padding-right: 0;
           border-radius: 0;
-          margin-top: 50px;
+          // margin-top: 50px;
           z-index: 1020;
           @include media-breakpoint-up(md) {
             margin-top: -30px;
