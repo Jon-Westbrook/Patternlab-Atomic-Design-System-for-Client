@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // $("#validationCustom01").trigger("focus");
   });
 
+  // Hide the Carousel on Close
+  $(".caro-close").on("click", util.hideCarousel);
+
   // Toggle Filter Bar on Mobile
   $(".dates-toggle").on("click", util.toggleDates);
 

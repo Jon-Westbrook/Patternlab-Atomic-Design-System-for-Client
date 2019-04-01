@@ -9,6 +9,12 @@
     #e74683 100%,
     #c86dd7 100%
   );
+  .caro-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+  }
   .carousel-indicators > li {
     border-radius: 50%;
     opacity: 1;

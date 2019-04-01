@@ -21,4 +21,9 @@ export const bootstrapBreakpoints = {
   md: 768,
   lg: 992,
   xl: 1200
+};
+
+// Close the Carousel
+export function hideCarousel() {
+  $(".carousel-home-cont").fadeOut(200);
 }
