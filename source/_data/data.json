@@ -411,7 +411,7 @@
             "heading": "Card on File",
             "card-on-file": true,
             "card-label": "Card Number 1",
-            "card-thumb": "../../images/cards/MC_Credit.png",
+            "card-thumb": "../../images/cards/MC_Credit@2x.png",
             "pre-pop-exp": "12/2021",
             "pre-pop-code": "123",
             "pre-pop-card": 2510448545873241,
@@ -422,7 +422,7 @@
           {
             "card-on-file": true,
             "card-label": "Card Number 2",
-            "card-thumb": "../../images/cards/Visa_Debit.png",
+            "card-thumb": "../../images/cards/Visa_Debit@2x.png",
             "pre-pop-exp": "12/2099",
             "pre-pop-code": "999",
             "pre-pop-card": "2510448545873241",
@@ -505,7 +505,7 @@
         "city": "New York",
         "state-abbrv": "NY",
         "zip": "60630",
-        "card-thumb": "../../images/cards/MC_Credit.png"
+        "card-thumb": "../../images/cards/MC_Credit@2x.png"
       },
       {
         "firstName": "Ashley",
@@ -518,7 +518,7 @@
         "city": "Rancho Santa Margarita",
         "state-abbrv": "NY",
         "zip": "60630-4532",
-        "card-thumb": "../../images/cards/Discover_Credit.png"
+        "card-thumb": "../../images/cards/Discover_Credit@2x.png"
       }
     ],
     "billing-plans": [
