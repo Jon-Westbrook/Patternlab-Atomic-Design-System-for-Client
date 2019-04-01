@@ -118,28 +118,28 @@ export const initReportingDepositsTable = () => {
       },
       {
         targets: 1,
-        className: "text-right pr-9",
+        className: "text-right pr-6",
         responsivePriority: 1,
         width: '25%',
         render: renderPrice
       },
       {
         targets: 2,
-        className: "pl-5",
+        className: "pl-7",
         render: renderDate,
         responsivePriority: 2,
         width: '25%'
       },
       {
         targets: 3,
-        className: "text-right pr-9",
+        className: "text-right pr-6",
         responsivePriority: 3,
         width: '25%',
         render: renderPrice
       },
       {
         targets: 4,
-        className: "pl-5",
+        className: "pl-6",
         responsivePriority: 4,
         width: '15%'
       },
