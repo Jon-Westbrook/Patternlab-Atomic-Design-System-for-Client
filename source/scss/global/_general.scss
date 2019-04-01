@@ -19,22 +19,19 @@ body {
 }
 
 .modal-open {
-  overflow: hidden;
-  position: fixed;
-  transition: $transition-base;
-  // @include media-breakpoint-down(sm) {
-  //   &:after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     background-color: $primary-3;
-  //     z-index: 1021;
-  //     transition: $transition-base;
-  //   }
-  // }
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary-3;
+      z-index: 1021;
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {
