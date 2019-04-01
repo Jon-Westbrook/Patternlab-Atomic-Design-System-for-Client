@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="42px" viewBox="0 0 41 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>chat icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 41 0 41 42 0 42"></polygon>
+    </defs>
+    <g id="chat-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3-Copy" transform="translate(20.500000, 21.000000) scale(-1, 1) translate(-20.500000, -21.000000) ">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M32.44945,42 C32.04355,42 31.64175,41.8340834 31.3486,41.5232523 L22.83085,32.5616562 C22.2384,31.9378938 22.24865,30.940294 22.8575,30.3333333 C23.47045,29.7284728 24.4442,29.7410741 25.03255,30.3627363 L30.91195,36.549955 L30.91195,31.4611461 C30.91195,30.5916592 31.60075,29.8859886 32.44945,29.8859886 L37.925,29.8859886 L37.925,3.15031503 L3.075,3.15031503 L3.075,29.8859886 L17.34095,29.8859886 C18.18965,29.8859886 18.87845,30.5916592 18.87845,31.4611461 C18.87845,32.3306331 18.18965,33.0363036 17.34095,33.0363036 L1.5375,33.0363036 C0.6888,33.0363036 0,32.3306331 0,31.4611461 L0,1.57515752 C0,0.705670567 0.6888,0 1.5375,0 L39.4625,0 C40.3112,0 41,0.705670567 41,1.57515752 L41,31.4611461 C41,32.3306331 40.3112,33.0363036 39.4625,33.0363036 L33.98695,33.0363036 L33.98695,40.4248425 C33.98695,41.0654065 33.6077,41.6429643 33.02755,41.8844884 C32.841,41.9621962 32.6442,42 32.44945,42" id="Fill-1" fill="#4F3D93" mask="url(#mask-2)"></path>
+        </g>
+        <circle id="Oval" fill="#4F3D93" fill-rule="nonzero" cx="12" cy="17" r="3"></circle>
+        <circle id="Oval" fill="#4F3D93" fill-rule="nonzero" cx="21" cy="17" r="3"></circle>
+        <circle id="Oval" fill="#4F3D93" fill-rule="nonzero" cx="30" cy="17" r="3"></circle>
+    </g>
+</svg>
