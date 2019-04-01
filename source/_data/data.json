@@ -285,6 +285,7 @@
           {
             "heading": "Card on File",
             "card-on-file": true,
+            "card-label": "Card number",
             "card-thumb": "../../images/cards/card-icons.png"
           },
           {
