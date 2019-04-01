@@ -186,7 +186,7 @@
     }
   ],
   "chat": {
-    "bubble": "../../images/icons/general-chat.svg",
+    "bubble": "../../images/chat-purple.svg",
     "title": "Can’t find what you’re looking for?",
     "wait-copy": "Current wait time is",
     "wait-time": "2 Minutes",
