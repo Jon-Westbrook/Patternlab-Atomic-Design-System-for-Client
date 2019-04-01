@@ -232,3 +232,11 @@
 .preview-logo {
   max-width: 140px;
 }
+
+
+.modal-button-bottom {
+  @include media-breakpoint-only(xs) {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
