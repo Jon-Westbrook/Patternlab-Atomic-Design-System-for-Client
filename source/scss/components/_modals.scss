@@ -197,6 +197,7 @@
           }
           .edit-card-img {
             height: 28px;
+            box-shadow: 1px 3px 3px 0px #e7e8ed;
             @include media-breakpoint-up(md) {
               height: 26px;
               margin-top: 30px;
@@ -232,7 +233,6 @@
 .preview-logo {
   max-width: 140px;
 }
-
 
 .modal-button-bottom {
   @include media-breakpoint-only(xs) {
