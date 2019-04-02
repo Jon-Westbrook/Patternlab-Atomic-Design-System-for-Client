@@ -191,8 +191,8 @@ export function addInvoiceEditTableRow() {
       invoiceTableRowCounter,
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
       '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
       '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
     ])
