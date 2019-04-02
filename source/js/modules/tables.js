@@ -135,7 +135,7 @@ export const initReportingDepositsTable = () => {
         className: "text-right pr-6",
         responsivePriority: 3,
         width: '25%',
-        render: renderPrice
+        render: renderPriceBasic
       },
       {
         targets: 4,
@@ -322,6 +322,14 @@ function renderArrowLink(linkPrefix, txid) {
 function renderPrice(data, type) {
   if (type === 'display') {
     return `<span class=\"medium secondary-6\">$${data}</span>`
+  } else {
+    return data
+  }
+}
+
+function renderPriceBasic(data, type) {
+  if (type === 'display') {
+    return `<span>$${data}</span>`
   } else {
     return data
   }
