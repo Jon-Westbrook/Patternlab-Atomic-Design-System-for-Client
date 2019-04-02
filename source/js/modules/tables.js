@@ -35,7 +35,7 @@ export const invoiceEditTable = $("#invoice-edit-table").DataTable({
   searching: false,
   paging: false,
   rowReorder: {
-    selector: "td:last-child"
+    selector: ".handle-reorder"
   },
   info: false,
   columnDefs: [
@@ -193,8 +193,8 @@ export function addInvoiceEditTableRow() {
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
-      '<a href=""class="d-inline-block icon-delete"><img src="../../images/icons/close-gray.svg"></a>',
-      '<a href=""class="d-inline-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
+      '<a href=""class="d-block"><img src="../../images/icons/close-gray.svg"></a>',
+      '<a href=""class="d-block"><img src="../../images/icons/handle-reorder.svg"></a>'
     ])
     .draw()
     .node();
