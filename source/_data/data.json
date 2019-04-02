@@ -286,6 +286,7 @@
             "heading": "Card on File",
             "card-on-file": true,
             "card-label": "Card number",
+            "card-class": "multiple",
             "card-thumb": "../../images/cards/card-icons@2x.png"
           },
           {
@@ -411,6 +412,7 @@
             "heading": "Card on File",
             "card-on-file": true,
             "card-label": "Card Number 1",
+            "card-class": "single",
             "card-thumb": "../../images/cards/MC_Credit@2x.png",
             "pre-pop-exp": "12/2021",
             "pre-pop-code": "123",
@@ -422,6 +424,7 @@
           {
             "card-on-file": true,
             "card-label": "Card Number 2",
+            "card-class": "single",
             "card-thumb": "../../images/cards/Visa_Debit@2x.png",
             "pre-pop-exp": "12/2099",
             "pre-pop-code": "999",

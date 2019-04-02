@@ -196,11 +196,20 @@
             }
           }
           .edit-card-img {
-            height: 28px;
-            box-shadow: 1px 3px 4px 0px #e7e8ed;
-            @include media-breakpoint-up(md) {
-              height: 26px;
-              margin-top: 30px;
+            &.single {
+              height: 28px;
+              box-shadow: 1px 3px 4px 0px #e7e8ed;
+              @include media-breakpoint-up(md) {
+                height: 36px;
+                margin-top: 30px;
+              }
+            }
+            &.multiple {
+              height: 28px;
+              @include media-breakpoint-up(md) {
+                height: 30px;
+                margin-top: 33px;
+              }
             }
           }
           .optional {
