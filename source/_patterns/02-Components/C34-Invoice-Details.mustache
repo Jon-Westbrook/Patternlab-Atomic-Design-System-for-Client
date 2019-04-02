@@ -15,15 +15,14 @@
     <div class="form-row px-0">
       <div class="form-group col-md-6 mb-3">
         <label for="validationCustom02" class="primary-2">Invoice ID</label>
-        <input type="number" class="form-control" id="validationCustom02" aria-describedby="validationCustom02"
-          required>
+        <input type="text" class="form-control" id="validationCustom02" aria-describedby="validationCustom02" required>
         <div class="valid-feedback">
           Looks good!
         </div>
       </div>
     </div>
     <div class="form-row">
-      <div class="form-group col-md-6 mb-3">
+      <div class="form-group col-md-5 mb-3">
         <label for="validationCustom05" class="primary-2">Frequency</label>
         <select id="inputState" class="custom-select">
           <option selected>Select...</option>
@@ -36,14 +35,13 @@
           Please provide a valid zip.
         </div>
       </div>
-      <div class="form-group col-md-6 mb-3">
-        <label for="validationCustom05" class="primary-2">Due</label>
-        <select id="inputState" class="custom-select">
-          <option selected>Select...</option>
-          <option>01/22/20</option>
-        </select>
-        <div class="invalid-feedback">
-          Please provide a valid zip.
+      <div class="form-group col-md-7 mb-3">
+        <label for="example-date-input" class="primary-2">Due</label>
+        <div class="input-group">
+          <input class="form-control custom-date date" type="text" name="date" value="Mar 28, 2019">
+          <div class="invalid-feedback">
+            Please select a valid date.
+          </div>
         </div>
       </div>
     </div>
