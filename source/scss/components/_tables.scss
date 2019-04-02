@@ -22,10 +22,22 @@
 }
 
 #invoice-edit-table {
-  td {
+  * {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .icon-delete td {
     &:first-of-type {
       padding-left: 0;
     }
+  }
+  .icon-delete,
+  .handle-reorder {
+    cursor: pointer;
   }
 }
 
