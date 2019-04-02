@@ -16,7 +16,8 @@ const reportingOptions = {
   pageLength: 25,
   searching: false,
   responsive: {
-    breakpoints: tableBreakpoints
+    breakpoints: tableBreakpoints,
+    details: false
   }
 }
 
@@ -65,8 +66,7 @@ export const initReportingSalesTable = () => {
       },
       {
         targets: 2,
-        className:
-        "pl-5",
+        className: "pl-5",
         render: renderDate,
         responsivePriority: 3
       },
