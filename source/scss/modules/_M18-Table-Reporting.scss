@@ -22,31 +22,29 @@
     min-height: 58px;
   }
   .reporting-filters {
-    .from,
-    .to {
+    .date-filters {
       @include media-breakpoint-down(md) {
         display: none;
       }
     }
+    .right-arrow {
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
     .from-date,
     .to-date {
-      @include media-breakpoint-down(md) {
-        width: 100%;
-      }
-      @include media-breakpoint-up(xl) {
-        width: 72%;
-      }
-    }
-    .right-arrow {
-      position: absolute;
-      right: -7px;
-      top: 18px;
+      width: 100%;
     }
   }
-  .export-link:hover {
-    svg g,
-    svg path {
-      fill: $secondary-5;
+  .export-link {
+    margin-left: .5rem;
+    white-space: nowrap;
+
+    &:hover {
+      svg g,
+      svg path {
+        fill: $secondary-5;
+      }
     }
   }
 }
