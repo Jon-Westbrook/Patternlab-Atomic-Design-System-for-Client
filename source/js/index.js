@@ -39,9 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Datatables - Init Invoice Modal Preview Table
-  tables.initInvoicePreviewTable();
-
   // Datatables - Init Reporting Sales Table
   tables.initReportingSalesTable();
 
@@ -98,6 +95,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "shown.bs.modal",
     tables.adjustTableColumnsWidths
   );
+
+  $('#customerCreateInvoice')
+    .find('.nav-pills [data-toggle]')
+    .on(
+      "shown.bs.tab",
+      tables.adjustTableColumnsWidths
+    );
 
   // Add a row in Invoice Table
   $(".add-additional").on("click", tables.addInvoiceEditTableRow);

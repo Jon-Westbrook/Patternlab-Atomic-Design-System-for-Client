@@ -743,7 +743,21 @@
             "sections": [
               {
                 "invoice-preview": true,
-                "heading": "Profile Information"
+                "heading": "Profile Information",
+                "data-rows": [
+                  {
+                    "item-name": "Lorem ipsum lorem ipsum",
+                    "quantity": 10,
+                    "price": 999.99,
+                    "total": 999.99
+                  },
+                  {
+                    "item-name": "Lorem ipsum lorem ipsum",
+                    "quantity": 10,
+                    "price": 999.99,
+                    "total": 999.99
+                  }
+                ]
               }
             ]
           }

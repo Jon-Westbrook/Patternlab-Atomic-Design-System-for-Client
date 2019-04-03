@@ -63,18 +63,14 @@
         </tr>
       </thead>
       <tbody>
+        {{#data-rows}}
         <tr>
-          <td class="py-2 pr-1">Lorem ipsum lorem ipsum</td>
-          <td class="py-2 pr-1">10</td>
-          <td class="py-2 pr-1">$999.99</td>
-          <td class="py-2 pr-1">$999.99</td>
+          <td class="py-2 pr-1">{{ item-name }}</td>
+          <td class="py-2 pr-1">{{ quantity }}</td>
+          <td class="py-2 pr-1">${{ price }}</td>
+          <td class="py-2 pr-1">${{ total }}</td>
         </tr>
-        <tr>
-          <td class="py-2 pr-1">Lorem ipsum lorem ipsum</td>
-          <td class="py-2 pr-1">10</td>
-          <td class="py-2 pr-1">$999.99</td>
-          <td class="py-2 pr-1">$999.99</td>
-        </tr>
+        {{/data-rows}}
       </tbody>
     </table>
   </div>
