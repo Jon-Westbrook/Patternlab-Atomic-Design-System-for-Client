@@ -48,7 +48,14 @@
     height: 9px;
     width: 9px;
   }
+  .card-container {
+    flex: 1 1 auto;
+    max-width: 550px;
+    padding: 0 1rem;
+    width: 415px;
+  }
   .card {
+
     @include media-breakpoint-only(lg) {
       height: 263px;
     }
