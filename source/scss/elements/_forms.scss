@@ -255,6 +255,90 @@
   }
 }
 
+.ui-datepicker {
+  font-family: $font-family-sans-serif;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: 0;
+}
+
+.ui-datepicker-header {
+  background-color: $primary-2;
+  border-radius: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-width: 0;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.ui-datepicker-title {
+  color: $white;
+}
+
+.ui-datepicker-calendar {
+  border-width: 0;
+
+  th {
+    // padding-bottom: .5em;
+    // padding-top: .9em;
+    font-size: $display7-size-xs;
+    line-height: $display7-line-height-xs;
+    font-weight: 600;
+    font-family: $font-family-sans-serif;
+    @include media-breakpoint-only(sm) {
+      font-size: $display7-size-sm;
+      line-height: $display7-line-height-sm;
+    }
+    @include media-breakpoint-only(md) {
+      font-size: $display7-size-md;
+      line-height: $display7-line-height-md;
+    }
+    @include media-breakpoint-only(lg) {
+      font-size: $display7-size-lg;
+      line-height: $display7-line-height-lg;
+    }
+    @include media-breakpoint-only(xl) {
+      font-size: $display7-size-xl;
+      line-height: $display7-line-height-xl;
+    }
+  }
+
+  tbody tr {
+    padding-bottom: 2px;
+    padding-top: 2px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $gray-border;
+    }
+  }
+
+  td {
+
+    &:hover {
+      background: $gray-light !important;
+    }
+
+    a {
+      background: none !important;
+      border: 0 !important;
+      padding-bottom: .3em;
+      padding-top: .3em;
+      text-align: center;
+
+      .ui-state-active {
+        background: none !important;
+      }
+    }
+
+    &.ui-datepicker-current-day {
+      background: $secondary-4 !important;
+      font-weight: 500;
+    }
+  }
+}
+
+
 .calendar-button {
   cursor: pointer;
   border: $input-border-width solid $input-focus-border-color;
