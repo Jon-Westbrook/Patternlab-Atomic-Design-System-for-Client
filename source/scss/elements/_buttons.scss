@@ -80,6 +80,15 @@
   }
 }
 
+.btn-lightbox {
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  .active:not(:disabled), {
+    background-color: $white;
+    color: $secondary-4;
+  }
+}
+
 .btn-filter {
   color: $secondary-4;
   height: calc(2.375rem + 2px);
