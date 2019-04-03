@@ -85,7 +85,8 @@ export const initReportingSalesTable = () => {
       },
       {
         targets: 6,
-        responsivePriority: 5
+        responsivePriority: 5,
+        render: renderStatus
       },
       {
         targets: 7,
@@ -347,5 +348,17 @@ function renderNameAndEmail(data, type, row, meta) {
 
     // causes first name > last name sort
     return data.name
+  }
+}
+
+function renderStatus(data, type) {
+  if (type === 'display') {
+    if (data === 'Funded') {
+      return 'Funded&nbsp;<img src="../../images/checkmark-green.svg">'
+    } else {
+      return data
+    }
+  } else {
+    return data
   }
 }
