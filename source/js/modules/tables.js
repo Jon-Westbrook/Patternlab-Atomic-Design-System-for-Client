@@ -163,18 +163,6 @@ export const initReportingDepositsTable = () => {
   });
 };
 
-// Build Modal Invoice Preview Table
-export function initInvoicePreviewTable() {
-  $("#invoice-preview-table").DataTable({
-    scrollX: false,
-    ordering: false,
-    searching: false,
-    paging: false,
-    info: false,
-    autoWidth: true
-  });
-}
-
 // Remove Modal Invoice Edit Row
 export function rmInvoiceEditTableRow() {
   invoiceEditTable
