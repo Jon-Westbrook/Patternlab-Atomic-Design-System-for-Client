@@ -177,6 +177,8 @@ export function initInvoicePreviewTable() {
 
 // Remove Modal Invoice Edit Row
 export function rmInvoiceEditTableRow() {
+  console.log($(this).parents("tr"));
+
   invoiceEditTable
     .row($(this).parents("tr"))
     .remove()
@@ -190,19 +192,26 @@ export function addInvoiceEditTableRow() {
   var rowNode = invoiceEditTable.row
     .add([
       invoiceTableRowCounter,
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="New row">',
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
-      '<a href=""class="d-block"><img src="../../images/icons/close-gray.svg"></a>',
-      '<a href=""class="d-block"><img src="../../images/icons/handle-reorder.svg"></a>'
+      '<a href="javascript:;" class="d-block icon-delete"><img src="../../images/icons/close-gray.svg"></a></td>',
+      '<a href="javascript:;" class="d-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
     ])
     .draw()
     .node();
   invoiceTableRowCounter += 1;
-  $(rowNode)
-    .css("color", "red")
-    .animate({ color: "black" });
+  $("#invoice-edit-table tbody").off(
+    "click",
+    ".icon-delete",
+    rmInvoiceEditTableRow
+  );
+  $("#invoice-edit-table tbody").on(
+    "click",
+    ".icon-delete",
+    rmInvoiceEditTableRow
+  );
 }
 
 // Resize Table Rows
