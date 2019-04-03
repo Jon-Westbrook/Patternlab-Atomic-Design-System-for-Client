@@ -131,19 +131,20 @@
           background-color: transparent;
         }
         &::before {
+          content: "";
           background-image: url("../../images/modal-pattern.svg");
           background-color: $gray-lightest;
           background-repeat: no-repeat;
-          background-position: center top;
-          background-size: cover;
-          content: "";
-          height: 100%;
-          left: 0;
+          background-attachment: fixed;
           position: fixed;
           top: 0;
-          width: 100%;
-          will-change: transform;
-          z-index: -1;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-position: center top;
+          background-size: cover;
+
+          // will-change: transform;
         }
         .mainBox {
           background: $primary-3;
