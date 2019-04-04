@@ -186,12 +186,11 @@ export function addRow(currentTable) {
 }
 
 // Remove Modal Invoice Edit Row
-// export function rmRow(currentTable) {
-//   currentTable
-//       .row($(this).parents("tr"))
-//       .remove()
-//       .draw();
-// }
+export function removeRow(table, row) {
+  table.row(row)
+    .remove()
+    .draw();
+}
 
 // Resize Table Rows
 export function adjustTableColumnsWidths() {
