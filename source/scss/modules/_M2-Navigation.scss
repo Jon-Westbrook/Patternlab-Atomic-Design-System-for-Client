@@ -186,6 +186,16 @@ a[data-toggle="collapse"] {
   min-height: 100vh;
   transition: $transition-base;
   z-index: 1000;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 // Prevent body content from scrolling when sidebar is open

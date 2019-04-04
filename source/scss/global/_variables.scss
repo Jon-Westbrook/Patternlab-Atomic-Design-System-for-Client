@@ -213,9 +213,9 @@ $link-color: $secondary-4 !default;
 
 $container-max-widths: (
   sm: 729px,
-  md: 730px,
-  lg: 800px,
-  xl: 1010px
+  md: 830px,
+  lg: 1000px,
+  xl: 1600px
 ) !default;
 
 // @include _assert-ascending($container-max-widths, "$container-max-widths");

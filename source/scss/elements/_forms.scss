@@ -276,6 +276,42 @@
   color: $white;
 }
 
+.ui-datepicker-prev {
+  left: 2px !important;
+  opacity: .8;
+  top: 2px !important;
+
+  &.ui-state-hover {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .ui-icon {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='6px' height='11px' viewBox='0 0 6 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Component-Library' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-10.000000, -3.000000)' fill='%23FFFFFF'%3E%3Cg id='arrow-(1)' transform='translate(12.500000, 8.500000) scale(-1, 1) translate(-12.500000, -8.500000) translate(9.000000, 3.000000)'%3E%3Cpolygon id='Path' points='0.83 10.43 0 9.6 4.39 5.22 0 0.83 0.83 0 6.05 5.22'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center center;
+  }
+}
+
+.ui-datepicker-next {
+  opacity: .8;
+  right: 2px !important;
+  top: 2px !important;
+
+  &.ui-state-hover {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .ui-icon {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='6px' height='11px' viewBox='0 0 6 11' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Component-Library' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-9.000000, -3.000000)' fill='%23FFFFFF'%3E%3Cg id='arrow-(1)' transform='translate(9.000000, 3.000000)'%3E%3Cpolygon id='Path' points='0.83 10.43 0 9.6 4.39 5.22 0 0.83 0.83 0 6.05 5.22'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center center;
+  }
+}
+
 .ui-datepicker-calendar {
   border-width: 0;
 
