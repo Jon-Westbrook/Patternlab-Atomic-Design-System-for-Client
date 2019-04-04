@@ -32,6 +32,7 @@ const reportingAjaxOption = url => ({
 export const invoiceEditTable = $("#invoice-edit-table").DataTable({
   scrollX: true,
   scrollCollapse: true,
+  ordering: false,
   searching: false,
   paging: false,
   rowReorder: {
@@ -180,7 +181,7 @@ export function addInvoiceEditTableRow() {
   var rowNode = invoiceEditTable.row
     .add([
       invoiceTableRowCounter,
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="New row">',
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
