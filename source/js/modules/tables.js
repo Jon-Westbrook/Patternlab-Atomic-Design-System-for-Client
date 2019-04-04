@@ -28,26 +28,28 @@ const reportingAjaxOption = url => ({
   }
 })
 
+
 // Datatables - Init Edit Preview Table
-export const invoiceEditTable = $("#invoice-edit-table").DataTable({
-  scrollX: true,
-  scrollCollapse: true,
-  ordering: false,
-  searching: false,
-  paging: false,
-  rowReorder: {
-    selector: ".handle-reorder"
-  },
-  info: false,
-  columnDefs: [
-    { orderable: false, targets: "_all" },
-    { targets: 0, visible: false },
-    { targets: 1, width: '30%' },
-    { targets: 2, width: '15%' },
-    { targets: 3, width: '25%' },
-    { targets: 4, width: '25%' }
-  ]
-});
+export const initInvoiceEditTable = () => {
+  return $("#invoice-edit-table").DataTable({
+    scrollX: true,
+    searching: false,
+    ordering: false,
+    paging: false,
+    rowReorder: {
+      selector: ".handle-reorder"
+    },
+    info: false,
+    columnDefs: [
+      { orderable: false, targets: "_all" },
+      { targets: 0, visible: false },
+      { targets: 1, width: '30%' },
+      { targets: 2, width: '15%' },
+      { targets: 3, width: '25%' },
+      { targets: 4, width: '25%' }
+    ]
+  });
+}
 
 // Build Reporting Sales Table
 export const initReportingSalesTable = () => {
@@ -164,21 +166,13 @@ export const initReportingDepositsTable = () => {
   });
 };
 
-// Remove Modal Invoice Edit Row
-export function rmInvoiceEditTableRow() {
-  console.log($(this).parents("tr"));
 
-  invoiceEditTable
-    .row($(this).parents("tr"))
-    .remove()
-    .draw();
-}
 
 // Add Modal Invoice Edit Row
 let invoiceTableRowCounter = 0;
 
-export function addInvoiceEditTableRow() {
-  var rowNode = invoiceEditTable.row
+export function addRow(currentTable) {
+  var rowNode = currentTable.row
     .add([
       invoiceTableRowCounter,
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
@@ -191,16 +185,16 @@ export function addInvoiceEditTableRow() {
     .draw()
     .node();
   invoiceTableRowCounter += 1;
-  $("#invoice-edit-table tbody").off(
-    "click",
-    ".icon-delete",
-    rmInvoiceEditTableRow
-  );
-  $("#invoice-edit-table tbody").on(
-    "click",
-    ".icon-delete",
-    rmInvoiceEditTableRow
-  );
+
+}
+
+// Remove Modal Invoice Edit Row
+export function rmRow(currentTable) {
+  console.log(currentTable);
+  currentTable
+    .row($(this).parents("tr"))
+    .remove()
+    .draw();
 }
 
 // Resize Table Rows
