@@ -39,6 +39,18 @@
   .handle-reorder {
     cursor: pointer;
   }
+  
+  td:first-of-type {
+    padding-left: 0;
+  }
+}
+
+.dataTables_scrollHead {
+  th {
+    border-right: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 }
 
 #sales-table,

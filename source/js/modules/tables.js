@@ -29,24 +29,25 @@ const reportingAjaxOption = url => ({
 })
 
 // Datatables - Init Edit Preview Table
-export const invoiceEditTable = $("#invoice-edit-table").DataTable({
-  scrollX: true,
-  scrollCollapse: true,
-  searching: false,
-  paging: false,
-  rowReorder: {
-    selector: ".handle-reorder"
-  },
-  info: false,
-  columnDefs: [
-    { orderable: false, targets: "_all" },
-    { targets: 0, visible: false },
-    { targets: 1, width: '30%' },
-    { targets: 2, width: '15%' },
-    { targets: 3, width: '25%' },
-    { targets: 4, width: '25%' }
-  ]
-});
+export const initInvoiceEditTable = () => {
+  $("#invoice-edit-table").DataTable({
+    scrollX: true,
+    searching: false,
+    paging: false,
+    rowReorder: {
+      selector: ".handle-reorder"
+    },
+    info: false,
+    columnDefs: [
+      { orderable: false, targets: "_all" },
+      { targets: 0, visible: false },
+      { targets: 1, width: '30%' },
+      { targets: 2, width: '15%' },
+      { targets: 3, width: '25%' },
+      { targets: 4, width: '25%' }
+    ]
+  });
+}
 
 // Build Reporting Sales Table
 export const initReportingSalesTable = () => {

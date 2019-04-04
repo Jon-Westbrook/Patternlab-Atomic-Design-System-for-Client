@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Datatables - Init Reporting Deposits Table
   tables.initReportingDepositsTable();
 
+  // Datatables - Init Invoice Edit Table
+  tables.initInvoiceEditTable()
+
   // Init Datepickers Site-Wide
   forms.initDatepickers();
 
@@ -93,14 +96,23 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#deposits-tab").on("shown.bs.tab", tables.adjustTableColumnsWidths);
   $("#customerCreateInvoice").on(
     "shown.bs.modal",
-    tables.adjustTableColumnsWidths
+    function () {
+      var $transitionEl = $(this).find('.modal-dialog')
+      
+      $transitionEl.on('transitionend', function transitionHandler() {
+        setTimeout(tables.adjustTableColumnsWidths, 250)
+        $transitionEl.off('transitionend', transitionHandler)
+      })
+    }
   );
 
   $('#customerCreateInvoice')
     .find('.nav-pills [data-toggle]')
     .on(
       "shown.bs.tab",
-      tables.adjustTableColumnsWidths
+      function () {
+        tables.adjustTableColumnsWidths()
+      }
     );
 
   // Add a row in Invoice Table
