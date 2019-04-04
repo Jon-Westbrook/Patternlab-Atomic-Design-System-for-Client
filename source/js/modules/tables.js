@@ -169,12 +169,10 @@ export const initReportingDepositsTable = () => {
 
 
 // Add Modal Invoice Edit Row
-let invoiceTableRowCounter = 99;
-
 export function addRow(currentTable) {
   var rowNode = currentTable.row
     .add([
-      invoiceTableRowCounter,
+      currentTable.rows()[0].length,
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
@@ -184,7 +182,6 @@ export function addRow(currentTable) {
     ])
     .draw()
     .node();
-  invoiceTableRowCounter += 1;
 
 }
 
