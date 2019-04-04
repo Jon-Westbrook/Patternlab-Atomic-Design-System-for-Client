@@ -34,7 +34,7 @@ export const initInvoiceEditTable = () => {
   return $("#invoice-edit-table").DataTable({
     scrollX: true,
     searching: false,
-    ordering: false,
+    ordering: true,
     paging: false,
     rowReorder: {
       selector: ".handle-reorder"
@@ -169,7 +169,7 @@ export const initReportingDepositsTable = () => {
 
 
 // Add Modal Invoice Edit Row
-let invoiceTableRowCounter = 0;
+let invoiceTableRowCounter = 99;
 
 export function addRow(currentTable) {
   var rowNode = currentTable.row
@@ -190,8 +190,7 @@ export function addRow(currentTable) {
 
 // Remove Modal Invoice Edit Row
 export function rmRow(currentTable) {
-  console.log(currentTable);
-  currentTable
+  var rowNode = currentTable.row
     .row($(this).parents("tr"))
     .remove()
     .draw();
