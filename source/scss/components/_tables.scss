@@ -5,8 +5,8 @@
 
   th {
     border-right: 0;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
   }
   tr,
   td {
@@ -45,11 +45,13 @@
   }
 }
 
-.dataTables_scrollHead {
-  th {
-    border-right: 0;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+#invoice-edit-table_wrapper {
+  .dataTables_scrollHead {
+    th {
+      border-right: 0;
+      padding-bottom: .75rem;
+      padding-top: .75rem;
+    }
   }
 }
 
