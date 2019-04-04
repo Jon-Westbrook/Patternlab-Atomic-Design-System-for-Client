@@ -46,7 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
   tables.initReportingDepositsTable();
 
   // Datatables - Init Invoice Edit Table
-  tables.initInvoiceEditTable()
+  const invoiceEditTable = tables.initInvoiceEditTable();
+
+  // Add a row in Invoice Table
+  $(".add-additional").on("click", function() {
+    tables.addRow(invoiceEditTable);
+  });
+
+  // Remove Table when Modal is Shown Table Manipulations
+  $(".icon-delete").on("click", function() {
+    tables.rmRow(invoiceEditTable);
+  });
 
   // Init Datepickers Site-Wide
   forms.initDatepickers();
@@ -94,36 +104,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // Redraw Table when Modal is Shown Table Manipulations
   $("#sales-tab").on("shown.bs.tab", tables.adjustTableColumnsWidths);
   $("#deposits-tab").on("shown.bs.tab", tables.adjustTableColumnsWidths);
-  $("#customerCreateInvoice").on(
-    "shown.bs.modal",
-    function () {
-      var $transitionEl = $(this).find('.modal-dialog')
-      
-      $transitionEl.on('transitionend', function transitionHandler() {
-        setTimeout(tables.adjustTableColumnsWidths, 250)
-        $transitionEl.off('transitionend', transitionHandler)
-      })
-    }
-  );
+  $("#customerCreateInvoice").on("shown.bs.modal", function() {
+    var $transitionEl = $(this).find(".modal-dialog");
 
-  $('#customerCreateInvoice')
-    .find('.nav-pills [data-toggle]')
-    .on(
-      "shown.bs.tab",
-      function () {
-        tables.adjustTableColumnsWidths()
-      }
-    );
+    $transitionEl.on("transitionend", function transitionHandler() {
+      setTimeout(tables.adjustTableColumnsWidths, 250);
+      $transitionEl.off("transitionend", transitionHandler);
+    });
+  });
 
-  // Add a row in Invoice Table
-  $(".add-additional").on("click", tables.addInvoiceEditTableRow);
-
-  // Remove Table when Modal is Shown Table Manipulations
-  $("#invoice-edit-table tbody").on(
-    "click",
-    ".icon-delete",
-    tables.rmInvoiceEditTableRow
-  );
+  $("#customerCreateInvoice")
+    .find(".nav-pills [data-toggle]")
+    .on("shown.bs.tab", function() {
+      tables.adjustTableColumnsWidths();
+    });
 
   // Draw Homepage Chart
   homeChart.drawChart(homeChart.options);

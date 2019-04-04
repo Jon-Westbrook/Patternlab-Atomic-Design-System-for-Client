@@ -28,11 +28,13 @@ const reportingAjaxOption = url => ({
   }
 })
 
+
 // Datatables - Init Edit Preview Table
 export const initInvoiceEditTable = () => {
-  $("#invoice-edit-table").DataTable({
+  return $("#invoice-edit-table").DataTable({
     scrollX: true,
     searching: false,
+    ordering: false,
     paging: false,
     rowReorder: {
       selector: ".handle-reorder"
@@ -164,24 +166,16 @@ export const initReportingDepositsTable = () => {
   });
 };
 
-// Remove Modal Invoice Edit Row
-export function rmInvoiceEditTableRow() {
-  console.log($(this).parents("tr"));
 
-  invoiceEditTable
-    .row($(this).parents("tr"))
-    .remove()
-    .draw();
-}
 
 // Add Modal Invoice Edit Row
 let invoiceTableRowCounter = 0;
 
-export function addInvoiceEditTableRow() {
-  var rowNode = invoiceEditTable.row
+export function addRow(currentTable) {
+  var rowNode = currentTable.row
     .add([
       invoiceTableRowCounter,
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="New row">',
+      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
@@ -191,16 +185,16 @@ export function addInvoiceEditTableRow() {
     .draw()
     .node();
   invoiceTableRowCounter += 1;
-  $("#invoice-edit-table tbody").off(
-    "click",
-    ".icon-delete",
-    rmInvoiceEditTableRow
-  );
-  $("#invoice-edit-table tbody").on(
-    "click",
-    ".icon-delete",
-    rmInvoiceEditTableRow
-  );
+
+}
+
+// Remove Modal Invoice Edit Row
+export function rmRow(currentTable) {
+  console.log(currentTable);
+  currentTable
+    .row($(this).parents("tr"))
+    .remove()
+    .draw();
 }
 
 // Resize Table Rows

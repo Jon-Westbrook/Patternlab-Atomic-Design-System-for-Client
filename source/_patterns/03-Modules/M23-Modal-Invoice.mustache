@@ -18,10 +18,11 @@ The trigger button should not normally be a part of the modal code. --}}
           <div class="row h-100 py-5">
             <div class="col-lg-11 col-xl-9 mx-auto heading-col d-flex flex-column flex-md-row align-items-center px-0">
               <h1 class="primary-3">{{ heading-page }}</h1>
-              <div class="ml-auto">
+              <div class="ml-auto nav nav-pills" role="tablist">
                 {{# btns-desktop-top }}
-                <button type="{{ type }}" form="{{ form }}" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
-                  aria-label="{{ aria-label }}">{{ btn-copy }}</button>
+                <button type="button" class="ml-4 {{ classes }}" data-dismiss="{{ data-dismiss }}"
+                  data-toggle="{{ data-toggle }}" href="{{ href }}" role="{{ role }}"
+                  aria-controls="{{ aria-controls }}" aria-selected="{{ aria-selected }}">{{ btn-copy }}</button>
                 {{/ btns-desktop-top }}
               </div>
             </div>
