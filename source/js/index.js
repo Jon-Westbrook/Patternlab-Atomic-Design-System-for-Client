@@ -54,8 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Remove Table when Modal is Shown Table Manipulations
-  $(".icon-delete").on("click", function() {
-    tables.rmRow(invoiceEditTable);
+  $("#invoice-edit-table tbody").on("click", ".icon-delete", function() {
+    invoiceEditTable
+      .row($(this).parents("tr"))
+      .remove()
+      .draw();
   });
 
   // Init Datepickers Site-Wide
