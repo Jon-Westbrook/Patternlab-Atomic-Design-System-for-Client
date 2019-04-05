@@ -5,8 +5,8 @@
 
   th {
     border-right: 0;
-    padding-bottom: .75rem;
-    padding-top: .75rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
   }
   tr,
   td {
@@ -39,7 +39,7 @@
   .handle-reorder {
     cursor: pointer;
   }
-  
+
   td:first-of-type {
     padding-left: 0;
   }
@@ -49,8 +49,8 @@
   .dataTables_scrollHead {
     th {
       border-right: 0;
-      padding-bottom: .75rem;
-      padding-top: .75rem;
+      padding-bottom: 0.75rem;
+      padding-top: 0.75rem;
     }
   }
 }
@@ -70,6 +70,12 @@
   input {
     border: 0;
   }
+  tr {
+    &:hover {
+      background: #f1f2f7;
+      cursor: pointer;
+    }
+  }
 }
 
 #sales-table,
@@ -83,7 +89,6 @@
 }
 
 #invoice-preview-table tbody {
-
   tr:nth-of-type(2n) {
     background-color: $gray-light;
   }
