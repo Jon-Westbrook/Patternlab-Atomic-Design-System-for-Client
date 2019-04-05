@@ -248,3 +248,16 @@
     width: 100%;
   }
 }
+
+.sale-tip-list {
+  padding-left: .5rem;
+  list-style: none;
+  position: relative;
+
+  li::before {
+    content: '\2022';
+    color: inherit;
+    position: absolute;
+    left: 0;
+  }
+}

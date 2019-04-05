@@ -89,8 +89,11 @@ The trigger button should not normally be a part of the modal code. --}}
                     <div class="customer-note mt-5 mb-4">
                       <img src="{{ note }}" alt="Dollar Sign Icon" class="d-inline-block">
                       <p class="label bold d-inline-block tertiary-2">{{ tip-title }}</p>
-                      <p class="small light mb-0">{{{ tip1 }}}</p>
-                      <p class="small light">{{{ tip2 }}}</p>
+                      <ul class="sale-tip-list small light">
+                        {{# tips}}
+                        <li>{{ . }}</li>
+                        {{/ tips}}
+                      </ul>
                     </div>
                     {{/ customer-note }}
                   </div>
