@@ -25,6 +25,6 @@
     "category": "etc",
     "displayName": "Etc",
     "last": true,
-    "icons": ["arrow-left", "close-gray", "handle-reorder", "note"]
+    "icons": ["arrow-left", "note"]
   }]
 }
