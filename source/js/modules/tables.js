@@ -42,7 +42,7 @@ export const initInvoiceEditTable = () => {
     data: [
       [
         '1',
-        'item 1',
+        '',
         '',
         '',
         ''
