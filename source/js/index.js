@@ -42,10 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
   $(".pills-preview-tab").on("click", function(e) {
     e.preventDefault();
     $(this).tab("show");
+    $(".pills-edit-tab").removeClass("active show");
   });
   $(".pills-edit-tab").on("click", function(e) {
     e.preventDefault();
     $(this).tab("show");
+    $(".pills-preview-tab").removeClass("active show");
   });
 
   // Datatables - Init Reporting Sales Table
