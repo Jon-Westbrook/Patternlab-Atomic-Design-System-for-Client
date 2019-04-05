@@ -31,7 +31,7 @@
     border-color: $gray-medium;
     color: $gray-medium;
   }
-  
+
   &:hover:not(:disabled),
   &:focus:not(:disabled),
   .active:not(:disabled) {
@@ -51,13 +51,13 @@
     border: 0;
   }
 
-  &:hover:not(:disabled),
-  &:focus:not(:disabled),
-  .active:not(:disabled) {
-    color: $primary-3;
-    background-color: $secondary-4 !important;
-    border: 0;
-  }
+  // &:hover:not(:disabled),
+  // &:focus:not(:disabled),
+  // .active:not(:disabled) {
+  //   color: $primary-3;
+  //   background-color: $secondary-4 !important;
+  //   border: 0;
+  // }
 }
 
 .btn-secondary.btn-dark {
@@ -83,7 +83,7 @@
 .btn-lightbox {
   &:hover:not(:disabled),
   &:focus:not(:disabled),
-  .active:not(:disabled), {
+  .active:not(:disabled) {
     background-color: $white;
     color: $secondary-4;
   }
