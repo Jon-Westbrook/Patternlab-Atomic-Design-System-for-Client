@@ -41,7 +41,7 @@
         "image": "../../images/card-processor.jpg",
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pulvinar diam, ac volutpat felis. Sed in placerat turpis ipsum sed malesuada volutpat. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. <br><br><ul class='pl-4'><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li><li>Leave the bullets. Take the cannoli</li></ul>Aenean luctus id velit non lacinia. Sed porttitor ut velit et feugiat. Aenean finibus malesuada neque, sit amet hendrerit quam mattis in. Cras finibus sodales magna eu consequat. Donec dignissim porttitor erat eu hendrerit.",
         "support-tip": {
-          "cog": "../../images/icons/account-support.svg",
+          "cog": "../../images/cog-pink.svg",
           "tip-title": "Support Tip",
           "tip": "Lorem ipsum dolor sit amet elit. Donec luctus id velin."
         }
