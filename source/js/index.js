@@ -1,4 +1,6 @@
+/* eslint-disable func-names */
 /* eslint-disable import/extensions */
+
 import * as tables from "./modules/tables.js";
 import * as sidebar from "./modules/sidebar.js";
 import * as homeChart from "./modules/homeChart.js";
@@ -10,9 +12,6 @@ import * as forms from "./modules/forms.js";
 const $window = $(window);
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Trigger Modal Automagically, can be removed
-  // $("#newSale").modal("show");
-
   // Animate modal headers when loaded
   $(".modal-full").on("shown.bs.modal", event => {
     modals.animateModalHeader(event.currentTarget);
@@ -39,6 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Swap Between Invoice Modal Edit and Preview
+  $(".pills-preview-tab").on("click", function(e) {
+    e.preventDefault();
+    $(this).tab("show");
+  });
+  $(".pills-edit-tab").on("click", function(e) {
+    e.preventDefault();
+    $(this).tab("show");
+  });
+
   // Datatables - Init Reporting Sales Table
   tables.initReportingSalesTable();
 
@@ -55,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Remove Table when Modal is Shown Table Manipulations
   $("#invoice-edit-table tbody").on("click", ".icon-delete", function() {
-    const row = $(this).parents('tr')
-    tables.removeRow(invoiceEditTable, row)
+    const row = $(this).parents("tr");
+    tables.removeRow(invoiceEditTable, row);
   });
 
   // Init Datepickers Site-Wide
