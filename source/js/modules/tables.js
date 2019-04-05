@@ -177,8 +177,8 @@ export function addRow(currentTable) {
       '<input type="text" class="w-100 bg-gray-light p-3" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
       '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
-      '<a href="javascript:;" class="d-block icon-delete"><img src="../../images/icons/close-gray.svg"></a></td>',
-      '<a href="javascript:;" class="d-block handle-reorder"><img src="../../images/icons/handle-reorder.svg"></a>'
+      '<a href="javascript:;" class="d-block icon-delete"><img src="../../images/invoice-items-remove.svg"></a></td>',
+      '<a href="javascript:;" class="d-block handle-reorder"><img src="../../images/invoice-items-reorder.svg"></a>'
     ])
     .draw()
     .node();
