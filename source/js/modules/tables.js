@@ -39,14 +39,56 @@ export const initInvoiceEditTable = () => {
     rowReorder: {
       selector: ".handle-reorder"
     },
+    data: [
+      [
+        '1',
+        'item 1',
+        '',
+        '',
+        ''
+      ],
+      [
+        '2',
+        '',
+        '',
+        '',
+        ''
+      ]
+    ],
     info: false,
     columnDefs: [
       { orderable: false, targets: "_all" },
       { targets: 0, visible: false },
-      { targets: 1, width: '30%' },
-      { targets: 2, width: '15%' },
-      { targets: 3, width: '25%' },
-      { targets: 4, width: '25%' }
+      {
+        targets: 1,
+        width: '30%',
+        render: renderItemNameInput
+      },
+      {
+        targets: 2,
+        width: '15%',
+        render: renderQuantityInput
+      },
+      {
+        targets: 3,
+        width: '25%',
+        render: renderPriceInput
+      },
+      {
+        targets: 4,
+        width: '25%',
+        render: renderPriceInput
+      },
+      { 
+        targets: 5,
+        className: 'icon-delete',
+        defaultContent: '<a class="d-block"><img src="../../images/invoice-items-remove.svg"></a>'
+      },
+      {
+        targets: 6,
+        className: 'handle-reorder',
+        defaultContent: '<a class="d-block"><img src="../../images/invoice-items-reorder.svg"></a>'
+      }
     ]
   });
 }
@@ -172,17 +214,14 @@ export const initReportingDepositsTable = () => {
 export function addRow(currentTable) {
   var rowNode = currentTable.row
     .add([
-      currentTable.rows()[0].length,
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name">',
-      '<input type="text" class="w-100 bg-gray-light p-3" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
-      '<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" >',
-      '<a href="javascript:;" class="d-block icon-delete"><img src="../../images/invoice-items-remove.svg"></a></td>',
-      '<a href="javascript:;" class="d-block handle-reorder"><img src="../../images/invoice-items-reorder.svg"></a>'
+      `${currentTable.rows()[0].length + 1}`,
+      '',
+      '',
+      '',
+      ''
     ])
     .draw()
     .node();
-
 }
 
 // Remove Modal Invoice Edit Row
@@ -190,6 +229,15 @@ export function removeRow(table, row) {
   table.row(row)
     .remove()
     .draw();
+
+  table.rows().every(function(index) {
+    var inputData = $(this.node()).find('td input').map(function(index, item) {
+      return item.value
+    }).get()
+
+    const newData = [ `${index + 1}` ].concat(inputData)
+    this.data(newData)
+  })
 }
 
 // Resize Table Rows
@@ -345,6 +393,30 @@ function renderStatus(data, type) {
     } else {
       return data
     }
+  } else {
+    return data
+  }
+}
+
+function renderItemNameInput(data, type) {
+  if (type === 'display') {
+    return `<input type="text" class="w-100 bg-gray-light p-3" placeholder="Enter Item Name" value="${data}">`
+  } else {
+    return data
+  }
+}
+
+function renderQuantityInput(data, type) {
+  if (type === 'display') {
+    return `<input type="text" class="w-100 bg-gray-light p-3" value="${data}">`
+  } else {
+    return data
+  }
+}
+
+function renderPriceInput(data, type) {
+  if (type === 'display') {
+    return `<input type="text" class="w-100 bg-gray-light p-3" placeholder="$" value="${data}">`
   } else {
     return data
   }
