@@ -3,7 +3,6 @@ coverage/
 node_modules/
 build
 build/
-design-files/
 gwd-src-bak/
 public/
 
@@ -25,7 +24,6 @@ node_modules/**
 /sitemap.xml
 /sitemap.xml.gz
 .sass-cache
-
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
