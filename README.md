@@ -41,3 +41,18 @@ For items that are seen throughout the site, like forms inputs, or modals, or ta
 For modules that required 3rd party plugins to accomplish, we put all those 3rd party files under css/vendor, or js/vendor.
 
 JavaScript is handled in a similar, modularized manner. There is a root index.js file, and that imports a list of ES6 modules, with functionality specific to their names, like modals.js. The index.js tries to only be a place to listen for the Document Ready event, then attach a number of event listeners.
+
+## Padding Classes
+
+The Design System uses a system for padding and margins. Eg. on any element, you can use a 'p' or an 'm' with a padding code. The system is:
+
+0: 0px,
+1: 4px,
+2: 8px,
+3: 12px,
+4: 16px (the base),
+5: 24px,
+6: 28px,
+7: 32px,
+8: 48px,
+9: 60px
