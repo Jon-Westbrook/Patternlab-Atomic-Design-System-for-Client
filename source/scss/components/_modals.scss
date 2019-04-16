@@ -149,7 +149,11 @@
             bottom: 0;
             background-position: center top;
             background-size: cover;
+            height: 100vh;
           }
+          // .pb-70vh {
+          //   padding-bottom: 70vh;
+          // }
         }
         .mainBox {
           background: $primary-3;
@@ -257,12 +261,12 @@
 }
 
 .sale-tip-list {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   list-style: none;
   position: relative;
 
   li::before {
-    content: '\2022';
+    content: "\2022";
     color: inherit;
     position: absolute;
     left: 0;
