@@ -44,7 +44,7 @@ JavaScript is handled in a similar, modularized manner. There is a root index.js
 
 ## Padding Classes
 
-The Design System uses a system for padding and margins. Eg. on any element, you can use a 'p' or an 'm' with a padding code. The system is:
+The Design System uses a system for padding and margins. On any element, you can use a 'p' or an 'm' with a padding code, like mx-3, or pr-9, or m-0. The system is:
 
 0: 0px,
 1: 4px,
@@ -56,3 +56,5 @@ The Design System uses a system for padding and margins. Eg. on any element, you
 7: 32px,
 8: 48px,
 9: 60px
+
+For more info, see https://getbootstrap.com/docs/4.3/utilities/spacing/ .
