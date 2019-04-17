@@ -58,3 +58,7 @@ The Design System uses a system for padding and margins. On any element, you can
 9: 60px
 
 For more info, see https://getbootstrap.com/docs/4.3/utilities/spacing/ .
+
+## Color Classes
+
+Any color from the CardX color palette (Foundation > Color Palette) can be added to any text element, by adding a class, eg. `primary-3`. A background color can be added by prefixing with `bg`, eg. `bg-primary-3`. The definitions for all color classes can be found in `scss/global/variables.scss`, and `scss/foundation/_colors.scss`, and they follow the naming conventions of the variables.
