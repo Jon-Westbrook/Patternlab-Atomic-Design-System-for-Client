@@ -34,10 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/vsapartners/3095-001-03-cardx-design-system.git"
+    "url": "git+ssh://git@github.com:Jon-Westbrook/CardX-Digital-Design-System.git"
   },
   "license": "ISC",
-  "homepage": "https://bitbucket.org/vsapartners/3095-001-03-cardx-design-system#readme",
   "dependencies": {
     "@pattern-lab/cli": "^0.0.1-beta.1",
     "@pattern-lab/core": "^3.0.0-beta.1",
