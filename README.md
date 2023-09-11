@@ -13,14 +13,16 @@ https://getbootstrap.com/docs/4.1/getting-started/introduction/
 
 ## Installation
 
-1. Ensure NodeJS (Important - Version 10) and the Node Package Manager (NPM) are installed on your system.
-2. In the project root, run:
+1. Use NVM to set Node 10.7.0 and NPM 6.1.0, or close minor versions.
+2. Use Pyenv to set Python 2.7 locally to your project.
+3. In the project root, run:
    `npm install`
-3. All build tasks are done with npm scripts, so preface each build command with `npm run`. The main dev build task, that should automagically fire up a local dev server is:
-   `npm run build -s`
-4. Please use ESLint and Prettier to ensure code quality.
-5. Modify and save files in the `source/` directory, and watch your browser auto-reload. Files are served from the `public/` folder.
-6. To modify the Patternlab "wrapper" around the actual patterns, surf to `source/uikit-workshop` and run `npm install`. From there, you can run Webpack build commands such as `npm run build` to build the Patternlab wrapper from the `src/` folder. Other commands are available and listed in `uikit-workshop/package.json`.
+4. `npm run build`
+5. You should get a local browser-sync server.
+6. Navigate foundation/elements/components/modules/templates via the top gray nav bar. Internal links are not intended to work, this is a testing environment for individual components.
+7. Please use ESLint and Prettier to ensure code quality.
+8. Modify and save files in the `source/` directory, and watch your browser auto-reload. Files are served from the `public/` folder.
+9. To modify the Patternlab "wrapper" around the actual patterns, surf to `source/uikit-workshop` and run `npm install`. From there, you can run Webpack build commands such as `npm run build` to build the Patternlab wrapper from the `src/` folder. Other commands are available and listed in `uikit-workshop/package.json`.
 
 ## Known Issues
 
