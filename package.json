@@ -53,7 +53,7 @@
     "starterkit-mustache-bootstrap": "github:pattern-lab/starterkit-mustache-bootstrap"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "2.26.14",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
